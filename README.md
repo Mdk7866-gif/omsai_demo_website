@@ -59,6 +59,13 @@ Read `AGENTS.md` and the installed Next.js guides before code changes. The curre
 
 The repository now includes an interactive **Next.js-only demo**, inspired by the temple-gold and maroon reference in `UI.png`. It uses a desktop sidebar, a mobile side drawer, and mobile bottom sheets. This demo is for presenting the design and workflows to the client; the production backend requirements below remain the implementation brief.
 
+### Published demo
+
+- **Live website:** https://omsai-demo-website.vercel.app
+- **Public source repository:** https://github.com/Mdk7866-gif/omsai_demo_website
+- **Hosting:** Vercel project `omsai-demo-website`, connected to the repository's `main` branch using the Next.js preset and repository root `./`. Pushing changes to `main` triggers a new deployment.
+- Published on **14 October 2026**. This is the client presentation demo; the production backend and authentication described below are still pending. Each visitor's edits stay in their own browser local storage and are not shared between devices or written back to GitHub. No application environment variables are required for the demo.
+
 ### Run the demo
 
 ```powershell
@@ -95,7 +102,7 @@ This document is the implementation brief for a private website used to manage t
 
 The shop is an agro input dealer. Farmers purchase fertilizers, pesticides, and seeds, often on credit, and repay later, frequently after harvest. They can purchase repeatedly and make partial payments on any day. The website must maintain an accurate running account for each farmer, including interest and historical transactions.
 
-**Requirements updated:** 14 October 2026, incorporating the owner's demo feedback. The sections below describe the production requirements, not completed production behavior. The client demo and its local run instructions are documented above; production deployment and backend setup do not exist yet.
+**Requirements updated:** 14 October 2026, incorporating the owner's demo feedback. The sections below describe the production requirements, not completed production behavior. The client demo is deployed on Vercel and its local run instructions are documented above; the final production backend and deployment architecture are still pending.
 
 Requirements explicitly agreed with the owner are described below. Additional choices needed to make those requirements implementable are marked **implementation default** or **recommendation**. They can be revised before implementation without changing the agreed business scope.
 
