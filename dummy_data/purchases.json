@@ -1,0 +1,4386 @@
+[
+  {
+    "id": 1,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-09-01",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Urea 45 kg",
+        "brand": "IFFCO",
+        "category": "Fertilizers",
+        "batch": "FE-26700",
+        "unit": "bags",
+        "quantity": 15,
+        "purchasePrice": 245,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3675
+      },
+      {
+        "productId": null,
+        "name": "Chilli Seeds Teja 10 g",
+        "brand": "Syngenta",
+        "category": "Seeds",
+        "batch": "SE-26708",
+        "unit": "packets",
+        "quantity": 10,
+        "purchasePrice": 365,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3650
+      }
+    ],
+    "amount": 7325,
+    "detail": "Urea 45 kg × 15 bags; Chilli Seeds Teja 10 g × 10 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-01",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-09-02",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "DAP 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26701",
+        "unit": "bags",
+        "quantity": 16,
+        "purchasePrice": 1220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 19520
+      },
+      {
+        "productId": null,
+        "name": "Imidacloprid 100 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26709",
+        "unit": "bottles",
+        "quantity": 11,
+        "purchasePrice": 135,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1485
+      }
+    ],
+    "amount": 21005,
+    "detail": "DAP 50 kg × 16 bags; Imidacloprid 100 ml × 11 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-02",
+        "paid": false
+      },
+      {
+        "date": "2026-09-05",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-09-03",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Cotton Seeds BG-II 450 g",
+        "brand": "Mahyco",
+        "category": "Seeds",
+        "batch": "SE-26702",
+        "unit": "packets",
+        "quantity": 17,
+        "purchasePrice": 710,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 12070
+      },
+      {
+        "productId": null,
+        "name": "Groundnut Seeds K6 30 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26710",
+        "unit": "bags",
+        "quantity": 12,
+        "purchasePrice": 2250,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 27000
+      }
+    ],
+    "amount": 39070,
+    "detail": "Cotton Seeds BG-II 450 g × 17 packets; Groundnut Seeds K6 30 kg × 12 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-03",
+        "paid": false
+      },
+      {
+        "date": "2026-09-06",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-09-04",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Bio Pesticide 500 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26703",
+        "unit": "bottles",
+        "quantity": 18,
+        "purchasePrice": 330,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5940
+      },
+      {
+        "productId": null,
+        "name": "Paddy Seeds Loose",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26711",
+        "unit": "kg",
+        "quantity": 13,
+        "purchasePrice": 42,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 546
+      }
+    ],
+    "amount": 6486,
+    "detail": "Bio Pesticide 500 ml × 18 bottles; Paddy Seeds Loose × 13 kg",
+    "statusHistory": [
+      {
+        "date": "2026-09-04",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-09-05",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Paddy Seeds BPT 5204 25 kg",
+        "brand": "Nuziveedu",
+        "category": "Seeds",
+        "batch": "SE-26704",
+        "unit": "bags",
+        "quantity": 19,
+        "purchasePrice": 1420,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 26980
+      },
+      {
+        "productId": null,
+        "name": "Super Phosphate 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26712",
+        "unit": "bags",
+        "quantity": 14,
+        "purchasePrice": 390,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5460
+      }
+    ],
+    "amount": 32440,
+    "detail": "Paddy Seeds BPT 5204 25 kg × 19 bags; Super Phosphate 50 kg × 14 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-05",
+        "paid": false
+      },
+      {
+        "date": "2026-09-08",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-09-06",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Neem Oil 1 L",
+        "brand": "Multiplex",
+        "category": "Pesticides",
+        "batch": "PE-26705",
+        "unit": "bottles",
+        "quantity": 20,
+        "purchasePrice": 270,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5400
+      },
+      {
+        "productId": null,
+        "name": "Zinc Sulphate 5 kg",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26713",
+        "unit": "bags",
+        "quantity": 15,
+        "purchasePrice": 470,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7050
+      }
+    ],
+    "amount": 12450,
+    "detail": "Neem Oil 1 L × 20 bottles; Zinc Sulphate 5 kg × 15 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-06",
+        "paid": false
+      },
+      {
+        "date": "2026-09-09",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-09-07",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "NPK 19:19:19 1 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26706",
+        "unit": "packets",
+        "quantity": 21,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3045
+      },
+      {
+        "productId": null,
+        "name": "Chlorantraniliprole 60 ml",
+        "brand": "FMC",
+        "category": "Pesticides",
+        "batch": "PE-26714",
+        "unit": "bottles",
+        "quantity": 16,
+        "purchasePrice": 520,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8320
+      }
+    ],
+    "amount": 11365,
+    "detail": "NPK 19:19:19 1 kg × 21 packets; Chlorantraniliprole 60 ml × 16 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-07",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-09-08",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "MOP 50 kg",
+        "brand": "IPL",
+        "category": "Fertilizers",
+        "batch": "FE-26707",
+        "unit": "bags",
+        "quantity": 22,
+        "purchasePrice": 1510,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 33220
+      },
+      {
+        "productId": null,
+        "name": "Micronutrient Mix Loose",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26715",
+        "unit": "kg",
+        "quantity": 17,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2125
+      }
+    ],
+    "amount": 35345,
+    "detail": "MOP 50 kg × 22 bags; Micronutrient Mix Loose × 17 kg",
+    "statusHistory": [
+      {
+        "date": "2026-09-08",
+        "paid": false
+      },
+      {
+        "date": "2026-09-11",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-09-09",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Chilli Seeds Teja 10 g",
+        "brand": "Syngenta",
+        "category": "Seeds",
+        "batch": "SE-26708",
+        "unit": "packets",
+        "quantity": 23,
+        "purchasePrice": 365,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8395
+      },
+      {
+        "productId": null,
+        "name": "Maize Seeds 4 kg",
+        "brand": "Pioneer",
+        "category": "Seeds",
+        "batch": "SE-26716",
+        "unit": "packets",
+        "quantity": 18,
+        "purchasePrice": 1180,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 21240
+      }
+    ],
+    "amount": 29635,
+    "detail": "Chilli Seeds Teja 10 g × 23 packets; Maize Seeds 4 kg × 18 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-09",
+        "paid": false
+      },
+      {
+        "date": "2026-09-12",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-09-10",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Imidacloprid 100 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26709",
+        "unit": "bottles",
+        "quantity": 24,
+        "purchasePrice": 135,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3240
+      },
+      {
+        "productId": null,
+        "name": "Mancozeb 75 WP 1 kg",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26717",
+        "unit": "packets",
+        "quantity": 19,
+        "purchasePrice": 260,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4940
+      }
+    ],
+    "amount": 8180,
+    "detail": "Imidacloprid 100 ml × 24 bottles; Mancozeb 75 WP 1 kg × 19 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-10",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-09-11",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Groundnut Seeds K6 30 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26710",
+        "unit": "bags",
+        "quantity": 25,
+        "purchasePrice": 2250,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 56250
+      },
+      {
+        "productId": null,
+        "name": "Potassium Nitrate 1 kg",
+        "brand": "Haifa",
+        "category": "Fertilizers",
+        "batch": "FE-26718",
+        "unit": "packets",
+        "quantity": 20,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2500
+      }
+    ],
+    "amount": 58750,
+    "detail": "Groundnut Seeds K6 30 kg × 25 bags; Potassium Nitrate 1 kg × 20 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-11",
+        "paid": false
+      },
+      {
+        "date": "2026-09-14",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-09-12",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Paddy Seeds Loose",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26711",
+        "unit": "kg",
+        "quantity": 26,
+        "purchasePrice": 42,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1092
+      },
+      {
+        "productId": null,
+        "name": "Tomato Seeds Hybrid 10 g",
+        "brand": "Namdhari",
+        "category": "Seeds",
+        "batch": "SE-26719",
+        "unit": "packets",
+        "quantity": 21,
+        "purchasePrice": 275,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5775
+      }
+    ],
+    "amount": 6867,
+    "detail": "Paddy Seeds Loose × 26 kg; Tomato Seeds Hybrid 10 g × 21 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-12",
+        "paid": false
+      },
+      {
+        "date": "2026-09-15",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-09-13",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Super Phosphate 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26712",
+        "unit": "bags",
+        "quantity": 27,
+        "purchasePrice": 390,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10530
+      },
+      {
+        "productId": null,
+        "name": "Humic Acid 1 L",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26720",
+        "unit": "bottles",
+        "quantity": 22,
+        "purchasePrice": 220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4840
+      }
+    ],
+    "amount": 15370,
+    "detail": "Super Phosphate 50 kg × 27 bags; Humic Acid 1 L × 22 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-13",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-09-14",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Zinc Sulphate 5 kg",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26713",
+        "unit": "bags",
+        "quantity": 28,
+        "purchasePrice": 470,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 13160
+      },
+      {
+        "productId": null,
+        "name": "Emamectin Benzoate 100 g",
+        "brand": "Crystal",
+        "category": "Pesticides",
+        "batch": "PE-26721",
+        "unit": "packets",
+        "quantity": 23,
+        "purchasePrice": 185,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4255
+      }
+    ],
+    "amount": 17415,
+    "detail": "Zinc Sulphate 5 kg × 28 bags; Emamectin Benzoate 100 g × 23 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-14",
+        "paid": false
+      },
+      {
+        "date": "2026-09-17",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-09-15",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Chlorantraniliprole 60 ml",
+        "brand": "FMC",
+        "category": "Pesticides",
+        "batch": "PE-26714",
+        "unit": "bottles",
+        "quantity": 29,
+        "purchasePrice": 520,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 15080
+      },
+      {
+        "productId": null,
+        "name": "Red Gram Seeds LRG 41 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26722",
+        "unit": "bags",
+        "quantity": 24,
+        "purchasePrice": 560,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 13440
+      }
+    ],
+    "amount": 28520,
+    "detail": "Chlorantraniliprole 60 ml × 29 bottles; Red Gram Seeds LRG 41 5 kg × 24 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-15",
+        "paid": false
+      },
+      {
+        "date": "2026-09-18",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-09-16",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Micronutrient Mix Loose",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26715",
+        "unit": "kg",
+        "quantity": 30,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3750
+      },
+      {
+        "productId": null,
+        "name": "Water-soluble Boron 250 g",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26723",
+        "unit": "packets",
+        "quantity": 25,
+        "purchasePrice": 110,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2750
+      }
+    ],
+    "amount": 6500,
+    "detail": "Micronutrient Mix Loose × 30 kg; Water-soluble Boron 250 g × 25 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-16",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-09-17",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Maize Seeds 4 kg",
+        "brand": "Pioneer",
+        "category": "Seeds",
+        "batch": "SE-26716",
+        "unit": "packets",
+        "quantity": 31,
+        "purchasePrice": 1180,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 36580
+      },
+      {
+        "productId": null,
+        "name": "Pendimethalin 1 L",
+        "brand": "BASF",
+        "category": "Pesticides",
+        "batch": "PE-26724",
+        "unit": "bottles",
+        "quantity": 26,
+        "purchasePrice": 395,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10270
+      }
+    ],
+    "amount": 46850,
+    "detail": "Maize Seeds 4 kg × 31 packets; Pendimethalin 1 L × 26 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-17",
+        "paid": false
+      },
+      {
+        "date": "2026-09-20",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-09-18",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Mancozeb 75 WP 1 kg",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26717",
+        "unit": "packets",
+        "quantity": 32,
+        "purchasePrice": 260,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8320
+      },
+      {
+        "productId": null,
+        "name": "Sunflower Seeds 1 kg",
+        "brand": "Advanta",
+        "category": "Seeds",
+        "batch": "SE-26725",
+        "unit": "packets",
+        "quantity": 27,
+        "purchasePrice": 310,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8370
+      }
+    ],
+    "amount": 16690,
+    "detail": "Mancozeb 75 WP 1 kg × 32 packets; Sunflower Seeds 1 kg × 27 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-18",
+        "paid": false
+      },
+      {
+        "date": "2026-09-21",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-09-19",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Potassium Nitrate 1 kg",
+        "brand": "Haifa",
+        "category": "Fertilizers",
+        "batch": "FE-26718",
+        "unit": "packets",
+        "quantity": 33,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4125
+      },
+      {
+        "productId": null,
+        "name": "Seaweed Extract 500 ml",
+        "brand": "Sagarika",
+        "category": "Fertilizers",
+        "batch": "FE-26726",
+        "unit": "bottles",
+        "quantity": 10,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1450
+      }
+    ],
+    "amount": 5575,
+    "detail": "Potassium Nitrate 1 kg × 33 packets; Seaweed Extract 500 ml × 10 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-19",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-09-20",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Tomato Seeds Hybrid 10 g",
+        "brand": "Namdhari",
+        "category": "Seeds",
+        "batch": "SE-26719",
+        "unit": "packets",
+        "quantity": 34,
+        "purchasePrice": 275,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 9350
+      },
+      {
+        "productId": null,
+        "name": "Copper Oxychloride 500 g",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26727",
+        "unit": "packets",
+        "quantity": 11,
+        "purchasePrice": 155,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1705
+      }
+    ],
+    "amount": 11055,
+    "detail": "Tomato Seeds Hybrid 10 g × 34 packets; Copper Oxychloride 500 g × 11 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-20",
+        "paid": false
+      },
+      {
+        "date": "2026-09-23",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-09-21",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Humic Acid 1 L",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26720",
+        "unit": "bottles",
+        "quantity": 35,
+        "purchasePrice": 220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7700
+      },
+      {
+        "productId": null,
+        "name": "Black Gram Seeds 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26728",
+        "unit": "bags",
+        "quantity": 12,
+        "purchasePrice": 525,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 6300
+      }
+    ],
+    "amount": 14000,
+    "detail": "Humic Acid 1 L × 35 bottles; Black Gram Seeds 5 kg × 12 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-21",
+        "paid": false
+      },
+      {
+        "date": "2026-09-24",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-09-22",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Emamectin Benzoate 100 g",
+        "brand": "Crystal",
+        "category": "Pesticides",
+        "batch": "PE-26721",
+        "unit": "packets",
+        "quantity": 36,
+        "purchasePrice": 185,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 6660
+      },
+      {
+        "productId": null,
+        "name": "Organic Vermicompost Loose",
+        "brand": "Local Growers",
+        "category": "Fertilizers",
+        "batch": "FE-26729",
+        "unit": "kg",
+        "quantity": 13,
+        "purchasePrice": 8,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 104
+      }
+    ],
+    "amount": 6764,
+    "detail": "Emamectin Benzoate 100 g × 36 packets; Organic Vermicompost Loose × 13 kg",
+    "statusHistory": [
+      {
+        "date": "2026-09-22",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-09-23",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Red Gram Seeds LRG 41 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26722",
+        "unit": "bags",
+        "quantity": 37,
+        "purchasePrice": 560,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 20720
+      },
+      {
+        "productId": null,
+        "name": "Trichoderma Viride 1 kg",
+        "brand": "Biostadt",
+        "category": "Pesticides",
+        "batch": "PE-26730",
+        "unit": "packets",
+        "quantity": 14,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1750
+      }
+    ],
+    "amount": 22470,
+    "detail": "Red Gram Seeds LRG 41 5 kg × 37 bags; Trichoderma Viride 1 kg × 14 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-23",
+        "paid": false
+      },
+      {
+        "date": "2026-09-26",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-09-24",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Water-soluble Boron 250 g",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26723",
+        "unit": "packets",
+        "quantity": 38,
+        "purchasePrice": 110,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4180
+      },
+      {
+        "productId": null,
+        "name": "Urea 45 kg",
+        "brand": "IFFCO",
+        "category": "Fertilizers",
+        "batch": "FE-26700",
+        "unit": "bags",
+        "quantity": 15,
+        "purchasePrice": 245,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3675
+      }
+    ],
+    "amount": 7855,
+    "detail": "Water-soluble Boron 250 g × 38 packets; Urea 45 kg × 15 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-24",
+        "paid": false
+      },
+      {
+        "date": "2026-09-27",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-09-25",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Pendimethalin 1 L",
+        "brand": "BASF",
+        "category": "Pesticides",
+        "batch": "PE-26724",
+        "unit": "bottles",
+        "quantity": 39,
+        "purchasePrice": 395,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 15405
+      },
+      {
+        "productId": null,
+        "name": "DAP 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26701",
+        "unit": "bags",
+        "quantity": 16,
+        "purchasePrice": 1220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 19520
+      }
+    ],
+    "amount": 34925,
+    "detail": "Pendimethalin 1 L × 39 bottles; DAP 50 kg × 16 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-25",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-09-26",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Sunflower Seeds 1 kg",
+        "brand": "Advanta",
+        "category": "Seeds",
+        "batch": "SE-26725",
+        "unit": "packets",
+        "quantity": 15,
+        "purchasePrice": 310,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4650
+      },
+      {
+        "productId": null,
+        "name": "Cotton Seeds BG-II 450 g",
+        "brand": "Mahyco",
+        "category": "Seeds",
+        "batch": "SE-26702",
+        "unit": "packets",
+        "quantity": 17,
+        "purchasePrice": 710,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 12070
+      }
+    ],
+    "amount": 16720,
+    "detail": "Sunflower Seeds 1 kg × 15 packets; Cotton Seeds BG-II 450 g × 17 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-26",
+        "paid": false
+      },
+      {
+        "date": "2026-09-29",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-09-27",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Seaweed Extract 500 ml",
+        "brand": "Sagarika",
+        "category": "Fertilizers",
+        "batch": "FE-26726",
+        "unit": "bottles",
+        "quantity": 16,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2320
+      },
+      {
+        "productId": null,
+        "name": "Bio Pesticide 500 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26703",
+        "unit": "bottles",
+        "quantity": 18,
+        "purchasePrice": 330,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5940
+      }
+    ],
+    "amount": 8260,
+    "detail": "Seaweed Extract 500 ml × 16 bottles; Bio Pesticide 500 ml × 18 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-27",
+        "paid": false
+      },
+      {
+        "date": "2026-09-30",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-09-28",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Copper Oxychloride 500 g",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26727",
+        "unit": "packets",
+        "quantity": 17,
+        "purchasePrice": 155,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2635
+      },
+      {
+        "productId": null,
+        "name": "Paddy Seeds BPT 5204 25 kg",
+        "brand": "Nuziveedu",
+        "category": "Seeds",
+        "batch": "SE-26704",
+        "unit": "bags",
+        "quantity": 19,
+        "purchasePrice": 1420,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 26980
+      }
+    ],
+    "amount": 29615,
+    "detail": "Copper Oxychloride 500 g × 17 packets; Paddy Seeds BPT 5204 25 kg × 19 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-28",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-09-29",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Black Gram Seeds 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26728",
+        "unit": "bags",
+        "quantity": 18,
+        "purchasePrice": 525,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 9450
+      },
+      {
+        "productId": null,
+        "name": "Neem Oil 1 L",
+        "brand": "Multiplex",
+        "category": "Pesticides",
+        "batch": "PE-26705",
+        "unit": "bottles",
+        "quantity": 20,
+        "purchasePrice": 270,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5400
+      }
+    ],
+    "amount": 14850,
+    "detail": "Black Gram Seeds 5 kg × 18 bags; Neem Oil 1 L × 20 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-29",
+        "paid": false
+      },
+      {
+        "date": "2026-10-02",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-09-30",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Organic Vermicompost Loose",
+        "brand": "Local Growers",
+        "category": "Fertilizers",
+        "batch": "FE-26729",
+        "unit": "kg",
+        "quantity": 19,
+        "purchasePrice": 8,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 152
+      },
+      {
+        "productId": null,
+        "name": "NPK 19:19:19 1 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26706",
+        "unit": "packets",
+        "quantity": 21,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3045
+      }
+    ],
+    "amount": 3197,
+    "detail": "Organic Vermicompost Loose × 19 kg; NPK 19:19:19 1 kg × 21 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-30",
+        "paid": false
+      },
+      {
+        "date": "2026-10-03",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-10-01",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Trichoderma Viride 1 kg",
+        "brand": "Biostadt",
+        "category": "Pesticides",
+        "batch": "PE-26730",
+        "unit": "packets",
+        "quantity": 20,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2500
+      },
+      {
+        "productId": null,
+        "name": "MOP 50 kg",
+        "brand": "IPL",
+        "category": "Fertilizers",
+        "batch": "FE-26707",
+        "unit": "bags",
+        "quantity": 22,
+        "purchasePrice": 1510,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 33220
+      }
+    ],
+    "amount": 35720,
+    "detail": "Trichoderma Viride 1 kg × 20 packets; MOP 50 kg × 22 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-01",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-10-02",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Urea 45 kg",
+        "brand": "IFFCO",
+        "category": "Fertilizers",
+        "batch": "FE-26700",
+        "unit": "bags",
+        "quantity": 21,
+        "purchasePrice": 245,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5145
+      },
+      {
+        "productId": null,
+        "name": "Chilli Seeds Teja 10 g",
+        "brand": "Syngenta",
+        "category": "Seeds",
+        "batch": "SE-26708",
+        "unit": "packets",
+        "quantity": 23,
+        "purchasePrice": 365,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8395
+      }
+    ],
+    "amount": 13540,
+    "detail": "Urea 45 kg × 21 bags; Chilli Seeds Teja 10 g × 23 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-02",
+        "paid": false
+      },
+      {
+        "date": "2026-10-05",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-10-03",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "DAP 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26701",
+        "unit": "bags",
+        "quantity": 22,
+        "purchasePrice": 1220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 26840
+      },
+      {
+        "productId": null,
+        "name": "Imidacloprid 100 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26709",
+        "unit": "bottles",
+        "quantity": 24,
+        "purchasePrice": 135,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3240
+      }
+    ],
+    "amount": 30080,
+    "detail": "DAP 50 kg × 22 bags; Imidacloprid 100 ml × 24 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-10-03",
+        "paid": false
+      },
+      {
+        "date": "2026-10-06",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-10-04",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Cotton Seeds BG-II 450 g",
+        "brand": "Mahyco",
+        "category": "Seeds",
+        "batch": "SE-26702",
+        "unit": "packets",
+        "quantity": 23,
+        "purchasePrice": 710,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 16330
+      },
+      {
+        "productId": null,
+        "name": "Groundnut Seeds K6 30 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26710",
+        "unit": "bags",
+        "quantity": 25,
+        "purchasePrice": 2250,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 56250
+      }
+    ],
+    "amount": 72580,
+    "detail": "Cotton Seeds BG-II 450 g × 23 packets; Groundnut Seeds K6 30 kg × 25 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-04",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-10-05",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Bio Pesticide 500 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26703",
+        "unit": "bottles",
+        "quantity": 24,
+        "purchasePrice": 330,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7920
+      },
+      {
+        "productId": null,
+        "name": "Paddy Seeds Loose",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26711",
+        "unit": "kg",
+        "quantity": 26,
+        "purchasePrice": 42,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1092
+      }
+    ],
+    "amount": 9012,
+    "detail": "Bio Pesticide 500 ml × 24 bottles; Paddy Seeds Loose × 26 kg",
+    "statusHistory": [
+      {
+        "date": "2026-10-05",
+        "paid": false
+      },
+      {
+        "date": "2026-10-08",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-10-06",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Paddy Seeds BPT 5204 25 kg",
+        "brand": "Nuziveedu",
+        "category": "Seeds",
+        "batch": "SE-26704",
+        "unit": "bags",
+        "quantity": 25,
+        "purchasePrice": 1420,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 35500
+      },
+      {
+        "productId": null,
+        "name": "Super Phosphate 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26712",
+        "unit": "bags",
+        "quantity": 27,
+        "purchasePrice": 390,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10530
+      }
+    ],
+    "amount": 46030,
+    "detail": "Paddy Seeds BPT 5204 25 kg × 25 bags; Super Phosphate 50 kg × 27 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-06",
+        "paid": false
+      },
+      {
+        "date": "2026-10-09",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-10-07",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Neem Oil 1 L",
+        "brand": "Multiplex",
+        "category": "Pesticides",
+        "batch": "PE-26705",
+        "unit": "bottles",
+        "quantity": 26,
+        "purchasePrice": 270,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7020
+      },
+      {
+        "productId": null,
+        "name": "Zinc Sulphate 5 kg",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26713",
+        "unit": "bags",
+        "quantity": 10,
+        "purchasePrice": 470,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4700
+      }
+    ],
+    "amount": 11720,
+    "detail": "Neem Oil 1 L × 26 bottles; Zinc Sulphate 5 kg × 10 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-07",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-10-08",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "NPK 19:19:19 1 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26706",
+        "unit": "packets",
+        "quantity": 27,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3915
+      },
+      {
+        "productId": null,
+        "name": "Chlorantraniliprole 60 ml",
+        "brand": "FMC",
+        "category": "Pesticides",
+        "batch": "PE-26714",
+        "unit": "bottles",
+        "quantity": 11,
+        "purchasePrice": 520,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5720
+      }
+    ],
+    "amount": 9635,
+    "detail": "NPK 19:19:19 1 kg × 27 packets; Chlorantraniliprole 60 ml × 11 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-10-08",
+        "paid": false
+      },
+      {
+        "date": "2026-10-11",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-10-09",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "MOP 50 kg",
+        "brand": "IPL",
+        "category": "Fertilizers",
+        "batch": "FE-26707",
+        "unit": "bags",
+        "quantity": 28,
+        "purchasePrice": 1510,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 42280
+      },
+      {
+        "productId": null,
+        "name": "Micronutrient Mix Loose",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26715",
+        "unit": "kg",
+        "quantity": 12,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1500
+      }
+    ],
+    "amount": 43780,
+    "detail": "MOP 50 kg × 28 bags; Micronutrient Mix Loose × 12 kg",
+    "statusHistory": [
+      {
+        "date": "2026-10-09",
+        "paid": false
+      },
+      {
+        "date": "2026-10-12",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-10-10",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Chilli Seeds Teja 10 g",
+        "brand": "Syngenta",
+        "category": "Seeds",
+        "batch": "SE-26708",
+        "unit": "packets",
+        "quantity": 29,
+        "purchasePrice": 365,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10585
+      },
+      {
+        "productId": null,
+        "name": "Maize Seeds 4 kg",
+        "brand": "Pioneer",
+        "category": "Seeds",
+        "batch": "SE-26716",
+        "unit": "packets",
+        "quantity": 13,
+        "purchasePrice": 1180,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 15340
+      }
+    ],
+    "amount": 25925,
+    "detail": "Chilli Seeds Teja 10 g × 29 packets; Maize Seeds 4 kg × 13 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-10",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-10-11",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Imidacloprid 100 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26709",
+        "unit": "bottles",
+        "quantity": 30,
+        "purchasePrice": 135,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4050
+      },
+      {
+        "productId": null,
+        "name": "Mancozeb 75 WP 1 kg",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26717",
+        "unit": "packets",
+        "quantity": 14,
+        "purchasePrice": 260,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3640
+      }
+    ],
+    "amount": 7690,
+    "detail": "Imidacloprid 100 ml × 30 bottles; Mancozeb 75 WP 1 kg × 14 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-11",
+        "paid": false
+      },
+      {
+        "date": "2026-10-14",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-10-12",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Groundnut Seeds K6 30 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26710",
+        "unit": "bags",
+        "quantity": 31,
+        "purchasePrice": 2250,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 69750
+      },
+      {
+        "productId": null,
+        "name": "Potassium Nitrate 1 kg",
+        "brand": "Haifa",
+        "category": "Fertilizers",
+        "batch": "FE-26718",
+        "unit": "packets",
+        "quantity": 15,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1875
+      }
+    ],
+    "amount": 71625,
+    "detail": "Groundnut Seeds K6 30 kg × 31 bags; Potassium Nitrate 1 kg × 15 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-12",
+        "paid": false
+      },
+      {
+        "date": "2026-10-14",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-10-13",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Paddy Seeds Loose",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26711",
+        "unit": "kg",
+        "quantity": 32,
+        "purchasePrice": 42,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1344
+      },
+      {
+        "productId": null,
+        "name": "Tomato Seeds Hybrid 10 g",
+        "brand": "Namdhari",
+        "category": "Seeds",
+        "batch": "SE-26719",
+        "unit": "packets",
+        "quantity": 16,
+        "purchasePrice": 275,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4400
+      }
+    ],
+    "amount": 5744,
+    "detail": "Paddy Seeds Loose × 32 kg; Tomato Seeds Hybrid 10 g × 16 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-13",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-10-14",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Super Phosphate 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26712",
+        "unit": "bags",
+        "quantity": 33,
+        "purchasePrice": 390,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 12870
+      },
+      {
+        "productId": null,
+        "name": "Humic Acid 1 L",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26720",
+        "unit": "bottles",
+        "quantity": 17,
+        "purchasePrice": 220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3740
+      }
+    ],
+    "amount": 16610,
+    "detail": "Super Phosphate 50 kg × 33 bags; Humic Acid 1 L × 17 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-10-14",
+        "paid": false
+      },
+      {
+        "date": "2026-10-14",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-09-01",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Zinc Sulphate 5 kg",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26713",
+        "unit": "bags",
+        "quantity": 34,
+        "purchasePrice": 470,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 15980
+      },
+      {
+        "productId": null,
+        "name": "Emamectin Benzoate 100 g",
+        "brand": "Crystal",
+        "category": "Pesticides",
+        "batch": "PE-26721",
+        "unit": "packets",
+        "quantity": 18,
+        "purchasePrice": 185,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3330
+      }
+    ],
+    "amount": 19310,
+    "detail": "Zinc Sulphate 5 kg × 34 bags; Emamectin Benzoate 100 g × 18 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-01",
+        "paid": false
+      },
+      {
+        "date": "2026-09-04",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-09-02",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Chlorantraniliprole 60 ml",
+        "brand": "FMC",
+        "category": "Pesticides",
+        "batch": "PE-26714",
+        "unit": "bottles",
+        "quantity": 35,
+        "purchasePrice": 520,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 18200
+      },
+      {
+        "productId": null,
+        "name": "Red Gram Seeds LRG 41 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26722",
+        "unit": "bags",
+        "quantity": 19,
+        "purchasePrice": 560,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10640
+      }
+    ],
+    "amount": 28840,
+    "detail": "Chlorantraniliprole 60 ml × 35 bottles; Red Gram Seeds LRG 41 5 kg × 19 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-02",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-09-03",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Micronutrient Mix Loose",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26715",
+        "unit": "kg",
+        "quantity": 36,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4500
+      },
+      {
+        "productId": null,
+        "name": "Water-soluble Boron 250 g",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26723",
+        "unit": "packets",
+        "quantity": 20,
+        "purchasePrice": 110,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2200
+      }
+    ],
+    "amount": 6700,
+    "detail": "Micronutrient Mix Loose × 36 kg; Water-soluble Boron 250 g × 20 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-03",
+        "paid": false
+      },
+      {
+        "date": "2026-09-06",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-09-04",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Maize Seeds 4 kg",
+        "brand": "Pioneer",
+        "category": "Seeds",
+        "batch": "SE-26716",
+        "unit": "packets",
+        "quantity": 37,
+        "purchasePrice": 1180,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 43660
+      },
+      {
+        "productId": null,
+        "name": "Pendimethalin 1 L",
+        "brand": "BASF",
+        "category": "Pesticides",
+        "batch": "PE-26724",
+        "unit": "bottles",
+        "quantity": 21,
+        "purchasePrice": 395,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8295
+      }
+    ],
+    "amount": 51955,
+    "detail": "Maize Seeds 4 kg × 37 packets; Pendimethalin 1 L × 21 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-04",
+        "paid": false
+      },
+      {
+        "date": "2026-09-07",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-09-05",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Mancozeb 75 WP 1 kg",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26717",
+        "unit": "packets",
+        "quantity": 38,
+        "purchasePrice": 260,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 9880
+      },
+      {
+        "productId": null,
+        "name": "Sunflower Seeds 1 kg",
+        "brand": "Advanta",
+        "category": "Seeds",
+        "batch": "SE-26725",
+        "unit": "packets",
+        "quantity": 22,
+        "purchasePrice": 310,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 6820
+      }
+    ],
+    "amount": 16700,
+    "detail": "Mancozeb 75 WP 1 kg × 38 packets; Sunflower Seeds 1 kg × 22 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-05",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-09-06",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Potassium Nitrate 1 kg",
+        "brand": "Haifa",
+        "category": "Fertilizers",
+        "batch": "FE-26718",
+        "unit": "packets",
+        "quantity": 39,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4875
+      },
+      {
+        "productId": null,
+        "name": "Seaweed Extract 500 ml",
+        "brand": "Sagarika",
+        "category": "Fertilizers",
+        "batch": "FE-26726",
+        "unit": "bottles",
+        "quantity": 23,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3335
+      }
+    ],
+    "amount": 8210,
+    "detail": "Potassium Nitrate 1 kg × 39 packets; Seaweed Extract 500 ml × 23 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-06",
+        "paid": false
+      },
+      {
+        "date": "2026-09-09",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-09-07",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Tomato Seeds Hybrid 10 g",
+        "brand": "Namdhari",
+        "category": "Seeds",
+        "batch": "SE-26719",
+        "unit": "packets",
+        "quantity": 15,
+        "purchasePrice": 275,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4125
+      },
+      {
+        "productId": null,
+        "name": "Copper Oxychloride 500 g",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26727",
+        "unit": "packets",
+        "quantity": 24,
+        "purchasePrice": 155,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3720
+      }
+    ],
+    "amount": 7845,
+    "detail": "Tomato Seeds Hybrid 10 g × 15 packets; Copper Oxychloride 500 g × 24 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-07",
+        "paid": false
+      },
+      {
+        "date": "2026-09-10",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-09-08",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Humic Acid 1 L",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26720",
+        "unit": "bottles",
+        "quantity": 16,
+        "purchasePrice": 220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3520
+      },
+      {
+        "productId": null,
+        "name": "Black Gram Seeds 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26728",
+        "unit": "bags",
+        "quantity": 25,
+        "purchasePrice": 525,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 13125
+      }
+    ],
+    "amount": 16645,
+    "detail": "Humic Acid 1 L × 16 bottles; Black Gram Seeds 5 kg × 25 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-08",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-09-09",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Emamectin Benzoate 100 g",
+        "brand": "Crystal",
+        "category": "Pesticides",
+        "batch": "PE-26721",
+        "unit": "packets",
+        "quantity": 17,
+        "purchasePrice": 185,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3145
+      },
+      {
+        "productId": null,
+        "name": "Organic Vermicompost Loose",
+        "brand": "Local Growers",
+        "category": "Fertilizers",
+        "batch": "FE-26729",
+        "unit": "kg",
+        "quantity": 26,
+        "purchasePrice": 8,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 208
+      }
+    ],
+    "amount": 3353,
+    "detail": "Emamectin Benzoate 100 g × 17 packets; Organic Vermicompost Loose × 26 kg",
+    "statusHistory": [
+      {
+        "date": "2026-09-09",
+        "paid": false
+      },
+      {
+        "date": "2026-09-12",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-09-10",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Red Gram Seeds LRG 41 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26722",
+        "unit": "bags",
+        "quantity": 18,
+        "purchasePrice": 560,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10080
+      },
+      {
+        "productId": null,
+        "name": "Trichoderma Viride 1 kg",
+        "brand": "Biostadt",
+        "category": "Pesticides",
+        "batch": "PE-26730",
+        "unit": "packets",
+        "quantity": 27,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3375
+      }
+    ],
+    "amount": 13455,
+    "detail": "Red Gram Seeds LRG 41 5 kg × 18 bags; Trichoderma Viride 1 kg × 27 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-10",
+        "paid": false
+      },
+      {
+        "date": "2026-09-13",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-09-11",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Water-soluble Boron 250 g",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26723",
+        "unit": "packets",
+        "quantity": 19,
+        "purchasePrice": 110,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2090
+      },
+      {
+        "productId": null,
+        "name": "Urea 45 kg",
+        "brand": "IFFCO",
+        "category": "Fertilizers",
+        "batch": "FE-26700",
+        "unit": "bags",
+        "quantity": 10,
+        "purchasePrice": 245,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2450
+      }
+    ],
+    "amount": 4540,
+    "detail": "Water-soluble Boron 250 g × 19 packets; Urea 45 kg × 10 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-11",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-09-12",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Pendimethalin 1 L",
+        "brand": "BASF",
+        "category": "Pesticides",
+        "batch": "PE-26724",
+        "unit": "bottles",
+        "quantity": 20,
+        "purchasePrice": 395,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7900
+      },
+      {
+        "productId": null,
+        "name": "DAP 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26701",
+        "unit": "bags",
+        "quantity": 11,
+        "purchasePrice": 1220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 13420
+      }
+    ],
+    "amount": 21320,
+    "detail": "Pendimethalin 1 L × 20 bottles; DAP 50 kg × 11 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-12",
+        "paid": false
+      },
+      {
+        "date": "2026-09-15",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-09-13",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Sunflower Seeds 1 kg",
+        "brand": "Advanta",
+        "category": "Seeds",
+        "batch": "SE-26725",
+        "unit": "packets",
+        "quantity": 21,
+        "purchasePrice": 310,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 6510
+      },
+      {
+        "productId": null,
+        "name": "Cotton Seeds BG-II 450 g",
+        "brand": "Mahyco",
+        "category": "Seeds",
+        "batch": "SE-26702",
+        "unit": "packets",
+        "quantity": 12,
+        "purchasePrice": 710,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8520
+      }
+    ],
+    "amount": 15030,
+    "detail": "Sunflower Seeds 1 kg × 21 packets; Cotton Seeds BG-II 450 g × 12 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-13",
+        "paid": false
+      },
+      {
+        "date": "2026-09-16",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-09-14",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Seaweed Extract 500 ml",
+        "brand": "Sagarika",
+        "category": "Fertilizers",
+        "batch": "FE-26726",
+        "unit": "bottles",
+        "quantity": 22,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3190
+      },
+      {
+        "productId": null,
+        "name": "Bio Pesticide 500 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26703",
+        "unit": "bottles",
+        "quantity": 13,
+        "purchasePrice": 330,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4290
+      }
+    ],
+    "amount": 7480,
+    "detail": "Seaweed Extract 500 ml × 22 bottles; Bio Pesticide 500 ml × 13 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-14",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-09-15",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Copper Oxychloride 500 g",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26727",
+        "unit": "packets",
+        "quantity": 23,
+        "purchasePrice": 155,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3565
+      },
+      {
+        "productId": null,
+        "name": "Paddy Seeds BPT 5204 25 kg",
+        "brand": "Nuziveedu",
+        "category": "Seeds",
+        "batch": "SE-26704",
+        "unit": "bags",
+        "quantity": 14,
+        "purchasePrice": 1420,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 19880
+      }
+    ],
+    "amount": 23445,
+    "detail": "Copper Oxychloride 500 g × 23 packets; Paddy Seeds BPT 5204 25 kg × 14 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-15",
+        "paid": false
+      },
+      {
+        "date": "2026-09-18",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-09-16",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Black Gram Seeds 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26728",
+        "unit": "bags",
+        "quantity": 24,
+        "purchasePrice": 525,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 12600
+      },
+      {
+        "productId": null,
+        "name": "Neem Oil 1 L",
+        "brand": "Multiplex",
+        "category": "Pesticides",
+        "batch": "PE-26705",
+        "unit": "bottles",
+        "quantity": 15,
+        "purchasePrice": 270,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4050
+      }
+    ],
+    "amount": 16650,
+    "detail": "Black Gram Seeds 5 kg × 24 bags; Neem Oil 1 L × 15 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-16",
+        "paid": false
+      },
+      {
+        "date": "2026-09-19",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-09-17",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Organic Vermicompost Loose",
+        "brand": "Local Growers",
+        "category": "Fertilizers",
+        "batch": "FE-26729",
+        "unit": "kg",
+        "quantity": 25,
+        "purchasePrice": 8,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 200
+      },
+      {
+        "productId": null,
+        "name": "NPK 19:19:19 1 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26706",
+        "unit": "packets",
+        "quantity": 16,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2320
+      }
+    ],
+    "amount": 2520,
+    "detail": "Organic Vermicompost Loose × 25 kg; NPK 19:19:19 1 kg × 16 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-17",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-09-18",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Trichoderma Viride 1 kg",
+        "brand": "Biostadt",
+        "category": "Pesticides",
+        "batch": "PE-26730",
+        "unit": "packets",
+        "quantity": 26,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3250
+      },
+      {
+        "productId": null,
+        "name": "MOP 50 kg",
+        "brand": "IPL",
+        "category": "Fertilizers",
+        "batch": "FE-26707",
+        "unit": "bags",
+        "quantity": 17,
+        "purchasePrice": 1510,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 25670
+      }
+    ],
+    "amount": 28920,
+    "detail": "Trichoderma Viride 1 kg × 26 packets; MOP 50 kg × 17 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-18",
+        "paid": false
+      },
+      {
+        "date": "2026-09-21",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-09-19",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Urea 45 kg",
+        "brand": "IFFCO",
+        "category": "Fertilizers",
+        "batch": "FE-26700",
+        "unit": "bags",
+        "quantity": 27,
+        "purchasePrice": 245,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 6615
+      },
+      {
+        "productId": null,
+        "name": "Chilli Seeds Teja 10 g",
+        "brand": "Syngenta",
+        "category": "Seeds",
+        "batch": "SE-26708",
+        "unit": "packets",
+        "quantity": 18,
+        "purchasePrice": 365,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 6570
+      }
+    ],
+    "amount": 13185,
+    "detail": "Urea 45 kg × 27 bags; Chilli Seeds Teja 10 g × 18 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-19",
+        "paid": false
+      },
+      {
+        "date": "2026-09-22",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-09-20",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "DAP 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26701",
+        "unit": "bags",
+        "quantity": 28,
+        "purchasePrice": 1220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 34160
+      },
+      {
+        "productId": null,
+        "name": "Imidacloprid 100 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26709",
+        "unit": "bottles",
+        "quantity": 19,
+        "purchasePrice": 135,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2565
+      }
+    ],
+    "amount": 36725,
+    "detail": "DAP 50 kg × 28 bags; Imidacloprid 100 ml × 19 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-20",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-09-21",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Cotton Seeds BG-II 450 g",
+        "brand": "Mahyco",
+        "category": "Seeds",
+        "batch": "SE-26702",
+        "unit": "packets",
+        "quantity": 29,
+        "purchasePrice": 710,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 20590
+      },
+      {
+        "productId": null,
+        "name": "Groundnut Seeds K6 30 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26710",
+        "unit": "bags",
+        "quantity": 20,
+        "purchasePrice": 2250,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 45000
+      }
+    ],
+    "amount": 65590,
+    "detail": "Cotton Seeds BG-II 450 g × 29 packets; Groundnut Seeds K6 30 kg × 20 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-21",
+        "paid": false
+      },
+      {
+        "date": "2026-09-24",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-09-22",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Bio Pesticide 500 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26703",
+        "unit": "bottles",
+        "quantity": 30,
+        "purchasePrice": 330,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 9900
+      },
+      {
+        "productId": null,
+        "name": "Paddy Seeds Loose",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26711",
+        "unit": "kg",
+        "quantity": 21,
+        "purchasePrice": 42,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 882
+      }
+    ],
+    "amount": 10782,
+    "detail": "Bio Pesticide 500 ml × 30 bottles; Paddy Seeds Loose × 21 kg",
+    "statusHistory": [
+      {
+        "date": "2026-09-22",
+        "paid": false
+      },
+      {
+        "date": "2026-09-25",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-09-23",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Paddy Seeds BPT 5204 25 kg",
+        "brand": "Nuziveedu",
+        "category": "Seeds",
+        "batch": "SE-26704",
+        "unit": "bags",
+        "quantity": 31,
+        "purchasePrice": 1420,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 44020
+      },
+      {
+        "productId": null,
+        "name": "Super Phosphate 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26712",
+        "unit": "bags",
+        "quantity": 22,
+        "purchasePrice": 390,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8580
+      }
+    ],
+    "amount": 52600,
+    "detail": "Paddy Seeds BPT 5204 25 kg × 31 bags; Super Phosphate 50 kg × 22 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-23",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-09-24",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Neem Oil 1 L",
+        "brand": "Multiplex",
+        "category": "Pesticides",
+        "batch": "PE-26705",
+        "unit": "bottles",
+        "quantity": 32,
+        "purchasePrice": 270,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8640
+      },
+      {
+        "productId": null,
+        "name": "Zinc Sulphate 5 kg",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26713",
+        "unit": "bags",
+        "quantity": 23,
+        "purchasePrice": 470,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10810
+      }
+    ],
+    "amount": 19450,
+    "detail": "Neem Oil 1 L × 32 bottles; Zinc Sulphate 5 kg × 23 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-24",
+        "paid": false
+      },
+      {
+        "date": "2026-09-27",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-09-25",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "NPK 19:19:19 1 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26706",
+        "unit": "packets",
+        "quantity": 33,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4785
+      },
+      {
+        "productId": null,
+        "name": "Chlorantraniliprole 60 ml",
+        "brand": "FMC",
+        "category": "Pesticides",
+        "batch": "PE-26714",
+        "unit": "bottles",
+        "quantity": 24,
+        "purchasePrice": 520,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 12480
+      }
+    ],
+    "amount": 17265,
+    "detail": "NPK 19:19:19 1 kg × 33 packets; Chlorantraniliprole 60 ml × 24 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-25",
+        "paid": false
+      },
+      {
+        "date": "2026-09-28",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-09-26",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "MOP 50 kg",
+        "brand": "IPL",
+        "category": "Fertilizers",
+        "batch": "FE-26707",
+        "unit": "bags",
+        "quantity": 34,
+        "purchasePrice": 1510,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 51340
+      },
+      {
+        "productId": null,
+        "name": "Micronutrient Mix Loose",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26715",
+        "unit": "kg",
+        "quantity": 25,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3125
+      }
+    ],
+    "amount": 54465,
+    "detail": "MOP 50 kg × 34 bags; Micronutrient Mix Loose × 25 kg",
+    "statusHistory": [
+      {
+        "date": "2026-09-26",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-09-27",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Chilli Seeds Teja 10 g",
+        "brand": "Syngenta",
+        "category": "Seeds",
+        "batch": "SE-26708",
+        "unit": "packets",
+        "quantity": 35,
+        "purchasePrice": 365,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 12775
+      },
+      {
+        "productId": null,
+        "name": "Maize Seeds 4 kg",
+        "brand": "Pioneer",
+        "category": "Seeds",
+        "batch": "SE-26716",
+        "unit": "packets",
+        "quantity": 26,
+        "purchasePrice": 1180,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 30680
+      }
+    ],
+    "amount": 43455,
+    "detail": "Chilli Seeds Teja 10 g × 35 packets; Maize Seeds 4 kg × 26 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-27",
+        "paid": false
+      },
+      {
+        "date": "2026-09-30",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-09-28",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Imidacloprid 100 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26709",
+        "unit": "bottles",
+        "quantity": 36,
+        "purchasePrice": 135,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4860
+      },
+      {
+        "productId": null,
+        "name": "Mancozeb 75 WP 1 kg",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26717",
+        "unit": "packets",
+        "quantity": 27,
+        "purchasePrice": 260,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7020
+      }
+    ],
+    "amount": 11880,
+    "detail": "Imidacloprid 100 ml × 36 bottles; Mancozeb 75 WP 1 kg × 27 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-28",
+        "paid": false
+      },
+      {
+        "date": "2026-10-01",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-09-29",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Groundnut Seeds K6 30 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26710",
+        "unit": "bags",
+        "quantity": 37,
+        "purchasePrice": 2250,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 83250
+      },
+      {
+        "productId": null,
+        "name": "Potassium Nitrate 1 kg",
+        "brand": "Haifa",
+        "category": "Fertilizers",
+        "batch": "FE-26718",
+        "unit": "packets",
+        "quantity": 10,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1250
+      }
+    ],
+    "amount": 84500,
+    "detail": "Groundnut Seeds K6 30 kg × 37 bags; Potassium Nitrate 1 kg × 10 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-29",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-09-30",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Paddy Seeds Loose",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26711",
+        "unit": "kg",
+        "quantity": 38,
+        "purchasePrice": 42,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1596
+      },
+      {
+        "productId": null,
+        "name": "Tomato Seeds Hybrid 10 g",
+        "brand": "Namdhari",
+        "category": "Seeds",
+        "batch": "SE-26719",
+        "unit": "packets",
+        "quantity": 11,
+        "purchasePrice": 275,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 3025
+      }
+    ],
+    "amount": 4621,
+    "detail": "Paddy Seeds Loose × 38 kg; Tomato Seeds Hybrid 10 g × 11 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-30",
+        "paid": false
+      },
+      {
+        "date": "2026-10-03",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-10-01",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Super Phosphate 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26712",
+        "unit": "bags",
+        "quantity": 39,
+        "purchasePrice": 390,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 15210
+      },
+      {
+        "productId": null,
+        "name": "Humic Acid 1 L",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26720",
+        "unit": "bottles",
+        "quantity": 12,
+        "purchasePrice": 220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2640
+      }
+    ],
+    "amount": 17850,
+    "detail": "Super Phosphate 50 kg × 39 bags; Humic Acid 1 L × 12 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-10-01",
+        "paid": false
+      },
+      {
+        "date": "2026-10-04",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-10-02",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Zinc Sulphate 5 kg",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26713",
+        "unit": "bags",
+        "quantity": 15,
+        "purchasePrice": 470,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7050
+      },
+      {
+        "productId": null,
+        "name": "Emamectin Benzoate 100 g",
+        "brand": "Crystal",
+        "category": "Pesticides",
+        "batch": "PE-26721",
+        "unit": "packets",
+        "quantity": 13,
+        "purchasePrice": 185,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2405
+      }
+    ],
+    "amount": 9455,
+    "detail": "Zinc Sulphate 5 kg × 15 bags; Emamectin Benzoate 100 g × 13 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-02",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-10-03",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Chlorantraniliprole 60 ml",
+        "brand": "FMC",
+        "category": "Pesticides",
+        "batch": "PE-26714",
+        "unit": "bottles",
+        "quantity": 16,
+        "purchasePrice": 520,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8320
+      },
+      {
+        "productId": null,
+        "name": "Red Gram Seeds LRG 41 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26722",
+        "unit": "bags",
+        "quantity": 14,
+        "purchasePrice": 560,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 7840
+      }
+    ],
+    "amount": 16160,
+    "detail": "Chlorantraniliprole 60 ml × 16 bottles; Red Gram Seeds LRG 41 5 kg × 14 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-03",
+        "paid": false
+      },
+      {
+        "date": "2026-10-06",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-10-04",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Micronutrient Mix Loose",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26715",
+        "unit": "kg",
+        "quantity": 17,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2125
+      },
+      {
+        "productId": null,
+        "name": "Water-soluble Boron 250 g",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26723",
+        "unit": "packets",
+        "quantity": 15,
+        "purchasePrice": 110,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1650
+      }
+    ],
+    "amount": 3775,
+    "detail": "Micronutrient Mix Loose × 17 kg; Water-soluble Boron 250 g × 15 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-04",
+        "paid": false
+      },
+      {
+        "date": "2026-10-07",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-10-05",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Maize Seeds 4 kg",
+        "brand": "Pioneer",
+        "category": "Seeds",
+        "batch": "SE-26716",
+        "unit": "packets",
+        "quantity": 18,
+        "purchasePrice": 1180,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 21240
+      },
+      {
+        "productId": null,
+        "name": "Pendimethalin 1 L",
+        "brand": "BASF",
+        "category": "Pesticides",
+        "batch": "PE-26724",
+        "unit": "bottles",
+        "quantity": 16,
+        "purchasePrice": 395,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 6320
+      }
+    ],
+    "amount": 27560,
+    "detail": "Maize Seeds 4 kg × 18 packets; Pendimethalin 1 L × 16 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-10-05",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-10-06",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Mancozeb 75 WP 1 kg",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26717",
+        "unit": "packets",
+        "quantity": 19,
+        "purchasePrice": 260,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4940
+      },
+      {
+        "productId": null,
+        "name": "Sunflower Seeds 1 kg",
+        "brand": "Advanta",
+        "category": "Seeds",
+        "batch": "SE-26725",
+        "unit": "packets",
+        "quantity": 17,
+        "purchasePrice": 310,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5270
+      }
+    ],
+    "amount": 10210,
+    "detail": "Mancozeb 75 WP 1 kg × 19 packets; Sunflower Seeds 1 kg × 17 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-06",
+        "paid": false
+      },
+      {
+        "date": "2026-10-09",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-10-07",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Potassium Nitrate 1 kg",
+        "brand": "Haifa",
+        "category": "Fertilizers",
+        "batch": "FE-26718",
+        "unit": "packets",
+        "quantity": 20,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2500
+      },
+      {
+        "productId": null,
+        "name": "Seaweed Extract 500 ml",
+        "brand": "Sagarika",
+        "category": "Fertilizers",
+        "batch": "FE-26726",
+        "unit": "bottles",
+        "quantity": 18,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2610
+      }
+    ],
+    "amount": 5110,
+    "detail": "Potassium Nitrate 1 kg × 20 packets; Seaweed Extract 500 ml × 18 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-10-07",
+        "paid": false
+      },
+      {
+        "date": "2026-10-10",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-10-08",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Tomato Seeds Hybrid 10 g",
+        "brand": "Namdhari",
+        "category": "Seeds",
+        "batch": "SE-26719",
+        "unit": "packets",
+        "quantity": 21,
+        "purchasePrice": 275,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5775
+      },
+      {
+        "productId": null,
+        "name": "Copper Oxychloride 500 g",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26727",
+        "unit": "packets",
+        "quantity": 19,
+        "purchasePrice": 155,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2945
+      }
+    ],
+    "amount": 8720,
+    "detail": "Tomato Seeds Hybrid 10 g × 21 packets; Copper Oxychloride 500 g × 19 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-08",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-10-09",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Humic Acid 1 L",
+        "brand": "Multiplex",
+        "category": "Fertilizers",
+        "batch": "FE-26720",
+        "unit": "bottles",
+        "quantity": 22,
+        "purchasePrice": 220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4840
+      },
+      {
+        "productId": null,
+        "name": "Black Gram Seeds 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26728",
+        "unit": "bags",
+        "quantity": 20,
+        "purchasePrice": 525,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10500
+      }
+    ],
+    "amount": 15340,
+    "detail": "Humic Acid 1 L × 22 bottles; Black Gram Seeds 5 kg × 20 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-09",
+        "paid": false
+      },
+      {
+        "date": "2026-10-12",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-10-10",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Emamectin Benzoate 100 g",
+        "brand": "Crystal",
+        "category": "Pesticides",
+        "batch": "PE-26721",
+        "unit": "packets",
+        "quantity": 23,
+        "purchasePrice": 185,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4255
+      },
+      {
+        "productId": null,
+        "name": "Organic Vermicompost Loose",
+        "brand": "Local Growers",
+        "category": "Fertilizers",
+        "batch": "FE-26729",
+        "unit": "kg",
+        "quantity": 21,
+        "purchasePrice": 8,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 168
+      }
+    ],
+    "amount": 4423,
+    "detail": "Emamectin Benzoate 100 g × 23 packets; Organic Vermicompost Loose × 21 kg",
+    "statusHistory": [
+      {
+        "date": "2026-10-10",
+        "paid": false
+      },
+      {
+        "date": "2026-10-13",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "supplier": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "date": "2026-10-11",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Red Gram Seeds LRG 41 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26722",
+        "unit": "bags",
+        "quantity": 24,
+        "purchasePrice": 560,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 13440
+      },
+      {
+        "productId": null,
+        "name": "Trichoderma Viride 1 kg",
+        "brand": "Biostadt",
+        "category": "Pesticides",
+        "batch": "PE-26730",
+        "unit": "packets",
+        "quantity": 22,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2750
+      }
+    ],
+    "amount": 16190,
+    "detail": "Red Gram Seeds LRG 41 5 kg × 24 bags; Trichoderma Viride 1 kg × 22 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-11",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "supplier": 2,
+    "name": "Coromandel Regional Distributors",
+    "date": "2026-10-12",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Water-soluble Boron 250 g",
+        "brand": "Aries Agro",
+        "category": "Fertilizers",
+        "batch": "FE-26723",
+        "unit": "packets",
+        "quantity": 25,
+        "purchasePrice": 110,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2750
+      },
+      {
+        "productId": null,
+        "name": "Urea 45 kg",
+        "brand": "IFFCO",
+        "category": "Fertilizers",
+        "batch": "FE-26700",
+        "unit": "bags",
+        "quantity": 23,
+        "purchasePrice": 245,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 5635
+      }
+    ],
+    "amount": 8385,
+    "detail": "Water-soluble Boron 250 g × 25 packets; Urea 45 kg × 23 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-12",
+        "paid": false
+      },
+      {
+        "date": "2026-10-14",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "supplier": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "date": "2026-10-13",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Pendimethalin 1 L",
+        "brand": "BASF",
+        "category": "Pesticides",
+        "batch": "PE-26724",
+        "unit": "bottles",
+        "quantity": 26,
+        "purchasePrice": 395,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 10270
+      },
+      {
+        "productId": null,
+        "name": "DAP 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26701",
+        "unit": "bags",
+        "quantity": 24,
+        "purchasePrice": 1220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 29280
+      }
+    ],
+    "amount": 39550,
+    "detail": "Pendimethalin 1 L × 26 bottles; DAP 50 kg × 24 bags",
+    "statusHistory": [
+      {
+        "date": "2026-10-13",
+        "paid": false
+      },
+      {
+        "date": "2026-10-14",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "supplier": 4,
+    "name": "Venkateswara Crop Care",
+    "date": "2026-10-14",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Sunflower Seeds 1 kg",
+        "brand": "Advanta",
+        "category": "Seeds",
+        "batch": "SE-26725",
+        "unit": "packets",
+        "quantity": 27,
+        "purchasePrice": 310,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8370
+      },
+      {
+        "productId": null,
+        "name": "Cotton Seeds BG-II 450 g",
+        "brand": "Mahyco",
+        "category": "Seeds",
+        "batch": "SE-26702",
+        "unit": "packets",
+        "quantity": 25,
+        "purchasePrice": 710,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 17750
+      }
+    ],
+    "amount": 26120,
+    "detail": "Sunflower Seeds 1 kg × 27 packets; Cotton Seeds BG-II 450 g × 25 packets",
+    "statusHistory": [
+      {
+        "date": "2026-10-14",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "supplier": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "date": "2026-09-01",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Seaweed Extract 500 ml",
+        "brand": "Sagarika",
+        "category": "Fertilizers",
+        "batch": "FE-26726",
+        "unit": "bottles",
+        "quantity": 28,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4060
+      },
+      {
+        "productId": null,
+        "name": "Bio Pesticide 500 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26703",
+        "unit": "bottles",
+        "quantity": 26,
+        "purchasePrice": 330,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8580
+      }
+    ],
+    "amount": 12640,
+    "detail": "Seaweed Extract 500 ml × 28 bottles; Bio Pesticide 500 ml × 26 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-01",
+        "paid": false
+      },
+      {
+        "date": "2026-09-04",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "supplier": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "date": "2026-09-02",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Copper Oxychloride 500 g",
+        "brand": "UPL",
+        "category": "Pesticides",
+        "batch": "PE-26727",
+        "unit": "packets",
+        "quantity": 29,
+        "purchasePrice": 155,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4495
+      },
+      {
+        "productId": null,
+        "name": "Paddy Seeds BPT 5204 25 kg",
+        "brand": "Nuziveedu",
+        "category": "Seeds",
+        "batch": "SE-26704",
+        "unit": "bags",
+        "quantity": 27,
+        "purchasePrice": 1420,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 38340
+      }
+    ],
+    "amount": 42835,
+    "detail": "Copper Oxychloride 500 g × 29 packets; Paddy Seeds BPT 5204 25 kg × 27 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-02",
+        "paid": false
+      },
+      {
+        "date": "2026-09-05",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "supplier": 7,
+    "name": "Andhra Farmers Supply Company",
+    "date": "2026-09-03",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Black Gram Seeds 5 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26728",
+        "unit": "bags",
+        "quantity": 30,
+        "purchasePrice": 525,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 15750
+      },
+      {
+        "productId": null,
+        "name": "Neem Oil 1 L",
+        "brand": "Multiplex",
+        "category": "Pesticides",
+        "batch": "PE-26705",
+        "unit": "bottles",
+        "quantity": 10,
+        "purchasePrice": 270,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 2700
+      }
+    ],
+    "amount": 18450,
+    "detail": "Black Gram Seeds 5 kg × 30 bags; Neem Oil 1 L × 10 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-03",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "supplier": 8,
+    "name": "Krishna Delta Agro Traders",
+    "date": "2026-09-04",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Organic Vermicompost Loose",
+        "brand": "Local Growers",
+        "category": "Fertilizers",
+        "batch": "FE-26729",
+        "unit": "kg",
+        "quantity": 31,
+        "purchasePrice": 8,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 248
+      },
+      {
+        "productId": null,
+        "name": "NPK 19:19:19 1 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26706",
+        "unit": "packets",
+        "quantity": 11,
+        "purchasePrice": 145,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1595
+      }
+    ],
+    "amount": 1843,
+    "detail": "Organic Vermicompost Loose × 31 kg; NPK 19:19:19 1 kg × 11 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-04",
+        "paid": false
+      },
+      {
+        "date": "2026-09-07",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "supplier": 9,
+    "name": "Green Harvest Inputs",
+    "date": "2026-09-05",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Trichoderma Viride 1 kg",
+        "brand": "Biostadt",
+        "category": "Pesticides",
+        "batch": "PE-26730",
+        "unit": "packets",
+        "quantity": 32,
+        "purchasePrice": 125,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4000
+      },
+      {
+        "productId": null,
+        "name": "MOP 50 kg",
+        "brand": "IPL",
+        "category": "Fertilizers",
+        "batch": "FE-26707",
+        "unit": "bags",
+        "quantity": 12,
+        "purchasePrice": 1510,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 18120
+      }
+    ],
+    "amount": 22120,
+    "detail": "Trichoderma Viride 1 kg × 32 packets; MOP 50 kg × 12 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-05",
+        "paid": false
+      },
+      {
+        "date": "2026-09-08",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "supplier": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "date": "2026-09-06",
+    "paid": false,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Urea 45 kg",
+        "brand": "IFFCO",
+        "category": "Fertilizers",
+        "batch": "FE-26700",
+        "unit": "bags",
+        "quantity": 33,
+        "purchasePrice": 245,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 8085
+      },
+      {
+        "productId": null,
+        "name": "Chilli Seeds Teja 10 g",
+        "brand": "Syngenta",
+        "category": "Seeds",
+        "batch": "SE-26708",
+        "unit": "packets",
+        "quantity": 13,
+        "purchasePrice": 365,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 4745
+      }
+    ],
+    "amount": 12830,
+    "detail": "Urea 45 kg × 33 bags; Chilli Seeds Teja 10 g × 13 packets",
+    "statusHistory": [
+      {
+        "date": "2026-09-06",
+        "paid": false
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "supplier": 11,
+    "name": "Rayalaseema Agri Depot",
+    "date": "2026-09-07",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "DAP 50 kg",
+        "brand": "Coromandel",
+        "category": "Fertilizers",
+        "batch": "FE-26701",
+        "unit": "bags",
+        "quantity": 34,
+        "purchasePrice": 1220,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 41480
+      },
+      {
+        "productId": null,
+        "name": "Imidacloprid 100 ml",
+        "brand": "Bayer",
+        "category": "Pesticides",
+        "batch": "PE-26709",
+        "unit": "bottles",
+        "quantity": 14,
+        "purchasePrice": 135,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 1890
+      }
+    ],
+    "amount": 43370,
+    "detail": "DAP 50 kg × 34 bags; Imidacloprid 100 ml × 14 bottles",
+    "statusHistory": [
+      {
+        "date": "2026-09-07",
+        "paid": false
+      },
+      {
+        "date": "2026-09-10",
+        "paid": true
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "supplier": 12,
+    "name": "Godavari Crop Protection",
+    "date": "2026-09-08",
+    "paid": true,
+    "lines": [
+      {
+        "productId": null,
+        "name": "Cotton Seeds BG-II 450 g",
+        "brand": "Mahyco",
+        "category": "Seeds",
+        "batch": "SE-26702",
+        "unit": "packets",
+        "quantity": 35,
+        "purchasePrice": 710,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 24850
+      },
+      {
+        "productId": null,
+        "name": "Groundnut Seeds K6 30 kg",
+        "brand": "AP Seeds",
+        "category": "Seeds",
+        "batch": "SE-26710",
+        "unit": "bags",
+        "quantity": 15,
+        "purchasePrice": 2250,
+        "sellingPrice": 0,
+        "discountedPrice": null,
+        "total": 33750
+      }
+    ],
+    "amount": 58600,
+    "detail": "Cotton Seeds BG-II 450 g × 35 packets; Groundnut Seeds K6 30 kg × 15 bags",
+    "statusHistory": [
+      {
+        "date": "2026-09-08",
+        "paid": false
+      },
+      {
+        "date": "2026-09-11",
+        "paid": true
+      }
+    ]
+  }
+]

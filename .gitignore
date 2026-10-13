@@ -20,6 +20,11 @@
 # production
 /build
 
+# local report exports and inspection artifacts
+/tmp/
+/output/
+/*.pdf
+
 # misc
 .DS_Store
 *.pem

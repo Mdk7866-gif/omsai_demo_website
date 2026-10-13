@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Sri Lakshmi Agro Agencies",
+    "phone": "0863 2201400",
+    "address": "Shop No. 21, Ground Floor, Lakshmi Commercial Complex, Main Road, Tadepalli, Guntur district, Andhra Pradesh - 522501.",
+    "archived": false
+  },
+  {
+    "id": 2,
+    "name": "Coromandel Regional Distributors",
+    "phone": "0863 2201513",
+    "address": "Shop No. 22, Agricultural Market Yard, Warehouse Road, Kollipara, Guntur district, Andhra Pradesh - 522304.",
+    "archived": false
+  },
+  {
+    "id": 3,
+    "name": "Nuziveedu Seeds Trade Centre",
+    "phone": "0863 2201626",
+    "address": "Shop No. 23, Ground Floor, Lakshmi Commercial Complex, Main Road, Pedakakani, Guntur district, Andhra Pradesh - 522509.",
+    "archived": false
+  },
+  {
+    "id": 4,
+    "name": "Venkateswara Crop Care",
+    "phone": "0863 2201739",
+    "address": "Shop No. 24, Agricultural Market Yard, Warehouse Road, Narasaraopet, Palnadu district, Andhra Pradesh - 522601.",
+    "archived": false
+  },
+  {
+    "id": 5,
+    "name": "Sai Durga Fertiliser Depot",
+    "phone": "0863 2201852",
+    "address": "Shop No. 25, Ground Floor, Lakshmi Commercial Complex, Main Road, Penamaluru, Krishna district, Andhra Pradesh - 521139.",
+    "archived": false
+  },
+  {
+    "id": 6,
+    "name": "Coastal Seeds & Crop Solutions",
+    "phone": "0863 2201965",
+    "address": "Shop No. 26, Agricultural Market Yard, Warehouse Road, Bapatla, Bapatla district, Andhra Pradesh - 522101.",
+    "archived": false
+  },
+  {
+    "id": 7,
+    "name": "Andhra Farmers Supply Company",
+    "phone": "0863 2202078",
+    "address": "Shop No. 27, Ground Floor, Lakshmi Commercial Complex, Main Road, Kandukur, Nellore district, Andhra Pradesh - 523105.",
+    "archived": false
+  },
+  {
+    "id": 8,
+    "name": "Krishna Delta Agro Traders",
+    "phone": "0863 2202191",
+    "address": "Shop No. 28, Agricultural Market Yard, Warehouse Road, Peddapuram, Kakinada district, Andhra Pradesh - 533437.",
+    "archived": false
+  },
+  {
+    "id": 9,
+    "name": "Green Harvest Inputs",
+    "phone": "0863 2202304",
+    "address": "Shop No. 29, Ground Floor, Lakshmi Commercial Complex, Main Road, Amalapuram, Konaseema district, Andhra Pradesh - 533201.",
+    "archived": false
+  },
+  {
+    "id": 10,
+    "name": "Bapatla Agriculture Distributors",
+    "phone": "0863 2202417",
+    "address": "Shop No. 30, Agricultural Market Yard, Warehouse Road, Anantapur, Anantapur district, Andhra Pradesh - 515001.",
+    "archived": false
+  },
+  {
+    "id": 11,
+    "name": "Rayalaseema Agri Depot",
+    "phone": "0863 2202530",
+    "address": "Shop No. 31, Ground Floor, Lakshmi Commercial Complex, Main Road, Tadepalli, Guntur district, Andhra Pradesh - 522501.",
+    "archived": false
+  },
+  {
+    "id": 12,
+    "name": "Godavari Crop Protection",
+    "phone": "0863 2202643",
+    "address": "Shop No. 32, Agricultural Market Yard, Warehouse Road, Kollipara, Guntur district, Andhra Pradesh - 522304.",
+    "archived": true
+  }
+]
