@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   DAY,
   STORAGE_KEY,
+  PROFILE_STORAGE_KEY,
   seed,
   money,
   dateLabel,
@@ -46,6 +47,12 @@ export function DemoShell({ children }: { children: ReactNode }) {
       }
     } catch {
       /* Use the JSON fixtures if storage is unavailable. */
+    }
+    try {
+      const profile = localStorage.getItem(PROFILE_STORAGE_KEY);
+      if (profile) restored = { ...restored, shop: JSON.parse(profile) };
+    } catch {
+      /* Keep the profile from the restored demo or fixture. */
     }
     // Always load the current fixture when this demo version has no saved state.
     // Fast Refresh otherwise keeps the previous version's in-memory balances.

@@ -1,47 +1,99 @@
 "use client";
 
-import { shopDetails, type Shop } from "./demo-data";
+import { useContext, useState, type FormEvent } from "react";
+import { PROFILE_STORAGE_KEY, shopDetails, type Shop } from "./demo-data";
+import { DemoContext } from "./demo-context";
 import { PrintButton } from "./reports";
 
 export function CompanyProfileDocument({ shop = shopDetails }: { shop?: Shop }) {
   return (
     <article className="print-document company-profile-document" aria-label="Company profile">
       <header>
+        <p className="profile-document-label">Company profile</p>
         <h2>{shop.name}</h2>
-        <p>Company profile</p>
+        <p className="profile-address">{shop.address}</p>
       </header>
-      <section>
-        <h3>Company details</h3>
-        <dl>
-          <div><dt>Address</dt><dd>{shop.address}</dd></div>
-          <div><dt>GSTIN</dt><dd>{shop.gstin}</dd></div>
-          <div><dt>Phone</dt><dd>{shop.phone}</dd></div>
-        </dl>
-      </section>
-      <section>
-        <h3>Bank details</h3>
-        <p className="profile-bank-note">Sample bank details - not for payment.</p>
-        <dl>
-          <div><dt>Account name</dt><dd>{shop.bank.holder}</dd></div>
-          <div><dt>Bank</dt><dd>{shop.bank.name}</dd></div>
+      <dl className="profile-registration">
+        <div><dt>GSTIN</dt><dd>{shop.gstin}</dd></div>
+        <div><dt>Contact number</dt><dd>{shop.phone}</dd></div>
+      </dl>
+      <section className="profile-bank-section">
+        <h3>Bank account details</h3>
+        {shop.bank.isSample !== false && <p className="profile-bank-note">Sample bank details - not for payment.</p>}
+        <dl className="profile-bank-grid">
+          <div className="profile-account-holder"><dt>Account holder</dt><dd>{shop.bank.holder}</dd></div>
+          <div><dt>Bank name</dt><dd>{shop.bank.name}</dd></div>
           <div><dt>Branch</dt><dd>{shop.bank.branch}</dd></div>
           <div><dt>Account number</dt><dd>{shop.bank.account}</dd></div>
           <div><dt>IFSC</dt><dd>{shop.bank.ifsc}</dd></div>
         </dl>
       </section>
+      <footer className="profile-document-footer"><span>Contact: {shop.phone}</span><span>Company profile</span></footer>
     </article>
   );
 }
 
 export function CompanyProfilePage() {
+  const { data, change, notify } = useContext(DemoContext);
+  const saved = data.shop ?? shopDetails;
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState<Shop>(() => structuredClone(saved));
+  const [error, setError] = useState("");
+  const field = (label: string, key: "name" | "address" | "gstin" | "phone", maxLength = 160) => (
+    <label className="field" key={key}>{label}
+      {key === "address" ? <textarea required maxLength={400} value={draft[key]} onChange={e => setDraft(old => ({ ...old, [key]: e.target.value }))} /> :
+        <input required type={key === "phone" ? "tel" : "text"} maxLength={maxLength} value={draft[key]} onChange={e => setDraft(old => ({ ...old, [key]: e.target.value }))} />}
+    </label>
+  );
+  const bankField = (label: string, key: keyof Omit<Shop["bank"], "isSample">) => (
+    <label className="field" key={key}>{label}
+      <input required maxLength={160} value={draft.bank[key]} onChange={e => setDraft(old => ({ ...old, bank: { ...old.bank, [key]: e.target.value } }))} />
+    </label>
+  );
+  function save(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const next: Shop = {
+      name: draft.name.trim(), address: draft.address.trim(), gstin: draft.gstin.trim().toUpperCase(), phone: draft.phone.trim(),
+      bank: { holder: draft.bank.holder.trim(), name: draft.bank.name.trim(), branch: draft.bank.branch.trim(), account: draft.bank.account.trim(), ifsc: draft.bank.ifsc.trim().toUpperCase(), isSample: draft.bank.isSample !== false },
+    };
+    const bankValues = [next.bank.holder, next.bank.name, next.bank.branch, next.bank.account, next.bank.ifsc];
+    if ([next.name, next.address, next.gstin, next.phone, ...bankValues].some(value => !value)) {
+      setError("Fill in all company and bank details."); return;
+    }
+    if (!next.bank.isSample && bankValues.some(value => /\bsample\b|\bdemo\b|x{3,}/i.test(value))) {
+      setError("Replace the sample bank details before marking them as real."); return;
+    }
+    try {
+      localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(next));
+    } catch {
+      setError("Changes could not be saved in this browser. Free some browser storage and try again."); return;
+    }
+    change(current => ({ ...current, shop: structuredClone(next) }));
+    setEditing(false); setError(""); notify("Company profile saved.");
+  }
   return (
     <main className="page-content company-profile-page">
       <div className="page-heading">
         <div><h1>Profile</h1><p>Company details and bank information.</p></div>
-        <div className="heading-actions"><PrintButton /></div>
+        <div className="heading-actions">
+          {!editing && <button className="outline" onClick={() => { setDraft(structuredClone(saved)); setError(""); setEditing(true); }}>Edit profile</button>}
+          {!editing && <PrintButton />}
+        </div>
       </div>
-      <CompanyProfileDocument />
-      <style>{`@media print { @page { size: A4 portrait; margin: 15mm; } }`}</style>
+      {editing && <form className="profile-editor" onSubmit={save}>
+        <h2>Edit company profile</h2>
+        <p>Save changes to update the profile PDF and new farmer bills. Saved bills keep their original details.</p>
+        <div className="form-grid">{field("Company name", "name")}{field("Phone", "phone", 40)}</div>
+        {field("Company address", "address")}
+        {field("GSTIN", "gstin", 20)}
+        <h3>Bank details</h3>
+        <div className="form-grid">{bankField("Account holder", "holder")}{bankField("Bank name", "name")}{bankField("Branch", "branch")}{bankField("Account number", "account")}{bankField("IFSC", "ifsc")}</div>
+        <label className="checkbox-field"><input type="checkbox" checked={draft.bank.isSample !== false} onChange={e => setDraft(old => ({ ...old, bank: { ...old.bank, isSample: e.target.checked } }))} /> These are sample bank details</label>
+        {error && <p className="error" role="alert">{error}</p>}
+        <div className="profile-editor-actions"><button type="button" className="outline" onClick={() => { setEditing(false); setError(""); }}>Cancel</button><button className="primary" type="submit">Save changes</button><small>Saved in this browser.</small></div>
+      </form>}
+      <CompanyProfileDocument shop={saved} />
+      <style>{`@media print { @page { size: A4 portrait; margin: 16mm; } }`}</style>
     </main>
   );
 }

@@ -61,3 +61,21 @@ test('With history is retained on the saved bill and does not reveal interest pe
   assert.ok(!html.includes('Discount'));
   assert.notEqual(invoice.shop, require('../src/components/demo-data.ts').shopDetails);
 });
+
+test('new bills use edited company details while existing invoice snapshots remain unchanged', () => {
+  const store = {...seed, shop: structuredClone(seed.shop)};
+  const original = createInvoice(store, farmer);
+  store.shop.name = 'Updated company';
+  store.shop.bank.name = 'Updated bank';
+  store.shop.bank.account = '12345678901';
+  store.shop.bank.isSample = false;
+  const updated = createInvoice(store, farmer);
+  assert.notEqual(original.shop.name, updated.shop.name);
+  assert.notEqual(original.shop.bank.name, updated.shop.bank.name);
+  const html = renderToStaticMarkup(React.createElement(BillDocument, {invoice: updated}));
+  assert.ok(html.includes('Updated company'));
+  assert.ok(html.includes('Updated bank'));
+  assert.ok(!html.includes('SAMPLE / NOT FOR PAYMENT'));
+  store.shop.bank.name = 'Changed again';
+  assert.equal(updated.shop.bank.name, 'Updated bank');
+});

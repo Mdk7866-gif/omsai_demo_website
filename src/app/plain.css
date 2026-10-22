@@ -142,34 +142,62 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .farmer-account-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .farmer-account-actions > .checkbox-field { margin: 0 auto 0 0; white-space: nowrap; }
 .bill-history-choice { margin: 16px 0; }
-.company-profile-document { max-width: 850px; border-color: var(--line); padding: 28px; }
-.company-profile-document header { padding-bottom: 18px; border-bottom: 1px solid #111; }
-.company-profile-document h2 { font: 700 23px/1.4 Arial, Helvetica, sans-serif; }
-.company-profile-document header p { margin-top: 6px; font-size: 14px; }
-.company-profile-document section { margin-top: 24px; }
-.company-profile-document h3 { font-size: 17px; font-weight: 700; margin-bottom: 12px; }
+.company-profile-document { max-width: 850px; border-color: var(--line); padding: 40px; }
+.company-profile-document header { border-top: 4px solid #111; padding: 20px 0 24px; }
+.company-profile-document .profile-document-label { margin: 0 0 12px; text-transform: uppercase; font-size: 11px; font-weight: 700; }
+.company-profile-document h2 { font: 700 27px/1.25 Arial, Helvetica, sans-serif; overflow-wrap: anywhere; }
+.company-profile-document .profile-address { margin-top: 14px; font-size: 14px; line-height: 1.7; max-width: 650px; }
 .company-profile-document dl { margin: 0; }
-.company-profile-document dl > div { display: grid; grid-template-columns: 145px minmax(0,1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid #ddd; font-size: 14px; line-height: 1.6; }
-.company-profile-document dt { font-weight: 600; }
-.company-profile-document dd { margin: 0; overflow-wrap: anywhere; }
-.profile-bank-note { margin-bottom: 10px; font-size: 13px; font-weight: 600; }
+.company-profile-document dt { font-size: 11px; font-weight: 600; text-transform: uppercase; margin-bottom: 6px; }
+.company-profile-document dd { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.6; overflow-wrap: anywhere; }
+.profile-registration { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; }
+.profile-registration > div { padding: 16px 20px; }
+.profile-registration > div + div { border-left: 1px solid #333; }
+.profile-bank-section { margin-top: 30px; }
+.company-profile-document h3 { font-size: 16px; font-weight: 700; padding: 12px 0; border-bottom: 2px solid #111; margin-bottom: 16px; }
+.profile-bank-note { margin-bottom: 14px; font-size: 12px; font-weight: 600; }
+.profile-bank-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #777; }
+.profile-bank-grid > div { padding: 16px 20px; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; min-width: 0; }
+.profile-bank-grid > .profile-account-holder { grid-column: 1 / -1; }
+.profile-bank-grid > div:nth-child(odd) { border-right: 0; }
+.profile-bank-grid > div:nth-last-child(-n+2) { border-bottom: 0; }
+.profile-document-footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid #333; display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
+.profile-editor { max-width: 850px; background: #fff; border: 1px solid var(--line); padding: 28px; margin-bottom: 24px; border-radius: 5px; }
+.profile-editor h2 { font-size: 20px; font-weight: 600; color: #111; }
+.profile-editor > p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 10px 0 24px; }
+.profile-editor h3 { font-size: 16px; font-weight: 600; margin: 24px 0 14px; }
+.profile-editor-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 20px; }
+.profile-editor-actions small { color: var(--muted); margin-left: auto; }
 @media(max-width:600px) {
   .company-profile-document { padding: 20px; }
   .company-profile-document h2 { font-size: 20px; }
-  .company-profile-document dl > div { grid-template-columns: 1fr; gap: 3px; }
+  .profile-registration, .profile-bank-grid { grid-template-columns: 1fr; }
+  .profile-registration > div + div { border-left: 0; border-top: 1px solid #333; }
+  .profile-bank-grid > div { border-right: 0; }
+  .profile-bank-grid > div:nth-last-child(2) { border-bottom: 1px solid #ccc; }
+  .profile-editor { padding: 20px; }
 }
 @media print {
   .app-shell[data-page="/profile"] { display: block !important; }
   .app-shell[data-page="/profile"] .sidebar,
   .app-shell[data-page="/profile"] .topbar,
   .app-shell[data-page="/profile"] .page-footer,
-  .company-profile-page > .page-heading { display: none !important; }
+  .company-profile-page > .page-heading,
+  .company-profile-page > .profile-editor { display: none !important; }
   .app-shell[data-page="/profile"] .main-shell { margin: 0 !important; width: 100% !important; }
   .company-profile-page { padding: 0 !important; max-width: none !important; }
   .company-profile-document { border: 0; padding: 0; max-width: none; color: #000; }
   .company-profile-document * { color: #000 !important; background: #fff !important; box-shadow: none !important; }
-  .company-profile-document h2 { font-size: 18pt; }
-  .company-profile-document dl > div { grid-template-columns: 130px minmax(0,1fr); font-size: 11pt; break-inside: avoid; }
+  .company-profile-document h2 { font-size: 21pt; }
+  .company-profile-document .profile-address { font-size: 10.5pt; }
+  .company-profile-document dt { font-size: 8.5pt; }
+  .company-profile-document dd { font-size: 11pt; }
+  .company-profile-document dl > div { break-inside: avoid; }
+  .profile-registration, .profile-bank-grid { grid-template-columns: 1fr 1fr; }
+  .profile-registration > div, .profile-bank-grid > div { padding: 16px 18px; }
+  .profile-registration > div + div { border-top: 0; border-left: 1px solid #333; }
+  .profile-bank-grid > div:nth-child(even) { border-right: 1px solid #ccc; }
+  .profile-bank-grid > div:nth-last-child(-n+2) { border-bottom: 0; }
 }
 /* Farmer bills are monochrome records, with no card or decorative styling. */
 .simple-farmer-bill { color: #000; font: 13px/1.45 Arial, Helvetica, sans-serif; }

@@ -7,6 +7,7 @@ import { Avatar, Empty, ModeBadge, DatePicker, SearchSelect } from "./demo-ui";
 import {
   DAY,
   seed,
+  PROFILE_STORAGE_KEY,
   money,
   round,
   dateLabel,
@@ -1708,6 +1709,12 @@ export function DemoModal({
               <button
                 className="primary"
                 onClick={() => {
+                  try {
+                    localStorage.removeItem(PROFILE_STORAGE_KEY);
+                  } catch {
+                    notify("Browser storage is unavailable. The profile could not be reset.");
+                    return;
+                  }
                   change(() => seed);
                   finish("Original sample data restored.");
                 }}

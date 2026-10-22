@@ -7,8 +7,8 @@ import invoices from "../../dummy_data/invoices.json";
 import interestHistory from "../../dummy_data/interest_history.json";
 import stockMovements from "../../dummy_data/stock_movements.json";
 import shop from "../../dummy_data/shop.json";
-export type Shop = typeof shop;
-export const shopDetails = shop;
+export type Shop = Omit<typeof shop, "bank"> & { bank: typeof shop.bank & { isSample?: boolean } };
+export const shopDetails: Shop = { ...shop, bank: { ...shop.bank, isSample: true } };
 
 export type Section =
   "Dashboard" | "Farmers" | "Products" | "Invoices" | "Suppliers";
@@ -126,6 +126,7 @@ export type StockMovement = {
   reason: string;
 };
 export type Store = {
+  shop?: Shop;
   farmers: Farmer[];
   products: Product[];
   suppliers: Supplier[];
@@ -137,6 +138,7 @@ export type Store = {
 };
 export type Modal = { kind: string; id?: number } | null;
 export const seed = {
+  shop: shopDetails,
   farmers,
   products,
   suppliers,
@@ -148,6 +150,7 @@ export const seed = {
 } as Store;
 export const DAY = "2026-10-22";
 export const STORAGE_KEY = "omsai-demo-v5-season";
+export const PROFILE_STORAGE_KEY = "omsai-company-profile-v1";
 export const money = (n: number) =>
   "₹" +
   n.toLocaleString("en-IN", {
@@ -202,7 +205,7 @@ export function nextDemoTime(s: Store) {
 }
 export function createInvoice(s: Store, farmer: Farmer, includeHistory = false): Invoice {
   return {
-    shop: structuredClone(shopDetails),
+    shop: structuredClone(s.shop ?? shopDetails),
     includeHistory,
     id: Math.max(100, ...s.invoices.map((i) => i.id)) + 1,
     farmer: farmer.id,

@@ -115,7 +115,7 @@ export function BillDocument({ invoice, includeHistory = invoice.includeHistory 
         <tr><th>Total amount due</th><td><strong>{money(invoice.due)}</strong></td></tr>
       </tbody></table>
       <section className="simple-bank-details">
-        <strong>Bank details - SAMPLE / NOT FOR PAYMENT</strong>
+        <strong>{shop.bank.isSample !== false ? "Bank details - SAMPLE / NOT FOR PAYMENT" : "Bank details"}</strong>
         <p>Account name: {shop.bank.holder}</p>
         <p>Bank: {shop.bank.name} | Branch: {shop.bank.branch}</p>
         <p>Account number: {shop.bank.account} | IFSC: {shop.bank.ifsc}</p>
