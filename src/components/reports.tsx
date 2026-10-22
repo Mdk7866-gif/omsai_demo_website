@@ -111,7 +111,7 @@ export function BillDocument({ invoice, includeHistory = invoice.includeHistory 
       {!lines.length && <p>No products recorded.</p>}
       <table className="simple-bill-balance"><tbody>
         <tr><th>Principal amount</th><td>{money(invoice.principal)}</td></tr>
-        <tr><th>Interest amount</th><td>{money(invoice.interest)}</td></tr>
+        {invoice.interest > 0 && <tr><th>Interest amount</th><td>{money(invoice.interest)}</td></tr>}
         <tr><th>Total amount due</th><td><strong>{money(invoice.due)}</strong></td></tr>
       </tbody></table>
       <section className="simple-bank-details">
