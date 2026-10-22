@@ -11,22 +11,26 @@ export function CompanyProfileDocument({ shop = shopDetails }: { shop?: Shop }) 
       <header>
         <p className="profile-document-label">Company profile</p>
         <h2>{shop.name}</h2>
-        <p className="profile-address">{shop.address}</p>
       </header>
-      <dl className="profile-registration">
-        <div><dt>GSTIN</dt><dd>{shop.gstin}</dd></div>
-        <div><dt>Contact number</dt><dd>{shop.phone}</dd></div>
-      </dl>
+      <section className="profile-company-section">
+        <h3>Company details</h3>
+        <table className="profile-details-table" aria-label="Company details"><tbody>
+          <tr><th scope="row">Company name</th><td>{shop.name}</td></tr>
+          <tr><th scope="row">Address</th><td>{shop.address}</td></tr>
+          <tr><th scope="row">GSTIN</th><td>{shop.gstin}</td></tr>
+          <tr><th scope="row">Phone</th><td>{shop.phone}</td></tr>
+        </tbody></table>
+      </section>
       <section className="profile-bank-section">
         <h3>Bank account details</h3>
         {shop.bank.isSample !== false && <p className="profile-bank-note">Sample bank details - not for payment.</p>}
-        <dl className="profile-bank-grid">
-          <div className="profile-account-holder"><dt>Account holder</dt><dd>{shop.bank.holder}</dd></div>
-          <div><dt>Bank name</dt><dd>{shop.bank.name}</dd></div>
-          <div><dt>Branch</dt><dd>{shop.bank.branch}</dd></div>
-          <div><dt>Account number</dt><dd>{shop.bank.account}</dd></div>
-          <div><dt>IFSC</dt><dd>{shop.bank.ifsc}</dd></div>
-        </dl>
+        <table className="profile-details-table" aria-label="Bank account details"><tbody>
+          <tr><th scope="row">Account holder</th><td>{shop.bank.holder}</td></tr>
+          <tr><th scope="row">Bank name</th><td>{shop.bank.name}</td></tr>
+          <tr><th scope="row">Branch</th><td>{shop.bank.branch}</td></tr>
+          <tr><th scope="row">Account number</th><td>{shop.bank.account}</td></tr>
+          <tr><th scope="row">IFSC</th><td>{shop.bank.ifsc}</td></tr>
+        </tbody></table>
       </section>
       <footer className="profile-document-footer"><span>Contact: {shop.phone}</span><span>Company profile</span></footer>
     </article>

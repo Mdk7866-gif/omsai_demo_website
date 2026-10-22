@@ -772,10 +772,6 @@ export function DemoPage({ section }: { section: Section }) {
                       )}
                     </strong>
                   </div>
-                  <div className="card-account-hint">
-                    View purchases & supplier details
-                    <Icon name="arrow" size={13} />
-                  </div>
                   <div className="card-actions">
                     <button
                       className="outline"

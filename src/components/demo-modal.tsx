@@ -519,7 +519,7 @@ export function DemoModal({
     <dialog
       ref={ref}
       aria-labelledby="dialog-title"
-      className={`modal ${wide ? "wide-modal" : ""} ${isReport ? "report-modal" : ""}`}
+      className={`modal ${wide ? "wide-modal" : ""} ${isReport ? "report-modal" : ""} ${modal.kind === "supplierHistory" ? "supplier-account" : ""}`}
       data-report={isReport ? "true" : undefined}
       onCancel={close}
       onClick={(e) => {
@@ -1394,18 +1394,13 @@ export function DemoModal({
         )}
         {modal.kind === "supplierHistory" && supplier && (
           <>
-            <div className="modal-person">
-              <div className="round-icon amber">
-                <Icon name="truck" />
-              </div>
-              <div>
-                <strong>{supplier.name}</strong>
-                <small>{supplier.phone}</small>
-              </div>
+            <div className="supplier-account-header">
+              <h3>{supplier.name}</h3>
+              <p>{supplier.phone}</p>
             </div>
-            <p className="supplier-address">{supplier.address}</p>
+            {supplier.address && <details className="supplier-contact-details"><summary>Supplier address</summary><p>{supplier.address}</p></details>}
             <div className="balance-strip">
-              <span>Unpaid purchases</span>
+              <span>Total due</span>
               <strong>
                 {money(
                   data.purchases
@@ -1414,6 +1409,7 @@ export function DemoModal({
                 )}
               </strong>
             </div>
+            <h3 className="supplier-history-title">Purchases</h3>
             {data.purchases
               .filter((p) => p.supplier === supplier.id)
               .sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id)
@@ -1423,14 +1419,21 @@ export function DemoModal({
                   <div className="supplier-purchase-heading">
                     <div>
                       <strong>
-                        {dateLabel(p.date)} · Purchase SUP-{p.id}
+                        SUP-{p.id}
                       </strong>
                       <small>
-                        {p.lines.length} products · {money(p.amount)}
+                        {dateLabel(p.date)} · {p.lines.length} products
                       </small>
                     </div>
+                    <div className="supplier-purchase-payment">
+                      <strong>{money(p.amount)}</strong>
+                      <span className={`status ${p.paid ? "clear" : "due"}`}>{p.paid ? "Paid" : "Due"}</span>
+                    </div>
+                  </div>
+                  <div className="supplier-purchase-actions">
                     <button
-                      className={`status ${p.paid ? "clear" : "due"}`}
+                      className="outline small"
+                      aria-label={`Mark purchase SUP-${p.id} as ${p.paid ? "Due" : "Paid"}`}
                       onClick={() => {
                         change((s) => ({
                           ...s,
@@ -1450,12 +1453,12 @@ export function DemoModal({
                         notify(`Purchase marked ${p.paid ? "Due" : "Paid"}.`);
                       }}
                     >
-                      {p.paid ? "Paid" : "Due"} ↻
+                      Mark as {p.paid ? "Due" : "Paid"}
                     </button>
                   </div>
                   <details className="purchase-lines">
                     <summary>
-                      View purchased products <Icon name="chevron" size={14} />
+                      Product details <Icon name="chevron" size={14} />
                     </summary>
                     <div className="table-scroll">
                       <table className="detail-table">
@@ -1487,13 +1490,13 @@ export function DemoModal({
                       </table>
                     </div>
                   </details>
-                  <div className="status-history">
+                  <details className="supplier-status-details"><summary>Payment status history</summary><div className="status-history">
                     {p.statusHistory.map((h, i) => (
                       <span key={i}>
                         {dateLabel(h.date)} · {h.paid ? "Paid" : "Due"}
                       </span>
                     ))}
-                  </div>
+                  </div></details>
                 </section>
               ))}
             {visible <
@@ -1516,8 +1519,9 @@ export function DemoModal({
               >
                 Edit supplier
               </button>
+              {!supplier.archived && <button className="primary" onClick={() => open({ kind: "purchase", id: supplier.id })}>Add purchase</button>}
               <button
-                className="primary"
+                className="outline"
                 onClick={() =>
                   open({ kind: "supplierReport", id: supplier.id })
                 }
