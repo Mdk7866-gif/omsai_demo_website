@@ -212,7 +212,7 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .bill-history-choice { margin: 16px 0; }
 /* Company profile follows the owner's supplied single-page reference. */
 .company-profile-document { max-width: 850px; padding: 38px; border: 1px solid var(--line); min-height: 1040px; display: flex; flex-direction: column; }
-.company-profile-document header { display: grid; grid-template-columns: minmax(0,1fr) 64px; gap: 20px; align-items: start; border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 22px; }
+.company-profile-document header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 22px; }
 .company-profile-document h2 { font: 700 30px/1.25 Arial, Helvetica, sans-serif; max-width: 550px; overflow-wrap: anywhere; }
 .company-profile-document .profile-document-label { margin: 14px 0 0; font-size: 14px; }
 .company-profile-document section { margin: 0 0 28px; }

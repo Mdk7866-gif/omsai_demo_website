@@ -1,6 +1,5 @@
 import { PDFDocument, StandardFonts, rgb, type PDFFont } from "pdf-lib";
 import type { Shop } from "./demo-data";
-import { OM_LOGO_PATH } from "./om-logo-data";
 
 // All dimensions are PDF points, measured from the owner's supplied PDF.
 export async function createCompanyProfilePdf(shop: Shop) {
@@ -9,7 +8,6 @@ export async function createCompanyProfilePdf(shop: Shop) {
   const bold = await pdf.embedFont(StandardFonts.HelveticaBold);
   const width = 595.276, height = 841.89, left = 55, right = 540;
   let page = pdf.addPage([width, height]);
-  page.drawSvgPath(OM_LOGO_PATH, { x: right - 50, y: height - 28, scale: 50 / 256, color: rgb(184 / 255, 91 / 255, 20 / 255) });
   let pageNumber = 1;
   const text = (value: string, x: number, y: number, size = 10.5, font = regular) => {
     page.drawText(value, { x, y, size, font, color: rgb(0, 0, 0) });
