@@ -519,7 +519,7 @@ export function DemoModal({
     <dialog
       ref={ref}
       aria-labelledby="dialog-title"
-      className={`modal ${wide ? "wide-modal" : ""} ${isReport ? "report-modal" : ""} ${modal.kind === "supplierHistory" ? "supplier-account" : ""}`}
+      className={`modal ${wide ? "wide-modal" : ""} ${isReport ? "report-modal" : ""} ${modal.kind === "supplierHistory" ? "supplier-account" : ""} ${modal.kind === "history" ? "farmer-account" : ""}`}
       data-report={isReport ? "true" : undefined}
       onCancel={close}
       onClick={(e) => {
@@ -968,6 +968,7 @@ export function DemoModal({
                   <button
                     key={t}
                     className={t === historyTab ? "selected" : ""}
+                    aria-pressed={t === historyTab}
                     onClick={() => {
                       setHistoryTab(t);
                       setVisible(8);

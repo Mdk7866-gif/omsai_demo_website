@@ -6,6 +6,7 @@ import {
   DAY,
   STORAGE_KEY,
   PROFILE_STORAGE_KEY,
+  restoreShop,
   seed,
   money,
   dateLabel,
@@ -54,6 +55,7 @@ export function DemoShell({ children }: { children: ReactNode }) {
     } catch {
       /* Keep the profile from the restored demo or fixture. */
     }
+    restored = { ...restored, shop: restoreShop(restored.shop) };
     // Always load the current fixture when this demo version has no saved state.
     // Fast Refresh otherwise keeps the previous version's in-memory balances.
     // eslint-disable-next-line react-hooks/set-state-in-effect

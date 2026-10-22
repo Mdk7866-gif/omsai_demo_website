@@ -117,7 +117,7 @@ export function BillDocument({ invoice, includeHistory = invoice.includeHistory 
       <section className="simple-bank-details">
         <strong>{shop.bank.isSample !== false ? "Bank details - SAMPLE / NOT FOR PAYMENT" : "Bank details"}</strong>
         <p>Account name: {shop.bank.holder}</p>
-        <p>Bank: {shop.bank.name} | Branch: {shop.bank.branch}</p>
+        <p>Bank: {shop.bank.name}{shop.bank.branch ? ` | Branch: ${shop.bank.branch}` : ""}</p>
         <p>Account number: {shop.bank.account} | IFSC: {shop.bank.ifsc}</p>
       </section>
       <div className="simple-signature">For {shop.name}<br /><br />Authorised signatory</div>

@@ -101,6 +101,38 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .balance-strip strong, .credit-summary strong, .account-breakdown strong, .section-label strong, .upload-area strong { color: var(--ink); }
 .section-label span, .credit-summary small, .account-breakdown small { font-size: 12px; color: var(--muted); }
 .modal-actions { background: #fff; box-shadow: none; border-top: 1px solid var(--line); }
+.farmer-account .modal-person { background: #fff; border: 0; border-radius: 0; padding: 0 0 18px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+.farmer-account .modal-person > .avatar { display: none; }
+.farmer-account .modal-person strong { font: 600 17px/1.4 Arial, Helvetica, sans-serif; color: var(--ink); }
+.farmer-account .modal-person small { font-size: 13px; color: var(--muted); margin-top: 5px; }
+.farmer-account .account-breakdown { border-radius: 4px; }
+.farmer-account .account-breakdown strong { font: 600 20px/1.5 Arial, Helvetica, sans-serif; }
+.farmer-account .history-tabs { width: 100%; border-radius: 4px; padding: 3px; }
+.farmer-account .history-tabs button { flex: 1; font-size: 13px; padding: 10px; color: var(--muted); }
+.farmer-account .history-tabs button.selected { color: #193d5b; background: #e9eff5; box-shadow: none; font-weight: 600; border-radius: 3px; }
+.farmer-account .transaction-icon { display: none; }
+.farmer-account .transaction-detail > summary { padding: 15px 0; gap: 12px; }
+.farmer-account .transaction-detail > summary > div strong { font-size: 14px; color: var(--ink); font-weight: 500; }
+.farmer-account .transaction-detail > summary small { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.farmer-account .transaction-detail > summary > strong { font-size: 17px; font-weight: 600; }
+.farmer-account .transaction-detail > summary > svg { color: var(--muted); }
+.farmer-account .transaction-content { background: #fff; }
+.farmer-account .payment-allocation { background: #f6f7f9; border-color: var(--line); color: var(--ink); font-size: 12px; }
+.farmer-account .interest-history-item > div > strong { font-size: 14px; color: var(--ink); font-weight: 600; }
+.farmer-account .interest-history-item small, .farmer-account .interest-history-item p { font-size: 12px; color: var(--muted); }
+.farmer-account .interest-history-item > strong { font: 600 17px/1.5 Arial, Helvetica, sans-serif; color: var(--ink); }
+.farmer-account .profile-details { background: #fff; }
+.farmer-account .profile-details > div { font-size: 13px; }
+.farmer-account .profile-details dt { color: var(--muted); }
+.farmer-account .profile-details dd { color: var(--ink); }
+.farmer-account .detail-table th, .farmer-account .detail-table td { font-size: 12px; color: var(--ink); }
+.farmer-account .detail-table small { font-size: 11px; color: var(--muted); }
+.farmer-account .outline { border-color: #cdd4dc; color: var(--ink); }
+@media(max-width:480px) {
+  .farmer-account .history-tabs button { font-size: 11px; padding: 9px 6px; }
+  .farmer-account .account-breakdown strong { font-size: 16px; }
+  .farmer-account .farmer-account-actions { flex-wrap: wrap; gap: 10px; }
+}
 .supplier-card .card-person { margin-bottom: 0; }
 .supplier-card .farmer-balance { padding: 12px 0; }
 .supplier-card .card-actions { margin-top: 0; }
@@ -169,18 +201,21 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .farmer-account-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .farmer-account-actions > .checkbox-field { margin: 0 auto 0 0; white-space: nowrap; }
 .bill-history-choice { margin: 16px 0; }
-/* Tables retain clear boundaries on screen and in browser PDF output. */
-.company-profile-document { max-width: 850px; border: 1px solid #333; padding: 32px; }
-.company-profile-document header { border-bottom: 2px solid #111; padding: 0 0 22px; margin-bottom: 24px; }
-.company-profile-document .profile-document-label { margin: 0 0 10px; text-transform: uppercase; font-size: 11px; font-weight: 700; }
-.company-profile-document h2 { font: 700 26px/1.3 Arial, Helvetica, sans-serif; overflow-wrap: anywhere; }
-.company-profile-document h3 { font: 700 15px/1.5 Arial, Helvetica, sans-serif; margin: 0 0 12px; color: #111; }
-.profile-bank-section { margin-top: 26px; }
-.profile-bank-note { margin-bottom: 12px; font-size: 12px; }
-.profile-details-table { width: 100%; border-collapse: collapse; table-layout: fixed; border: 1px solid #333; }
-.profile-details-table th, .profile-details-table td { border: 1px solid #555; padding: 12px 16px; font: 400 14px/1.6 Arial, Helvetica, sans-serif; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
-.profile-details-table th { width: 28%; font-weight: 600; background: #f5f5f5; }
-.profile-document-footer { margin-top: 28px; padding-top: 12px; border-top: 1px solid #333; display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
+/* Company profile follows the owner's supplied single-page reference. */
+.company-profile-document { max-width: 850px; padding: 38px; border: 1px solid var(--line); min-height: 1040px; display: flex; flex-direction: column; }
+.company-profile-document header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 22px; }
+.company-profile-document h2 { font: 700 30px/1.25 Arial, Helvetica, sans-serif; max-width: 550px; overflow-wrap: anywhere; }
+.company-profile-document .profile-document-label { margin: 14px 0 0; font-size: 14px; }
+.company-profile-document section { margin: 0 0 28px; }
+.company-profile-document h3 { font: 700 17px/1.4 Arial, Helvetica, sans-serif; margin: 0 0 12px; }
+.company-profile-document p { font-size: 14px; line-height: 1.65; }
+.profile-offerings p + p { margin-top: 5px; }
+.profile-detail-list { margin: 0; font-size: 14px; line-height: 1.65; }
+.profile-detail-list > div { display: flex; align-items: baseline; gap: 4px; margin-top: 7px; }
+.profile-detail-list dt { flex-shrink: 0; font-weight: 700; }
+.profile-detail-list dd { margin: 0; overflow-wrap: anywhere; min-width: 0; }
+.profile-bank-note { margin-bottom: 10px; }
+.profile-document-footer { margin-top: auto; padding-top: 14px; border-top: 1px solid #333; display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
 .profile-editor { max-width: 850px; background: #fff; border: 1px solid var(--line); padding: 28px; margin-bottom: 24px; border-radius: 5px; }
 .profile-editor h2 { font-size: 20px; font-weight: 600; color: #111; }
 .profile-editor > p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 10px 0 24px; }
@@ -188,10 +223,9 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .profile-editor-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 20px; }
 .profile-editor-actions small { color: var(--muted); margin-left: auto; }
 @media(max-width:600px) {
-  .company-profile-document { padding: 16px; }
-  .company-profile-document h2 { font-size: 20px; }
-  .profile-details-table th, .profile-details-table td { font-size: 12px; padding: 10px 8px; }
-  .profile-details-table th { width: 32%; }
+  .company-profile-document { padding: 20px; min-height: 0; }
+  .company-profile-document h2 { font-size: 23px; }
+  .profile-detail-list > div { flex-wrap: wrap; }
   .profile-editor { padding: 20px; }
 }
 @media print {
@@ -203,15 +237,13 @@ h1, h2, h3, strong { letter-spacing: normal; }
   .company-profile-page > .profile-editor { display: none !important; }
   .app-shell[data-page="/profile"] .main-shell { margin: 0 !important; width: 100% !important; }
   .company-profile-page { padding: 0 !important; max-width: none !important; }
-  .company-profile-page .company-profile-document { border: 1px solid #111; padding: 20px; max-width: none; color: #000; }
+  .company-profile-page .company-profile-document { border: 0; padding: 0; max-width: none; min-height: 259mm; color: #000; }
   .company-profile-document * { color: #000 !important; background: #fff !important; box-shadow: none !important; }
-  .company-profile-document h2 { font-size: 20pt; }
-  .company-profile-document h3 { font-size: 11pt; }
-  .company-profile-document .profile-details-table th,
-  .company-profile-document .profile-details-table td { border: 1px solid #333; padding: 10px 12px; font-size: 10pt; }
-  .company-profile-document .profile-details-table th { width: 28%; }
-  .profile-details-table tr { break-inside: avoid; }
-  .profile-company-section, .profile-bank-section { break-inside: avoid; }
+  .company-profile-document h2 { font-size: 25pt; max-width: none; }
+  .company-profile-document h3 { font-size: 13pt; }
+  .company-profile-document p, .profile-detail-list { font-size: 10.5pt; line-height: 1.65; }
+  .company-profile-document section { break-inside: avoid; margin-bottom: 25px; }
+  .profile-detail-list > div { flex-wrap: nowrap; margin-top: 6px; }
 }
 /* Farmer bills are monochrome records, with no card or decorative styling. */
 .simple-farmer-bill { color: #000; font: 13px/1.45 Arial, Helvetica, sans-serif; }

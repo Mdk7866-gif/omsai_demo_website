@@ -15,15 +15,17 @@ const {BillDocument} = require('../src/components/reports.tsx');
 const {createInvoice, seed} = require('../src/components/demo-data.ts');
 const farmer = seed.farmers.find(f => f.id === 11);
 
-test('default bill contains products, bank placeholders and balance, without history or interest percentages', () => {
+test('default bill contains products, supplied bank details and balance, without history or interest percentages', () => {
   const invoice = createInvoice(seed, farmer);
   assert.equal(invoice.includeHistory, false);
   const html = renderToStaticMarkup(React.createElement(BillDocument, {invoice}));
   assert.ok(html.includes(farmer.name));
   assert.ok(html.includes('Principal amount'));
   assert.ok(html.includes('Interest amount'));
-  assert.ok(html.includes('SAMPLE / NOT FOR PAYMENT'));
-  assert.ok(html.includes('State Bank of India (SBI)'));
+  assert.ok(!html.includes('SAMPLE / NOT FOR PAYMENT'));
+  assert.ok(html.includes('Patha Krishna Murthy'));
+  assert.ok(html.includes('12345648271'));
+  assert.ok(html.includes('State Bank of India'));
   for (const event of invoice.events.filter(e => e.type === 'Credit')) {
     for (const line of event.lines) assert.ok(html.includes(line.name.replaceAll('&', '&amp;')));
   }
@@ -78,4 +80,16 @@ test('new bills use edited company details while existing invoice snapshots rema
   assert.ok(!html.includes('SAMPLE / NOT FOR PAYMENT'));
   store.shop.bank.name = 'Changed again';
   assert.equal(updated.shop.bank.name, 'Updated bank');
+});
+
+test('profile defaults replace only the original sample bank and preserve custom accounts', () => {
+  const {restoreShop, shopDetails} = require('../src/components/demo-data.ts');
+  const old = structuredClone(shopDetails);
+  old.bank = {...old.bank, holder:'Old sample holder', account:'XXXXXX48271 (sample)', isSample:true};
+  old.name = 'Edited business';
+  const restored = restoreShop(old);
+  assert.equal(restored.name, 'Edited business');
+  assert.equal(restored.bank.account, shopDetails.bank.account);
+  old.bank = {...old.bank, account:'98765432100', isSample:false};
+  assert.equal(restoreShop(old).bank.account, '98765432100');
 });

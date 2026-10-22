@@ -9,30 +9,38 @@ export function CompanyProfileDocument({ shop = shopDetails }: { shop?: Shop }) 
   return (
     <article className="print-document company-profile-document" aria-label="Company profile">
       <header>
+        <h2>{shop.name.includes(",") ? <>{shop.name.slice(0, shop.name.indexOf(",") + 1)}<br />{shop.name.slice(shop.name.indexOf(",") + 1).trim()}</> : shop.name}</h2>
         <p className="profile-document-label">Company profile</p>
-        <h2>{shop.name}</h2>
       </header>
+      <section className="profile-about-section"><h3>About</h3><p>{shop.about}</p></section>
+      <section className="profile-offerings"><h3>What we offer</h3>
+        <p><strong>Fertilisers:</strong> Crop nutrition inputs</p>
+        <p><strong>Pesticides:</strong> Crop protection inputs</p>
+        <p><strong>Seeds:</strong> Agricultural seeds</p>
+      </section>
       <section className="profile-company-section">
-        <h3>Company details</h3>
-        <table className="profile-details-table" aria-label="Company details"><tbody>
-          <tr><th scope="row">Company name</th><td>{shop.name}</td></tr>
-          <tr><th scope="row">Address</th><td>{shop.address}</td></tr>
-          <tr><th scope="row">GSTIN</th><td>{shop.gstin}</td></tr>
-          <tr><th scope="row">Phone</th><td>{shop.phone}</td></tr>
-        </tbody></table>
+        <h3>Business details</h3>
+        <dl className="profile-detail-list">
+          <div><dt>Business name:</dt><dd>{shop.name}</dd></div>
+          <div><dt>Address:</dt><dd>{shop.address}</dd></div>
+          <div><dt>GSTIN:</dt><dd>{shop.gstin}</dd></div>
+          {shop.pan && <div><dt>PAN No.:</dt><dd>{shop.pan}</dd></div>}
+          {shop.licence && <div><dt>PL No.:</dt><dd>{shop.licence}</dd></div>}
+          <div><dt>Phone:</dt><dd>{shop.phone}</dd></div>
+        </dl>
       </section>
       <section className="profile-bank-section">
-        <h3>Bank account details</h3>
+        <h3>Bank details</h3>
         {shop.bank.isSample !== false && <p className="profile-bank-note">Sample bank details - not for payment.</p>}
-        <table className="profile-details-table" aria-label="Bank account details"><tbody>
-          <tr><th scope="row">Account holder</th><td>{shop.bank.holder}</td></tr>
-          <tr><th scope="row">Bank name</th><td>{shop.bank.name}</td></tr>
-          <tr><th scope="row">Branch</th><td>{shop.bank.branch}</td></tr>
-          <tr><th scope="row">Account number</th><td>{shop.bank.account}</td></tr>
-          <tr><th scope="row">IFSC</th><td>{shop.bank.ifsc}</td></tr>
-        </tbody></table>
+        <dl className="profile-detail-list">
+          <div><dt>Account number:</dt><dd>{shop.bank.account}</dd></div>
+          <div><dt>Account name:</dt><dd>{shop.bank.holder}</dd></div>
+          <div><dt>Bank name:</dt><dd>{shop.bank.name}</dd></div>
+          {shop.bank.branch && <div><dt>Branch:</dt><dd>{shop.bank.branch}</dd></div>}
+          <div><dt>IFSC:</dt><dd>{shop.bank.ifsc}</dd></div>
+        </dl>
       </section>
-      <footer className="profile-document-footer"><span>Contact: {shop.phone}</span><span>Company profile</span></footer>
+      <footer className="profile-document-footer"><span>{shop.name}</span><span>1</span></footer>
     </article>
   );
 }
@@ -43,24 +51,25 @@ export function CompanyProfilePage() {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState<Shop>(() => structuredClone(saved));
   const [error, setError] = useState("");
-  const field = (label: string, key: "name" | "address" | "gstin" | "phone", maxLength = 160) => (
+  const field = (label: string, key: "name" | "address" | "gstin" | "phone" | "pan" | "licence", maxLength = 160) => (
     <label className="field" key={key}>{label}
       {key === "address" ? <textarea required maxLength={400} value={draft[key]} onChange={e => setDraft(old => ({ ...old, [key]: e.target.value }))} /> :
-        <input required type={key === "phone" ? "tel" : "text"} maxLength={maxLength} value={draft[key]} onChange={e => setDraft(old => ({ ...old, [key]: e.target.value }))} />}
+        <input required={key !== "pan" && key !== "licence"} type={key === "phone" ? "tel" : "text"} maxLength={maxLength} value={draft[key]} onChange={e => setDraft(old => ({ ...old, [key]: e.target.value }))} />}
     </label>
   );
   const bankField = (label: string, key: keyof Omit<Shop["bank"], "isSample">) => (
     <label className="field" key={key}>{label}
-      <input required maxLength={160} value={draft.bank[key]} onChange={e => setDraft(old => ({ ...old, bank: { ...old.bank, [key]: e.target.value } }))} />
+      <input required={key !== "branch"} maxLength={160} value={draft.bank[key]} onChange={e => setDraft(old => ({ ...old, bank: { ...old.bank, [key]: e.target.value } }))} />
     </label>
   );
   function save(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const next: Shop = {
+      about: draft.about.trim(), pan: draft.pan.trim().toUpperCase(), licence: draft.licence.trim(),
       name: draft.name.trim(), address: draft.address.trim(), gstin: draft.gstin.trim().toUpperCase(), phone: draft.phone.trim(),
       bank: { holder: draft.bank.holder.trim(), name: draft.bank.name.trim(), branch: draft.bank.branch.trim(), account: draft.bank.account.trim(), ifsc: draft.bank.ifsc.trim().toUpperCase(), isSample: draft.bank.isSample !== false },
     };
-    const bankValues = [next.bank.holder, next.bank.name, next.bank.branch, next.bank.account, next.bank.ifsc];
+    const bankValues = [next.bank.holder, next.bank.name, next.bank.account, next.bank.ifsc];
     if ([next.name, next.address, next.gstin, next.phone, ...bankValues].some(value => !value)) {
       setError("Fill in all company and bank details."); return;
     }
@@ -90,6 +99,8 @@ export function CompanyProfilePage() {
         <div className="form-grid">{field("Company name", "name")}{field("Phone", "phone", 40)}</div>
         {field("Company address", "address")}
         {field("GSTIN", "gstin", 20)}
+        <div className="form-grid">{field("PAN No.", "pan", 20)}{field("PL No.", "licence", 50)}</div>
+        <label className="field">About the company<textarea required maxLength={700} rows={3} value={draft.about} onChange={e => setDraft(old => ({ ...old, about: e.target.value }))} /></label>
         <h3>Bank details</h3>
         <div className="form-grid">{bankField("Account holder", "holder")}{bankField("Bank name", "name")}{bankField("Branch", "branch")}{bankField("Account number", "account")}{bankField("IFSC", "ifsc")}</div>
         <label className="checkbox-field"><input type="checkbox" checked={draft.bank.isSample !== false} onChange={e => setDraft(old => ({ ...old, bank: { ...old.bank, isSample: e.target.checked } }))} /> These are sample bank details</label>
@@ -97,7 +108,7 @@ export function CompanyProfilePage() {
         <div className="profile-editor-actions"><button type="button" className="outline" onClick={() => { setEditing(false); setError(""); }}>Cancel</button><button className="primary" type="submit">Save changes</button><small>Saved in this browser.</small></div>
       </form>}
       <CompanyProfileDocument shop={saved} />
-      <style>{`@media print { @page { size: A4 portrait; margin: 16mm; } }`}</style>
+      <style>{`@media print { @page { size: A4 portrait; margin: 18mm 19mm; } }`}</style>
     </main>
   );
 }

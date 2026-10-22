@@ -4,10 +4,14 @@
   "gstin": "36BFAPP5110C1Z1",
   "phone": "9948710704",
   "bank": {
-    "holder": "Omsai Fertiliser, Pesticides and Seeds",
-    "name": "State Bank of India (SBI)",
-    "branch": "Dharmaram (sample)",
-    "account": "XXXXXX48271 (sample)",
-    "ifsc": "SBIN00XXXXX (sample)"
-  }
+    "holder": "Patha Krishna Murthy",
+    "name": "State Bank of India",
+    "branch": "",
+    "account": "12345648271",
+    "ifsc": "SBIN0001234",
+    "isSample": false
+  },
+  "pan": "BFAPP5110C",
+  "licence": "28/Pdpl/2019",
+  "about": "Omsai Fertiliser, Pesticides and Seeds is an agricultural inputs business in Dharmaram, Peddapalli district, Telangana. The business focuses on fertilisers, pesticides and seeds."
 }

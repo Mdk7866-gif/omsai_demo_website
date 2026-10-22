@@ -8,7 +8,12 @@ import interestHistory from "../../dummy_data/interest_history.json";
 import stockMovements from "../../dummy_data/stock_movements.json";
 import shop from "../../dummy_data/shop.json";
 export type Shop = Omit<typeof shop, "bank"> & { bank: typeof shop.bank & { isSample?: boolean } };
-export const shopDetails: Shop = { ...shop, bank: { ...shop.bank, isSample: true } };
+export const shopDetails: Shop = { ...shop, bank: { ...shop.bank } };
+export function restoreShop(saved?: Shop): Shop {
+  if (!saved) return structuredClone(shopDetails);
+  const oldSample = saved.bank?.account === "XXXXXX48271 (sample)";
+  return { ...shopDetails, ...saved, bank: oldSample ? { ...shopDetails.bank } : { ...shopDetails.bank, ...saved.bank } };
+}
 
 export type Section =
   "Dashboard" | "Farmers" | "Products" | "Invoices" | "Suppliers";
