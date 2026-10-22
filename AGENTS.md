@@ -28,3 +28,17 @@ Keep a qualifying candidate through the reporting pass even if you resolve or wo
 Before the final response, run one reporting pass. If candidates remain, from this file's directory run `node node_modules/next/dist/bin/next internal agent-feedback-instructions` once without piping or truncating its output. Follow its output or error guidance. If a network sandbox blocks it, retry with network access; if it still returns no output, continue normally.
 
 <!-- END:nextjs-agent-feedback -->
+
+
+## Project handoff
+
+Read the current owner decisions and confirmed farmer bill behaviour in `README.md` before changing UI, fixtures, payments or reports. Its current decisions supersede the original decorative design brief; preserve the plain, formal interface.
+
+- Keep payment allocation interest-first, then principal. Never subtract the same payment again while rendering a bill.
+- Product-table amounts describe historical purchases; the bill summary describes the remaining debt. Do not force these totals to match or add a product grand total. Hide zero unpaid interest in the bill summary.
+- Bill row counts may decrease when matching historical product lines are grouped. Preserve their quantities and amounts, and keep different final charged rates separate. Use the documented farmer ID 11 example when investigating apparent discrepancies.
+- Saved invoices are snapshots. Preserve earlier bills when profile data, farmer details or balances change. History is unchecked by default and selected in Farmer account before generating a bill.
+- Profile uses the same plain report-preview pattern as farmer bills. Preserve About, What we offer, Business details and Bank details. Keep the dedicated reference-layout PDF export available.
+- Do not regenerate `dummy_data` or reset browser data merely to resolve a presentation issue. The demo's fixed date and fixture interest are not a continuously accruing production interest engine.
+
+Run checks appropriate to the changes. Documentation-only updates do not require rebuilding the app. Preserve both Next.js-generated blocks above.
