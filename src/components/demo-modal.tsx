@@ -1399,7 +1399,6 @@ export function DemoModal({
               <h3>{supplier.name}</h3>
               <p>{supplier.phone}</p>
             </div>
-            {supplier.address && <details className="supplier-contact-details"><summary>Supplier address</summary><p>{supplier.address}</p></details>}
             <div className="balance-strip">
               <span>Total due</span>
               <strong>
@@ -1420,46 +1419,47 @@ export function DemoModal({
                   <div className="supplier-purchase-heading">
                     <div>
                       <strong>
-                        SUP-{p.id}
+                        {dateLabel(p.date)}
                       </strong>
                       <small>
-                        {dateLabel(p.date)} · {p.lines.length} products
+                        Purchase SUP-{p.id}
                       </small>
                     </div>
                     <div className="supplier-purchase-payment">
                       <strong>{money(p.amount)}</strong>
-                      <span className={`status ${p.paid ? "clear" : "due"}`}>{p.paid ? "Paid" : "Due"}</span>
+                      <select
+                        className="supplier-payment-status"
+                        aria-label={`Payment status for purchase SUP-${p.id}`}
+                        value={p.paid ? "paid" : "due"}
+                        onChange={(e) => {
+                          const paid = e.target.value === "paid";
+                          if (paid === p.paid) return;
+                          change((s) => ({
+                            ...s,
+                            purchases: s.purchases.map((old) =>
+                              old.id === p.id
+                                ? {
+                                    ...old,
+                                    paid,
+                                    statusHistory: [
+                                      ...old.statusHistory,
+                                      { date: DAY, paid },
+                                    ],
+                                  }
+                                : old,
+                            ),
+                          }));
+                          notify(`Purchase marked ${paid ? "Paid" : "Due"}.`);
+                        }}
+                      >
+                        <option value="paid">Paid</option>
+                        <option value="due">Due</option>
+                      </select>
                     </div>
-                  </div>
-                  <div className="supplier-purchase-actions">
-                    <button
-                      className="outline small"
-                      aria-label={`Mark purchase SUP-${p.id} as ${p.paid ? "Due" : "Paid"}`}
-                      onClick={() => {
-                        change((s) => ({
-                          ...s,
-                          purchases: s.purchases.map((old) =>
-                            old.id === p.id
-                              ? {
-                                  ...old,
-                                  paid: !old.paid,
-                                  statusHistory: [
-                                    ...old.statusHistory,
-                                    { date: DAY, paid: !old.paid },
-                                  ],
-                                }
-                              : old,
-                          ),
-                        }));
-                        notify(`Purchase marked ${p.paid ? "Due" : "Paid"}.`);
-                      }}
-                    >
-                      Mark as {p.paid ? "Due" : "Paid"}
-                    </button>
                   </div>
                   <details className="purchase-lines">
                     <summary>
-                      Product details <Icon name="chevron" size={14} />
+                      View products ({p.lines.length}) <Icon name="chevron" size={14} />
                     </summary>
                     <div className="table-scroll">
                       <table className="detail-table">
@@ -1476,9 +1476,6 @@ export function DemoModal({
                             <tr key={i}>
                               <td>
                                 {l.name}
-                                <small>
-                                  {l.category} · {l.brand} · {l.batch}
-                                </small>
                               </td>
                               <td>
                                 {l.quantity} {l.unit}
@@ -1491,13 +1488,6 @@ export function DemoModal({
                       </table>
                     </div>
                   </details>
-                  <details className="supplier-status-details"><summary>Payment status history</summary><div className="status-history">
-                    {p.statusHistory.map((h, i) => (
-                      <span key={i}>
-                        {dateLabel(h.date)} · {h.paid ? "Paid" : "Due"}
-                      </span>
-                    ))}
-                  </div></details>
                 </section>
               ))}
             {visible <
@@ -1520,7 +1510,6 @@ export function DemoModal({
               >
                 Edit supplier
               </button>
-              {!supplier.archived && <button className="primary" onClick={() => open({ kind: "purchase", id: supplier.id })}>Add purchase</button>}
               <button
                 className="outline"
                 onClick={() =>
