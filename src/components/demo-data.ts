@@ -141,8 +141,8 @@ export const seed = {
   interestHistory,
   stockMovements,
 } as Store;
-export const DAY = "2026-10-14";
-export const STORAGE_KEY = "omsai-demo-v2";
+export const DAY = "2026-10-22";
+export const STORAGE_KEY = "omsai-demo-v3";
 export const money = (n: number) =>
   "₹" +
   n.toLocaleString("en-IN", {

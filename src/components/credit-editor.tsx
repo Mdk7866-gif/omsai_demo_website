@@ -427,7 +427,7 @@ export function PurchaseEditor({
   close: () => void;
 }) {
   const [lines, setLines] = useState([purchaseBlank(1)]),
-    [paid, setPaid] = useState(false),
+    [paid, setPaid] = useState(true),
     [error, setError] = useState("");
   const update = (key: number, patch: Partial<PurchaseDraft>) =>
     setLines((old) => old.map((l) => (l.key === key ? { ...l, ...patch } : l)));

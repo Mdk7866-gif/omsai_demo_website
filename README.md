@@ -2,37 +2,27 @@
 
 ## Start here — handoff for future AI work
 
-**Last updated: 14 October 2026.** This README captures the owner's requirements and feedback from building the client presentation demo. Read this section, inspect the current website and `UI.png`, then read the relevant production requirements below before making changes. The current demo is the practical reference for the final website's appearance and everyday interactions. Preserve that direction while implementing the production services.
+**Last updated: 22 October 2026.** This README captures the owner's requirements and feedback from building the client presentation demo. Read this section, inspect the current website and `UI.png`, then read the relevant production requirements below before making changes. The current demo is the practical reference for the final website's appearance and everyday interactions. Preserve that direction while implementing the production services.
 
-The client is an agro input shop proprietor serving farmers, mostly in **Andhra Pradesh**. They need an easy way to manage farmer credit and repayments, inventory, supplier purchases, interest, and bills. Desktop is the main workspace; every workflow must also be usable on a phone. The client is Hindu and religious, and the owner requested a tasteful temple-inspired design that feels familiar, trustworthy, and polished enough to impress during a demonstration.
+The client is an agro input shop proprietor serving farmers, mostly in **Andhra Pradesh**. They need an easy way to manage farmer credit and repayments, inventory, supplier purchases, interest, and bills. Desktop is the main workspace; every workflow must also be usable on a phone. The owner initially requested a temple-inspired presentation, then explicitly replaced that direction on 22 October with a minimal, formal interface.
 
-### Approved visual direction
+### Current design and owner decisions (22 October 2026)
 
-- Use the **temple-gold, deep maroon, warm cream** direction from [`UI.png`](UI.png) and the implemented demo. Keep the Omsai name, Om motif, restrained gold decorative details, and agricultural context. “Temple Gold — Revised UI” is the reference image's presentation heading, not the shop's name or an application heading.
-- Current palette: maroon `#711e29`, deep maroon `#4c121d`, gold `#c4913f`, cream `#faf7f0`, paper `#fffdf9`, dark text `#352923`, muted text `#8a8175`, and green `#2d794d`. Use serif display headings with readable sans-serif body text. Keep generous spacing, soft borders, rounded cards, subtle shadows, and clear financial hierarchy.
-- Keep a comfortably wide **desktop sidebar** with Omsai branding and a strong active-page highlight. The current desktop width is approximately 260 px. The top strip provides page context and useful alerts; it is not a replacement navigation bar. The owner explicitly asked to remove the **OP** avatar/initials.
-- On mobile, use a side drawer for navigation and bottom sheets for forms and accounts. Reflow cards and keep long forms scrollable with visible actions. Avoid horizontal page overflow, clipped amounts, and controls hidden behind the keyboard.
-- Preserve the illustrated **product/package icons** used for fertilizers, pesticides, and seeds. The owner specifically liked these and the explicit product **unit** field. Product photos are not required by the current brief.
-- Date pickers must match the design: maroon/gold month controls, a clear selected date, readable day grid, and obvious month navigation. Fixed October 2026 shortcuts and activity dots are demo conveniences, not a production date restriction.
-- Use green for money received/positive values and maroon/red for dues or outgoing values, always with text labels and signs. Use visible Due/Clear and Compounding badges rather than relying only on color.
+These decisions replace the earlier temple-gold presentation direction and dashboard formulas.
 
-### Owner feedback to preserve
-
-- **Dashboard:** remove the Add Farmer button; farmer creation belongs on Farmers. Keep the date picker, daily summaries, farmer activity, low stock, all-time overview, and Business report. Clicking a farmer in the activity card or its expanded list opens that farmer's full account.
-- **Credit given means purchase cost:** the dashboard measures what the proprietor actually spent on the products supplied to farmers. Farmer debt uses the selling price after any discount. Preserve both values separately. Product profit is selling value minus purchase cost.
-- **Discoverable cards:** the whole farmer, product, and supplier card opens its account/details/history. Do not require users to discover a small arrow. Keep Edit, Delete, Credit, Pay, and Restock as independent actions that do not accidentally open the card.
-- **Farmer sorting:** Recent by default, Highest activity, Highest due, Highest paid, and A–Z. Include practical search, status filters, pagination, and an archive view.
-- **Credit entry:** use typed product search with suggestions, not a long select-only dropdown. Show name, category, available stock and unit, purchase price, and selling price. Support multiple products in one transaction and adding/removing lines. Autofill selling price after selection and provide a nearby optional discounted final unit price. Quantity rules follow the unit; category also guides the product presentation.
-- **Adding products:** the proprietor can add inventory products through Products, including purchase price and unit. Explicit manual credit lines support products absent from inventory without creating an inventory record. These are distinct actions. No two inventory products may have exactly the same name.
-- **Farmer account:** show principal, interest, total due, and compounding status clearly. Expand each credit transaction to see every product supplied that day. Keep understandable interest setting/accrual histories and full farmer bill generation. The Pay screen also shows the current mode so the proprietor need not reopen settings to check it.
-- **Aadhaar:** Add Farmer visibly includes optional image upload/preview. The demo can simulate storage, but the final interface includes view/replace/remove controls.
-- **Deletion:** archive farmers, products, and suppliers while retaining necessary history, outstanding balances, and saved bills. Allow archive inspection/restoration. Farmer Aadhaar has its separate deletion lifecycle.
-- **Bills and reports:** create realistic multi-product farmer bills; provide farmer-name/phone suggestions in Create farmer bill, Product report on Products, and Business report on Dashboard with an inclusive From/To range. PDFs carry the same Omsai maroon/gold identity and remain readable over multiple pages.
-- **Demo realism:** retain a substantial, internally consistent dataset in separate JSON files under `dummy_data`, with mostly Andhra Pradesh farmer names, long village/mandal/district addresses, varied units, batches, discounts, repayments, interest changes, and multi-product credits. Include meaningful activity on **5 October 2026**. Do not replace it with a few generic placeholder cards.
+- Keep the website minimal and formal: Arial/system sans-serif, white cards, neutral borders, restrained blue controls, simple headings and wording. `UI.png` is a historical reference only.
+- Remove Om and devotional slogans from the website. Keep Om only in the farmer bill letterhead.
+- Farmer and supplier cards are compact and show no address preview; addresses remain in forms, details and farmer bills. Product cards have no package illustration.
+- Dashboard shows only Farmer payments, Credit given (historical input cost), Supplier purchases (Paid only), Total farmer dues, active farmer/supplier counts, All-time payments, All-time supplier purchases (Paid only), and All-time inputs supplied at cost. Remove farmer activity, restock panels, net activity, profit and cash-flow figures.
+- New supplier purchases default to **Paid**; the owner may mark them **Due**. Due purchases are excluded from dashboard purchase totals. Paid purchases count on the latest Paid status date, once. Supplier purchases remain separate from inventory.
+- All reports use plain white, formal layouts, readable text and ruled tables. Farmer bills use portrait paper, show company/farmer details and principal + interest = total due on page one. An **Include account history** checkbox controls whether product, payment and interest history starts on later pages. Saved financial snapshots remain complete regardless of this print option. No tax is added.
+- Farmer bill company identity: **Omsai Fertiliser, Pesticides and Seeds**; D.No. 3-47, Dhongagurthy Vill, Dharmaram Mdl, Peddapalli Dist, Dongathurthy - 505187, Telangana; GSTIN **36BFAPP5110C1Z1**; phone **9948710704**.
+- Preserve existing account workflows, archive/restore, typed product search, units, discounts, payment allocation and snapshot history.
+- Demo fixtures now include daily credits and payments through **22 October 2026**. Browser storage uses `omsai-demo-v3` so the refreshed fixtures load without deleting the old `omsai-demo-v2` storage entry. Old browser edits are not migrated into this new demonstration dataset.
 
 ### Demo versus production, and PDF feedback
 
-The demo implements the visual direction, five routes, client-side forms, archive/restore, linked stock deductions, account histories, local image previews, invoice snapshots, and browser-print reports. It uses JSON seed data and browser local storage. It demonstrates intended UI and basic workflows; it is not the finished financial system.
+The demo implements the plain visual direction, five routes, client-side forms, archive/restore, linked stock deductions, account histories, local image previews, invoice snapshots, and browser-print reports. It uses JSON seed data and browser local storage. It demonstrates intended UI and basic workflows; it is not the finished financial system.
 
 Production still requires FastAPI authentication and APIs, Supabase persistence, concurrent transaction integrity, authoritative elapsed-day interest calculations, private Cloudinary image handling, durable image cleanup, and deployment. Keep the architecture below unless the owner changes it. Building the demo entirely in Next.js was a deliberate demo simplification, not a decision to remove the production backend.
 
@@ -57,7 +47,7 @@ Read `AGENTS.md` and the installed Next.js guides before code changes. The curre
 
 ## Client presentation demo
 
-The repository now includes an interactive **Next.js-only demo**, inspired by the temple-gold and maroon reference in `UI.png`. It uses a desktop sidebar, a mobile side drawer, and mobile bottom sheets. This demo is for presenting the design and workflows to the client; the production backend requirements below remain the implementation brief.
+The repository now includes an interactive **Next.js-only demo**, with a plain, formal interface. It uses a desktop sidebar, a mobile side drawer, and mobile bottom sheets. This demo is for presenting the design and workflows to the client; the production backend requirements below remain the implementation brief.
 
 ### Published demo
 
@@ -77,9 +67,9 @@ Open `http://localhost:3000`. All five pages are available: Dashboard, Farmers, 
 
 ### Sample data and walkthrough
 
-- Sample records are split across JSON files in [`dummy_data`](dummy_data): `farmers.json`, `products.json`, `suppliers.json`, `transactions.json`, `purchases.json`, `interest_history.json`, `stock_movements.json`, and `invoices.json`. The fixtures include 120 fictional Andhra Pradesh farmer accounts with detailed village/mandal/district addresses, 32 products, 12 suppliers, 1,098 transactions, 96 supplier purchases, and 48 saved bills.
+- Sample records are split across JSON files in [`dummy_data`](dummy_data): `farmers.json`, `products.json`, `suppliers.json`, `transactions.json`, `purchases.json`, `interest_history.json`, `stock_movements.json`, and `invoices.json`. The fixtures include 120 fictional Andhra Pradesh farmer accounts with detailed village/mandal/district addresses, 32 products, 12 suppliers, 1,218 transactions, 96 supplier purchases, and 48 saved bills.
 - Edit the JSON files to customize the presentation, then use **Reset demo** in the footer to reload them. Browser changes stay local and do not overwrite the JSON. `node scripts/generate-demo-data.mjs` deliberately regenerates all fixtures and overwrites manual JSON edits.
-- The fixed demo business date is **14 October 2026**. The themed calendar includes activity from September through 14 October, including **240 transactions on 5 October**. New demo transactions use the fixed business date and sequential demo times after the latest existing entry, keeping the account history in order during presentations.
+- The fixed demo business date is **22 October 2026**. The calendar includes activity from September through 22 October, including **240 transactions on 5 October**. New demo transactions use the fixed business date and sequential demo times after the latest existing entry, keeping the account history in order during presentations.
 - Add/edit farmers with an optional local Aadhaar photo preview. Entire cards open their accounts. Sort by Recent (default), Highest activity, Highest due, Highest paid, or A–Z. Compounding has a visible badge on cards and payment screens.
 - Give multi-product credit using typed inventory suggestions showing category, batch, stock, purchase price, and selling price. Selling price fills automatically; an optional discounted final price applies only to that transaction. Whole-unit products and fractional kg/litre quantities use their own quantity rules. Manual lines are explicitly selected and require their purchase cost too.
 - Payments reduce unpaid interest first, then principal. Expand transactions to inspect every credited line and before/after balances. Interest History includes effective rate/mode changes, accrued interest, and capitalization examples.
@@ -88,7 +78,7 @@ Open `http://localhost:3000`. All five pages are available: Dashboard, Farmers, 
 - Add suppliers, record purchases, and toggle their Paid/Due status from History. Supplier purchases do not restock inventory.
 - Search for a farmer by name or phone when creating a bill. Full bills retain their captured contact details, multi-product credits, discounts, payments, interest history, and settlement breakdown.
 - **Product report** prints active inventory, category, brand, batch, units, quantities, purchase/selling prices, and expiry. **Business report** accepts an inclusive From/To range and shows credited products at their historical cost and actual selling prices, with purchase-cost, selling-value, and product-profit summaries. Supplier account histories have a printable report too.
-- Reports share the website's maroon/gold Omsai styling and support multiple pages. Use **Print / Save as PDF** and the browser's **Save as PDF** destination to export. Farmer bills and business reports use portrait pages; inventory and supplier reports use landscape pages. The business table fits portrait paper to avoid sideways output from printer drivers that keep a portrait paper setting.
+- Reports use plain white Omsai letterheads and ruled tables and support multiple pages. Use **Print / Save as PDF** and the browser's **Save as PDF** destination to export. Farmer bills and business reports use portrait pages; inventory and supplier reports use landscape pages. The business table fits portrait paper to avoid sideways output from printer drivers that keep a portrait paper setting.
 - Delete actions archive farmers/products/suppliers. Use **Archived** to inspect or restore them. Financial history, stock movements, outstanding balances, and saved bills remain. Farmer archival removes the local Aadhaar reference and blocks new credits; payments and bills remain available.
 - Demo changes are saved in this browser's local storage. **Reset demo** restores the original JSON sample data before another client presentation.
 
@@ -522,7 +512,7 @@ Purchase opens a form with one or more lines containing:
 
 Provide **+ Add Products**, live line totals, and a live total purchase amount. Record the purchase date/time.
 
-Each purchase has a **Paid/Due toggle**. **Implementation default:** Start a new purchase as Due unless the owner explicitly marks it Paid. Paid means the entire purchase amount is paid; Due means the entire purchase amount is unpaid. A purchase containing several products has one status for its total.
+Each purchase has a **Paid/Due toggle**. **Owner decision:** Start a new purchase as Paid; the owner may mark it Due. Paid means the entire purchase amount is paid; Due means the entire purchase amount is unpaid. A purchase containing several products has one status for its total.
 
 Store dated status changes, including when a Due purchase becomes Paid, for audit and reporting. Partial supplier payments, supplier interest, and an amount-based supplier repayment ledger are outside the current scope.
 
@@ -544,48 +534,21 @@ Use the themed calendar described in the visual brief. Keep **Business report** 
 
 **Implementation default:** Day boundaries use the configured business timezone. Historical daily views use recorded events from that date; current account dues must be explicitly labeled if shown alongside historical activity.
 
-### 11.2 Farmer activity card
+### 11.2 Removed dashboard sections
 
-The Farmer Activity card shows the number of distinct farmers with a credit or payment on the selected day. Clicking it opens a dialog/bottom sheet listing:
+Do not show Farmer Activity or Time to Restock panels. Keep history in farmer/product details and low-stock access on Products.
 
-- Farmer name.
-- Credit, payment, or both.
-- Transaction times and amounts.
-- Credited products and quantities for each credit transaction.
+### 11.3 Daily totals
 
-Retain every transaction even when a farmer visits multiple times in one day. Profile edits and bill generation do not count as visits.
+Show farmer payments received, credit given at historical purchase cost, and supplier purchases paid on the selected date. Due supplier purchases do not count. A purchase entered Due and later marked Paid counts on its Paid status date. Status corrections update the single effective payment; never count every Paid toggle as another payment. Inventory entry is not a supplier payment.
 
-Clicking a farmer row in either the dashboard preview or expanded activity list opens their full farmer account, with history, payment, credit, and bill actions as appropriate to their active/archive status.
+### 11.4 Removed financial metrics
 
-### 11.3 Stock activity card
+Do not show profit, Net Business Activity, outgoing activity totals or net cash flow on the dashboard. Keep historical purchase cost separate from farmer debt, which uses selling prices after discounts.
 
-The Stock Activity card opens stock-in/stock-out history for the selected day, showing product/batch, movement time, quantity, movement direction, and source/reason. Show totals by product or compatible unit; do not add kilograms and packets into one misleading physical quantity.
+### 11.5 Account totals
 
-Inventory-linked farmer credits are stock-out. Manual inventory entries/restocks are stock-in. Supplier purchases remain separate and are not automatically stock-in.
-
-### 11.4 Daily business totals
-
-Show these distinct values for the selected day:
-
-1. **Farmer payments received:** money actually received from farmers, including the interest component of payments.
-2. **Credit given / input purchase cost:** the historical purchase cost of products supplied to farmers, calculated as quantity × purchase price per unit for each credited line. This shows the proprietor's money invested in those inputs. Farmer debts and credit transaction totals continue to use the selling price after discounts; they are different measures.
-3. **Supplier purchase value:** the total recorded value purchased from suppliers.
-4. **Total outgoing activity value:** input purchase cost + supplier purchase value.
-5. **Net Business Activity:** farmer payments received − input purchase cost − supplier purchase value.
-
-The owner requested this fifth measure to understand the day's incoming and outgoing business activity. Show positive values as a surplus and negative values as a deficit, with the formula visible in help text. It remains a custom business measure, not accounting profit or pure cash flow: input cost represents products supplied from stock, and a Due supplier purchase has not yet been paid. Preserve the purchase-cost snapshot at the time of credit; later inventory price edits must not change historical totals. Manual credits must also record purchase cost.
-
-**Implementation default:** Count a supplier purchase in this activity measure once, on its purchase date, whether Paid or Due. Marking it Paid on a later day does not count the purchase again. Inventory additions also do not create another supplier purchase expense in this measure.
-
-**Recommendation:** A separate actual cash summary can show farmer receipts minus purchases marked Paid on their payment/status date. If added, status corrections need dated reversal events rather than silently rewriting earlier daily totals. A formal profit/loss statement and tax accounting are outside the agreed initial scope.
-
-### 11.5 Lifetime overview
-
-Show all-time farmer payments received, input purchase cost, supplier purchase value, total outgoing activity value, and Net Business Activity using the same definitions as the daily view.
-
-Also show **Total Farmer Dues**, including unpaid interest as of the current business date. Include archived farmers that still owe money. Recommended additional counts: active farmers, farmers with dues, active suppliers, and low-stock inventory items.
-
-Historical dashboard activity must survive farmer, product, or supplier archival. Interest accrual alone is not a cash receipt and must not increase farmer-payment inflow.
+Show Total Farmer Dues (including archived unpaid accounts), total active farmers, total active suppliers, All-time payments received, All-time supplier purchases (currently Paid only), and All-time inputs supplied at historical cost. Account balances are labeled with their as-of date.
 
 ### 11.6 Business report
 
@@ -595,7 +558,7 @@ Group compatible quantities with the same product, unit, batch, and transaction 
 
 Summarize **Total purchase cost**, **Total selling amount**, and **Total product profit**. For this report, total purchase cost means the cost basis of the products supplied in the selected period, not all supplier purchases booked during that period. Product profit is actual selling value after discounts minus purchase cost; interest, shop expenses, and tax accounting are excluded. This product-margin report does not replace a formal profit/loss statement.
 
-Use the shop's Omsai identity and maroon/gold styling, show the selected date range and generation date, repeat table headings across pages, and preserve legibility. Generate the PDF on demand; do not store it in Cloudinary.
+Use the shop's Omsai identity with plain white, formal styling, show the selected date range and generation date, repeat table headings across pages, and preserve legibility. Generate the PDF on demand; do not store it in Cloudinary.
 
 The business report uses upright portrait pages with compact, readable columns. The owner reported sideways output from Microsoft Print to PDF when landscape content was placed on portrait paper. Verify orientation, margins, amounts, table continuation, and repeated headings in the exported PDF; do not rely only on the preview.
 
@@ -726,8 +689,8 @@ The implementation is ready for review when the following behavior is demonstrat
 - FastAPI verifies the password configured in its own environment, issues/verifies the session, and ends that access on logout. Next.js contains no copy of the configured password or session signing secret.
 - All five routes are accessible through the sidebar, with the current page highlighted; the sidebar remains visible on desktop and works as a collapsible side drawer on mobile.
 - Add/edit/credit/pay/history workflows work on desktop and as usable mobile bottom sheets.
-- The maroon/gold/cream Omsai design, product illustrations, wider desktop sidebar, and themed calendars remain consistent across pages. No OP avatar or dashboard Add Farmer button is present.
-- Entire farmer/product/supplier cards open details, while individual action buttons remain independent. Dashboard farmer activity opens the same farmer account.
+- The plain white design, compact cards, sans-serif fonts, sidebar and simple calendars remain consistent across pages. No OP avatar or dashboard Add Farmer button is present.
+- Entire farmer/product/supplier cards open details, while individual action buttons remain independent. Farmer account history remains accessible from Farmers.
 - Farmer search and the five requested sort options work. Credit and bill forms offer typed suggestions instead of requiring a scan through long dropdowns.
 
 ### Farmer accounts and interest
@@ -761,7 +724,7 @@ The implementation is ready for review when the following behavior is demonstrat
 - The calendar changes all selected-day activities and totals correctly, including multiple visits by one farmer.
 - Dashboard Credit given uses historical input purchase cost while farmer debt uses actual selling price after discounts.
 - Business reports use inclusive date ranges and retained historical prices, include manual lines, and reconcile purchase cost, selling amount, and product profit. Exported PDFs are upright and readable, with all multi-product bill lines retained.
-- Net Business Activity uses the documented formula and counts supplier purchases only on their purchase date.
+- Dashboard contains only the nine approved figures; Due supplier purchases are excluded, and paid purchases use their payment/status date.
 - All-time totals survive archival, and Total Farmer Dues includes current interest on outstanding archived accounts.
 - Lists and detailed histories remain usable with the expected dataset size and growing transaction volume.
 

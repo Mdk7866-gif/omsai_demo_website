@@ -225,13 +225,13 @@ export function DatePicker({
           </button>
           <button
             type="button"
-            onClick={() => choose("2026-10-13")}
+            onClick={() => choose("2026-10-21")}
             disabled={
-              Boolean(min && "2026-10-13" < min) ||
-              Boolean(max && "2026-10-13" > max)
+              Boolean(min && "2026-10-21" < min) ||
+              Boolean(max && "2026-10-21" > max)
             }
           >
-            13 Oct · Yesterday
+            21 Oct · Yesterday
           </button>
         </div>
       </div>

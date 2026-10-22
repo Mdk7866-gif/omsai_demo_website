@@ -1912,7 +1912,7 @@
         "paid": false
       },
       {
-        "date": "2026-10-14",
+        "date": "2026-10-15",
         "paid": true
       }
     ]
@@ -2002,7 +2002,7 @@
         "paid": false
       },
       {
-        "date": "2026-10-14",
+        "date": "2026-10-17",
         "paid": true
       }
     ]
@@ -2011,7 +2011,7 @@
     "id": 45,
     "supplier": 9,
     "name": "Green Harvest Inputs",
-    "date": "2026-09-01",
+    "date": "2026-10-15",
     "paid": true,
     "lines": [
       {
@@ -2045,11 +2045,11 @@
     "detail": "Zinc Sulphate 5 kg × 34 bags; Emamectin Benzoate 100 g × 18 packets",
     "statusHistory": [
       {
-        "date": "2026-09-01",
+        "date": "2026-10-15",
         "paid": false
       },
       {
-        "date": "2026-09-04",
+        "date": "2026-10-18",
         "paid": true
       }
     ]
@@ -2058,7 +2058,7 @@
     "id": 46,
     "supplier": 10,
     "name": "Bapatla Agriculture Distributors",
-    "date": "2026-09-02",
+    "date": "2026-10-16",
     "paid": false,
     "lines": [
       {
@@ -2092,7 +2092,7 @@
     "detail": "Chlorantraniliprole 60 ml × 35 bottles; Red Gram Seeds LRG 41 5 kg × 19 bags",
     "statusHistory": [
       {
-        "date": "2026-09-02",
+        "date": "2026-10-16",
         "paid": false
       }
     ]
@@ -2101,7 +2101,7 @@
     "id": 47,
     "supplier": 11,
     "name": "Rayalaseema Agri Depot",
-    "date": "2026-09-03",
+    "date": "2026-10-17",
     "paid": true,
     "lines": [
       {
@@ -2135,11 +2135,11 @@
     "detail": "Micronutrient Mix Loose × 36 kg; Water-soluble Boron 250 g × 20 packets",
     "statusHistory": [
       {
-        "date": "2026-09-03",
+        "date": "2026-10-17",
         "paid": false
       },
       {
-        "date": "2026-09-06",
+        "date": "2026-10-20",
         "paid": true
       }
     ]
@@ -2148,7 +2148,7 @@
     "id": 48,
     "supplier": 12,
     "name": "Godavari Crop Protection",
-    "date": "2026-09-04",
+    "date": "2026-10-18",
     "paid": true,
     "lines": [
       {
@@ -2182,11 +2182,11 @@
     "detail": "Maize Seeds 4 kg × 37 packets; Pendimethalin 1 L × 21 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-04",
+        "date": "2026-10-18",
         "paid": false
       },
       {
-        "date": "2026-09-07",
+        "date": "2026-10-21",
         "paid": true
       }
     ]
@@ -2195,7 +2195,7 @@
     "id": 49,
     "supplier": 1,
     "name": "Sri Lakshmi Agro Agencies",
-    "date": "2026-09-05",
+    "date": "2026-10-19",
     "paid": false,
     "lines": [
       {
@@ -2229,7 +2229,7 @@
     "detail": "Mancozeb 75 WP 1 kg × 38 packets; Sunflower Seeds 1 kg × 22 packets",
     "statusHistory": [
       {
-        "date": "2026-09-05",
+        "date": "2026-10-19",
         "paid": false
       }
     ]
@@ -2238,7 +2238,7 @@
     "id": 50,
     "supplier": 2,
     "name": "Coromandel Regional Distributors",
-    "date": "2026-09-06",
+    "date": "2026-10-20",
     "paid": true,
     "lines": [
       {
@@ -2272,11 +2272,11 @@
     "detail": "Potassium Nitrate 1 kg × 39 packets; Seaweed Extract 500 ml × 23 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-06",
+        "date": "2026-10-20",
         "paid": false
       },
       {
-        "date": "2026-09-09",
+        "date": "2026-10-22",
         "paid": true
       }
     ]
@@ -2285,7 +2285,7 @@
     "id": 51,
     "supplier": 3,
     "name": "Nuziveedu Seeds Trade Centre",
-    "date": "2026-09-07",
+    "date": "2026-10-21",
     "paid": true,
     "lines": [
       {
@@ -2319,11 +2319,11 @@
     "detail": "Tomato Seeds Hybrid 10 g × 15 packets; Copper Oxychloride 500 g × 24 packets",
     "statusHistory": [
       {
-        "date": "2026-09-07",
+        "date": "2026-10-21",
         "paid": false
       },
       {
-        "date": "2026-09-10",
+        "date": "2026-10-22",
         "paid": true
       }
     ]
@@ -2332,7 +2332,7 @@
     "id": 52,
     "supplier": 4,
     "name": "Venkateswara Crop Care",
-    "date": "2026-09-08",
+    "date": "2026-10-22",
     "paid": false,
     "lines": [
       {
@@ -2366,7 +2366,7 @@
     "detail": "Humic Acid 1 L × 16 bottles; Black Gram Seeds 5 kg × 25 bags",
     "statusHistory": [
       {
-        "date": "2026-09-08",
+        "date": "2026-10-22",
         "paid": false
       }
     ]
@@ -2375,7 +2375,7 @@
     "id": 53,
     "supplier": 5,
     "name": "Sai Durga Fertiliser Depot",
-    "date": "2026-09-09",
+    "date": "2026-09-01",
     "paid": true,
     "lines": [
       {
@@ -2409,11 +2409,11 @@
     "detail": "Emamectin Benzoate 100 g × 17 packets; Organic Vermicompost Loose × 26 kg",
     "statusHistory": [
       {
-        "date": "2026-09-09",
+        "date": "2026-09-01",
         "paid": false
       },
       {
-        "date": "2026-09-12",
+        "date": "2026-09-04",
         "paid": true
       }
     ]
@@ -2422,7 +2422,7 @@
     "id": 54,
     "supplier": 6,
     "name": "Coastal Seeds & Crop Solutions",
-    "date": "2026-09-10",
+    "date": "2026-09-02",
     "paid": true,
     "lines": [
       {
@@ -2456,11 +2456,11 @@
     "detail": "Red Gram Seeds LRG 41 5 kg × 18 bags; Trichoderma Viride 1 kg × 27 packets",
     "statusHistory": [
       {
-        "date": "2026-09-10",
+        "date": "2026-09-02",
         "paid": false
       },
       {
-        "date": "2026-09-13",
+        "date": "2026-09-05",
         "paid": true
       }
     ]
@@ -2469,7 +2469,7 @@
     "id": 55,
     "supplier": 7,
     "name": "Andhra Farmers Supply Company",
-    "date": "2026-09-11",
+    "date": "2026-09-03",
     "paid": false,
     "lines": [
       {
@@ -2503,7 +2503,7 @@
     "detail": "Water-soluble Boron 250 g × 19 packets; Urea 45 kg × 10 bags",
     "statusHistory": [
       {
-        "date": "2026-09-11",
+        "date": "2026-09-03",
         "paid": false
       }
     ]
@@ -2512,7 +2512,7 @@
     "id": 56,
     "supplier": 8,
     "name": "Krishna Delta Agro Traders",
-    "date": "2026-09-12",
+    "date": "2026-09-04",
     "paid": true,
     "lines": [
       {
@@ -2546,11 +2546,11 @@
     "detail": "Pendimethalin 1 L × 20 bottles; DAP 50 kg × 11 bags",
     "statusHistory": [
       {
-        "date": "2026-09-12",
+        "date": "2026-09-04",
         "paid": false
       },
       {
-        "date": "2026-09-15",
+        "date": "2026-09-07",
         "paid": true
       }
     ]
@@ -2559,7 +2559,7 @@
     "id": 57,
     "supplier": 9,
     "name": "Green Harvest Inputs",
-    "date": "2026-09-13",
+    "date": "2026-09-05",
     "paid": true,
     "lines": [
       {
@@ -2593,11 +2593,11 @@
     "detail": "Sunflower Seeds 1 kg × 21 packets; Cotton Seeds BG-II 450 g × 12 packets",
     "statusHistory": [
       {
-        "date": "2026-09-13",
+        "date": "2026-09-05",
         "paid": false
       },
       {
-        "date": "2026-09-16",
+        "date": "2026-09-08",
         "paid": true
       }
     ]
@@ -2606,7 +2606,7 @@
     "id": 58,
     "supplier": 10,
     "name": "Bapatla Agriculture Distributors",
-    "date": "2026-09-14",
+    "date": "2026-09-06",
     "paid": false,
     "lines": [
       {
@@ -2640,7 +2640,7 @@
     "detail": "Seaweed Extract 500 ml × 22 bottles; Bio Pesticide 500 ml × 13 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-14",
+        "date": "2026-09-06",
         "paid": false
       }
     ]
@@ -2649,7 +2649,7 @@
     "id": 59,
     "supplier": 11,
     "name": "Rayalaseema Agri Depot",
-    "date": "2026-09-15",
+    "date": "2026-09-07",
     "paid": true,
     "lines": [
       {
@@ -2683,11 +2683,11 @@
     "detail": "Copper Oxychloride 500 g × 23 packets; Paddy Seeds BPT 5204 25 kg × 14 bags",
     "statusHistory": [
       {
-        "date": "2026-09-15",
+        "date": "2026-09-07",
         "paid": false
       },
       {
-        "date": "2026-09-18",
+        "date": "2026-09-10",
         "paid": true
       }
     ]
@@ -2696,7 +2696,7 @@
     "id": 60,
     "supplier": 12,
     "name": "Godavari Crop Protection",
-    "date": "2026-09-16",
+    "date": "2026-09-08",
     "paid": true,
     "lines": [
       {
@@ -2730,11 +2730,11 @@
     "detail": "Black Gram Seeds 5 kg × 24 bags; Neem Oil 1 L × 15 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-16",
+        "date": "2026-09-08",
         "paid": false
       },
       {
-        "date": "2026-09-19",
+        "date": "2026-09-11",
         "paid": true
       }
     ]
@@ -2743,7 +2743,7 @@
     "id": 61,
     "supplier": 1,
     "name": "Sri Lakshmi Agro Agencies",
-    "date": "2026-09-17",
+    "date": "2026-09-09",
     "paid": false,
     "lines": [
       {
@@ -2777,7 +2777,7 @@
     "detail": "Organic Vermicompost Loose × 25 kg; NPK 19:19:19 1 kg × 16 packets",
     "statusHistory": [
       {
-        "date": "2026-09-17",
+        "date": "2026-09-09",
         "paid": false
       }
     ]
@@ -2786,7 +2786,7 @@
     "id": 62,
     "supplier": 2,
     "name": "Coromandel Regional Distributors",
-    "date": "2026-09-18",
+    "date": "2026-09-10",
     "paid": true,
     "lines": [
       {
@@ -2820,11 +2820,11 @@
     "detail": "Trichoderma Viride 1 kg × 26 packets; MOP 50 kg × 17 bags",
     "statusHistory": [
       {
-        "date": "2026-09-18",
+        "date": "2026-09-10",
         "paid": false
       },
       {
-        "date": "2026-09-21",
+        "date": "2026-09-13",
         "paid": true
       }
     ]
@@ -2833,7 +2833,7 @@
     "id": 63,
     "supplier": 3,
     "name": "Nuziveedu Seeds Trade Centre",
-    "date": "2026-09-19",
+    "date": "2026-09-11",
     "paid": true,
     "lines": [
       {
@@ -2867,11 +2867,11 @@
     "detail": "Urea 45 kg × 27 bags; Chilli Seeds Teja 10 g × 18 packets",
     "statusHistory": [
       {
-        "date": "2026-09-19",
+        "date": "2026-09-11",
         "paid": false
       },
       {
-        "date": "2026-09-22",
+        "date": "2026-09-14",
         "paid": true
       }
     ]
@@ -2880,7 +2880,7 @@
     "id": 64,
     "supplier": 4,
     "name": "Venkateswara Crop Care",
-    "date": "2026-09-20",
+    "date": "2026-09-12",
     "paid": false,
     "lines": [
       {
@@ -2914,7 +2914,7 @@
     "detail": "DAP 50 kg × 28 bags; Imidacloprid 100 ml × 19 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-20",
+        "date": "2026-09-12",
         "paid": false
       }
     ]
@@ -2923,7 +2923,7 @@
     "id": 65,
     "supplier": 5,
     "name": "Sai Durga Fertiliser Depot",
-    "date": "2026-09-21",
+    "date": "2026-09-13",
     "paid": true,
     "lines": [
       {
@@ -2957,11 +2957,11 @@
     "detail": "Cotton Seeds BG-II 450 g × 29 packets; Groundnut Seeds K6 30 kg × 20 bags",
     "statusHistory": [
       {
-        "date": "2026-09-21",
+        "date": "2026-09-13",
         "paid": false
       },
       {
-        "date": "2026-09-24",
+        "date": "2026-09-16",
         "paid": true
       }
     ]
@@ -2970,7 +2970,7 @@
     "id": 66,
     "supplier": 6,
     "name": "Coastal Seeds & Crop Solutions",
-    "date": "2026-09-22",
+    "date": "2026-09-14",
     "paid": true,
     "lines": [
       {
@@ -3004,11 +3004,11 @@
     "detail": "Bio Pesticide 500 ml × 30 bottles; Paddy Seeds Loose × 21 kg",
     "statusHistory": [
       {
-        "date": "2026-09-22",
+        "date": "2026-09-14",
         "paid": false
       },
       {
-        "date": "2026-09-25",
+        "date": "2026-09-17",
         "paid": true
       }
     ]
@@ -3017,7 +3017,7 @@
     "id": 67,
     "supplier": 7,
     "name": "Andhra Farmers Supply Company",
-    "date": "2026-09-23",
+    "date": "2026-09-15",
     "paid": false,
     "lines": [
       {
@@ -3051,7 +3051,7 @@
     "detail": "Paddy Seeds BPT 5204 25 kg × 31 bags; Super Phosphate 50 kg × 22 bags",
     "statusHistory": [
       {
-        "date": "2026-09-23",
+        "date": "2026-09-15",
         "paid": false
       }
     ]
@@ -3060,7 +3060,7 @@
     "id": 68,
     "supplier": 8,
     "name": "Krishna Delta Agro Traders",
-    "date": "2026-09-24",
+    "date": "2026-09-16",
     "paid": true,
     "lines": [
       {
@@ -3094,11 +3094,11 @@
     "detail": "Neem Oil 1 L × 32 bottles; Zinc Sulphate 5 kg × 23 bags",
     "statusHistory": [
       {
-        "date": "2026-09-24",
+        "date": "2026-09-16",
         "paid": false
       },
       {
-        "date": "2026-09-27",
+        "date": "2026-09-19",
         "paid": true
       }
     ]
@@ -3107,7 +3107,7 @@
     "id": 69,
     "supplier": 9,
     "name": "Green Harvest Inputs",
-    "date": "2026-09-25",
+    "date": "2026-09-17",
     "paid": true,
     "lines": [
       {
@@ -3141,11 +3141,11 @@
     "detail": "NPK 19:19:19 1 kg × 33 packets; Chlorantraniliprole 60 ml × 24 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-25",
+        "date": "2026-09-17",
         "paid": false
       },
       {
-        "date": "2026-09-28",
+        "date": "2026-09-20",
         "paid": true
       }
     ]
@@ -3154,7 +3154,7 @@
     "id": 70,
     "supplier": 10,
     "name": "Bapatla Agriculture Distributors",
-    "date": "2026-09-26",
+    "date": "2026-09-18",
     "paid": false,
     "lines": [
       {
@@ -3188,7 +3188,7 @@
     "detail": "MOP 50 kg × 34 bags; Micronutrient Mix Loose × 25 kg",
     "statusHistory": [
       {
-        "date": "2026-09-26",
+        "date": "2026-09-18",
         "paid": false
       }
     ]
@@ -3197,7 +3197,7 @@
     "id": 71,
     "supplier": 11,
     "name": "Rayalaseema Agri Depot",
-    "date": "2026-09-27",
+    "date": "2026-09-19",
     "paid": true,
     "lines": [
       {
@@ -3231,11 +3231,11 @@
     "detail": "Chilli Seeds Teja 10 g × 35 packets; Maize Seeds 4 kg × 26 packets",
     "statusHistory": [
       {
-        "date": "2026-09-27",
+        "date": "2026-09-19",
         "paid": false
       },
       {
-        "date": "2026-09-30",
+        "date": "2026-09-22",
         "paid": true
       }
     ]
@@ -3244,7 +3244,7 @@
     "id": 72,
     "supplier": 12,
     "name": "Godavari Crop Protection",
-    "date": "2026-09-28",
+    "date": "2026-09-20",
     "paid": true,
     "lines": [
       {
@@ -3278,11 +3278,11 @@
     "detail": "Imidacloprid 100 ml × 36 bottles; Mancozeb 75 WP 1 kg × 27 packets",
     "statusHistory": [
       {
-        "date": "2026-09-28",
+        "date": "2026-09-20",
         "paid": false
       },
       {
-        "date": "2026-10-01",
+        "date": "2026-09-23",
         "paid": true
       }
     ]
@@ -3291,7 +3291,7 @@
     "id": 73,
     "supplier": 1,
     "name": "Sri Lakshmi Agro Agencies",
-    "date": "2026-09-29",
+    "date": "2026-09-21",
     "paid": false,
     "lines": [
       {
@@ -3325,7 +3325,7 @@
     "detail": "Groundnut Seeds K6 30 kg × 37 bags; Potassium Nitrate 1 kg × 10 packets",
     "statusHistory": [
       {
-        "date": "2026-09-29",
+        "date": "2026-09-21",
         "paid": false
       }
     ]
@@ -3334,7 +3334,7 @@
     "id": 74,
     "supplier": 2,
     "name": "Coromandel Regional Distributors",
-    "date": "2026-09-30",
+    "date": "2026-09-22",
     "paid": true,
     "lines": [
       {
@@ -3368,11 +3368,11 @@
     "detail": "Paddy Seeds Loose × 38 kg; Tomato Seeds Hybrid 10 g × 11 packets",
     "statusHistory": [
       {
-        "date": "2026-09-30",
+        "date": "2026-09-22",
         "paid": false
       },
       {
-        "date": "2026-10-03",
+        "date": "2026-09-25",
         "paid": true
       }
     ]
@@ -3381,7 +3381,7 @@
     "id": 75,
     "supplier": 3,
     "name": "Nuziveedu Seeds Trade Centre",
-    "date": "2026-10-01",
+    "date": "2026-09-23",
     "paid": true,
     "lines": [
       {
@@ -3415,11 +3415,11 @@
     "detail": "Super Phosphate 50 kg × 39 bags; Humic Acid 1 L × 12 bottles",
     "statusHistory": [
       {
-        "date": "2026-10-01",
+        "date": "2026-09-23",
         "paid": false
       },
       {
-        "date": "2026-10-04",
+        "date": "2026-09-26",
         "paid": true
       }
     ]
@@ -3428,7 +3428,7 @@
     "id": 76,
     "supplier": 4,
     "name": "Venkateswara Crop Care",
-    "date": "2026-10-02",
+    "date": "2026-09-24",
     "paid": false,
     "lines": [
       {
@@ -3462,7 +3462,7 @@
     "detail": "Zinc Sulphate 5 kg × 15 bags; Emamectin Benzoate 100 g × 13 packets",
     "statusHistory": [
       {
-        "date": "2026-10-02",
+        "date": "2026-09-24",
         "paid": false
       }
     ]
@@ -3471,7 +3471,7 @@
     "id": 77,
     "supplier": 5,
     "name": "Sai Durga Fertiliser Depot",
-    "date": "2026-10-03",
+    "date": "2026-09-25",
     "paid": true,
     "lines": [
       {
@@ -3505,11 +3505,11 @@
     "detail": "Chlorantraniliprole 60 ml × 16 bottles; Red Gram Seeds LRG 41 5 kg × 14 bags",
     "statusHistory": [
       {
-        "date": "2026-10-03",
+        "date": "2026-09-25",
         "paid": false
       },
       {
-        "date": "2026-10-06",
+        "date": "2026-09-28",
         "paid": true
       }
     ]
@@ -3518,7 +3518,7 @@
     "id": 78,
     "supplier": 6,
     "name": "Coastal Seeds & Crop Solutions",
-    "date": "2026-10-04",
+    "date": "2026-09-26",
     "paid": true,
     "lines": [
       {
@@ -3552,11 +3552,11 @@
     "detail": "Micronutrient Mix Loose × 17 kg; Water-soluble Boron 250 g × 15 packets",
     "statusHistory": [
       {
-        "date": "2026-10-04",
+        "date": "2026-09-26",
         "paid": false
       },
       {
-        "date": "2026-10-07",
+        "date": "2026-09-29",
         "paid": true
       }
     ]
@@ -3565,7 +3565,7 @@
     "id": 79,
     "supplier": 7,
     "name": "Andhra Farmers Supply Company",
-    "date": "2026-10-05",
+    "date": "2026-09-27",
     "paid": false,
     "lines": [
       {
@@ -3599,7 +3599,7 @@
     "detail": "Maize Seeds 4 kg × 18 packets; Pendimethalin 1 L × 16 bottles",
     "statusHistory": [
       {
-        "date": "2026-10-05",
+        "date": "2026-09-27",
         "paid": false
       }
     ]
@@ -3608,7 +3608,7 @@
     "id": 80,
     "supplier": 8,
     "name": "Krishna Delta Agro Traders",
-    "date": "2026-10-06",
+    "date": "2026-09-28",
     "paid": true,
     "lines": [
       {
@@ -3642,11 +3642,11 @@
     "detail": "Mancozeb 75 WP 1 kg × 19 packets; Sunflower Seeds 1 kg × 17 packets",
     "statusHistory": [
       {
-        "date": "2026-10-06",
+        "date": "2026-09-28",
         "paid": false
       },
       {
-        "date": "2026-10-09",
+        "date": "2026-10-01",
         "paid": true
       }
     ]
@@ -3655,7 +3655,7 @@
     "id": 81,
     "supplier": 9,
     "name": "Green Harvest Inputs",
-    "date": "2026-10-07",
+    "date": "2026-09-29",
     "paid": true,
     "lines": [
       {
@@ -3689,11 +3689,11 @@
     "detail": "Potassium Nitrate 1 kg × 20 packets; Seaweed Extract 500 ml × 18 bottles",
     "statusHistory": [
       {
-        "date": "2026-10-07",
+        "date": "2026-09-29",
         "paid": false
       },
       {
-        "date": "2026-10-10",
+        "date": "2026-10-02",
         "paid": true
       }
     ]
@@ -3702,7 +3702,7 @@
     "id": 82,
     "supplier": 10,
     "name": "Bapatla Agriculture Distributors",
-    "date": "2026-10-08",
+    "date": "2026-09-30",
     "paid": false,
     "lines": [
       {
@@ -3736,7 +3736,7 @@
     "detail": "Tomato Seeds Hybrid 10 g × 21 packets; Copper Oxychloride 500 g × 19 packets",
     "statusHistory": [
       {
-        "date": "2026-10-08",
+        "date": "2026-09-30",
         "paid": false
       }
     ]
@@ -3745,7 +3745,7 @@
     "id": 83,
     "supplier": 11,
     "name": "Rayalaseema Agri Depot",
-    "date": "2026-10-09",
+    "date": "2026-10-01",
     "paid": true,
     "lines": [
       {
@@ -3779,11 +3779,11 @@
     "detail": "Humic Acid 1 L × 22 bottles; Black Gram Seeds 5 kg × 20 bags",
     "statusHistory": [
       {
-        "date": "2026-10-09",
+        "date": "2026-10-01",
         "paid": false
       },
       {
-        "date": "2026-10-12",
+        "date": "2026-10-04",
         "paid": true
       }
     ]
@@ -3792,7 +3792,7 @@
     "id": 84,
     "supplier": 12,
     "name": "Godavari Crop Protection",
-    "date": "2026-10-10",
+    "date": "2026-10-02",
     "paid": true,
     "lines": [
       {
@@ -3826,11 +3826,11 @@
     "detail": "Emamectin Benzoate 100 g × 23 packets; Organic Vermicompost Loose × 21 kg",
     "statusHistory": [
       {
-        "date": "2026-10-10",
+        "date": "2026-10-02",
         "paid": false
       },
       {
-        "date": "2026-10-13",
+        "date": "2026-10-05",
         "paid": true
       }
     ]
@@ -3839,7 +3839,7 @@
     "id": 85,
     "supplier": 1,
     "name": "Sri Lakshmi Agro Agencies",
-    "date": "2026-10-11",
+    "date": "2026-10-03",
     "paid": false,
     "lines": [
       {
@@ -3873,7 +3873,7 @@
     "detail": "Red Gram Seeds LRG 41 5 kg × 24 bags; Trichoderma Viride 1 kg × 22 packets",
     "statusHistory": [
       {
-        "date": "2026-10-11",
+        "date": "2026-10-03",
         "paid": false
       }
     ]
@@ -3882,7 +3882,7 @@
     "id": 86,
     "supplier": 2,
     "name": "Coromandel Regional Distributors",
-    "date": "2026-10-12",
+    "date": "2026-10-04",
     "paid": true,
     "lines": [
       {
@@ -3916,11 +3916,11 @@
     "detail": "Water-soluble Boron 250 g × 25 packets; Urea 45 kg × 23 bags",
     "statusHistory": [
       {
-        "date": "2026-10-12",
+        "date": "2026-10-04",
         "paid": false
       },
       {
-        "date": "2026-10-14",
+        "date": "2026-10-07",
         "paid": true
       }
     ]
@@ -3929,7 +3929,7 @@
     "id": 87,
     "supplier": 3,
     "name": "Nuziveedu Seeds Trade Centre",
-    "date": "2026-10-13",
+    "date": "2026-10-05",
     "paid": true,
     "lines": [
       {
@@ -3963,11 +3963,11 @@
     "detail": "Pendimethalin 1 L × 26 bottles; DAP 50 kg × 24 bags",
     "statusHistory": [
       {
-        "date": "2026-10-13",
+        "date": "2026-10-05",
         "paid": false
       },
       {
-        "date": "2026-10-14",
+        "date": "2026-10-08",
         "paid": true
       }
     ]
@@ -3976,7 +3976,7 @@
     "id": 88,
     "supplier": 4,
     "name": "Venkateswara Crop Care",
-    "date": "2026-10-14",
+    "date": "2026-10-06",
     "paid": false,
     "lines": [
       {
@@ -4010,7 +4010,7 @@
     "detail": "Sunflower Seeds 1 kg × 27 packets; Cotton Seeds BG-II 450 g × 25 packets",
     "statusHistory": [
       {
-        "date": "2026-10-14",
+        "date": "2026-10-06",
         "paid": false
       }
     ]
@@ -4019,7 +4019,7 @@
     "id": 89,
     "supplier": 5,
     "name": "Sai Durga Fertiliser Depot",
-    "date": "2026-09-01",
+    "date": "2026-10-07",
     "paid": true,
     "lines": [
       {
@@ -4053,11 +4053,11 @@
     "detail": "Seaweed Extract 500 ml × 28 bottles; Bio Pesticide 500 ml × 26 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-01",
+        "date": "2026-10-07",
         "paid": false
       },
       {
-        "date": "2026-09-04",
+        "date": "2026-10-10",
         "paid": true
       }
     ]
@@ -4066,7 +4066,7 @@
     "id": 90,
     "supplier": 6,
     "name": "Coastal Seeds & Crop Solutions",
-    "date": "2026-09-02",
+    "date": "2026-10-08",
     "paid": true,
     "lines": [
       {
@@ -4100,11 +4100,11 @@
     "detail": "Copper Oxychloride 500 g × 29 packets; Paddy Seeds BPT 5204 25 kg × 27 bags",
     "statusHistory": [
       {
-        "date": "2026-09-02",
+        "date": "2026-10-08",
         "paid": false
       },
       {
-        "date": "2026-09-05",
+        "date": "2026-10-11",
         "paid": true
       }
     ]
@@ -4113,7 +4113,7 @@
     "id": 91,
     "supplier": 7,
     "name": "Andhra Farmers Supply Company",
-    "date": "2026-09-03",
+    "date": "2026-10-09",
     "paid": false,
     "lines": [
       {
@@ -4147,7 +4147,7 @@
     "detail": "Black Gram Seeds 5 kg × 30 bags; Neem Oil 1 L × 10 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-03",
+        "date": "2026-10-09",
         "paid": false
       }
     ]
@@ -4156,7 +4156,7 @@
     "id": 92,
     "supplier": 8,
     "name": "Krishna Delta Agro Traders",
-    "date": "2026-09-04",
+    "date": "2026-10-10",
     "paid": true,
     "lines": [
       {
@@ -4190,11 +4190,11 @@
     "detail": "Organic Vermicompost Loose × 31 kg; NPK 19:19:19 1 kg × 11 packets",
     "statusHistory": [
       {
-        "date": "2026-09-04",
+        "date": "2026-10-10",
         "paid": false
       },
       {
-        "date": "2026-09-07",
+        "date": "2026-10-13",
         "paid": true
       }
     ]
@@ -4203,7 +4203,7 @@
     "id": 93,
     "supplier": 9,
     "name": "Green Harvest Inputs",
-    "date": "2026-09-05",
+    "date": "2026-10-11",
     "paid": true,
     "lines": [
       {
@@ -4237,11 +4237,11 @@
     "detail": "Trichoderma Viride 1 kg × 32 packets; MOP 50 kg × 12 bags",
     "statusHistory": [
       {
-        "date": "2026-09-05",
+        "date": "2026-10-11",
         "paid": false
       },
       {
-        "date": "2026-09-08",
+        "date": "2026-10-14",
         "paid": true
       }
     ]
@@ -4250,7 +4250,7 @@
     "id": 94,
     "supplier": 10,
     "name": "Bapatla Agriculture Distributors",
-    "date": "2026-09-06",
+    "date": "2026-10-12",
     "paid": false,
     "lines": [
       {
@@ -4284,7 +4284,7 @@
     "detail": "Urea 45 kg × 33 bags; Chilli Seeds Teja 10 g × 13 packets",
     "statusHistory": [
       {
-        "date": "2026-09-06",
+        "date": "2026-10-12",
         "paid": false
       }
     ]
@@ -4293,7 +4293,7 @@
     "id": 95,
     "supplier": 11,
     "name": "Rayalaseema Agri Depot",
-    "date": "2026-09-07",
+    "date": "2026-10-13",
     "paid": true,
     "lines": [
       {
@@ -4327,11 +4327,11 @@
     "detail": "DAP 50 kg × 34 bags; Imidacloprid 100 ml × 14 bottles",
     "statusHistory": [
       {
-        "date": "2026-09-07",
+        "date": "2026-10-13",
         "paid": false
       },
       {
-        "date": "2026-09-10",
+        "date": "2026-10-16",
         "paid": true
       }
     ]
@@ -4340,7 +4340,7 @@
     "id": 96,
     "supplier": 12,
     "name": "Godavari Crop Protection",
-    "date": "2026-09-08",
+    "date": "2026-10-14",
     "paid": true,
     "lines": [
       {
@@ -4374,11 +4374,11 @@
     "detail": "Cotton Seeds BG-II 450 g × 35 packets; Groundnut Seeds K6 30 kg × 15 bags",
     "statusHistory": [
       {
-        "date": "2026-09-08",
+        "date": "2026-10-14",
         "paid": false
       },
       {
-        "date": "2026-09-11",
+        "date": "2026-10-17",
         "paid": true
       }
     ]

@@ -58,29 +58,29 @@ export function LineTable({
     </div>
   );
 }
-function Letterhead({ title, subtitle }: { title: string; subtitle: string }) {
+function Letterhead({ title, subtitle, logo = false, generated = DAY }: { title: string; subtitle: string; logo?: boolean; generated?: string }) {
   return (
     <>
       <div className="report-letterhead">
         <div className="report-shop">
-          <span>ॐ</span>
+          {logo && <span aria-label="Om">ॐ</span>}
           <div>
-            <h2>Omsai</h2>
-            <p>Fertiliser, pesticides and seeds</p>
-            <small>Andhra Pradesh · Farmer & shop accounts</small>
+            <h2>Omsai Fertiliser, Pesticides and Seeds</h2>
+            <p>D.No. 3-47, Dhongagurthy Vill, Dharmaram Mdl, Peddapalli Dist, Dongathurthy - 505187, Telangana</p>
+            <small>GSTIN: 36BFAPP5110C1Z1 | Phone: 9948710704</small>
           </div>
         </div>
         <div className="report-title">
           <h3>{title}</h3>
           <p>{subtitle}</p>
-          <small>Generated {dateLabel(DAY)}</small>
+          <small>Generated {dateLabel(generated)}</small>
         </div>
       </div>
       <div className="report-gold-line" />
     </>
   );
 }
-export function BillDocument({ invoice }: { invoice: Invoice }) {
+export function BillDocument({ invoice, includeHistory = true }: { invoice: Invoice; includeHistory?: boolean }) {
   const credit = round(
     invoice.events
       .filter((e) => e.type === "Credit")
@@ -94,7 +94,9 @@ export function BillDocument({ invoice }: { invoice: Invoice }) {
   return (
     <div className="print-document farmer-document">
       <Letterhead
-        title="Farmer account statement"
+        logo
+        generated={invoice.date}
+        title="Farmer bill"
         subtitle={`OMS-${invoice.id} · Balance as of ${dateLabel(invoice.date)}`}
       />
       <div className="bill-meta">
@@ -129,7 +131,17 @@ export function BillDocument({ invoice }: { invoice: Invoice }) {
           <strong>{money(invoice.due)}</strong>
         </div>
       </div>
-      <h3 className="report-section-title">Credits & payments</h3>
+      <h3 className="report-section-title">Account balance</h3>
+      <div className="bill-settlement">
+        <div><span>Outstanding principal</span><strong>{money(invoice.principal)}</strong></div>
+        <div><span>Outstanding interest</span><strong>{money(invoice.interest)}</strong></div>
+        <div className="total"><span>Total amount due</span><strong>{money(invoice.due)}</strong></div>
+      </div>
+      <p className="report-explanation">Principal + interest = total amount due. No tax is charged on this bill.</p>
+      <p className="report-explanation">{includeHistory ? "Product, payment and interest history follows on the next pages." : "Account summary only. History is not included."}</p>
+      <ReportFoot />
+      {includeHistory && <div className="bill-history-pages">
+      <h3 className="report-section-title">Product and payment history · OMS-{invoice.id}</h3>
       {[...invoice.events]
         .sort((a, b) => a.date.localeCompare(b.date) || a.id - b.id)
         .map((e) => (
@@ -201,21 +213,8 @@ export function BillDocument({ invoice }: { invoice: Invoice }) {
           </tbody>
         </table>
       </div>
-      <div className="bill-settlement">
-        <div>
-          <span>Unpaid principal</span>
-          <strong>{money(invoice.principal)}</strong>
-        </div>
-        <div>
-          <span>Unpaid interest</span>
-          <strong>{money(invoice.interest)}</strong>
-        </div>
-        <div className="total">
-          <span>Total amount due</span>
-          <strong>{money(invoice.due)}</strong>
-        </div>
-      </div>
       <ReportFoot />
+      </div>}
     </div>
   );
 }
@@ -465,9 +464,9 @@ function ReportFoot() {
   return (
     <div className="report-footer">
       <span>
-        Omsai <span>✧</span> Rooted in trust. Growing together.
+        Omsai Fertiliser, Pesticides and Seeds
       </span>
-      <small>Client presentation · Fictional demonstration records</small>
+      <small>Demo records</small>
     </div>
   );
 }

@@ -1,4 +1,13 @@
 import type { CreditLine, Store } from "./demo-data";
+// Only the current Paid entry contributes; use its status date, not purchase date.
+export function supplierPaymentsOn(purchases: Store["purchases"], date?: string) {
+  return roundMoney(purchases.reduce((sum, purchase) => {
+    if (!purchase.paid) return sum;
+    const latest = purchase.statusHistory.at(-1);
+    const paidDate = latest?.paid ? latest.date : purchase.date;
+    return !date || paidDate === date ? sum + purchase.amount : sum;
+  }, 0));
+}
 export const roundMoney = (n: number) =>
   Math.round((n + Number.EPSILON) * 100) / 100;
 export function aggregateBusinessLines(

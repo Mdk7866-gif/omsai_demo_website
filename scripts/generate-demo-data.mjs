@@ -4,7 +4,7 @@ import { join } from "node:path";
 const root = join(process.cwd(), "dummy_data");
 mkdirSync(root, { recursive: true });
 const round = (n) => Math.round((n + Number.EPSILON) * 100) / 100;
-const DAY = "2026-10-14";
+const DAY = "2026-10-22";
 const nextDate = (date, days = 1) =>
   new Date(Date.parse(date + "T12:00:00Z") + days * 86400000)
     .toISOString()
@@ -320,6 +320,8 @@ for (const f of farmers) {
     nextDate("2026-10-07", i % 6),
   ];
   if (i < 18) dates.push("2026-10-14");
+  // Give each day of the extended presentation period realistic activity.
+  dates.push(nextDate("2026-10-15", i % 8));
   dates.forEach((date, j) => {
     const lines = Array.from({ length: 2 + ((i + j) % 2) }, (_, k) => {
       const p = products[(i * 3 + j * 5 + k * 7) % products.length];
@@ -362,7 +364,7 @@ for (const f of farmers) {
     nextDate(dates[0], 4),
     nextDate(dates[2], 2),
     "2026-10-05",
-    i < 30 ? "2026-10-14" : "2026-10-13",
+    nextDate("2026-10-15", i % 8),
   ].forEach((date, j) =>
     raw.push({
       id: serial++,
@@ -562,7 +564,7 @@ events.sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
 const purchases = [];
 for (let i = 0; i < 96; i++) {
   const s = suppliers[i % suppliers.length],
-    date = nextDate("2026-09-01", i % 44),
+    date = nextDate("2026-09-01", i % 52),
     lines = [
       line(products[i % 31], 15 + (i % 25)),
       line(products[(i + 8) % 31], 10 + (i % 18)),

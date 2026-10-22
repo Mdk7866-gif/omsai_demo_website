@@ -5,7 +5,7 @@
     "name": "Nageswara Naidu",
     "phone": "9800372193",
     "address": "D.No. 16-20, Canal Bund Road, Mangalagiri village, Mangalagiri mandal, Guntur district, Andhra Pradesh - 522503; off the Panakala Swamy temple road.",
-    "date": "2026-10-14",
+    "date": "2026-10-22",
     "principal": 0,
     "interest": 0,
     "due": 0,
@@ -13,22 +13,62 @@
     "compound": false,
     "events": [
       {
-        "id": 450,
+        "id": 498,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Payment",
-        "amount": 12117.61,
-        "date": "2026-10-13",
+        "amount": 13590.63,
+        "date": "2026-10-22",
         "time": "04:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 12117.61,
+        "dueBefore": 13590.63,
         "dueAfter": 0,
-        "interestPaid": 31.82,
-        "principalPaid": 12085.79
+        "interestPaid": 104.34,
+        "principalPaid": 13486.29
       },
       {
-        "id": 446,
+        "id": 494,
+        "farmer": 48,
+        "name": "Nageswara Naidu",
+        "type": "Credit",
+        "amount": 1400.5,
+        "date": "2026-10-22",
+        "time": "10:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 7,
+            "name": "NPK 19:19:19 1 kg",
+            "brand": "Coromandel",
+            "category": "Fertilizers",
+            "batch": "FE-26706",
+            "unit": "packets",
+            "quantity": 1,
+            "purchasePrice": 145,
+            "sellingPrice": 190,
+            "discountedPrice": 180.5,
+            "total": 180.5
+          },
+          {
+            "productId": 14,
+            "name": "Zinc Sulphate 5 kg",
+            "brand": "Multiplex",
+            "category": "Fertilizers",
+            "batch": "FE-26713",
+            "unit": "bags",
+            "quantity": 2,
+            "purchasePrice": 470,
+            "sellingPrice": 610,
+            "discountedPrice": null,
+            "total": 1220
+          }
+        ],
+        "dueBefore": 12190.13,
+        "dueAfter": 13590.63
+      },
+      {
+        "id": 493,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Credit",
@@ -81,7 +121,7 @@
         "dueAfter": 12109.56
       },
       {
-        "id": 449,
+        "id": 497,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Payment",
@@ -96,7 +136,7 @@
         "principalPaid": 2493.16
       },
       {
-        "id": 445,
+        "id": 492,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Credit",
@@ -136,7 +176,7 @@
         "dueAfter": 7600.43
       },
       {
-        "id": 448,
+        "id": 496,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Payment",
@@ -151,7 +191,7 @@
         "principalPaid": 1813.39
       },
       {
-        "id": 444,
+        "id": 491,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Credit",
@@ -204,7 +244,7 @@
         "dueAfter": 5582.81
       },
       {
-        "id": 443,
+        "id": 490,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Credit",
@@ -244,7 +284,7 @@
         "dueAfter": 3160.21
       },
       {
-        "id": 447,
+        "id": 495,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Payment",
@@ -259,7 +299,7 @@
         "principalPaid": 1041.91
       },
       {
-        "id": 442,
+        "id": 489,
         "farmer": 48,
         "name": "Nageswara Naidu",
         "type": "Credit",
@@ -314,7 +354,7 @@
     ],
     "interestHistory": [
       {
-        "id": 461,
+        "id": 518,
         "farmer": 48,
         "date": "2026-09-13",
         "type": "Accrual",
@@ -328,7 +368,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 462,
+        "id": 519,
         "farmer": 48,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -342,7 +382,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 463,
+        "id": 520,
         "farmer": 48,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -356,7 +396,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 464,
+        "id": 521,
         "farmer": 48,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -370,7 +410,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 465,
+        "id": 522,
         "farmer": 48,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -384,7 +424,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 466,
+        "id": 523,
         "farmer": 48,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -398,7 +438,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 467,
+        "id": 524,
         "farmer": 48,
         "date": "2026-10-12",
         "type": "Accrual",
@@ -412,7 +452,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 468,
+        "id": 525,
         "farmer": 48,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -424,6 +464,20 @@
         "from": "2026-10-12",
         "to": "2026-10-13",
         "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 526,
+        "farmer": 48,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 72.51,
+        "from": "2026-10-13",
+        "to": "2026-10-22",
+        "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
   },
@@ -433,30 +487,70 @@
     "name": "Raghava Naidu",
     "phone": "9800340517",
     "address": "D.No. 12-16, Canal Bund Road, Chebrolu village, Chebrolu mandal, Guntur district, Andhra Pradesh - 522212; behind the government high school.",
-    "date": "2026-10-14",
-    "principal": 6487.31,
-    "interest": 4.33,
-    "due": 6491.64,
+    "date": "2026-10-22",
+    "principal": 8454.68,
+    "interest": 22.55,
+    "due": 8477.23,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 414,
+        "id": 458,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Payment",
-        "amount": 3195.24,
-        "date": "2026-10-13",
+        "amount": 4164.25,
+        "date": "2026-10-18",
         "time": "03:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 9682.55,
-        "dueAfter": 6487.31,
-        "interestPaid": 46.22,
-        "principalPaid": 3149.02
+        "dueBefore": 12618.93,
+        "dueAfter": 8454.68,
+        "interestPaid": 78.35,
+        "principalPaid": 4085.9
       },
       {
-        "id": 410,
+        "id": 454,
+        "farmer": 44,
+        "name": "Raghava Naidu",
+        "type": "Credit",
+        "amount": 2904.25,
+        "date": "2026-10-18",
+        "time": "09:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 27,
+            "name": "Seaweed Extract 500 ml",
+            "brand": "Sagarika",
+            "category": "Fertilizers",
+            "batch": "FE-26726",
+            "unit": "bottles",
+            "quantity": 1,
+            "purchasePrice": 145,
+            "sellingPrice": 215,
+            "discountedPrice": 204.25,
+            "total": 204.25
+          },
+          {
+            "productId": 2,
+            "name": "DAP 50 kg",
+            "brand": "Coromandel",
+            "category": "Fertilizers",
+            "batch": "FE-26701",
+            "unit": "bags",
+            "quantity": 2,
+            "purchasePrice": 1220,
+            "sellingPrice": 1350,
+            "discountedPrice": null,
+            "total": 2700
+          }
+        ],
+        "dueBefore": 9714.68,
+        "dueAfter": 12618.93
+      },
+      {
+        "id": 453,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Credit",
@@ -509,7 +603,7 @@
         "dueAfter": 9650.43
       },
       {
-        "id": 413,
+        "id": 457,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Payment",
@@ -524,7 +618,7 @@
         "principalPaid": 3454.17
       },
       {
-        "id": 409,
+        "id": 452,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Credit",
@@ -564,7 +658,7 @@
         "dueAfter": 10522.88
       },
       {
-        "id": 412,
+        "id": 456,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Payment",
@@ -579,7 +673,7 @@
         "principalPaid": 2641.39
       },
       {
-        "id": 408,
+        "id": 451,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Credit",
@@ -632,7 +726,7 @@
         "dueAfter": 8219.72
       },
       {
-        "id": 407,
+        "id": 450,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Credit",
@@ -672,7 +766,7 @@
         "dueAfter": 5650.94
       },
       {
-        "id": 411,
+        "id": 455,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Payment",
@@ -687,7 +781,7 @@
         "principalPaid": 2065.61
       },
       {
-        "id": 406,
+        "id": 449,
         "farmer": 44,
         "name": "Raghava Naidu",
         "type": "Credit",
@@ -742,7 +836,7 @@
     ],
     "interestHistory": [
       {
-        "id": 426,
+        "id": 479,
         "farmer": 44,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -756,7 +850,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 427,
+        "id": 480,
         "farmer": 44,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -770,7 +864,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 428,
+        "id": 481,
         "farmer": 44,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -784,7 +878,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 429,
+        "id": 482,
         "farmer": 44,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -798,7 +892,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 430,
+        "id": 483,
         "farmer": 44,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -812,7 +906,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 431,
+        "id": 484,
         "farmer": 44,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -826,7 +920,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 432,
+        "id": 485,
         "farmer": 44,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -840,7 +934,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 433,
+        "id": 486,
         "farmer": 44,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -854,17 +948,31 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 434,
+        "id": 487,
         "farmer": 44,
-        "date": "2026-10-14",
+        "date": "2026-10-18",
         "type": "Accrual",
         "oldRate": 2,
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 4.32,
+        "amount": 32.12,
         "from": "2026-10-13",
-        "to": "2026-10-14",
+        "to": "2026-10-18",
+        "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 488,
+        "farmer": 44,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 22.55,
+        "from": "2026-10-18",
+        "to": "2026-10-22",
         "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
@@ -875,30 +983,70 @@
     "name": "Satyanarayana Naidu",
     "phone": "9800308841",
     "address": "D.No. 8-12, Canal Bund Road, Nandyal village, Nandyal mandal, Nandyal district, Andhra Pradesh - 518501; beside the cotton market road.",
-    "date": "2026-10-14",
-    "principal": 6704.19,
-    "interest": 4.47,
-    "due": 6708.66,
+    "date": "2026-10-22",
+    "principal": 7531.93,
+    "interest": 0,
+    "due": 7531.93,
     "rate": 2,
     "compound": true,
     "events": [
       {
-        "id": 378,
+        "id": 418,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Payment",
-        "amount": 3302.07,
-        "date": "2026-10-13",
+        "amount": 3709.75,
+        "date": "2026-10-22",
         "time": "02:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 10006.26,
-        "dueAfter": 6704.19,
-        "interestPaid": 19.97,
-        "principalPaid": 3282.1
+        "dueBefore": 11241.68,
+        "dueAfter": 7531.93,
+        "interestPaid": 79.89,
+        "principalPaid": 3629.86
       },
       {
-        "id": 374,
+        "id": 414,
+        "farmer": 40,
+        "name": "Satyanarayana Naidu",
+        "type": "Credit",
+        "amount": 1175.5,
+        "date": "2026-10-22",
+        "time": "11:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 15,
+            "name": "Chlorantraniliprole 60 ml",
+            "brand": "FMC",
+            "category": "Pesticides",
+            "batch": "PE-26714",
+            "unit": "bottles",
+            "quantity": 1,
+            "purchasePrice": 520,
+            "sellingPrice": 690,
+            "discountedPrice": 655.5,
+            "total": 655.5
+          },
+          {
+            "productId": 22,
+            "name": "Emamectin Benzoate 100 g",
+            "brand": "Crystal",
+            "category": "Pesticides",
+            "batch": "PE-26721",
+            "unit": "packets",
+            "quantity": 2,
+            "purchasePrice": 185,
+            "sellingPrice": 260,
+            "discountedPrice": null,
+            "total": 520
+          }
+        ],
+        "dueBefore": 10066.18,
+        "dueAfter": 11241.68
+      },
+      {
+        "id": 413,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Credit",
@@ -951,7 +1099,7 @@
         "dueAfter": 9986.29
       },
       {
-        "id": 377,
+        "id": 417,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Payment",
@@ -966,7 +1114,7 @@
         "principalPaid": 3689.37
       },
       {
-        "id": 373,
+        "id": 412,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Credit",
@@ -1006,7 +1154,7 @@
         "dueAfter": 11229.42
       },
       {
-        "id": 376,
+        "id": 416,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Payment",
@@ -1021,7 +1169,7 @@
         "principalPaid": 2965.91
       },
       {
-        "id": 372,
+        "id": 411,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Credit",
@@ -1074,7 +1222,7 @@
         "dueAfter": 9130.54
       },
       {
-        "id": 371,
+        "id": 410,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Credit",
@@ -1114,7 +1262,7 @@
         "dueAfter": 4649.6
       },
       {
-        "id": 375,
+        "id": 415,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Payment",
@@ -1129,7 +1277,7 @@
         "principalPaid": 848.76
       },
       {
-        "id": 370,
+        "id": 409,
         "farmer": 40,
         "name": "Satyanarayana Naidu",
         "type": "Credit",
@@ -1184,7 +1332,7 @@
     ],
     "interestHistory": [
       {
-        "id": 383,
+        "id": 433,
         "farmer": 40,
         "date": "2026-09-12",
         "type": "Accrual",
@@ -1198,7 +1346,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 384,
+        "id": 434,
         "farmer": 40,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -1212,7 +1360,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 385,
+        "id": 435,
         "farmer": 40,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -1226,7 +1374,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 386,
+        "id": 436,
         "farmer": 40,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -1240,7 +1388,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 387,
+        "id": 437,
         "farmer": 40,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -1254,7 +1402,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 388,
+        "id": 438,
         "farmer": 40,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -1268,7 +1416,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 389,
+        "id": 439,
         "farmer": 40,
         "date": "2026-10-10",
         "type": "Settings",
@@ -1282,7 +1430,7 @@
         "note": "Monthly compounding enabled prospectively"
       },
       {
-        "id": 390,
+        "id": 440,
         "farmer": 40,
         "date": "2026-10-10",
         "type": "Capitalization",
@@ -1296,7 +1444,7 @@
         "note": "Existing unpaid interest capitalized once on starting compound mode"
       },
       {
-        "id": 391,
+        "id": 441,
         "farmer": 40,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -1310,17 +1458,17 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 392,
+        "id": 442,
         "farmer": 40,
-        "date": "2026-10-14",
+        "date": "2026-10-22",
         "type": "Accrual",
         "oldRate": 2,
         "newRate": 2,
         "oldCompound": true,
         "newCompound": true,
-        "amount": 4.47,
+        "amount": 59.92,
         "from": "2026-10-13",
-        "to": "2026-10-14",
+        "to": "2026-10-22",
         "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
@@ -1331,30 +1479,70 @@
     "name": "Padmavathi Naidu",
     "phone": "9800277165",
     "address": "D.No. 4-47, Canal Bund Road, Mandapeta village, Mandapeta mandal, Konaseema district, Andhra Pradesh - 533308; near the old canal-side warehouse.",
-    "date": "2026-10-14",
-    "principal": 6172.07,
-    "interest": 3.6,
-    "due": 6175.67,
+    "date": "2026-10-22",
+    "principal": 6978.93,
+    "interest": 16.28,
+    "due": 6995.21,
     "rate": 1.75,
     "compound": false,
     "events": [
       {
-        "id": 342,
+        "id": 378,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Payment",
-        "amount": 3039.97,
-        "date": "2026-10-13",
+        "amount": 3437.38,
+        "date": "2026-10-18",
         "time": "04:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 9212.04,
-        "dueAfter": 6172.07,
-        "interestPaid": 35.29,
-        "principalPaid": 3004.68
+        "dueBefore": 10416.31,
+        "dueAfter": 6978.93,
+        "interestPaid": 62.06,
+        "principalPaid": 3375.32
       },
       {
-        "id": 338,
+        "id": 374,
+        "farmer": 36,
+        "name": "Padmavathi Naidu",
+        "type": "Credit",
+        "amount": 1177.5,
+        "date": "2026-10-18",
+        "time": "10:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 3,
+            "name": "Cotton Seeds BG-II 450 g",
+            "brand": "Mahyco",
+            "category": "Seeds",
+            "batch": "SE-26702",
+            "unit": "packets",
+            "quantity": 1,
+            "purchasePrice": 710,
+            "sellingPrice": 850,
+            "discountedPrice": 807.5,
+            "total": 807.5
+          },
+          {
+            "productId": 10,
+            "name": "Imidacloprid 100 ml",
+            "brand": "Bayer",
+            "category": "Pesticides",
+            "batch": "PE-26709",
+            "unit": "bottles",
+            "quantity": 2,
+            "purchasePrice": 135,
+            "sellingPrice": 185,
+            "discountedPrice": null,
+            "total": 370
+          }
+        ],
+        "dueBefore": 9238.81,
+        "dueAfter": 10416.31
+      },
+      {
+        "id": 373,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Credit",
@@ -1407,7 +1595,7 @@
         "dueAfter": 9206.69
       },
       {
-        "id": 341,
+        "id": 377,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Payment",
@@ -1422,7 +1610,7 @@
         "principalPaid": 3585.25
       },
       {
-        "id": 337,
+        "id": 372,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Credit",
@@ -1462,7 +1650,7 @@
         "dueAfter": 10942.91
       },
       {
-        "id": 340,
+        "id": 376,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Payment",
@@ -1477,7 +1665,7 @@
         "principalPaid": 3160.98
       },
       {
-        "id": 336,
+        "id": 371,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Credit",
@@ -1530,7 +1718,7 @@
         "dueAfter": 9657.52
       },
       {
-        "id": 335,
+        "id": 370,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Credit",
@@ -1570,7 +1758,7 @@
         "dueAfter": 2826.9
       },
       {
-        "id": 339,
+        "id": 375,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Payment",
@@ -1585,7 +1773,7 @@
         "principalPaid": 800.02
       },
       {
-        "id": 334,
+        "id": 369,
         "farmer": 36,
         "name": "Padmavathi Naidu",
         "type": "Credit",
@@ -1640,7 +1828,7 @@
     ],
     "interestHistory": [
       {
-        "id": 345,
+        "id": 391,
         "farmer": 36,
         "date": "2026-09-08",
         "type": "Accrual",
@@ -1654,7 +1842,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 346,
+        "id": 392,
         "farmer": 36,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -1668,7 +1856,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 347,
+        "id": 393,
         "farmer": 36,
         "date": "2026-09-20",
         "type": "Settings",
@@ -1682,7 +1870,7 @@
         "note": "Monthly rate reduced after discussion with the farmer"
       },
       {
-        "id": 348,
+        "id": 394,
         "farmer": 36,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -1696,7 +1884,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 349,
+        "id": 395,
         "farmer": 36,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -1710,7 +1898,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 350,
+        "id": 396,
         "farmer": 36,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -1724,7 +1912,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 351,
+        "id": 397,
         "farmer": 36,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -1738,7 +1926,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 352,
+        "id": 398,
         "farmer": 36,
         "date": "2026-10-05",
         "type": "Settings",
@@ -1752,7 +1940,7 @@
         "note": "Rate revised for the new crop season"
       },
       {
-        "id": 353,
+        "id": 399,
         "farmer": 36,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -1766,7 +1954,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 354,
+        "id": 400,
         "farmer": 36,
         "date": "2026-10-12",
         "type": "Accrual",
@@ -1780,7 +1968,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 355,
+        "id": 401,
         "farmer": 36,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -1794,17 +1982,31 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 356,
+        "id": 402,
         "farmer": 36,
-        "date": "2026-10-14",
+        "date": "2026-10-18",
         "type": "Accrual",
         "oldRate": 1.75,
         "newRate": 1.75,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 3.6,
+        "amount": 26.77,
         "from": "2026-10-13",
-        "to": "2026-10-14",
+        "to": "2026-10-18",
+        "note": "Interest accrued at 1.75% per 30 elapsed days"
+      },
+      {
+        "id": 403,
+        "farmer": 36,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 1.75,
+        "newRate": 1.75,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 16.28,
+        "from": "2026-10-18",
+        "to": "2026-10-22",
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       }
     ]
@@ -1815,30 +2017,70 @@
     "name": "Lakshmi Naidu",
     "phone": "9800245489",
     "address": "D.No. 17-43, Canal Bund Road, Chirala village, Chirala mandal, Bapatla district, Andhra Pradesh - 523155; behind the cooperative bank.",
-    "date": "2026-10-14",
-    "principal": 6289.84,
-    "interest": 4.2,
-    "due": 6294.04,
+    "date": "2026-10-22",
+    "principal": 6815.51,
+    "interest": 0,
+    "due": 6815.51,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 306,
+        "id": 338,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Payment",
-        "amount": 3097.99,
-        "date": "2026-10-13",
+        "amount": 3356.89,
+        "date": "2026-10-22",
         "time": "03:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 9387.83,
-        "dueAfter": 6289.84,
-        "interestPaid": 43.25,
-        "principalPaid": 3054.74
+        "dueBefore": 10172.4,
+        "dueAfter": 6815.51,
+        "interestPaid": 99.32,
+        "principalPaid": 3257.57
       },
       {
-        "id": 302,
+        "id": 334,
+        "farmer": 32,
+        "name": "Lakshmi Naidu",
+        "type": "Credit",
+        "amount": 728.5,
+        "date": "2026-10-22",
+        "time": "09:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 23,
+            "name": "Red Gram Seeds LRG 41 5 kg",
+            "brand": "AP Seeds",
+            "category": "Seeds",
+            "batch": "SE-26722",
+            "unit": "bags",
+            "quantity": 1,
+            "purchasePrice": 560,
+            "sellingPrice": 710,
+            "discountedPrice": 674.5,
+            "total": 674.5
+          },
+          {
+            "productId": 30,
+            "name": "Organic Vermicompost Loose",
+            "brand": "Local Growers",
+            "category": "Fertilizers",
+            "batch": "FE-26729",
+            "unit": "kg",
+            "quantity": 4.5,
+            "purchasePrice": 8,
+            "sellingPrice": 12,
+            "discountedPrice": null,
+            "total": 54
+          }
+        ],
+        "dueBefore": 9443.9,
+        "dueAfter": 10172.4
+      },
+      {
+        "id": 333,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Credit",
@@ -1891,7 +2133,7 @@
         "dueAfter": 9356.69
       },
       {
-        "id": 305,
+        "id": 337,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Payment",
@@ -1906,7 +2148,7 @@
         "principalPaid": 2951.99
       },
       {
-        "id": 301,
+        "id": 332,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Credit",
@@ -1946,7 +2188,7 @@
         "dueAfter": 9030.72
       },
       {
-        "id": 304,
+        "id": 336,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Payment",
@@ -1961,7 +2203,7 @@
         "principalPaid": 2939.39
       },
       {
-        "id": 300,
+        "id": 331,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Credit",
@@ -2014,7 +2256,7 @@
         "dueAfter": 8991.87
       },
       {
-        "id": 299,
+        "id": 330,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Credit",
@@ -2054,7 +2296,7 @@
         "dueAfter": 2467.1
       },
       {
-        "id": 303,
+        "id": 335,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Payment",
@@ -2069,7 +2311,7 @@
         "principalPaid": 627.54
       },
       {
-        "id": 298,
+        "id": 329,
         "farmer": 32,
         "name": "Lakshmi Naidu",
         "type": "Credit",
@@ -2124,7 +2366,7 @@
     ],
     "interestHistory": [
       {
-        "id": 306,
+        "id": 349,
         "farmer": 32,
         "date": "2026-09-11",
         "type": "Accrual",
@@ -2138,7 +2380,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 307,
+        "id": 350,
         "farmer": 32,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -2152,7 +2394,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 308,
+        "id": 351,
         "farmer": 32,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -2166,7 +2408,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 309,
+        "id": 352,
         "farmer": 32,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -2180,7 +2422,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 310,
+        "id": 353,
         "farmer": 32,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -2194,7 +2436,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 311,
+        "id": 354,
         "farmer": 32,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -2208,7 +2450,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 312,
+        "id": 355,
         "farmer": 32,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -2222,7 +2464,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 313,
+        "id": 356,
         "farmer": 32,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -2236,17 +2478,17 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 314,
+        "id": 357,
         "farmer": 32,
-        "date": "2026-10-14",
+        "date": "2026-10-22",
         "type": "Accrual",
         "oldRate": 2,
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 4.19,
+        "amount": 56.07,
         "from": "2026-10-13",
-        "to": "2026-10-14",
+        "to": "2026-10-22",
         "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
@@ -2257,30 +2499,70 @@
     "name": "Vijay Naidu",
     "phone": "9800213813",
     "address": "D.No. 13-39, Canal Bund Road, Mangalagiri village, Mangalagiri mandal, Guntur district, Andhra Pradesh - 522503; off the Panakala Swamy temple road.",
-    "date": "2026-10-14",
-    "principal": 7321.68,
-    "interest": 0,
-    "due": 7321.68,
+    "date": "2026-10-22",
+    "principal": 9515.25,
+    "interest": 25.37,
+    "due": 9540.62,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 270,
+        "id": 298,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Payment",
-        "amount": 3606.2,
-        "date": "2026-10-14",
+        "amount": 4686.62,
+        "date": "2026-10-18",
         "time": "02:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 10927.88,
-        "dueAfter": 7321.68,
-        "interestPaid": 56.08,
-        "principalPaid": 3550.12
+        "dueBefore": 14201.87,
+        "dueAfter": 9515.25,
+        "interestPaid": 85.07,
+        "principalPaid": 4601.55
       },
       {
-        "id": 266,
+        "id": 294,
+        "farmer": 28,
+        "name": "Vijay Naidu",
+        "type": "Credit",
+        "amount": 3245,
+        "date": "2026-10-18",
+        "time": "11:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 11,
+            "name": "Groundnut Seeds K6 30 kg",
+            "brand": "AP Seeds",
+            "category": "Seeds",
+            "batch": "SE-26710",
+            "unit": "bags",
+            "quantity": 1,
+            "purchasePrice": 2250,
+            "sellingPrice": 2700,
+            "discountedPrice": 2565,
+            "total": 2565
+          },
+          {
+            "productId": 18,
+            "name": "Mancozeb 75 WP 1 kg",
+            "brand": "UPL",
+            "category": "Pesticides",
+            "batch": "PE-26717",
+            "unit": "packets",
+            "quantity": 2,
+            "purchasePrice": 260,
+            "sellingPrice": 340,
+            "discountedPrice": null,
+            "total": 680
+          }
+        ],
+        "dueBefore": 10956.87,
+        "dueAfter": 14201.87
+      },
+      {
+        "id": 293,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Credit",
@@ -2333,7 +2615,7 @@
         "dueAfter": 10898.88
       },
       {
-        "id": 269,
+        "id": 297,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Payment",
@@ -2348,7 +2630,7 @@
         "principalPaid": 3984.02
       },
       {
-        "id": 265,
+        "id": 292,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Credit",
@@ -2388,7 +2670,7 @@
         "dueAfter": 12127.32
       },
       {
-        "id": 268,
+        "id": 296,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Payment",
@@ -2403,7 +2685,7 @@
         "principalPaid": 2184.04
       },
       {
-        "id": 264,
+        "id": 291,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Credit",
@@ -2456,7 +2738,7 @@
         "dueAfter": 6706.49
       },
       {
-        "id": 263,
+        "id": 290,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Credit",
@@ -2496,7 +2778,7 @@
         "dueAfter": 2960.74
       },
       {
-        "id": 267,
+        "id": 295,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Payment",
@@ -2511,7 +2793,7 @@
         "principalPaid": 1081.14
       },
       {
-        "id": 262,
+        "id": 289,
         "farmer": 28,
         "name": "Vijay Naidu",
         "type": "Credit",
@@ -2566,7 +2848,7 @@
     ],
     "interestHistory": [
       {
-        "id": 269,
+        "id": 308,
         "farmer": 28,
         "date": "2026-09-14",
         "type": "Accrual",
@@ -2580,7 +2862,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 270,
+        "id": 309,
         "farmer": 28,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -2594,7 +2876,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 271,
+        "id": 310,
         "farmer": 28,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -2608,7 +2890,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 272,
+        "id": 311,
         "farmer": 28,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -2622,7 +2904,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 273,
+        "id": 312,
         "farmer": 28,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -2636,7 +2918,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 274,
+        "id": 313,
         "farmer": 28,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -2650,7 +2932,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 275,
+        "id": 314,
         "farmer": 28,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -2664,17 +2946,31 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 276,
+        "id": 315,
         "farmer": 28,
-        "date": "2026-10-14",
+        "date": "2026-10-18",
         "type": "Accrual",
         "oldRate": 2,
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 7.25,
+        "amount": 36.24,
         "from": "2026-10-13",
-        "to": "2026-10-14",
+        "to": "2026-10-18",
+        "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 316,
+        "farmer": 28,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 25.37,
+        "from": "2026-10-18",
+        "to": "2026-10-22",
         "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
@@ -2685,30 +2981,70 @@
     "name": "Nageswara Reddy",
     "phone": "9800182137",
     "address": "D.No. 9-35, Canal Bund Road, Chebrolu village, Chebrolu mandal, Guntur district, Andhra Pradesh - 522212; behind the government high school.",
-    "date": "2026-10-14",
-    "principal": 6918.84,
+    "date": "2026-10-22",
+    "principal": 7585.79,
     "interest": 0,
-    "due": 6918.84,
+    "due": 7585.79,
     "rate": 2,
     "compound": true,
     "events": [
       {
-        "id": 234,
+        "id": 258,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Payment",
-        "amount": 3407.79,
-        "date": "2026-10-14",
+        "amount": 3736.29,
+        "date": "2026-10-22",
         "time": "04:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 10326.63,
-        "dueAfter": 6918.84,
-        "interestPaid": 23.63,
-        "principalPaid": 3384.16
+        "dueBefore": 11322.08,
+        "dueAfter": 7585.79,
+        "interestPaid": 78.58,
+        "principalPaid": 3657.71
       },
       {
-        "id": 230,
+        "id": 254,
+        "farmer": 24,
+        "name": "Nageswara Reddy",
+        "type": "Credit",
+        "amount": 940.5,
+        "date": "2026-10-22",
+        "time": "10:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 31,
+            "name": "Trichoderma Viride 1 kg",
+            "brand": "Biostadt",
+            "category": "Pesticides",
+            "batch": "PE-26730",
+            "unit": "packets",
+            "quantity": 1,
+            "purchasePrice": 125,
+            "sellingPrice": 190,
+            "discountedPrice": 180.5,
+            "total": 180.5
+          },
+          {
+            "productId": 6,
+            "name": "Neem Oil 1 L",
+            "brand": "Multiplex",
+            "category": "Pesticides",
+            "batch": "PE-26705",
+            "unit": "bottles",
+            "quantity": 2,
+            "purchasePrice": 270,
+            "sellingPrice": 380,
+            "discountedPrice": null,
+            "total": 760
+          }
+        ],
+        "dueBefore": 10381.58,
+        "dueAfter": 11322.08
+      },
+      {
+        "id": 253,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Credit",
@@ -2761,7 +3097,7 @@
         "dueAfter": 10312.89
       },
       {
-        "id": 233,
+        "id": 257,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Payment",
@@ -2776,7 +3112,7 @@
         "principalPaid": 2411.4
       },
       {
-        "id": 229,
+        "id": 252,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Credit",
@@ -2816,7 +3152,7 @@
         "dueAfter": 7363.19
       },
       {
-        "id": 232,
+        "id": 256,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Payment",
@@ -2831,7 +3167,7 @@
         "principalPaid": 2677.82
       },
       {
-        "id": 228,
+        "id": 251,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Credit",
@@ -2884,7 +3220,7 @@
         "dueAfter": 8249.85
       },
       {
-        "id": 227,
+        "id": 250,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Credit",
@@ -2924,7 +3260,7 @@
         "dueAfter": 5103.6
       },
       {
-        "id": 231,
+        "id": 255,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Payment",
@@ -2939,7 +3275,7 @@
         "principalPaid": 906.93
       },
       {
-        "id": 226,
+        "id": 249,
         "farmer": 24,
         "name": "Nageswara Reddy",
         "type": "Credit",
@@ -2994,7 +3330,7 @@
     ],
     "interestHistory": [
       {
-        "id": 226,
+        "id": 263,
         "farmer": 24,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -3008,7 +3344,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 227,
+        "id": 264,
         "farmer": 24,
         "date": "2026-09-09",
         "type": "Settings",
@@ -3022,7 +3358,7 @@
         "note": "Monthly compounding enabled by the proprietor"
       },
       {
-        "id": 228,
+        "id": 265,
         "farmer": 24,
         "date": "2026-09-09",
         "type": "Capitalization",
@@ -3036,7 +3372,7 @@
         "note": "Existing unpaid interest capitalized once on starting compound mode"
       },
       {
-        "id": 229,
+        "id": 266,
         "farmer": 24,
         "date": "2026-09-10",
         "type": "Accrual",
@@ -3050,7 +3386,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 230,
+        "id": 267,
         "farmer": 24,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -3064,7 +3400,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 231,
+        "id": 268,
         "farmer": 24,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -3078,7 +3414,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 232,
+        "id": 269,
         "farmer": 24,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -3092,7 +3428,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 233,
+        "id": 270,
         "farmer": 24,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -3106,7 +3442,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 234,
+        "id": 271,
         "farmer": 24,
         "date": "2026-10-09",
         "type": "Accrual",
@@ -3120,7 +3456,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 235,
+        "id": 272,
         "farmer": 24,
         "date": "2026-10-09",
         "type": "Capitalization",
@@ -3134,7 +3470,7 @@
         "note": "Completed 30-day cycle; unpaid interest added to the interest-bearing principal"
       },
       {
-        "id": 236,
+        "id": 273,
         "farmer": 24,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -3148,7 +3484,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 237,
+        "id": 274,
         "farmer": 24,
         "date": "2026-10-12",
         "type": "Accrual",
@@ -3162,7 +3498,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 238,
+        "id": 275,
         "farmer": 24,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -3176,17 +3512,17 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 239,
+        "id": 276,
         "farmer": 24,
-        "date": "2026-10-14",
+        "date": "2026-10-22",
         "type": "Accrual",
         "oldRate": 2,
         "newRate": 2,
         "oldCompound": true,
         "newCompound": true,
-        "amount": 6.87,
+        "amount": 61.82,
         "from": "2026-10-13",
-        "to": "2026-10-14",
+        "to": "2026-10-22",
         "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
@@ -3197,30 +3533,70 @@
     "name": "Raghava Reddy",
     "phone": "9800150461",
     "address": "D.No. 5-31, Canal Bund Road, Nandyal village, Nandyal mandal, Nandyal district, Andhra Pradesh - 518501; beside the cotton market road.",
-    "date": "2026-10-14",
-    "principal": 7523.2,
-    "interest": 0,
-    "due": 7523.2,
+    "date": "2026-10-22",
+    "principal": 8224.04,
+    "interest": 21.93,
+    "due": 8245.97,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 198,
+        "id": 218,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Payment",
-        "amount": 3705.46,
-        "date": "2026-10-14",
+        "amount": 4050.65,
+        "date": "2026-10-18",
         "time": "03:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 11228.66,
-        "dueAfter": 7523.2,
-        "interestPaid": 60.66,
-        "principalPaid": 3644.8
+        "dueBefore": 12274.69,
+        "dueAfter": 8224.04,
+        "interestPaid": 90.44,
+        "principalPaid": 3960.21
       },
       {
-        "id": 194,
+        "id": 214,
+        "farmer": 20,
+        "name": "Raghava Reddy",
+        "type": "Credit",
+        "amount": 1016.25,
+        "date": "2026-10-18",
+        "time": "09:35 AM",
+        "detail": "2 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 19,
+            "name": "Potassium Nitrate 1 kg",
+            "brand": "Haifa",
+            "category": "Fertilizers",
+            "batch": "FE-26718",
+            "unit": "packets",
+            "quantity": 1,
+            "purchasePrice": 125,
+            "sellingPrice": 175,
+            "discountedPrice": 166.25,
+            "total": 166.25
+          },
+          {
+            "productId": 26,
+            "name": "Sunflower Seeds 1 kg",
+            "brand": "Advanta",
+            "category": "Seeds",
+            "batch": "SE-26725",
+            "unit": "packets",
+            "quantity": 2,
+            "purchasePrice": 310,
+            "sellingPrice": 425,
+            "discountedPrice": null,
+            "total": 850
+          }
+        ],
+        "dueBefore": 11258.44,
+        "dueAfter": 12274.69
+      },
+      {
+        "id": 213,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Credit",
@@ -3273,7 +3649,7 @@
         "dueAfter": 11183.99
       },
       {
-        "id": 197,
+        "id": 217,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Payment",
@@ -3288,7 +3664,7 @@
         "principalPaid": 3910.35
       },
       {
-        "id": 193,
+        "id": 212,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Credit",
@@ -3328,7 +3704,7 @@
         "dueAfter": 11930.59
       },
       {
-        "id": 196,
+        "id": 216,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Payment",
@@ -3343,7 +3719,7 @@
         "principalPaid": 4872.57
       },
       {
-        "id": 192,
+        "id": 211,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Credit",
@@ -3396,7 +3772,7 @@
         "dueAfter": 14944.83
       },
       {
-        "id": 191,
+        "id": 210,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Credit",
@@ -3436,7 +3812,7 @@
         "dueAfter": 4548.52
       },
       {
-        "id": 195,
+        "id": 215,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Payment",
@@ -3451,7 +3827,7 @@
         "principalPaid": 1758.08
       },
       {
-        "id": 190,
+        "id": 209,
         "farmer": 20,
         "name": "Raghava Reddy",
         "type": "Credit",
@@ -3506,7 +3882,7 @@
     ],
     "interestHistory": [
       {
-        "id": 188,
+        "id": 221,
         "farmer": 20,
         "date": "2026-09-13",
         "type": "Accrual",
@@ -3520,7 +3896,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 189,
+        "id": 222,
         "farmer": 20,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -3534,7 +3910,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 190,
+        "id": 223,
         "farmer": 20,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -3548,7 +3924,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 191,
+        "id": 224,
         "farmer": 20,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -3562,7 +3938,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 192,
+        "id": 225,
         "farmer": 20,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -3576,7 +3952,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 193,
+        "id": 226,
         "farmer": 20,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -3590,7 +3966,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 194,
+        "id": 227,
         "farmer": 20,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -3604,7 +3980,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 195,
+        "id": 228,
         "farmer": 20,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -3618,17 +3994,31 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 196,
+        "id": 229,
         "farmer": 20,
-        "date": "2026-10-14",
+        "date": "2026-10-18",
         "type": "Accrual",
         "oldRate": 2,
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 7.45,
+        "amount": 37.23,
         "from": "2026-10-13",
-        "to": "2026-10-14",
+        "to": "2026-10-18",
+        "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 230,
+        "farmer": 20,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 21.93,
+        "from": "2026-10-18",
+        "to": "2026-10-22",
         "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
@@ -3639,30 +4029,83 @@
     "name": "Satyanarayana Reddy",
     "phone": "9800118785",
     "address": "D.No. 18-27, Canal Bund Road, Mandapeta village, Mandapeta mandal, Konaseema district, Andhra Pradesh - 533308; near the old canal-side warehouse.",
-    "date": "2026-10-14",
-    "principal": 8836.78,
+    "date": "2026-10-22",
+    "principal": 10466.61,
     "interest": 0,
-    "due": 8836.78,
+    "due": 10466.61,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 160,
+        "id": 176,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Payment",
-        "amount": 4352.44,
-        "date": "2026-10-14",
+        "amount": 5155.19,
+        "date": "2026-10-22",
         "time": "02:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 13189.22,
-        "dueAfter": 8836.78,
-        "interestPaid": 48.3,
-        "principalPaid": 4304.14
+        "dueBefore": 15621.8,
+        "dueAfter": 10466.61,
+        "interestPaid": 118.38,
+        "principalPaid": 5036.81
       },
       {
-        "id": 156,
+        "id": 172,
+        "farmer": 16,
+        "name": "Satyanarayana Reddy",
+        "type": "Credit",
+        "amount": 2362.5,
+        "date": "2026-10-22",
+        "time": "09:10 AM",
+        "detail": "3 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 12,
+            "name": "Paddy Seeds Loose",
+            "brand": "AP Seeds",
+            "category": "Seeds",
+            "batch": "SE-26711",
+            "unit": "kg",
+            "quantity": 2.5,
+            "purchasePrice": 42,
+            "sellingPrice": 55,
+            "discountedPrice": null,
+            "total": 137.5
+          },
+          {
+            "productId": 19,
+            "name": "Potassium Nitrate 1 kg",
+            "brand": "Haifa",
+            "category": "Fertilizers",
+            "batch": "FE-26718",
+            "unit": "packets",
+            "quantity": 3,
+            "purchasePrice": 125,
+            "sellingPrice": 175,
+            "discountedPrice": null,
+            "total": 525
+          },
+          {
+            "productId": 26,
+            "name": "Sunflower Seeds 1 kg",
+            "brand": "Advanta",
+            "category": "Seeds",
+            "batch": "SE-26725",
+            "unit": "packets",
+            "quantity": 4,
+            "purchasePrice": 310,
+            "sellingPrice": 425,
+            "discountedPrice": null,
+            "total": 1700
+          }
+        ],
+        "dueBefore": 13259.3,
+        "dueAfter": 15621.8
+      },
+      {
+        "id": 171,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Credit",
@@ -3702,7 +4145,7 @@
         "dueAfter": 13189.22
       },
       {
-        "id": 155,
+        "id": 170,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Credit",
@@ -3755,7 +4198,7 @@
         "dueAfter": 11757.41
       },
       {
-        "id": 159,
+        "id": 175,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Payment",
@@ -3770,7 +4213,7 @@
         "principalPaid": 2490.43
       },
       {
-        "id": 154,
+        "id": 169,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Credit",
@@ -3810,7 +4253,7 @@
         "dueAfter": 7607.34
       },
       {
-        "id": 158,
+        "id": 174,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Payment",
@@ -3825,7 +4268,7 @@
         "principalPaid": 1811.49
       },
       {
-        "id": 153,
+        "id": 168,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Credit",
@@ -3878,7 +4321,7 @@
         "dueAfter": 5585.65
       },
       {
-        "id": 152,
+        "id": 167,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Credit",
@@ -3918,7 +4361,7 @@
         "dueAfter": 3163.06
       },
       {
-        "id": 157,
+        "id": 173,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Payment",
@@ -3933,7 +4376,7 @@
         "principalPaid": 1041.91
       },
       {
-        "id": 151,
+        "id": 166,
         "farmer": 16,
         "name": "Satyanarayana Reddy",
         "type": "Credit",
@@ -3988,7 +4431,7 @@
     ],
     "interestHistory": [
       {
-        "id": 153,
+        "id": 180,
         "farmer": 16,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -4002,7 +4445,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 154,
+        "id": 181,
         "farmer": 16,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -4016,7 +4459,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 155,
+        "id": 182,
         "farmer": 16,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -4030,7 +4473,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 156,
+        "id": 183,
         "farmer": 16,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -4044,7 +4487,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 157,
+        "id": 184,
         "farmer": 16,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -4058,7 +4501,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 158,
+        "id": 185,
         "farmer": 16,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -4072,7 +4515,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 159,
+        "id": 186,
         "farmer": 16,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -4086,7 +4529,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 160,
+        "id": 187,
         "farmer": 16,
         "date": "2026-10-14",
         "type": "Accrual",
@@ -4098,6 +4541,20 @@
         "from": "2026-10-13",
         "to": "2026-10-14",
         "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 188,
+        "farmer": 16,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 70.08,
+        "from": "2026-10-14",
+        "to": "2026-10-22",
+        "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
   },
@@ -4107,30 +4564,83 @@
     "name": "Padmavathi Reddy",
     "phone": "9800087109",
     "address": "D.No. 14-23, Canal Bund Road, Chirala village, Chirala mandal, Bapatla district, Andhra Pradesh - 523155; behind the cooperative bank.",
-    "date": "2026-10-14",
-    "principal": 8505.05,
-    "interest": 0,
-    "due": 8505.05,
+    "date": "2026-10-22",
+    "principal": 11509.14,
+    "interest": 30.69,
+    "due": 11539.83,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 120,
+        "id": 132,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Payment",
-        "amount": 4189.05,
-        "date": "2026-10-14",
+        "amount": 5668.68,
+        "date": "2026-10-18",
         "time": "04:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 12694.1,
-        "dueAfter": 8505.05,
-        "interestPaid": 46.4,
-        "principalPaid": 4142.65
+        "dueBefore": 17177.82,
+        "dueAfter": 11509.14,
+        "interestPaid": 80.12,
+        "principalPaid": 5588.56
       },
       {
-        "id": 116,
+        "id": 128,
+        "farmer": 12,
+        "name": "Padmavathi Reddy",
+        "type": "Credit",
+        "amount": 4450,
+        "date": "2026-10-18",
+        "time": "11:10 AM",
+        "detail": "3 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 32,
+            "name": "Legacy Cotton Seeds 450 g",
+            "brand": "Mahyco",
+            "category": "Seeds",
+            "batch": "SE-26731",
+            "unit": "packets",
+            "quantity": 2,
+            "purchasePrice": 580,
+            "sellingPrice": 720,
+            "discountedPrice": null,
+            "total": 1440
+          },
+          {
+            "productId": 7,
+            "name": "NPK 19:19:19 1 kg",
+            "brand": "Coromandel",
+            "category": "Fertilizers",
+            "batch": "FE-26706",
+            "unit": "packets",
+            "quantity": 3,
+            "purchasePrice": 145,
+            "sellingPrice": 190,
+            "discountedPrice": null,
+            "total": 570
+          },
+          {
+            "productId": 14,
+            "name": "Zinc Sulphate 5 kg",
+            "brand": "Multiplex",
+            "category": "Fertilizers",
+            "batch": "FE-26713",
+            "unit": "bags",
+            "quantity": 4,
+            "purchasePrice": 470,
+            "sellingPrice": 610,
+            "discountedPrice": null,
+            "total": 2440
+          }
+        ],
+        "dueBefore": 12727.82,
+        "dueAfter": 17177.82
+      },
+      {
+        "id": 127,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Credit",
@@ -4170,7 +4680,7 @@
         "dueAfter": 12694.1
       },
       {
-        "id": 115,
+        "id": 126,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Credit",
@@ -4223,7 +4733,7 @@
         "dueAfter": 9776.86
       },
       {
-        "id": 119,
+        "id": 131,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Payment",
@@ -4238,7 +4748,7 @@
         "principalPaid": 3498.87
       },
       {
-        "id": 114,
+        "id": 125,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Credit",
@@ -4278,7 +4788,7 @@
         "dueAfter": 10682.76
       },
       {
-        "id": 118,
+        "id": 130,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Payment",
@@ -4293,7 +4803,7 @@
         "principalPaid": 2732.25
       },
       {
-        "id": 113,
+        "id": 124,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Credit",
@@ -4346,7 +4856,7 @@
         "dueAfter": 8445.99
       },
       {
-        "id": 112,
+        "id": 123,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Credit",
@@ -4386,7 +4896,7 @@
         "dueAfter": 6008.56
       },
       {
-        "id": 117,
+        "id": 129,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Payment",
@@ -4401,7 +4911,7 @@
         "principalPaid": 2237.93
       },
       {
-        "id": 111,
+        "id": 122,
         "farmer": 12,
         "name": "Padmavathi Reddy",
         "type": "Credit",
@@ -4456,7 +4966,7 @@
     ],
     "interestHistory": [
       {
-        "id": 109,
+        "id": 129,
         "farmer": 12,
         "date": "2026-09-12",
         "type": "Accrual",
@@ -4470,7 +4980,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 110,
+        "id": 130,
         "farmer": 12,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -4484,7 +4994,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 111,
+        "id": 131,
         "farmer": 12,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -4498,7 +5008,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 112,
+        "id": 132,
         "farmer": 12,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -4512,7 +5022,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 113,
+        "id": 133,
         "farmer": 12,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -4526,7 +5036,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 114,
+        "id": 134,
         "farmer": 12,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -4540,7 +5050,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 115,
+        "id": 135,
         "farmer": 12,
         "date": "2026-10-12",
         "type": "Accrual",
@@ -4554,7 +5064,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 116,
+        "id": 136,
         "farmer": 12,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -4568,7 +5078,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 117,
+        "id": 137,
         "farmer": 12,
         "date": "2026-10-14",
         "type": "Accrual",
@@ -4580,6 +5090,34 @@
         "from": "2026-10-13",
         "to": "2026-10-14",
         "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 138,
+        "farmer": 12,
+        "date": "2026-10-18",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 33.73,
+        "from": "2026-10-14",
+        "to": "2026-10-18",
+        "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 139,
+        "farmer": 12,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 30.69,
+        "from": "2026-10-18",
+        "to": "2026-10-22",
+        "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
   },
@@ -4589,30 +5127,83 @@
     "name": "Lakshmi Reddy",
     "phone": "9800055433",
     "address": "D.No. 10-19, Canal Bund Road, Mangalagiri village, Mangalagiri mandal, Guntur district, Andhra Pradesh - 522503; off the Panakala Swamy temple road.",
-    "date": "2026-10-14",
-    "principal": 7567.29,
+    "date": "2026-10-22",
+    "principal": 12175.21,
     "interest": 0,
-    "due": 7567.29,
+    "due": 12175.21,
     "rate": 1.75,
     "compound": false,
     "events": [
       {
-        "id": 80,
+        "id": 88,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Payment",
-        "amount": 3727.18,
-        "date": "2026-10-14",
+        "amount": 5996.74,
+        "date": "2026-10-22",
         "time": "03:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 11294.47,
-        "dueAfter": 7567.29,
-        "interestPaid": 48.6,
-        "principalPaid": 3678.58
+        "dueBefore": 18171.95,
+        "dueAfter": 12175.21,
+        "interestPaid": 101.08,
+        "principalPaid": 5895.66
       },
       {
-        "id": 76,
+        "id": 84,
+        "farmer": 8,
+        "name": "Lakshmi Reddy",
+        "type": "Credit",
+        "amount": 6825,
+        "date": "2026-10-22",
+        "time": "10:10 AM",
+        "detail": "3 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 20,
+            "name": "Tomato Seeds Hybrid 10 g",
+            "brand": "Namdhari",
+            "category": "Seeds",
+            "batch": "SE-26719",
+            "unit": "packets",
+            "quantity": 2,
+            "purchasePrice": 275,
+            "sellingPrice": 390,
+            "discountedPrice": null,
+            "total": 780
+          },
+          {
+            "productId": 27,
+            "name": "Seaweed Extract 500 ml",
+            "brand": "Sagarika",
+            "category": "Fertilizers",
+            "batch": "FE-26726",
+            "unit": "bottles",
+            "quantity": 3,
+            "purchasePrice": 145,
+            "sellingPrice": 215,
+            "discountedPrice": null,
+            "total": 645
+          },
+          {
+            "productId": 2,
+            "name": "DAP 50 kg",
+            "brand": "Coromandel",
+            "category": "Fertilizers",
+            "batch": "FE-26701",
+            "unit": "bags",
+            "quantity": 4,
+            "purchasePrice": 1220,
+            "sellingPrice": 1350,
+            "discountedPrice": null,
+            "total": 5400
+          }
+        ],
+        "dueBefore": 11346.95,
+        "dueAfter": 18171.95
+      },
+      {
+        "id": 83,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Credit",
@@ -4652,7 +5243,7 @@
         "dueAfter": 11294.47
       },
       {
-        "id": 75,
+        "id": 82,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Credit",
@@ -4705,7 +5296,7 @@
         "dueAfter": 10083.73
       },
       {
-        "id": 79,
+        "id": 87,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Payment",
@@ -4720,7 +5311,7 @@
         "principalPaid": 3741.1
       },
       {
-        "id": 74,
+        "id": 81,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Credit",
@@ -4760,7 +5351,7 @@
         "dueAfter": 11392.34
       },
       {
-        "id": 78,
+        "id": 86,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Payment",
@@ -4775,7 +5366,7 @@
         "principalPaid": 2970.02
       },
       {
-        "id": 73,
+        "id": 80,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Credit",
@@ -4828,7 +5419,7 @@
         "dueAfter": 9127.44
       },
       {
-        "id": 72,
+        "id": 79,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Credit",
@@ -4868,7 +5459,7 @@
         "dueAfter": 4651.91
       },
       {
-        "id": 77,
+        "id": 85,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Payment",
@@ -4883,7 +5474,7 @@
         "principalPaid": 848.76
       },
       {
-        "id": 71,
+        "id": 78,
         "farmer": 8,
         "name": "Lakshmi Reddy",
         "type": "Credit",
@@ -4938,7 +5529,7 @@
     ],
     "interestHistory": [
       {
-        "id": 71,
+        "id": 84,
         "farmer": 8,
         "date": "2026-09-08",
         "type": "Accrual",
@@ -4952,7 +5543,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 72,
+        "id": 85,
         "farmer": 8,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -4966,7 +5557,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 73,
+        "id": 86,
         "farmer": 8,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -4980,7 +5571,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 74,
+        "id": 87,
         "farmer": 8,
         "date": "2026-09-20",
         "type": "Settings",
@@ -4994,7 +5585,7 @@
         "note": "Monthly rate reduced after discussion with the farmer"
       },
       {
-        "id": 75,
+        "id": 88,
         "farmer": 8,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -5008,7 +5599,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 76,
+        "id": 89,
         "farmer": 8,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -5022,7 +5613,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 77,
+        "id": 90,
         "farmer": 8,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -5036,7 +5627,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 78,
+        "id": 91,
         "farmer": 8,
         "date": "2026-10-05",
         "type": "Settings",
@@ -5050,7 +5641,7 @@
         "note": "Rate revised for the new crop season"
       },
       {
-        "id": 79,
+        "id": 92,
         "farmer": 8,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -5064,7 +5655,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 80,
+        "id": 93,
         "farmer": 8,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -5078,7 +5669,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 81,
+        "id": 94,
         "farmer": 8,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -5092,7 +5683,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 82,
+        "id": 95,
         "farmer": 8,
         "date": "2026-10-14",
         "type": "Accrual",
@@ -5104,6 +5695,20 @@
         "from": "2026-10-13",
         "to": "2026-10-14",
         "note": "Interest accrued at 1.75% per 30 elapsed days"
+      },
+      {
+        "id": 96,
+        "farmer": 8,
+        "date": "2026-10-22",
+        "type": "Accrual",
+        "oldRate": 1.75,
+        "newRate": 1.75,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 52.48,
+        "from": "2026-10-14",
+        "to": "2026-10-22",
+        "note": "Interest accrued at 1.75% per 30 elapsed days"
       }
     ]
   },
@@ -5113,7 +5718,7 @@
     "name": "Vijay Reddy",
     "phone": "9800023757",
     "address": "D.No. 6-15, Canal Bund Road, Chebrolu village, Chebrolu mandal, Guntur district, Andhra Pradesh - 522212; behind the government high school.",
-    "date": "2026-10-14",
+    "date": "2026-10-22",
     "principal": 0,
     "interest": 0,
     "due": 0,
@@ -5121,22 +5726,75 @@
     "compound": false,
     "events": [
       {
-        "id": 40,
+        "id": 44,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Payment",
-        "amount": 10330.25,
-        "date": "2026-10-14",
+        "amount": 16867.67,
+        "date": "2026-10-18",
         "time": "02:20 PM",
         "detail": "Payment received at the shop",
         "lines": [],
-        "dueBefore": 10330.25,
+        "dueBefore": 16867.67,
         "dueAfter": 0,
-        "interestPaid": 48.72,
-        "principalPaid": 10281.53
+        "interestPaid": 76.14,
+        "principalPaid": 16791.53
       },
       {
-        "id": 36,
+        "id": 40,
+        "farmer": 4,
+        "name": "Vijay Reddy",
+        "type": "Credit",
+        "amount": 6510,
+        "date": "2026-10-18",
+        "time": "09:10 AM",
+        "detail": "3 farm inputs supplied",
+        "lines": [
+          {
+            "productId": 8,
+            "name": "MOP 50 kg",
+            "brand": "IPL",
+            "category": "Fertilizers",
+            "batch": "FE-26707",
+            "unit": "bags",
+            "quantity": 2,
+            "purchasePrice": 1510,
+            "sellingPrice": 1700,
+            "discountedPrice": null,
+            "total": 3400
+          },
+          {
+            "productId": 15,
+            "name": "Chlorantraniliprole 60 ml",
+            "brand": "FMC",
+            "category": "Pesticides",
+            "batch": "PE-26714",
+            "unit": "bottles",
+            "quantity": 3,
+            "purchasePrice": 520,
+            "sellingPrice": 690,
+            "discountedPrice": null,
+            "total": 2070
+          },
+          {
+            "productId": 22,
+            "name": "Emamectin Benzoate 100 g",
+            "brand": "Crystal",
+            "category": "Pesticides",
+            "batch": "PE-26721",
+            "unit": "packets",
+            "quantity": 4,
+            "purchasePrice": 185,
+            "sellingPrice": 260,
+            "discountedPrice": null,
+            "total": 1040
+          }
+        ],
+        "dueBefore": 10357.67,
+        "dueAfter": 16867.67
+      },
+      {
+        "id": 39,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Credit",
@@ -5176,7 +5834,7 @@
         "dueAfter": 10330.25
       },
       {
-        "id": 35,
+        "id": 38,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Credit",
@@ -5229,7 +5887,7 @@
         "dueAfter": 9128.48
       },
       {
-        "id": 39,
+        "id": 43,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Payment",
@@ -5244,7 +5902,7 @@
         "principalPaid": 3590.18
       },
       {
-        "id": 34,
+        "id": 37,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Credit",
@@ -5284,7 +5942,7 @@
         "dueAfter": 10944.82
       },
       {
-        "id": 38,
+        "id": 42,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Payment",
@@ -5299,7 +5957,7 @@
         "principalPaid": 3154.77
       },
       {
-        "id": 33,
+        "id": 36,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Credit",
@@ -5352,7 +6010,7 @@
         "dueAfter": 9663.59
       },
       {
-        "id": 32,
+        "id": 35,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Credit",
@@ -5392,7 +6050,7 @@
         "dueAfter": 2821.71
       },
       {
-        "id": 37,
+        "id": 41,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Payment",
@@ -5407,7 +6065,7 @@
         "principalPaid": 800.02
       },
       {
-        "id": 31,
+        "id": 34,
         "farmer": 4,
         "name": "Vijay Reddy",
         "type": "Credit",
@@ -5462,7 +6120,7 @@
     ],
     "interestHistory": [
       {
-        "id": 33,
+        "id": 39,
         "farmer": 4,
         "date": "2026-09-11",
         "type": "Accrual",
@@ -5476,7 +6134,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 34,
+        "id": 40,
         "farmer": 4,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -5490,7 +6148,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 35,
+        "id": 41,
         "farmer": 4,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -5504,7 +6162,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 36,
+        "id": 42,
         "farmer": 4,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -5518,7 +6176,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 37,
+        "id": 43,
         "farmer": 4,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -5532,7 +6190,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 38,
+        "id": 44,
         "farmer": 4,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -5546,7 +6204,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 39,
+        "id": 45,
         "farmer": 4,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -5560,7 +6218,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 40,
+        "id": 46,
         "farmer": 4,
         "date": "2026-10-14",
         "type": "Accrual",
@@ -5572,6 +6230,20 @@
         "from": "2026-10-13",
         "to": "2026-10-14",
         "note": "Interest accrued at 2% per 30 elapsed days"
+      },
+      {
+        "id": 47,
+        "farmer": 4,
+        "date": "2026-10-18",
+        "type": "Accrual",
+        "oldRate": 2,
+        "newRate": 2,
+        "oldCompound": false,
+        "newCompound": false,
+        "amount": 27.42,
+        "from": "2026-10-14",
+        "to": "2026-10-18",
+        "note": "Interest accrued at 2% per 30 elapsed days"
       }
     ]
   },
@@ -5582,29 +6254,14 @@
     "phone": "9800364274",
     "address": "D.No. 15-19, Farmers Colony, Main Street, Narasaraopet village, Narasaraopet mandal, Palnadu district, Andhra Pradesh - 522601; near the agricultural market yard.",
     "date": "2026-10-13",
-    "principal": 9307.98,
-    "interest": 0,
-    "due": 9307.98,
+    "principal": 12867.48,
+    "interest": 60.27,
+    "due": 12927.75,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 441,
-        "farmer": 47,
-        "name": "Chandra Naidu",
-        "type": "Payment",
-        "amount": 3619.77,
-        "date": "2026-10-13",
-        "time": "03:20 PM",
-        "detail": "Payment received at the shop",
-        "lines": [],
-        "dueBefore": 12927.75,
-        "dueAfter": 9307.98,
-        "interestPaid": 60.27,
-        "principalPaid": 3559.5
-      },
-      {
-        "id": 437,
+        "id": 483,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Credit",
@@ -5644,7 +6301,7 @@
         "dueAfter": 12910.59
       },
       {
-        "id": 440,
+        "id": 487,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Payment",
@@ -5659,7 +6316,7 @@
         "principalPaid": 4161.01
       },
       {
-        "id": 436,
+        "id": 482,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Credit",
@@ -5712,7 +6369,7 @@
         "dueAfter": 14968.72
       },
       {
-        "id": 439,
+        "id": 486,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Payment",
@@ -5727,7 +6384,7 @@
         "principalPaid": 2438.38
       },
       {
-        "id": 435,
+        "id": 481,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Credit",
@@ -5767,7 +6424,7 @@
         "dueAfter": 8986.02
       },
       {
-        "id": 434,
+        "id": 480,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Credit",
@@ -5820,7 +6477,7 @@
         "dueAfter": 8218.79
       },
       {
-        "id": 438,
+        "id": 485,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Payment",
@@ -5835,7 +6492,7 @@
         "principalPaid": 2630.63
       },
       {
-        "id": 433,
+        "id": 479,
         "farmer": 47,
         "name": "Chandra Naidu",
         "type": "Credit",
@@ -5877,7 +6534,7 @@
     ],
     "interestHistory": [
       {
-        "id": 452,
+        "id": 508,
         "farmer": 47,
         "date": "2026-09-12",
         "type": "Accrual",
@@ -5891,7 +6548,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 453,
+        "id": 509,
         "farmer": 47,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -5905,7 +6562,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 454,
+        "id": 510,
         "farmer": 47,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -5919,7 +6576,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 455,
+        "id": 511,
         "farmer": 47,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -5933,7 +6590,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 456,
+        "id": 512,
         "farmer": 47,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -5947,7 +6604,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 457,
+        "id": 513,
         "farmer": 47,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -5961,7 +6618,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 458,
+        "id": 514,
         "farmer": 47,
         "date": "2026-10-11",
         "type": "Accrual",
@@ -5975,7 +6632,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 459,
+        "id": 515,
         "farmer": 47,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -5997,29 +6654,14 @@
     "phone": "9800332598",
     "address": "D.No. 11-15, Farmers Colony, Main Street, Kollipara village, Kollipara mandal, Guntur district, Andhra Pradesh - 522304; near the village panchayat office.",
     "date": "2026-10-13",
-    "principal": 6205.42,
-    "interest": 0,
-    "due": 6205.42,
+    "principal": 8581.19,
+    "interest": 37.45,
+    "due": 8618.64,
     "rate": 1.75,
     "compound": false,
     "events": [
       {
-        "id": 405,
-        "farmer": 43,
-        "name": "Madhavi Naidu",
-        "type": "Payment",
-        "amount": 2413.22,
-        "date": "2026-10-13",
-        "time": "02:20 PM",
-        "detail": "Payment received at the shop",
-        "lines": [],
-        "dueBefore": 8618.64,
-        "dueAfter": 6205.42,
-        "interestPaid": 37.45,
-        "principalPaid": 2375.77
-      },
-      {
-        "id": 401,
+        "id": 443,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Credit",
@@ -6059,7 +6701,7 @@
         "dueAfter": 8588.61
       },
       {
-        "id": 404,
+        "id": 447,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Payment",
@@ -6074,7 +6716,7 @@
         "principalPaid": 2454.51
       },
       {
-        "id": 400,
+        "id": 442,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Credit",
@@ -6127,7 +6769,7 @@
         "dueAfter": 8828.04
       },
       {
-        "id": 403,
+        "id": 446,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Payment",
@@ -6142,7 +6784,7 @@
         "principalPaid": 2191.61
       },
       {
-        "id": 399,
+        "id": 441,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Credit",
@@ -6182,7 +6824,7 @@
         "dueAfter": 8020.78
       },
       {
-        "id": 398,
+        "id": 440,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Credit",
@@ -6235,7 +6877,7 @@
         "dueAfter": 6561.86
       },
       {
-        "id": 402,
+        "id": 445,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Payment",
@@ -6250,7 +6892,7 @@
         "principalPaid": 581.19
       },
       {
-        "id": 397,
+        "id": 439,
         "farmer": 43,
         "name": "Madhavi Naidu",
         "type": "Credit",
@@ -6292,7 +6934,7 @@
     ],
     "interestHistory": [
       {
-        "id": 414,
+        "id": 466,
         "farmer": 43,
         "date": "2026-09-08",
         "type": "Accrual",
@@ -6306,7 +6948,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 415,
+        "id": 467,
         "farmer": 43,
         "date": "2026-09-16",
         "type": "Accrual",
@@ -6320,7 +6962,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 416,
+        "id": 468,
         "farmer": 43,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -6334,7 +6976,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 417,
+        "id": 469,
         "farmer": 43,
         "date": "2026-09-20",
         "type": "Settings",
@@ -6348,7 +6990,7 @@
         "note": "Monthly rate reduced after discussion with the farmer"
       },
       {
-        "id": 418,
+        "id": 470,
         "farmer": 43,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -6362,7 +7004,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 419,
+        "id": 471,
         "farmer": 43,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -6376,7 +7018,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 420,
+        "id": 472,
         "farmer": 43,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -6390,7 +7032,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 421,
+        "id": 473,
         "farmer": 43,
         "date": "2026-10-05",
         "type": "Settings",
@@ -6404,7 +7046,7 @@
         "note": "Rate revised for the new crop season"
       },
       {
-        "id": 422,
+        "id": 474,
         "farmer": 43,
         "date": "2026-10-07",
         "type": "Accrual",
@@ -6418,7 +7060,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 423,
+        "id": 475,
         "farmer": 43,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -6432,7 +7074,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 424,
+        "id": 476,
         "farmer": 43,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -6454,29 +7096,14 @@
     "phone": "9800300922",
     "address": "D.No. 7-50, Farmers Colony, Main Street, Anantapur village, Anantapur mandal, Anantapur district, Andhra Pradesh - 515001; near the groundnut procurement centre.",
     "date": "2026-10-13",
-    "principal": 6353.65,
-    "interest": 0,
-    "due": 6353.65,
+    "principal": 8785.68,
+    "interest": 38.83,
+    "due": 8824.51,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 369,
-        "farmer": 39,
-        "name": "Bhavani Naidu",
-        "type": "Payment",
-        "amount": 2470.86,
-        "date": "2026-10-13",
-        "time": "04:20 PM",
-        "detail": "Payment received at the shop",
-        "lines": [],
-        "dueBefore": 8824.51,
-        "dueAfter": 6353.65,
-        "interestPaid": 38.83,
-        "principalPaid": 2432.03
-      },
-      {
-        "id": 365,
+        "id": 403,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Credit",
@@ -6516,7 +7143,7 @@
         "dueAfter": 8801.08
       },
       {
-        "id": 368,
+        "id": 407,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Payment",
@@ -6531,7 +7158,7 @@
         "principalPaid": 2234.65
       },
       {
-        "id": 364,
+        "id": 402,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Credit",
@@ -6584,7 +7211,7 @@
         "dueAfter": 8021.78
       },
       {
-        "id": 367,
+        "id": 406,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Payment",
@@ -6599,7 +7226,7 @@
         "principalPaid": 1299.94
       },
       {
-        "id": 363,
+        "id": 401,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Credit",
@@ -6639,7 +7266,7 @@
         "dueAfter": 4761.51
       },
       {
-        "id": 362,
+        "id": 400,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Credit",
@@ -6692,7 +7319,7 @@
         "dueAfter": 3194.27
       },
       {
-        "id": 366,
+        "id": 405,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Payment",
@@ -6707,7 +7334,7 @@
         "principalPaid": 618.73
       },
       {
-        "id": 361,
+        "id": 399,
         "farmer": 39,
         "name": "Bhavani Naidu",
         "type": "Credit",
@@ -6749,7 +7376,7 @@
     ],
     "interestHistory": [
       {
-        "id": 374,
+        "id": 423,
         "farmer": 39,
         "date": "2026-09-11",
         "type": "Accrual",
@@ -6763,7 +7390,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 375,
+        "id": 424,
         "farmer": 39,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -6777,7 +7404,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 376,
+        "id": 425,
         "farmer": 39,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -6791,7 +7418,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 377,
+        "id": 426,
         "farmer": 39,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -6805,7 +7432,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 378,
+        "id": 427,
         "farmer": 39,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -6819,7 +7446,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 379,
+        "id": 428,
         "farmer": 39,
         "date": "2026-10-09",
         "type": "Accrual",
@@ -6833,7 +7460,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 380,
+        "id": 429,
         "farmer": 39,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -6847,7 +7474,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 381,
+        "id": 430,
         "farmer": 39,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -6869,29 +7496,14 @@
     "phone": "9800269246",
     "address": "D.No. 3-46, Farmers Colony, Main Street, Peddapuram village, Peddapuram mandal, Kakinada district, Andhra Pradesh - 533437; near the government junior college.",
     "date": "2026-10-13",
-    "principal": 8888.73,
-    "interest": 0,
-    "due": 8888.73,
+    "principal": 12304.02,
+    "interest": 41.44,
+    "due": 12345.46,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 333,
-        "farmer": 35,
-        "name": "Ramakrishna Naidu",
-        "type": "Payment",
-        "amount": 3456.73,
-        "date": "2026-10-13",
-        "time": "03:20 PM",
-        "detail": "Payment received at the shop",
-        "lines": [],
-        "dueBefore": 12345.46,
-        "dueAfter": 8888.73,
-        "interestPaid": 41.44,
-        "principalPaid": 3415.29
-      },
-      {
-        "id": 329,
+        "id": 363,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Credit",
@@ -6931,7 +7543,7 @@
         "dueAfter": 12329.06
       },
       {
-        "id": 332,
+        "id": 367,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Payment",
@@ -6946,7 +7558,7 @@
         "principalPaid": 2422.53
       },
       {
-        "id": 328,
+        "id": 362,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Credit",
@@ -6999,7 +7611,7 @@
         "dueAfter": 8693.08
       },
       {
-        "id": 331,
+        "id": 366,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Payment",
@@ -7014,7 +7626,7 @@
         "principalPaid": 1642.68
       },
       {
-        "id": 327,
+        "id": 361,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Credit",
@@ -7067,7 +7679,7 @@
         "dueAfter": 5994.2
       },
       {
-        "id": 326,
+        "id": 360,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Credit",
@@ -7120,7 +7732,7 @@
         "dueAfter": 3555.42
       },
       {
-        "id": 330,
+        "id": 365,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Payment",
@@ -7135,7 +7747,7 @@
         "principalPaid": 837.02
       },
       {
-        "id": 325,
+        "id": 359,
         "farmer": 35,
         "name": "Ramakrishna Naidu",
         "type": "Credit",
@@ -7177,7 +7789,7 @@
     ],
     "interestHistory": [
       {
-        "id": 336,
+        "id": 381,
         "farmer": 35,
         "date": "2026-09-14",
         "type": "Accrual",
@@ -7191,7 +7803,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 337,
+        "id": 382,
         "farmer": 35,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -7205,7 +7817,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 338,
+        "id": 383,
         "farmer": 35,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -7219,7 +7831,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 339,
+        "id": 384,
         "farmer": 35,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -7233,7 +7845,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 340,
+        "id": 385,
         "farmer": 35,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -7247,7 +7859,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 341,
+        "id": 386,
         "farmer": 35,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -7261,7 +7873,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 342,
+        "id": 387,
         "farmer": 35,
         "date": "2026-10-11",
         "type": "Accrual",
@@ -7275,7 +7887,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 343,
+        "id": 388,
         "farmer": 35,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -7297,29 +7909,14 @@
     "phone": "9800237570",
     "address": "D.No. 16-42, Farmers Colony, Main Street, Bapatla village, Bapatla mandal, Bapatla district, Andhra Pradesh - 522101; near the agricultural college approach road.",
     "date": "2026-10-13",
-    "principal": 8997.99,
-    "interest": 0,
-    "due": 8997.99,
+    "principal": 12435.02,
+    "interest": 62.18,
+    "due": 12497.2,
     "rate": 2,
     "compound": false,
     "events": [
       {
-        "id": 297,
-        "farmer": 31,
-        "name": "Prakash Naidu",
-        "type": "Payment",
-        "amount": 3499.21,
-        "date": "2026-10-13",
-        "time": "02:20 PM",
-        "detail": "Payment received at the shop",
-        "lines": [],
-        "dueBefore": 12497.2,
-        "dueAfter": 8997.99,
-        "interestPaid": 62.18,
-        "principalPaid": 3437.03
-      },
-      {
-        "id": 293,
+        "id": 323,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Credit",
@@ -7359,7 +7956,7 @@
         "dueAfter": 12447.46
       },
       {
-        "id": 296,
+        "id": 327,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Payment",
@@ -7374,7 +7971,7 @@
         "principalPaid": 3586.13
       },
       {
-        "id": 292,
+        "id": 322,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Credit",
@@ -7427,7 +8024,7 @@
         "dueAfter": 12951.42
       },
       {
-        "id": 295,
+        "id": 326,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Payment",
@@ -7442,7 +8039,7 @@
         "principalPaid": 2853.36
       },
       {
-        "id": 291,
+        "id": 321,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Credit",
@@ -7482,7 +8079,7 @@
         "dueAfter": 10473.83
       },
       {
-        "id": 290,
+        "id": 320,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Credit",
@@ -7535,7 +8132,7 @@
         "dueAfter": 8661.97
       },
       {
-        "id": 294,
+        "id": 325,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Payment",
@@ -7550,7 +8147,7 @@
         "principalPaid": 1680.99
       },
       {
-        "id": 289,
+        "id": 319,
         "farmer": 31,
         "name": "Prakash Naidu",
         "type": "Credit",
@@ -7592,7 +8189,7 @@
     ],
     "interestHistory": [
       {
-        "id": 297,
+        "id": 339,
         "farmer": 31,
         "date": "2026-09-10",
         "type": "Accrual",
@@ -7606,7 +8203,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 298,
+        "id": 340,
         "farmer": 31,
         "date": "2026-09-16",
         "type": "Accrual",
@@ -7620,7 +8217,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 299,
+        "id": 341,
         "farmer": 31,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -7634,7 +8231,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 300,
+        "id": 342,
         "farmer": 31,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -7648,7 +8245,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 301,
+        "id": 343,
         "farmer": 31,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -7662,7 +8259,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 302,
+        "id": 344,
         "farmer": 31,
         "date": "2026-10-07",
         "type": "Accrual",
@@ -7676,7 +8273,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 303,
+        "id": 345,
         "farmer": 31,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -7690,7 +8287,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 304,
+        "id": 346,
         "farmer": 31,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -7719,7 +8316,7 @@
     "compound": true,
     "events": [
       {
-        "id": 257,
+        "id": 283,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Credit",
@@ -7759,7 +8356,7 @@
         "dueAfter": 11654.5
       },
       {
-        "id": 260,
+        "id": 287,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Payment",
@@ -7774,7 +8371,7 @@
         "principalPaid": 3214.97
       },
       {
-        "id": 256,
+        "id": 282,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Credit",
@@ -7827,7 +8424,7 @@
         "dueAfter": 11586.45
       },
       {
-        "id": 259,
+        "id": 286,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Payment",
@@ -7842,7 +8439,7 @@
         "principalPaid": 2380.7
       },
       {
-        "id": 255,
+        "id": 281,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Credit",
@@ -7882,7 +8479,7 @@
         "dueAfter": 8686.69
       },
       {
-        "id": 254,
+        "id": 280,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Credit",
@@ -7935,7 +8532,7 @@
         "dueAfter": 6716.91
       },
       {
-        "id": 258,
+        "id": 285,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Payment",
@@ -7950,7 +8547,7 @@
         "principalPaid": 864.83
       },
       {
-        "id": 253,
+        "id": 279,
         "farmer": 27,
         "name": "Sunitha Naidu",
         "type": "Credit",
@@ -7992,7 +8589,7 @@
     ],
     "interestHistory": [
       {
-        "id": 258,
+        "id": 296,
         "farmer": 27,
         "date": "2026-09-13",
         "type": "Accrual",
@@ -8006,7 +8603,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 259,
+        "id": 297,
         "farmer": 27,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -8020,7 +8617,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 260,
+        "id": 298,
         "farmer": 27,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -8034,7 +8631,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 261,
+        "id": 299,
         "farmer": 27,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -8048,7 +8645,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 262,
+        "id": 300,
         "farmer": 27,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -8062,7 +8659,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 263,
+        "id": 301,
         "farmer": 27,
         "date": "2026-10-09",
         "type": "Accrual",
@@ -8076,7 +8673,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 264,
+        "id": 302,
         "farmer": 27,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -8090,7 +8687,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 265,
+        "id": 303,
         "farmer": 27,
         "date": "2026-10-10",
         "type": "Settings",
@@ -8104,7 +8701,7 @@
         "note": "Monthly compounding enabled prospectively"
       },
       {
-        "id": 266,
+        "id": 304,
         "farmer": 27,
         "date": "2026-10-10",
         "type": "Capitalization",
@@ -8118,7 +8715,7 @@
         "note": "Existing unpaid interest capitalized once on starting compound mode"
       },
       {
-        "id": 267,
+        "id": 305,
         "farmer": 27,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -8147,7 +8744,7 @@
     "compound": false,
     "events": [
       {
-        "id": 221,
+        "id": 243,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Credit",
@@ -8187,7 +8784,7 @@
         "dueAfter": 11989.24
       },
       {
-        "id": 224,
+        "id": 247,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Payment",
@@ -8202,7 +8799,7 @@
         "principalPaid": 3759.73
       },
       {
-        "id": 220,
+        "id": 242,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Credit",
@@ -8255,7 +8852,7 @@
         "dueAfter": 13547.53
       },
       {
-        "id": 223,
+        "id": 246,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Payment",
@@ -8270,7 +8867,7 @@
         "principalPaid": 3183.16
       },
       {
-        "id": 219,
+        "id": 241,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Credit",
@@ -8310,7 +8907,7 @@
         "dueAfter": 11642.83
       },
       {
-        "id": 218,
+        "id": 240,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Credit",
@@ -8363,7 +8960,7 @@
         "dueAfter": 10368.03
       },
       {
-        "id": 222,
+        "id": 245,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Payment",
@@ -8378,7 +8975,7 @@
         "principalPaid": 914.89
       },
       {
-        "id": 217,
+        "id": 239,
         "farmer": 23,
         "name": "Chandra Reddy",
         "type": "Credit",
@@ -8420,7 +9017,7 @@
     ],
     "interestHistory": [
       {
-        "id": 217,
+        "id": 253,
         "farmer": 23,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -8434,7 +9031,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 218,
+        "id": 254,
         "farmer": 23,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -8448,7 +9045,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 219,
+        "id": 255,
         "farmer": 23,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -8462,7 +9059,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 220,
+        "id": 256,
         "farmer": 23,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -8476,7 +9073,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 221,
+        "id": 257,
         "farmer": 23,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -8490,7 +9087,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 222,
+        "id": 258,
         "farmer": 23,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -8504,7 +9101,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 223,
+        "id": 259,
         "farmer": 23,
         "date": "2026-10-11",
         "type": "Accrual",
@@ -8518,7 +9115,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 224,
+        "id": 260,
         "farmer": 23,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -8547,7 +9144,7 @@
     "compound": false,
     "events": [
       {
-        "id": 185,
+        "id": 203,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Credit",
@@ -8587,7 +9184,7 @@
         "dueAfter": 15977.85
       },
       {
-        "id": 188,
+        "id": 207,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Payment",
@@ -8602,7 +9199,7 @@
         "principalPaid": 2513.7
       },
       {
-        "id": 184,
+        "id": 202,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Credit",
@@ -8655,7 +9252,7 @@
         "dueAfter": 9040.51
       },
       {
-        "id": 187,
+        "id": 206,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Payment",
@@ -8670,7 +9267,7 @@
         "principalPaid": 2015.13
       },
       {
-        "id": 183,
+        "id": 201,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Credit",
@@ -8710,7 +9307,7 @@
         "dueAfter": 7341.46
       },
       {
-        "id": 182,
+        "id": 200,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Credit",
@@ -8763,7 +9360,7 @@
         "dueAfter": 3655.75
       },
       {
-        "id": 186,
+        "id": 205,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Payment",
@@ -8778,7 +9375,7 @@
         "principalPaid": 614
       },
       {
-        "id": 181,
+        "id": 199,
         "farmer": 19,
         "name": "Madhavi Reddy",
         "type": "Credit",
@@ -8820,7 +9417,7 @@
     ],
     "interestHistory": [
       {
-        "id": 179,
+        "id": 211,
         "farmer": 19,
         "date": "2026-09-12",
         "type": "Accrual",
@@ -8834,7 +9431,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 180,
+        "id": 212,
         "farmer": 19,
         "date": "2026-09-16",
         "type": "Accrual",
@@ -8848,7 +9445,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 181,
+        "id": 213,
         "farmer": 19,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -8862,7 +9459,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 182,
+        "id": 214,
         "farmer": 19,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -8876,7 +9473,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 183,
+        "id": 215,
         "farmer": 19,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -8890,7 +9487,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 184,
+        "id": 216,
         "farmer": 19,
         "date": "2026-10-07",
         "type": "Accrual",
@@ -8904,7 +9501,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 185,
+        "id": 217,
         "farmer": 19,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -8918,7 +9515,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 186,
+        "id": 218,
         "farmer": 19,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -8947,7 +9544,7 @@
     "compound": false,
     "events": [
       {
-        "id": 145,
+        "id": 159,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Credit",
@@ -8987,7 +9584,7 @@
         "dueAfter": 13153.83
       },
       {
-        "id": 149,
+        "id": 164,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Payment",
@@ -9002,7 +9599,7 @@
         "principalPaid": 4278.87
       },
       {
-        "id": 144,
+        "id": 158,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Credit",
@@ -9055,7 +9652,7 @@
         "dueAfter": 15330.65
       },
       {
-        "id": 148,
+        "id": 163,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Payment",
@@ -9070,7 +9667,7 @@
         "principalPaid": 2565.48
       },
       {
-        "id": 143,
+        "id": 157,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Credit",
@@ -9110,7 +9707,7 @@
         "dueAfter": 9514.1
       },
       {
-        "id": 142,
+        "id": 156,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Credit",
@@ -9163,7 +9760,7 @@
         "dueAfter": 8728.92
       },
       {
-        "id": 147,
+        "id": 162,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Payment",
@@ -9178,7 +9775,7 @@
         "principalPaid": 2630.63
       },
       {
-        "id": 141,
+        "id": 155,
         "farmer": 15,
         "name": "Bhavani Reddy",
         "type": "Credit",
@@ -9220,7 +9817,7 @@
     ],
     "interestHistory": [
       {
-        "id": 138,
+        "id": 164,
         "farmer": 15,
         "date": "2026-09-08",
         "type": "Accrual",
@@ -9234,7 +9831,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 139,
+        "id": 165,
         "farmer": 15,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -9248,7 +9845,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 140,
+        "id": 166,
         "farmer": 15,
         "date": "2026-09-09",
         "type": "Settings",
@@ -9262,7 +9859,7 @@
         "note": "Monthly compounding enabled by the proprietor"
       },
       {
-        "id": 141,
+        "id": 167,
         "farmer": 15,
         "date": "2026-09-09",
         "type": "Capitalization",
@@ -9276,7 +9873,7 @@
         "note": "Existing unpaid interest capitalized once on starting compound mode"
       },
       {
-        "id": 142,
+        "id": 168,
         "farmer": 15,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -9290,7 +9887,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 143,
+        "id": 169,
         "farmer": 15,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -9304,7 +9901,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 144,
+        "id": 170,
         "farmer": 15,
         "date": "2026-09-20",
         "type": "Settings",
@@ -9318,7 +9915,7 @@
         "note": "Monthly rate reduced after discussion with the farmer"
       },
       {
-        "id": 145,
+        "id": 171,
         "farmer": 15,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -9332,7 +9929,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 146,
+        "id": 172,
         "farmer": 15,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -9346,7 +9943,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 147,
+        "id": 173,
         "farmer": 15,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -9360,7 +9957,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 148,
+        "id": 174,
         "farmer": 15,
         "date": "2026-10-05",
         "type": "Settings",
@@ -9374,7 +9971,7 @@
         "note": "Rate revised for the new crop season"
       },
       {
-        "id": 149,
+        "id": 175,
         "farmer": 15,
         "date": "2026-10-09",
         "type": "Accrual",
@@ -9388,7 +9985,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 150,
+        "id": 176,
         "farmer": 15,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -9402,7 +9999,7 @@
         "note": "Interest accrued at 1.75% per 30 elapsed days"
       },
       {
-        "id": 151,
+        "id": 177,
         "farmer": 15,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -9431,7 +10028,7 @@
     "compound": false,
     "events": [
       {
-        "id": 105,
+        "id": 115,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Credit",
@@ -9471,7 +10068,7 @@
         "dueAfter": 8425.18
       },
       {
-        "id": 109,
+        "id": 120,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Payment",
@@ -9486,7 +10083,7 @@
         "principalPaid": 2372.15
       },
       {
-        "id": 104,
+        "id": 114,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Credit",
@@ -9539,7 +10136,7 @@
         "dueAfter": 8577.06
       },
       {
-        "id": 108,
+        "id": 119,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Payment",
@@ -9554,7 +10151,7 @@
         "principalPaid": 2104.68
       },
       {
-        "id": 103,
+        "id": 113,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Credit",
@@ -9594,7 +10191,7 @@
         "dueAfter": 7653.21
       },
       {
-        "id": 102,
+        "id": 112,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Credit",
@@ -9647,7 +10244,7 @@
         "dueAfter": 6562.87
       },
       {
-        "id": 107,
+        "id": 118,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Payment",
@@ -9662,7 +10259,7 @@
         "principalPaid": 581.19
       },
       {
-        "id": 101,
+        "id": 111,
         "farmer": 11,
         "name": "Ramakrishna Reddy",
         "type": "Credit",
@@ -9704,7 +10301,7 @@
     ],
     "interestHistory": [
       {
-        "id": 100,
+        "id": 118,
         "farmer": 11,
         "date": "2026-09-11",
         "type": "Accrual",
@@ -9718,7 +10315,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 101,
+        "id": 119,
         "farmer": 11,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -9732,7 +10329,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 102,
+        "id": 120,
         "farmer": 11,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -9746,7 +10343,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 103,
+        "id": 121,
         "farmer": 11,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -9760,7 +10357,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 104,
+        "id": 122,
         "farmer": 11,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -9774,7 +10371,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 105,
+        "id": 123,
         "farmer": 11,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -9788,7 +10385,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 106,
+        "id": 124,
         "farmer": 11,
         "date": "2026-10-11",
         "type": "Accrual",
@@ -9802,7 +10399,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 107,
+        "id": 125,
         "farmer": 11,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -9831,7 +10428,7 @@
     "compound": false,
     "events": [
       {
-        "id": 65,
+        "id": 71,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Credit",
@@ -9871,7 +10468,7 @@
         "dueAfter": 9172.39
       },
       {
-        "id": 69,
+        "id": 76,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Payment",
@@ -9886,7 +10483,7 @@
         "principalPaid": 2377.3
       },
       {
-        "id": 64,
+        "id": 70,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Credit",
@@ -9939,7 +10536,7 @@
         "dueAfter": 8547.48
       },
       {
-        "id": 68,
+        "id": 75,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Payment",
@@ -9954,7 +10551,7 @@
         "principalPaid": 1303.79
       },
       {
-        "id": 63,
+        "id": 69,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Credit",
@@ -9994,7 +10591,7 @@
         "dueAfter": 4756.16
       },
       {
-        "id": 62,
+        "id": 68,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Credit",
@@ -10047,7 +10644,7 @@
         "dueAfter": 3188.92
       },
       {
-        "id": 67,
+        "id": 74,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Payment",
@@ -10062,7 +10659,7 @@
         "principalPaid": 618.73
       },
       {
-        "id": 61,
+        "id": 67,
         "farmer": 7,
         "name": "Prakash Reddy",
         "type": "Credit",
@@ -10104,7 +10701,7 @@
     ],
     "interestHistory": [
       {
-        "id": 62,
+        "id": 73,
         "farmer": 7,
         "date": "2026-09-14",
         "type": "Accrual",
@@ -10118,7 +10715,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 63,
+        "id": 74,
         "farmer": 7,
         "date": "2026-09-16",
         "type": "Accrual",
@@ -10132,7 +10729,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 64,
+        "id": 75,
         "farmer": 7,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -10146,7 +10743,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 65,
+        "id": 76,
         "farmer": 7,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -10160,7 +10757,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 66,
+        "id": 77,
         "farmer": 7,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -10174,7 +10771,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 67,
+        "id": 78,
         "farmer": 7,
         "date": "2026-10-07",
         "type": "Accrual",
@@ -10188,7 +10785,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 68,
+        "id": 79,
         "farmer": 7,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -10202,7 +10799,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 69,
+        "id": 80,
         "farmer": 7,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -10231,7 +10828,7 @@
     "compound": false,
     "events": [
       {
-        "id": 25,
+        "id": 27,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Credit",
@@ -10271,7 +10868,7 @@
         "dueAfter": 11892.31
       },
       {
-        "id": 29,
+        "id": 32,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Payment",
@@ -10286,7 +10883,7 @@
         "principalPaid": 2253.01
       },
       {
-        "id": 24,
+        "id": 26,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Credit",
@@ -10339,7 +10936,7 @@
         "dueAfter": 8099.67
       },
       {
-        "id": 28,
+        "id": 31,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Payment",
@@ -10354,7 +10951,7 @@
         "principalPaid": 1409.46
       },
       {
-        "id": 23,
+        "id": 25,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Credit",
@@ -10394,7 +10991,7 @@
         "dueAfter": 5166.44
       },
       {
-        "id": 22,
+        "id": 24,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Credit",
@@ -10447,7 +11044,7 @@
         "dueAfter": 3448.32
       },
       {
-        "id": 27,
+        "id": 30,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Payment",
@@ -10462,7 +11059,7 @@
         "principalPaid": 837.02
       },
       {
-        "id": 21,
+        "id": 23,
         "farmer": 3,
         "name": "Sunitha Reddy",
         "type": "Credit",
@@ -10504,7 +11101,7 @@
     ],
     "interestHistory": [
       {
-        "id": 24,
+        "id": 28,
         "farmer": 3,
         "date": "2026-09-10",
         "type": "Accrual",
@@ -10518,7 +11115,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 25,
+        "id": 29,
         "farmer": 3,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -10532,7 +11129,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 26,
+        "id": 30,
         "farmer": 3,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -10546,7 +11143,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 27,
+        "id": 31,
         "farmer": 3,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -10560,7 +11157,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 28,
+        "id": 32,
         "farmer": 3,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -10574,7 +11171,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 29,
+        "id": 33,
         "farmer": 3,
         "date": "2026-10-09",
         "type": "Accrual",
@@ -10588,7 +11185,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 30,
+        "id": 34,
         "farmer": 3,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -10602,7 +11199,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 31,
+        "id": 35,
         "farmer": 3,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -10631,7 +11228,7 @@
     "compound": false,
     "events": [
       {
-        "id": 428,
+        "id": 473,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Credit",
@@ -10684,7 +11281,7 @@
         "dueAfter": 11079.72
       },
       {
-        "id": 431,
+        "id": 477,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Payment",
@@ -10699,7 +11296,7 @@
         "principalPaid": 2141.41
       },
       {
-        "id": 427,
+        "id": 472,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Credit",
@@ -10739,7 +11336,7 @@
         "dueAfter": 9513.38
       },
       {
-        "id": 430,
+        "id": 476,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Payment",
@@ -10754,7 +11351,7 @@
         "principalPaid": 2539.86
       },
       {
-        "id": 426,
+        "id": 471,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Credit",
@@ -10807,7 +11404,7 @@
         "dueAfter": 11348.86
       },
       {
-        "id": 425,
+        "id": 470,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Credit",
@@ -10847,7 +11444,7 @@
         "dueAfter": 8022.88
       },
       {
-        "id": 429,
+        "id": 475,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Payment",
@@ -10862,7 +11459,7 @@
         "principalPaid": 1483.93
       },
       {
-        "id": 424,
+        "id": 469,
         "farmer": 46,
         "name": "Savitri Naidu",
         "type": "Credit",
@@ -10917,7 +11514,7 @@
     ],
     "interestHistory": [
       {
-        "id": 444,
+        "id": 499,
         "farmer": 46,
         "date": "2026-09-11",
         "type": "Accrual",
@@ -10931,7 +11528,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 445,
+        "id": 500,
         "farmer": 46,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -10945,7 +11542,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 446,
+        "id": 501,
         "farmer": 46,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -10959,7 +11556,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 447,
+        "id": 502,
         "farmer": 46,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -10973,7 +11570,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 448,
+        "id": 503,
         "farmer": 46,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -10987,7 +11584,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 449,
+        "id": 504,
         "farmer": 46,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -11016,7 +11613,7 @@
     "compound": true,
     "events": [
       {
-        "id": 395,
+        "id": 437,
         "farmer": 42,
         "name": "Durga Naidu",
         "type": "Payment",
@@ -11031,7 +11628,7 @@
         "principalPaid": 3065.38
       },
       {
-        "id": 391,
+        "id": 432,
         "farmer": 42,
         "name": "Durga Naidu",
         "type": "Credit",
@@ -11071,7 +11668,7 @@
         "dueAfter": 13535.58
       },
       {
-        "id": 394,
+        "id": 436,
         "farmer": 42,
         "name": "Durga Naidu",
         "type": "Payment",
@@ -11086,7 +11683,7 @@
         "principalPaid": 2993.48
       },
       {
-        "id": 390,
+        "id": 431,
         "farmer": 42,
         "name": "Durga Naidu",
         "type": "Credit",
@@ -11139,7 +11736,7 @@
         "dueAfter": 13284.66
       },
       {
-        "id": 389,
+        "id": 430,
         "farmer": 42,
         "name": "Durga Naidu",
         "type": "Credit",
@@ -11179,7 +11776,7 @@
         "dueAfter": 10503.2
       },
       {
-        "id": 393,
+        "id": 435,
         "farmer": 42,
         "name": "Durga Naidu",
         "type": "Payment",
@@ -11194,7 +11791,7 @@
         "principalPaid": 850.24
       },
       {
-        "id": 388,
+        "id": 429,
         "farmer": 42,
         "name": "Durga Naidu",
         "type": "Credit",
@@ -11249,7 +11846,7 @@
     ],
     "interestHistory": [
       {
-        "id": 402,
+        "id": 453,
         "farmer": 42,
         "date": "2026-09-09",
         "type": "Settings",
@@ -11263,7 +11860,7 @@
         "note": "Monthly compounding enabled by the proprietor"
       },
       {
-        "id": 403,
+        "id": 454,
         "farmer": 42,
         "date": "2026-09-14",
         "type": "Accrual",
@@ -11277,7 +11874,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 404,
+        "id": 455,
         "farmer": 42,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -11291,7 +11888,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 405,
+        "id": 456,
         "farmer": 42,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -11305,7 +11902,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 406,
+        "id": 457,
         "farmer": 42,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -11319,7 +11916,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 407,
+        "id": 458,
         "farmer": 42,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -11333,7 +11930,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 408,
+        "id": 459,
         "farmer": 42,
         "date": "2026-10-09",
         "type": "Accrual",
@@ -11347,7 +11944,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 409,
+        "id": 460,
         "farmer": 42,
         "date": "2026-10-09",
         "type": "Capitalization",
@@ -11361,7 +11958,7 @@
         "note": "Completed 30-day cycle; unpaid interest added to the interest-bearing principal"
       },
       {
-        "id": 410,
+        "id": 461,
         "farmer": 42,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -11390,7 +11987,7 @@
     "compound": false,
     "events": [
       {
-        "id": 356,
+        "id": 393,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Credit",
@@ -11443,7 +12040,7 @@
         "dueAfter": 16769.99
       },
       {
-        "id": 359,
+        "id": 397,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Payment",
@@ -11458,7 +12055,7 @@
         "principalPaid": 1881.5
       },
       {
-        "id": 355,
+        "id": 392,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Credit",
@@ -11498,7 +12095,7 @@
         "dueAfter": 8308.04
       },
       {
-        "id": 358,
+        "id": 396,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Payment",
@@ -11513,7 +12110,7 @@
         "principalPaid": 2141
       },
       {
-        "id": 354,
+        "id": 391,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Credit",
@@ -11566,7 +12163,7 @@
         "dueAfter": 9517.47
       },
       {
-        "id": 353,
+        "id": 390,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Credit",
@@ -11606,7 +12203,7 @@
         "dueAfter": 4133.48
       },
       {
-        "id": 357,
+        "id": 395,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Payment",
@@ -11621,7 +12218,7 @@
         "principalPaid": 682.81
       },
       {
-        "id": 352,
+        "id": 389,
         "farmer": 38,
         "name": "Narasimha Naidu",
         "type": "Credit",
@@ -11676,7 +12273,7 @@
     ],
     "interestHistory": [
       {
-        "id": 365,
+        "id": 413,
         "farmer": 38,
         "date": "2026-09-10",
         "type": "Accrual",
@@ -11690,7 +12287,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 366,
+        "id": 414,
         "farmer": 38,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -11704,7 +12301,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 367,
+        "id": 415,
         "farmer": 38,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -11718,7 +12315,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 368,
+        "id": 416,
         "farmer": 38,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -11732,7 +12329,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 369,
+        "id": 417,
         "farmer": 38,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -11746,7 +12343,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 370,
+        "id": 418,
         "farmer": 38,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -11760,7 +12357,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 371,
+        "id": 419,
         "farmer": 38,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -11789,7 +12386,7 @@
     "compound": false,
     "events": [
       {
-        "id": 320,
+        "id": 353,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Credit",
@@ -11842,7 +12439,7 @@
         "dueAfter": 11470.14
       },
       {
-        "id": 323,
+        "id": 357,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Payment",
@@ -11857,7 +12454,7 @@
         "principalPaid": 2661.69
       },
       {
-        "id": 319,
+        "id": 352,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Credit",
@@ -11897,7 +12494,7 @@
         "dueAfter": 11727.32
       },
       {
-        "id": 322,
+        "id": 356,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Payment",
@@ -11912,7 +12509,7 @@
         "principalPaid": 3075
       },
       {
-        "id": 318,
+        "id": 351,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Credit",
@@ -11965,7 +12562,7 @@
         "dueAfter": 13845.93
       },
       {
-        "id": 317,
+        "id": 350,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Credit",
@@ -12005,7 +12602,7 @@
         "dueAfter": 10607.97
       },
       {
-        "id": 321,
+        "id": 355,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Payment",
@@ -12020,7 +12617,7 @@
         "principalPaid": 2361.52
       },
       {
-        "id": 316,
+        "id": 349,
         "farmer": 34,
         "name": "Srinivas Naidu",
         "type": "Credit",
@@ -12075,7 +12672,7 @@
     ],
     "interestHistory": [
       {
-        "id": 328,
+        "id": 372,
         "farmer": 34,
         "date": "2026-09-13",
         "type": "Accrual",
@@ -12089,7 +12686,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 329,
+        "id": 373,
         "farmer": 34,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -12103,7 +12700,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 330,
+        "id": 374,
         "farmer": 34,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -12117,7 +12714,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 331,
+        "id": 375,
         "farmer": 34,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -12131,7 +12728,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 332,
+        "id": 376,
         "farmer": 34,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -12145,7 +12742,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 333,
+        "id": 377,
         "farmer": 34,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -12174,7 +12771,7 @@
     "compound": false,
     "events": [
       {
-        "id": 287,
+        "id": 317,
         "farmer": 30,
         "name": "Ganesh Naidu",
         "type": "Payment",
@@ -12189,7 +12786,7 @@
         "principalPaid": 2468.82
       },
       {
-        "id": 283,
+        "id": 312,
         "farmer": 30,
         "name": "Ganesh Naidu",
         "type": "Credit",
@@ -12229,7 +12826,7 @@
         "dueAfter": 10843.23
       },
       {
-        "id": 286,
+        "id": 316,
         "farmer": 30,
         "name": "Ganesh Naidu",
         "type": "Payment",
@@ -12244,7 +12841,7 @@
         "principalPaid": 2751.54
       },
       {
-        "id": 282,
+        "id": 311,
         "farmer": 30,
         "name": "Ganesh Naidu",
         "type": "Credit",
@@ -12297,7 +12894,7 @@
         "dueAfter": 12214.44
       },
       {
-        "id": 281,
+        "id": 310,
         "farmer": 30,
         "name": "Ganesh Naidu",
         "type": "Credit",
@@ -12337,7 +12934,7 @@
         "dueAfter": 5715.54
       },
       {
-        "id": 285,
+        "id": 315,
         "farmer": 30,
         "name": "Ganesh Naidu",
         "type": "Payment",
@@ -12352,7 +12949,7 @@
         "principalPaid": 549.35
       },
       {
-        "id": 280,
+        "id": 309,
         "farmer": 30,
         "name": "Ganesh Naidu",
         "type": "Credit",
@@ -12407,7 +13004,7 @@
     ],
     "interestHistory": [
       {
-        "id": 288,
+        "id": 329,
         "farmer": 30,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -12421,7 +13018,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 289,
+        "id": 330,
         "farmer": 30,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -12435,7 +13032,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 290,
+        "id": 331,
         "farmer": 30,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -12449,7 +13046,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 291,
+        "id": 332,
         "farmer": 30,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -12463,7 +13060,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 292,
+        "id": 333,
         "farmer": 30,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -12477,7 +13074,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 293,
+        "id": 334,
         "farmer": 30,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -12506,7 +13103,7 @@
     "compound": false,
     "events": [
       {
-        "id": 248,
+        "id": 273,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Credit",
@@ -12559,7 +13156,7 @@
         "dueAfter": 12337.75
       },
       {
-        "id": 251,
+        "id": 277,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Payment",
@@ -12574,7 +13171,7 @@
         "principalPaid": 2312.55
       },
       {
-        "id": 247,
+        "id": 272,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Credit",
@@ -12614,7 +13211,7 @@
         "dueAfter": 10223.38
       },
       {
-        "id": 250,
+        "id": 276,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Payment",
@@ -12629,7 +13226,7 @@
         "principalPaid": 2119.68
       },
       {
-        "id": 246,
+        "id": 271,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Credit",
@@ -12682,7 +13279,7 @@
         "dueAfter": 9442.4
       },
       {
-        "id": 245,
+        "id": 270,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Credit",
@@ -12722,7 +13319,7 @@
         "dueAfter": 6820.06
       },
       {
-        "id": 249,
+        "id": 275,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Payment",
@@ -12737,7 +13334,7 @@
         "principalPaid": 538.52
       },
       {
-        "id": 244,
+        "id": 269,
         "farmer": 26,
         "name": "Suresh Naidu",
         "type": "Credit",
@@ -12792,7 +13389,7 @@
     ],
     "interestHistory": [
       {
-        "id": 249,
+        "id": 287,
         "farmer": 26,
         "date": "2026-09-12",
         "type": "Accrual",
@@ -12806,7 +13403,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 250,
+        "id": 288,
         "farmer": 26,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -12820,7 +13417,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 251,
+        "id": 289,
         "farmer": 26,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -12834,7 +13431,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 252,
+        "id": 290,
         "farmer": 26,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -12848,7 +13445,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 253,
+        "id": 291,
         "farmer": 26,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -12862,7 +13459,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 254,
+        "id": 292,
         "farmer": 26,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -12876,7 +13473,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 255,
+        "id": 293,
         "farmer": 26,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -12905,7 +13502,7 @@
     "compound": false,
     "events": [
       {
-        "id": 212,
+        "id": 233,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Credit",
@@ -12958,7 +13555,7 @@
         "dueAfter": 14379.27
       },
       {
-        "id": 215,
+        "id": 237,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Payment",
@@ -12973,7 +13570,7 @@
         "principalPaid": 2219.89
       },
       {
-        "id": 211,
+        "id": 232,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Credit",
@@ -13013,7 +13610,7 @@
         "dueAfter": 9782.21
       },
       {
-        "id": 214,
+        "id": 236,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Payment",
@@ -13028,7 +13625,7 @@
         "principalPaid": 2493.95
       },
       {
-        "id": 210,
+        "id": 231,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Credit",
@@ -13081,7 +13678,7 @@
         "dueAfter": 11127.49
       },
       {
-        "id": 209,
+        "id": 230,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Credit",
@@ -13121,7 +13718,7 @@
         "dueAfter": 8658.33
       },
       {
-        "id": 213,
+        "id": 235,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Payment",
@@ -13136,7 +13733,7 @@
         "principalPaid": 1014.36
       },
       {
-        "id": 208,
+        "id": 229,
         "farmer": 22,
         "name": "Savitri Reddy",
         "type": "Credit",
@@ -13191,7 +13788,7 @@
     ],
     "interestHistory": [
       {
-        "id": 206,
+        "id": 241,
         "farmer": 22,
         "date": "2026-09-08",
         "type": "Accrual",
@@ -13205,7 +13802,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 207,
+        "id": 242,
         "farmer": 22,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -13219,7 +13816,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 208,
+        "id": 243,
         "farmer": 22,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -13233,7 +13830,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 209,
+        "id": 244,
         "farmer": 22,
         "date": "2026-09-20",
         "type": "Settings",
@@ -13247,7 +13844,7 @@
         "note": "Monthly rate reduced after discussion with the farmer"
       },
       {
-        "id": 210,
+        "id": 245,
         "farmer": 22,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -13261,7 +13858,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 211,
+        "id": 246,
         "farmer": 22,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -13275,7 +13872,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 212,
+        "id": 247,
         "farmer": 22,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -13289,7 +13886,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 213,
+        "id": 248,
         "farmer": 22,
         "date": "2026-10-05",
         "type": "Settings",
@@ -13303,7 +13900,7 @@
         "note": "Rate revised for the new crop season"
       },
       {
-        "id": 214,
+        "id": 249,
         "farmer": 22,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -13332,7 +13929,7 @@
     "compound": false,
     "events": [
       {
-        "id": 179,
+        "id": 197,
         "farmer": 18,
         "name": "Durga Reddy",
         "type": "Payment",
@@ -13347,7 +13944,7 @@
         "principalPaid": 2454.71
       },
       {
-        "id": 174,
+        "id": 191,
         "farmer": 18,
         "name": "Durga Reddy",
         "type": "Credit",
@@ -13387,7 +13984,7 @@
         "dueAfter": 10840.05
       },
       {
-        "id": 178,
+        "id": 196,
         "farmer": 18,
         "name": "Durga Reddy",
         "type": "Payment",
@@ -13402,7 +13999,7 @@
         "principalPaid": 2784.21
       },
       {
-        "id": 173,
+        "id": 190,
         "farmer": 18,
         "name": "Durga Reddy",
         "type": "Credit",
@@ -13468,7 +14065,7 @@
         "dueAfter": 12482.23
       },
       {
-        "id": 172,
+        "id": 189,
         "farmer": 18,
         "name": "Durga Reddy",
         "type": "Credit",
@@ -13508,7 +14105,7 @@
         "dueAfter": 9744.39
       },
       {
-        "id": 177,
+        "id": 195,
         "farmer": 18,
         "name": "Durga Reddy",
         "type": "Payment",
@@ -13523,7 +14120,7 @@
         "principalPaid": 1555.74
       },
       {
-        "id": 171,
+        "id": 188,
         "farmer": 18,
         "name": "Durga Reddy",
         "type": "Credit",
@@ -13578,7 +14175,7 @@
     ],
     "interestHistory": [
       {
-        "id": 170,
+        "id": 200,
         "farmer": 18,
         "date": "2026-09-11",
         "type": "Accrual",
@@ -13592,7 +14189,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 171,
+        "id": 201,
         "farmer": 18,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -13606,7 +14203,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 172,
+        "id": 202,
         "farmer": 18,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -13620,7 +14217,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 173,
+        "id": 203,
         "farmer": 18,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -13634,7 +14231,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 174,
+        "id": 204,
         "farmer": 18,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -13648,7 +14245,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 175,
+        "id": 205,
         "farmer": 18,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -13677,7 +14274,7 @@
     "compound": true,
     "events": [
       {
-        "id": 135,
+        "id": 148,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Credit",
@@ -13730,7 +14327,7 @@
         "dueAfter": 11090.13
       },
       {
-        "id": 139,
+        "id": 153,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Payment",
@@ -13745,7 +14342,7 @@
         "principalPaid": 2164.89
       },
       {
-        "id": 134,
+        "id": 147,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Credit",
@@ -13785,7 +14382,7 @@
         "dueAfter": 9539.53
       },
       {
-        "id": 138,
+        "id": 152,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Payment",
@@ -13800,7 +14397,7 @@
         "principalPaid": 2532.24
       },
       {
-        "id": 133,
+        "id": 146,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Credit",
@@ -13853,7 +14450,7 @@
         "dueAfter": 11358.76
       },
       {
-        "id": 132,
+        "id": 145,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Credit",
@@ -13893,7 +14490,7 @@
         "dueAfter": 8006.12
       },
       {
-        "id": 137,
+        "id": 151,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Payment",
@@ -13908,7 +14505,7 @@
         "principalPaid": 1483.93
       },
       {
-        "id": 131,
+        "id": 144,
         "farmer": 14,
         "name": "Narasimha Reddy",
         "type": "Credit",
@@ -13963,7 +14560,7 @@
     ],
     "interestHistory": [
       {
-        "id": 127,
+        "id": 151,
         "farmer": 14,
         "date": "2026-09-14",
         "type": "Accrual",
@@ -13977,7 +14574,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 128,
+        "id": 152,
         "farmer": 14,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -13991,7 +14588,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 129,
+        "id": 153,
         "farmer": 14,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -14005,7 +14602,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 130,
+        "id": 154,
         "farmer": 14,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -14019,7 +14616,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 131,
+        "id": 155,
         "farmer": 14,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -14033,7 +14630,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 132,
+        "id": 156,
         "farmer": 14,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -14047,7 +14644,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 133,
+        "id": 157,
         "farmer": 14,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -14061,7 +14658,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 134,
+        "id": 158,
         "farmer": 14,
         "date": "2026-10-10",
         "type": "Settings",
@@ -14075,7 +14672,7 @@
         "note": "Monthly compounding enabled prospectively"
       },
       {
-        "id": 135,
+        "id": 159,
         "farmer": 14,
         "date": "2026-10-10",
         "type": "Capitalization",
@@ -14104,7 +14701,7 @@
     "compound": false,
     "events": [
       {
-        "id": 95,
+        "id": 104,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Credit",
@@ -14157,7 +14754,7 @@
         "dueAfter": 13773.96
       },
       {
-        "id": 99,
+        "id": 109,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Payment",
@@ -14172,7 +14769,7 @@
         "principalPaid": 3087.97
       },
       {
-        "id": 94,
+        "id": 103,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Credit",
@@ -14212,7 +14809,7 @@
         "dueAfter": 13545.05
       },
       {
-        "id": 98,
+        "id": 108,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Payment",
@@ -14227,7 +14824,7 @@
         "principalPaid": 2963.6
       },
       {
-        "id": 93,
+        "id": 102,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Credit",
@@ -14280,7 +14877,7 @@
         "dueAfter": 13323.47
       },
       {
-        "id": 92,
+        "id": 101,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Credit",
@@ -14320,7 +14917,7 @@
         "dueAfter": 10507.04
       },
       {
-        "id": 97,
+        "id": 107,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Payment",
@@ -14335,7 +14932,7 @@
         "principalPaid": 850.24
       },
       {
-        "id": 91,
+        "id": 100,
         "farmer": 10,
         "name": "Srinivas Reddy",
         "type": "Credit",
@@ -14390,7 +14987,7 @@
     ],
     "interestHistory": [
       {
-        "id": 92,
+        "id": 108,
         "farmer": 10,
         "date": "2026-09-10",
         "type": "Accrual",
@@ -14404,7 +15001,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 93,
+        "id": 109,
         "farmer": 10,
         "date": "2026-09-19",
         "type": "Accrual",
@@ -14418,7 +15015,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 94,
+        "id": 110,
         "farmer": 10,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -14432,7 +15029,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 95,
+        "id": 111,
         "farmer": 10,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -14446,7 +15043,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 96,
+        "id": 112,
         "farmer": 10,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -14460,7 +15057,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 97,
+        "id": 113,
         "farmer": 10,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -14489,7 +15086,7 @@
     "compound": true,
     "events": [
       {
-        "id": 59,
+        "id": 65,
         "farmer": 6,
         "name": "Ganesh Reddy",
         "type": "Payment",
@@ -14504,7 +15101,7 @@
         "principalPaid": 1820.67
       },
       {
-        "id": 54,
+        "id": 59,
         "farmer": 6,
         "name": "Ganesh Reddy",
         "type": "Credit",
@@ -14544,7 +15141,7 @@
         "dueAfter": 8080.64
       },
       {
-        "id": 58,
+        "id": 64,
         "farmer": 6,
         "name": "Ganesh Reddy",
         "type": "Payment",
@@ -14559,7 +15156,7 @@
         "principalPaid": 2088.18
       },
       {
-        "id": 53,
+        "id": 58,
         "farmer": 6,
         "name": "Ganesh Reddy",
         "type": "Credit",
@@ -14612,7 +15209,7 @@
         "dueAfter": 9211.46
       },
       {
-        "id": 52,
+        "id": 57,
         "farmer": 6,
         "name": "Ganesh Reddy",
         "type": "Credit",
@@ -14652,7 +15249,7 @@
         "dueAfter": 3844.74
       },
       {
-        "id": 57,
+        "id": 63,
         "farmer": 6,
         "name": "Ganesh Reddy",
         "type": "Payment",
@@ -14667,7 +15264,7 @@
         "principalPaid": 597.56
       },
       {
-        "id": 51,
+        "id": 56,
         "farmer": 6,
         "name": "Ganesh Reddy",
         "type": "Credit",
@@ -14722,7 +15319,7 @@
     ],
     "interestHistory": [
       {
-        "id": 50,
+        "id": 59,
         "farmer": 6,
         "date": "2026-09-09",
         "type": "Settings",
@@ -14736,7 +15333,7 @@
         "note": "Monthly compounding enabled by the proprietor"
       },
       {
-        "id": 51,
+        "id": 60,
         "farmer": 6,
         "date": "2026-09-13",
         "type": "Accrual",
@@ -14750,7 +15347,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 52,
+        "id": 61,
         "farmer": 6,
         "date": "2026-09-21",
         "type": "Accrual",
@@ -14764,7 +15361,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 53,
+        "id": 62,
         "farmer": 6,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -14778,7 +15375,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 54,
+        "id": 63,
         "farmer": 6,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -14792,7 +15389,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 55,
+        "id": 64,
         "farmer": 6,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -14806,7 +15403,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 56,
+        "id": 65,
         "farmer": 6,
         "date": "2026-10-09",
         "type": "Accrual",
@@ -14820,7 +15417,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 57,
+        "id": 66,
         "farmer": 6,
         "date": "2026-10-09",
         "type": "Capitalization",
@@ -14834,7 +15431,7 @@
         "note": "Completed 30-day cycle; unpaid interest added to the interest-bearing principal"
       },
       {
-        "id": 58,
+        "id": 67,
         "farmer": 6,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -14863,7 +15460,7 @@
     "compound": false,
     "events": [
       {
-        "id": 15,
+        "id": 16,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Credit",
@@ -14916,7 +15513,7 @@
         "dueAfter": 11265.02
       },
       {
-        "id": 19,
+        "id": 21,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Payment",
@@ -14931,7 +15528,7 @@
         "principalPaid": 2591.13
       },
       {
-        "id": 14,
+        "id": 15,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Credit",
@@ -14971,7 +15568,7 @@
         "dueAfter": 11477.06
       },
       {
-        "id": 18,
+        "id": 20,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Payment",
@@ -14986,7 +15583,7 @@
         "principalPaid": 2988.26
       },
       {
-        "id": 13,
+        "id": 14,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Credit",
@@ -15039,7 +15636,7 @@
         "dueAfter": 13504.49
       },
       {
-        "id": 12,
+        "id": 13,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Credit",
@@ -15079,7 +15676,7 @@
         "dueAfter": 10268.64
       },
       {
-        "id": 17,
+        "id": 19,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Payment",
@@ -15094,7 +15691,7 @@
         "principalPaid": 2361.52
       },
       {
-        "id": 11,
+        "id": 12,
         "farmer": 2,
         "name": "Suresh Reddy",
         "type": "Credit",
@@ -15149,7 +15746,7 @@
     ],
     "interestHistory": [
       {
-        "id": 15,
+        "id": 17,
         "farmer": 2,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -15163,7 +15760,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 16,
+        "id": 18,
         "farmer": 2,
         "date": "2026-09-17",
         "type": "Accrual",
@@ -15177,7 +15774,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 17,
+        "id": 19,
         "farmer": 2,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -15191,7 +15788,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 18,
+        "id": 20,
         "farmer": 2,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -15205,7 +15802,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 19,
+        "id": 21,
         "farmer": 2,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -15219,7 +15816,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 20,
+        "id": 22,
         "farmer": 2,
         "date": "2026-10-08",
         "type": "Accrual",
@@ -15233,7 +15830,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 21,
+        "id": 23,
         "farmer": 2,
         "date": "2026-10-10",
         "type": "Accrual",
@@ -15262,7 +15859,7 @@
     "compound": false,
     "events": [
       {
-        "id": 422,
+        "id": 467,
         "farmer": 45,
         "name": "Ravi Naidu",
         "type": "Payment",
@@ -15277,7 +15874,7 @@
         "principalPaid": 2253.19
       },
       {
-        "id": 418,
+        "id": 462,
         "farmer": 45,
         "name": "Ravi Naidu",
         "type": "Credit",
@@ -15330,7 +15927,7 @@
         "dueAfter": 12638.48
       },
       {
-        "id": 421,
+        "id": 466,
         "farmer": 45,
         "name": "Ravi Naidu",
         "type": "Payment",
@@ -15345,7 +15942,7 @@
         "principalPaid": 1719.34
       },
       {
-        "id": 417,
+        "id": 461,
         "farmer": 45,
         "name": "Ravi Naidu",
         "type": "Credit",
@@ -15385,7 +15982,7 @@
         "dueAfter": 9928.89
       },
       {
-        "id": 416,
+        "id": 460,
         "farmer": 45,
         "name": "Ravi Naidu",
         "type": "Credit",
@@ -15438,7 +16035,7 @@
         "dueAfter": 6769.31
       },
       {
-        "id": 420,
+        "id": 465,
         "farmer": 45,
         "name": "Ravi Naidu",
         "type": "Payment",
@@ -15453,7 +16050,7 @@
         "principalPaid": 303.17
       },
       {
-        "id": 415,
+        "id": 459,
         "farmer": 45,
         "name": "Ravi Naidu",
         "type": "Credit",
@@ -15495,7 +16092,7 @@
     ],
     "interestHistory": [
       {
-        "id": 435,
+        "id": 489,
         "farmer": 45,
         "date": "2026-09-10",
         "type": "Accrual",
@@ -15509,7 +16106,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 436,
+        "id": 490,
         "farmer": 45,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -15523,7 +16120,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 437,
+        "id": 491,
         "farmer": 45,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -15537,7 +16134,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 438,
+        "id": 492,
         "farmer": 45,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -15551,7 +16148,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 439,
+        "id": 493,
         "farmer": 45,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -15580,7 +16177,7 @@
     "compound": false,
     "events": [
       {
-        "id": 386,
+        "id": 427,
         "farmer": 41,
         "name": "Subba Naidu",
         "type": "Payment",
@@ -15595,7 +16192,7 @@
         "principalPaid": 2897.5
       },
       {
-        "id": 382,
+        "id": 422,
         "farmer": 41,
         "name": "Subba Naidu",
         "type": "Credit",
@@ -15648,7 +16245,7 @@
         "dueAfter": 16343.91
       },
       {
-        "id": 385,
+        "id": 426,
         "farmer": 41,
         "name": "Subba Naidu",
         "type": "Payment",
@@ -15663,7 +16260,7 @@
         "principalPaid": 1783.6
       },
       {
-        "id": 381,
+        "id": 421,
         "farmer": 41,
         "name": "Subba Naidu",
         "type": "Credit",
@@ -15703,7 +16300,7 @@
         "dueAfter": 10137.76
       },
       {
-        "id": 380,
+        "id": 420,
         "farmer": 41,
         "name": "Subba Naidu",
         "type": "Credit",
@@ -15756,7 +16353,7 @@
         "dueAfter": 6825.03
       },
       {
-        "id": 384,
+        "id": 425,
         "farmer": 41,
         "name": "Subba Naidu",
         "type": "Payment",
@@ -15771,7 +16368,7 @@
         "principalPaid": 343.89
       },
       {
-        "id": 379,
+        "id": 419,
         "farmer": 41,
         "name": "Subba Naidu",
         "type": "Credit",
@@ -15813,7 +16410,7 @@
     ],
     "interestHistory": [
       {
-        "id": 393,
+        "id": 443,
         "farmer": 41,
         "date": "2026-09-13",
         "type": "Accrual",
@@ -15827,7 +16424,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 394,
+        "id": 444,
         "farmer": 41,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -15841,7 +16438,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 395,
+        "id": 445,
         "farmer": 41,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -15855,7 +16452,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 396,
+        "id": 446,
         "farmer": 41,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -15869,7 +16466,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 397,
+        "id": 447,
         "farmer": 41,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -15898,7 +16495,7 @@
     "compound": false,
     "events": [
       {
-        "id": 350,
+        "id": 387,
         "farmer": 37,
         "name": "Krishna Naidu",
         "type": "Payment",
@@ -15913,7 +16510,7 @@
         "principalPaid": 1579.36
       },
       {
-        "id": 346,
+        "id": 382,
         "farmer": 37,
         "name": "Krishna Naidu",
         "type": "Credit",
@@ -15966,7 +16563,7 @@
         "dueAfter": 8952.16
       },
       {
-        "id": 349,
+        "id": 386,
         "farmer": 37,
         "name": "Krishna Naidu",
         "type": "Payment",
@@ -15981,7 +16578,7 @@
         "principalPaid": 1449.78
       },
       {
-        "id": 345,
+        "id": 381,
         "farmer": 37,
         "name": "Krishna Naidu",
         "type": "Credit",
@@ -16021,7 +16618,7 @@
         "dueAfter": 8357.97
       },
       {
-        "id": 344,
+        "id": 380,
         "farmer": 37,
         "name": "Krishna Naidu",
         "type": "Credit",
@@ -16074,7 +16671,7 @@
         "dueAfter": 6133.12
       },
       {
-        "id": 348,
+        "id": 385,
         "farmer": 37,
         "name": "Krishna Naidu",
         "type": "Payment",
@@ -16089,7 +16686,7 @@
         "principalPaid": 218.09
       },
       {
-        "id": 343,
+        "id": 379,
         "farmer": 37,
         "name": "Krishna Naidu",
         "type": "Credit",
@@ -16131,7 +16728,7 @@
     ],
     "interestHistory": [
       {
-        "id": 357,
+        "id": 404,
         "farmer": 37,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -16145,7 +16742,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 358,
+        "id": 405,
         "farmer": 37,
         "date": "2026-09-16",
         "type": "Accrual",
@@ -16159,7 +16756,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 359,
+        "id": 406,
         "farmer": 37,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -16173,7 +16770,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 360,
+        "id": 407,
         "farmer": 37,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -16187,7 +16784,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 361,
+        "id": 408,
         "farmer": 37,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -16216,7 +16813,7 @@
     "compound": true,
     "events": [
       {
-        "id": 314,
+        "id": 347,
         "farmer": 33,
         "name": "Venkateswara Naidu",
         "type": "Payment",
@@ -16231,7 +16828,7 @@
         "principalPaid": 2634.94
       },
       {
-        "id": 310,
+        "id": 342,
         "farmer": 33,
         "name": "Venkateswara Naidu",
         "type": "Credit",
@@ -16284,7 +16881,7 @@
         "dueAfter": 14935.07
       },
       {
-        "id": 313,
+        "id": 346,
         "farmer": 33,
         "name": "Venkateswara Naidu",
         "type": "Payment",
@@ -16299,7 +16896,7 @@
         "principalPaid": 2854.63
       },
       {
-        "id": 309,
+        "id": 341,
         "farmer": 33,
         "name": "Venkateswara Naidu",
         "type": "Credit",
@@ -16339,7 +16936,7 @@
         "dueAfter": 16248.77
       },
       {
-        "id": 308,
+        "id": 340,
         "farmer": 33,
         "name": "Venkateswara Naidu",
         "type": "Credit",
@@ -16392,7 +16989,7 @@
         "dueAfter": 6748.36
       },
       {
-        "id": 312,
+        "id": 345,
         "farmer": 33,
         "name": "Venkateswara Naidu",
         "type": "Payment",
@@ -16407,7 +17004,7 @@
         "principalPaid": 652.61
       },
       {
-        "id": 307,
+        "id": 339,
         "farmer": 33,
         "name": "Venkateswara Naidu",
         "type": "Credit",
@@ -16449,7 +17046,7 @@
     ],
     "interestHistory": [
       {
-        "id": 315,
+        "id": 358,
         "farmer": 33,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -16463,7 +17060,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 316,
+        "id": 359,
         "farmer": 33,
         "date": "2026-09-09",
         "type": "Settings",
@@ -16477,7 +17074,7 @@
         "note": "Monthly compounding enabled by the proprietor"
       },
       {
-        "id": 317,
+        "id": 360,
         "farmer": 33,
         "date": "2026-09-09",
         "type": "Capitalization",
@@ -16491,7 +17088,7 @@
         "note": "Existing unpaid interest capitalized once on starting compound mode"
       },
       {
-        "id": 318,
+        "id": 361,
         "farmer": 33,
         "date": "2026-09-12",
         "type": "Accrual",
@@ -16505,7 +17102,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 319,
+        "id": 362,
         "farmer": 33,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -16519,7 +17116,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 320,
+        "id": 363,
         "farmer": 33,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -16533,7 +17130,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 321,
+        "id": 364,
         "farmer": 33,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -16547,7 +17144,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 322,
+        "id": 365,
         "farmer": 33,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -16576,7 +17173,7 @@
     "compound": false,
     "events": [
       {
-        "id": 278,
+        "id": 307,
         "farmer": 29,
         "name": "Annapurna Naidu",
         "type": "Payment",
@@ -16591,7 +17188,7 @@
         "principalPaid": 2543.29
       },
       {
-        "id": 274,
+        "id": 302,
         "farmer": 29,
         "name": "Annapurna Naidu",
         "type": "Credit",
@@ -16644,7 +17241,7 @@
         "dueAfter": 14257
       },
       {
-        "id": 277,
+        "id": 306,
         "farmer": 29,
         "name": "Annapurna Naidu",
         "type": "Payment",
@@ -16659,7 +17256,7 @@
         "principalPaid": 1964.87
       },
       {
-        "id": 273,
+        "id": 301,
         "farmer": 29,
         "name": "Annapurna Naidu",
         "type": "Credit",
@@ -16699,7 +17296,7 @@
         "dueAfter": 11194.99
       },
       {
-        "id": 272,
+        "id": 300,
         "farmer": 29,
         "name": "Annapurna Naidu",
         "type": "Credit",
@@ -16752,7 +17349,7 @@
         "dueAfter": 9068.73
       },
       {
-        "id": 276,
+        "id": 305,
         "farmer": 29,
         "name": "Annapurna Naidu",
         "type": "Payment",
@@ -16767,7 +17364,7 @@
         "principalPaid": 130.6
       },
       {
-        "id": 271,
+        "id": 299,
         "farmer": 29,
         "name": "Annapurna Naidu",
         "type": "Credit",
@@ -16809,7 +17406,7 @@
     ],
     "interestHistory": [
       {
-        "id": 277,
+        "id": 317,
         "farmer": 29,
         "date": "2026-09-08",
         "type": "Accrual",
@@ -16823,7 +17420,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 278,
+        "id": 318,
         "farmer": 29,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -16837,7 +17434,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 279,
+        "id": 319,
         "farmer": 29,
         "date": "2026-09-20",
         "type": "Settings",
@@ -16851,7 +17448,7 @@
         "note": "Monthly rate reduced after discussion with the farmer"
       },
       {
-        "id": 280,
+        "id": 320,
         "farmer": 29,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -16865,7 +17462,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 281,
+        "id": 321,
         "farmer": 29,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -16879,7 +17476,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 282,
+        "id": 322,
         "farmer": 29,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -16893,7 +17490,7 @@
         "note": "Interest accrued at 1.5% per 30 elapsed days"
       },
       {
-        "id": 283,
+        "id": 323,
         "farmer": 29,
         "date": "2026-10-05",
         "type": "Settings",
@@ -16922,7 +17519,7 @@
     "compound": false,
     "events": [
       {
-        "id": 242,
+        "id": 267,
         "farmer": 25,
         "name": "Ramesh Naidu",
         "type": "Payment",
@@ -16937,7 +17534,7 @@
         "principalPaid": 1164.09
       },
       {
-        "id": 238,
+        "id": 262,
         "farmer": 25,
         "name": "Ramesh Naidu",
         "type": "Credit",
@@ -16990,7 +17587,7 @@
         "dueAfter": 6540.5
       },
       {
-        "id": 241,
+        "id": 266,
         "farmer": 25,
         "name": "Ramesh Naidu",
         "type": "Payment",
@@ -17005,7 +17602,7 @@
         "principalPaid": 1042.82
       },
       {
-        "id": 237,
+        "id": 261,
         "farmer": 25,
         "name": "Ramesh Naidu",
         "type": "Credit",
@@ -17045,7 +17642,7 @@
         "dueAfter": 6024.7
       },
       {
-        "id": 236,
+        "id": 260,
         "farmer": 25,
         "name": "Ramesh Naidu",
         "type": "Credit",
@@ -17098,7 +17695,7 @@
         "dueAfter": 3767.07
       },
       {
-        "id": 240,
+        "id": 265,
         "farmer": 25,
         "name": "Ramesh Naidu",
         "type": "Payment",
@@ -17113,7 +17710,7 @@
         "principalPaid": 158.88
       },
       {
-        "id": 235,
+        "id": 259,
         "farmer": 25,
         "name": "Ramesh Naidu",
         "type": "Credit",
@@ -17155,7 +17752,7 @@
     ],
     "interestHistory": [
       {
-        "id": 240,
+        "id": 277,
         "farmer": 25,
         "date": "2026-09-11",
         "type": "Accrual",
@@ -17169,7 +17766,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 241,
+        "id": 278,
         "farmer": 25,
         "date": "2026-09-16",
         "type": "Accrual",
@@ -17183,7 +17780,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 242,
+        "id": 279,
         "farmer": 25,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -17197,7 +17794,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 243,
+        "id": 280,
         "farmer": 25,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -17211,7 +17808,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 244,
+        "id": 281,
         "farmer": 25,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -17240,7 +17837,7 @@
     "compound": false,
     "events": [
       {
-        "id": 206,
+        "id": 227,
         "farmer": 21,
         "name": "Ravi Reddy",
         "type": "Payment",
@@ -17255,7 +17852,7 @@
         "principalPaid": 1540.26
       },
       {
-        "id": 202,
+        "id": 222,
         "farmer": 21,
         "name": "Ravi Reddy",
         "type": "Credit",
@@ -17308,7 +17905,7 @@
         "dueAfter": 8781.84
       },
       {
-        "id": 205,
+        "id": 226,
         "farmer": 21,
         "name": "Ravi Reddy",
         "type": "Payment",
@@ -17323,7 +17920,7 @@
         "principalPaid": 1620.98
       },
       {
-        "id": 201,
+        "id": 221,
         "farmer": 21,
         "name": "Ravi Reddy",
         "type": "Credit",
@@ -17363,7 +17960,7 @@
         "dueAfter": 9240.92
       },
       {
-        "id": 200,
+        "id": 220,
         "farmer": 21,
         "name": "Ravi Reddy",
         "type": "Credit",
@@ -17416,7 +18013,7 @@
         "dueAfter": 6201.99
       },
       {
-        "id": 204,
+        "id": 225,
         "farmer": 21,
         "name": "Ravi Reddy",
         "type": "Payment",
@@ -17431,7 +18028,7 @@
         "principalPaid": 274.9
       },
       {
-        "id": 199,
+        "id": 219,
         "farmer": 21,
         "name": "Ravi Reddy",
         "type": "Credit",
@@ -17473,7 +18070,7 @@
     ],
     "interestHistory": [
       {
-        "id": 197,
+        "id": 231,
         "farmer": 21,
         "date": "2026-09-14",
         "type": "Accrual",
@@ -17487,7 +18084,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 198,
+        "id": 232,
         "farmer": 21,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -17501,7 +18098,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 199,
+        "id": 233,
         "farmer": 21,
         "date": "2026-09-25",
         "type": "Accrual",
@@ -17515,7 +18112,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 200,
+        "id": 234,
         "farmer": 21,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -17529,7 +18126,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 201,
+        "id": 235,
         "farmer": 21,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -17558,7 +18155,7 @@
     "compound": false,
     "events": [
       {
-        "id": 169,
+        "id": 186,
         "farmer": 17,
         "name": "Subba Reddy",
         "type": "Payment",
@@ -17573,7 +18170,7 @@
         "principalPaid": 2482.18
       },
       {
-        "id": 164,
+        "id": 180,
         "farmer": 17,
         "name": "Subba Reddy",
         "type": "Credit",
@@ -17626,7 +18223,7 @@
         "dueAfter": 14041.8
       },
       {
-        "id": 168,
+        "id": 185,
         "farmer": 17,
         "name": "Subba Reddy",
         "type": "Payment",
@@ -17641,7 +18238,7 @@
         "principalPaid": 2084.71
       },
       {
-        "id": 163,
+        "id": 179,
         "farmer": 17,
         "name": "Subba Reddy",
         "type": "Credit",
@@ -17681,7 +18278,7 @@
         "dueAfter": 11833
       },
       {
-        "id": 162,
+        "id": 178,
         "farmer": 17,
         "name": "Subba Reddy",
         "type": "Credit",
@@ -17734,7 +18331,7 @@
         "dueAfter": 5764.97
       },
       {
-        "id": 167,
+        "id": 184,
         "farmer": 17,
         "name": "Subba Reddy",
         "type": "Payment",
@@ -17749,7 +18346,7 @@
         "principalPaid": 301.83
       },
       {
-        "id": 161,
+        "id": 177,
         "farmer": 17,
         "name": "Subba Reddy",
         "type": "Credit",
@@ -17791,7 +18388,7 @@
     ],
     "interestHistory": [
       {
-        "id": 161,
+        "id": 189,
         "farmer": 17,
         "date": "2026-09-10",
         "type": "Accrual",
@@ -17805,7 +18402,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 162,
+        "id": 190,
         "farmer": 17,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -17819,7 +18416,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 163,
+        "id": 191,
         "farmer": 17,
         "date": "2026-09-26",
         "type": "Accrual",
@@ -17833,7 +18430,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 164,
+        "id": 192,
         "farmer": 17,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -17847,7 +18444,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 165,
+        "id": 193,
         "farmer": 17,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -17876,7 +18473,7 @@
     "compound": false,
     "events": [
       {
-        "id": 129,
+        "id": 142,
         "farmer": 13,
         "name": "Krishna Reddy",
         "type": "Payment",
@@ -17891,7 +18488,7 @@
         "principalPaid": 2263.47
       },
       {
-        "id": 124,
+        "id": 136,
         "farmer": 13,
         "name": "Krishna Reddy",
         "type": "Credit",
@@ -17944,7 +18541,7 @@
         "dueAfter": 12758.37
       },
       {
-        "id": 128,
+        "id": 141,
         "farmer": 13,
         "name": "Krishna Reddy",
         "type": "Payment",
@@ -17959,7 +18556,7 @@
         "principalPaid": 1746.41
       },
       {
-        "id": 123,
+        "id": 135,
         "farmer": 13,
         "name": "Krishna Reddy",
         "type": "Credit",
@@ -17999,7 +18596,7 @@
         "dueAfter": 10061.15
       },
       {
-        "id": 122,
+        "id": 134,
         "farmer": 13,
         "name": "Krishna Reddy",
         "type": "Credit",
@@ -18052,7 +18649,7 @@
         "dueAfter": 6900.56
       },
       {
-        "id": 127,
+        "id": 140,
         "farmer": 13,
         "name": "Krishna Reddy",
         "type": "Payment",
@@ -18067,7 +18664,7 @@
         "principalPaid": 332.51
       },
       {
-        "id": 121,
+        "id": 133,
         "farmer": 13,
         "name": "Krishna Reddy",
         "type": "Credit",
@@ -18109,7 +18706,7 @@
     ],
     "interestHistory": [
       {
-        "id": 118,
+        "id": 140,
         "farmer": 13,
         "date": "2026-09-13",
         "type": "Accrual",
@@ -18123,7 +18720,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 119,
+        "id": 141,
         "farmer": 13,
         "date": "2026-09-16",
         "type": "Accrual",
@@ -18137,7 +18734,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 120,
+        "id": 142,
         "farmer": 13,
         "date": "2026-09-27",
         "type": "Accrual",
@@ -18151,7 +18748,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 121,
+        "id": 143,
         "farmer": 13,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -18165,7 +18762,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 122,
+        "id": 144,
         "farmer": 13,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -18194,7 +18791,7 @@
     "compound": false,
     "events": [
       {
-        "id": 89,
+        "id": 98,
         "farmer": 9,
         "name": "Venkateswara Reddy",
         "type": "Payment",
@@ -18209,7 +18806,7 @@
         "principalPaid": 2903.93
       },
       {
-        "id": 84,
+        "id": 92,
         "farmer": 9,
         "name": "Venkateswara Reddy",
         "type": "Credit",
@@ -18262,7 +18859,7 @@
         "dueAfter": 16286.33
       },
       {
-        "id": 88,
+        "id": 97,
         "farmer": 9,
         "name": "Venkateswara Reddy",
         "type": "Payment",
@@ -18277,7 +18874,7 @@
         "principalPaid": 1750.39
       },
       {
-        "id": 83,
+        "id": 91,
         "farmer": 9,
         "name": "Venkateswara Reddy",
         "type": "Credit",
@@ -18317,7 +18914,7 @@
         "dueAfter": 10088.11
       },
       {
-        "id": 82,
+        "id": 90,
         "farmer": 9,
         "name": "Venkateswara Reddy",
         "type": "Credit",
@@ -18370,7 +18967,7 @@
         "dueAfter": 6753.15
       },
       {
-        "id": 87,
+        "id": 96,
         "farmer": 9,
         "name": "Venkateswara Reddy",
         "type": "Payment",
@@ -18385,7 +18982,7 @@
         "principalPaid": 343.89
       },
       {
-        "id": 81,
+        "id": 89,
         "farmer": 9,
         "name": "Venkateswara Reddy",
         "type": "Credit",
@@ -18427,7 +19024,7 @@
     ],
     "interestHistory": [
       {
-        "id": 83,
+        "id": 97,
         "farmer": 9,
         "date": "2026-09-09",
         "type": "Accrual",
@@ -18441,7 +19038,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 84,
+        "id": 98,
         "farmer": 9,
         "date": "2026-09-18",
         "type": "Accrual",
@@ -18455,7 +19052,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 85,
+        "id": 99,
         "farmer": 9,
         "date": "2026-09-28",
         "type": "Accrual",
@@ -18469,7 +19066,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 86,
+        "id": 100,
         "farmer": 9,
         "date": "2026-09-30",
         "type": "Accrual",
@@ -18483,7 +19080,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 87,
+        "id": 101,
         "farmer": 9,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -18512,7 +19109,7 @@
     "compound": false,
     "events": [
       {
-        "id": 49,
+        "id": 54,
         "farmer": 5,
         "name": "Annapurna Reddy",
         "type": "Payment",
@@ -18527,7 +19124,7 @@
         "principalPaid": 1586.61
       },
       {
-        "id": 44,
+        "id": 48,
         "farmer": 5,
         "name": "Annapurna Reddy",
         "type": "Credit",
@@ -18580,7 +19177,7 @@
         "dueAfter": 8915.86
       },
       {
-        "id": 48,
+        "id": 53,
         "farmer": 5,
         "name": "Annapurna Reddy",
         "type": "Payment",
@@ -18595,7 +19192,7 @@
         "principalPaid": 1448.29
       },
       {
-        "id": 43,
+        "id": 47,
         "farmer": 5,
         "name": "Annapurna Reddy",
         "type": "Credit",
@@ -18635,7 +19232,7 @@
         "dueAfter": 8330.56
       },
       {
-        "id": 42,
+        "id": 46,
         "farmer": 5,
         "name": "Annapurna Reddy",
         "type": "Credit",
@@ -18688,7 +19285,7 @@
         "dueAfter": 6133.79
       },
       {
-        "id": 47,
+        "id": 52,
         "farmer": 5,
         "name": "Annapurna Reddy",
         "type": "Payment",
@@ -18703,7 +19300,7 @@
         "principalPaid": 218.09
       },
       {
-        "id": 41,
+        "id": 45,
         "farmer": 5,
         "name": "Annapurna Reddy",
         "type": "Credit",
@@ -18745,7 +19342,7 @@
     ],
     "interestHistory": [
       {
-        "id": 41,
+        "id": 48,
         "farmer": 5,
         "date": "2026-09-12",
         "type": "Accrual",
@@ -18759,7 +19356,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 42,
+        "id": 49,
         "farmer": 5,
         "date": "2026-09-20",
         "type": "Accrual",
@@ -18773,7 +19370,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 43,
+        "id": 50,
         "farmer": 5,
         "date": "2026-09-29",
         "type": "Accrual",
@@ -18787,7 +19384,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 44,
+        "id": 51,
         "farmer": 5,
         "date": "2026-10-01",
         "type": "Accrual",
@@ -18801,7 +19398,7 @@
         "note": "Interest accrued at 2% per 30 elapsed days"
       },
       {
-        "id": 45,
+        "id": 52,
         "farmer": 5,
         "date": "2026-10-05",
         "type": "Accrual",
@@ -18830,7 +19427,7 @@
     "compound": false,
     "events": [
       {
-        "id": 9,
+        "id": 10,
         "farmer": 1,
         "name": "Ramesh Reddy",
         "type": "Payment",
@@ -18898,7 +19495,7 @@
         "dueAfter": 15148.66
       },
       {
-        "id": 8,
+        "id": 9,
         "farmer": 1,
         "name": "Ramesh Reddy",
         "type": "Payment",
@@ -19019,7 +19616,7 @@
         "dueAfter": 6752.35
       },
       {
-        "id": 7,
+        "id": 8,
         "farmer": 1,
         "name": "Ramesh Reddy",
         "type": "Payment",

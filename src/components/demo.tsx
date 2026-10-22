@@ -14,9 +14,10 @@ import {
   type Store,
   type Modal,
 } from "./demo-data";
+import { supplierPaymentsOn } from "./demo-math";
 import { DemoContext } from "./demo-context";
 import { Avatar, Empty, ModeBadge, Pager, DatePicker } from "./demo-ui";
-import { Icon, Lotus } from "./icons";
+import { Icon } from "./icons";
 import { DemoModal } from "./demo-modal";
 import { useContext } from "react";
 
@@ -128,18 +129,11 @@ export function DemoShell({ children }: { children: ReactNode }) {
             <Icon name="close" />
           </button>
           <Link href="/" className="brand" onClick={() => setMenu(false)}>
-            <div className="om-emblem">
-              <span>ॐ</span>
-            </div>
             <span className="brand-name">
               Omsai<span className="brand-dot">.</span>
             </span>
             <span className="brand-sub">FERTILISER, PESTICIDES & SEEDS</span>
           </Link>
-          <div className="ornament">
-            <span />✧<span />
-          </div>
-          <div className="nav-label">YOUR WORKSPACE</div>
           <nav>
             {routes.map(([name, href, icon]) => (
               <Link
@@ -156,19 +150,13 @@ export function DemoShell({ children }: { children: ReactNode }) {
             ))}
           </nav>
           <div className="sidebar-bottom">
-            <Lotus />
-            <p>
-              Rooted in trust.
-              <br />
-              <em>Growing together.</em>
-            </p>
             <div className="sidebar-profile">
               <div className="owner-avatar">
                 <Icon name="leaf" size={16} />
               </div>
               <div>
                 <strong>Omsai Proprietor</strong>
-                <small>Andhra Pradesh · Shop workspace</small>
+                <small>Telangana · Shop accounts</small>
               </div>
             </div>
           </div>
@@ -208,8 +196,7 @@ export function DemoShell({ children }: { children: ReactNode }) {
           {children}
           <footer className="page-footer">
             <span>
-              Omsai <span className="gold">✧</span> Every account. Every
-              harvest. Together.
+              Omsai Fertiliser, Pesticides and Seeds
             </span>
             <button
               className="text-button"
@@ -262,7 +249,6 @@ function Stat({
       </div>
       <strong>{value}</strong>
       <div className="stat-caption">{caption}</div>
-      <Lotus className="stat-lotus" />
     </div>
   );
 }
@@ -283,20 +269,17 @@ export function DemoPage({ section }: { section: Section }) {
   const credits = dayEvents
     .filter((e) => e.type === "Credit")
     .reduce((s, e) => s + creditCost(e), 0);
-  const purchases = data.purchases
-    .filter((p) => p.date === date)
-    .reduce((s, p) => s + p.amount, 0);
-  const net = payments - credits - purchases;
-  const low = data.products.filter((p) => !p.archived && p.stock < 10),
-    totalDue = data.farmers.reduce((s, f) => s + f.due, 0);
+  const purchases = supplierPaymentsOn(data.purchases, date);
+  const totalDue = data.farmers.reduce((s, f) => s + f.due, 0);
+  const low = data.products.filter((p) => !p.archived && p.stock < 10);
   const farmerEvents = (id: number) =>
     data.events.filter((e) => e.farmer === id);
   const descriptions = {
-    Dashboard: "A little clarity for a flourishing business.",
-    Farmers: "Relationships that grow, accounts you can trust.",
-    Products: "Everything your farmers need for a better harvest.",
-    Invoices: "Every transaction, thoughtfully recorded.",
-    Suppliers: "Strong partnerships. A well-stocked tomorrow.",
+    Dashboard: "Payments, purchases and account totals.",
+    Farmers: "Manage farmer accounts, credits and payments.",
+    Products: "Manage products, prices and stock.",
+    Invoices: "View and print saved farmer bills.",
+    Suppliers: "Manage suppliers and purchases.",
   };
   const farmers = data.farmers
     .filter(
@@ -373,12 +356,6 @@ export function DemoPage({ section }: { section: Section }) {
     <main className="page-content">
       <div className="page-heading">
         <div>
-          <div className="eyebrow">
-            {section === "Dashboard"
-              ? "NAMASTE, WELCOME BACK"
-              : "YOUR OMSAI WORKSPACE"}
-            <span>✧</span>
-          </div>
           <h1>{section === "Dashboard" ? "Business overview" : section}</h1>
           <p>{descriptions[section]}</p>
         </div>
@@ -466,145 +443,14 @@ export function DemoPage({ section }: { section: Section }) {
               value={money(purchases)}
               icon="truck"
               tone="rose"
-              caption="Paid & due purchases"
+              caption="Paid on the selected date"
             />
-            <Stat
-              label="Net business activity"
-              value={`${net >= 0 ? "+" : "−"}${money(Math.abs(net))}`}
-              icon="chart"
-              tone={net >= 0 ? "green" : "rose"}
-              caption="Payments − input cost − purchases"
-            />
-          </div>
-          <div className="dashboard-panels">
-            <section className="panel activity-panel">
-              <div className="panel-heading">
-                <div>
-                  <h2>
-                    <button
-                      className="heading-link"
-                      onClick={() => open({ kind: "activity" })}
-                    >
-                      {date === DAY
-                        ? "Today’s farmer activity"
-                        : "Farmer activity"}
-                    </button>
-                  </h2>
-                  <p>
-                    <span className="green-dot" />
-                    {new Set(dayEvents.map((e) => e.farmer)).size} farmers ·{" "}
-                    {dayEvents.length} transactions
-                  </p>
-                </div>
-                <button
-                  className="text-button"
-                  onClick={() => open({ kind: "activity" })}
-                >
-                  View all <Icon name="arrow" size={15} />
-                </button>
-              </div>
-              <div className="activity-list">
-                {dayEvents.length ? (
-                  dayEvents.slice(0, 4).map((e) => (
-                    <button
-                      className="activity-row"
-                      key={e.id}
-                      onClick={() => open({ kind: "history", id: e.farmer })}
-                    >
-                      <Avatar name={e.name} id={e.farmer} />
-                      <div className="activity-person">
-                        <strong>{e.name}</strong>
-                        <small>
-                          {e.type === "Payment"
-                            ? "Made a payment"
-                            : `${e.lines.length} products credited`}
-                        </small>
-                      </div>
-                      <span className="activity-time">{e.time}</span>
-                      <div
-                        className={`activity-amount ${e.type === "Payment" ? "positive" : "negative"}`}
-                      >
-                        <strong>+{money(e.amount)}</strong>
-                        <small>
-                          {e.type === "Payment"
-                            ? "Received"
-                            : "Farmer selling value"}
-                        </small>
-                      </div>
-                    </button>
-                  ))
-                ) : (
-                  <Empty text="No farmer activity on this date." />
-                )}
-              </div>
-              <div className="panel-foot">
-                <Icon name="people" size={15} />
-                <span>Click a farmer to open their full account.</span>
-              </div>
-            </section>
-            <section className="panel stock-panel">
-              <div className="panel-heading">
-                <div>
-                  <h2>Time to restock</h2>
-                  <p>
-                    <span className="amber-dot" />
-                    {low.length} products running low · current stock
-                  </p>
-                </div>
-                <Link className="text-button" href="/products">
-                  View inventory <Icon name="arrow" size={15} />
-                </Link>
-              </div>
-              <div className="stock-table">
-                <div className="stock-table-head">
-                  <span>PRODUCT</span>
-                  <span>IN STOCK</span>
-                  <span>ACTION</span>
-                </div>
-                {low.slice(0, 3).map((p) => (
-                  <div className="stock-row" key={p.id}>
-                    <button
-                      className="product-ident"
-                      onClick={() => open({ kind: "productDetails", id: p.id })}
-                    >
-                      <div
-                        className={`product-icon ${p.category === "Pesticides" ? "rose" : "amber"}`}
-                      >
-                        <Icon name="leaf" />
-                      </div>
-                      <div>
-                        <strong>{p.name}</strong>
-                        <small>{p.category}</small>
-                      </div>
-                    </button>
-                    <div className="stock-number">
-                      <strong>{p.stock}</strong>
-                      <small>{p.unit}</small>
-                    </div>
-                    <button
-                      className="outline small"
-                      onClick={() => open({ kind: "restock", id: p.id })}
-                    >
-                      <Icon name="plus" size={13} /> Restock
-                    </button>
-                  </div>
-                ))}
-              </div>
-              <button
-                className="stock-note full-stock-note"
-                onClick={() => open({ kind: "stockActivity" })}
-              >
-                <Icon name="leaf" size={16} />
-                <span>See stock movements for {dateLabel(date)}</span>
-                <Icon name="arrow" size={13} />
-              </button>
-            </section>
           </div>
           <section className="panel overview-panel">
             <div className="panel-heading">
               <div>
-                <h2>Business at a glance</h2>
-                <p>The bigger picture, nurtured every day.</p>
+                <h2>Account totals</h2>
+                <p>Current balances and account counts.</p>
               </div>
               <span className="subtle-pill">ALL-TIME OVERVIEW</span>
             </div>
@@ -622,11 +468,11 @@ export function DemoPage({ section }: { section: Section }) {
                   <Icon name="people" size={25} />
                 </div>
                 <div>
-                  <small>Farmers</small>
+                  <small>Total number of farmers</small>
                   <strong>
                     {data.farmers.filter((f) => !f.archived).length}
                   </strong>
-                  <span>Trusted relationships across Andhra Pradesh</span>
+                  <span>Active farmer accounts</span>
                 </div>
               </div>
               <div className="overview-stat">
@@ -634,11 +480,11 @@ export function DemoPage({ section }: { section: Section }) {
                   <Icon name="truck" size={25} />
                 </div>
                 <div>
-                  <small>Suppliers</small>
+                  <small>Total number of suppliers</small>
                   <strong>
                     {data.suppliers.filter((s) => !s.archived).length}
                   </strong>
-                  <span>Active business partners</span>
+                  <span>Active supplier accounts</span>
                 </div>
               </div>
             </div>
@@ -666,19 +512,11 @@ export function DemoPage({ section }: { section: Section }) {
               <div>
                 <small>All-time supplier purchases</small>
                 <strong>
-                  {money(data.purchases.reduce((s, p) => s + p.amount, 0))}
+                  {money(supplierPaymentsOn(data.purchases))}
                 </strong>
               </div>
             </div>
           </section>
-          <div className="blessing-banner">
-            <div className="blessing-symbol">ॐ</div>
-            <div>
-              <strong>Good seeds. Honest business. Abundant blessings.</strong>
-              <p>Serving our farmers with care, one harvest at a time.</p>
-            </div>
-            <Lotus />
-          </div>
         </>
       ) : (
         <>
@@ -694,7 +532,7 @@ export function DemoPage({ section }: { section: Section }) {
                   ? `${low.length} low-stock products`
                   : section === "Suppliers"
                     ? `${money(data.purchases.filter((p) => !p.paid).reduce((s, p) => s + p.amount, 0))} purchase dues`
-                    : "Immutable account snapshots"}
+                    : "Saved farmer bills"}
             </span>
           </div>
           <div className="toolbar">
@@ -782,7 +620,6 @@ export function DemoPage({ section }: { section: Section }) {
                       {f.due ? "Due" : "Clear"}
                     </span>
                   </div>
-                  <div className="farmer-location">{f.address}</div>
                   <div className="farmer-balance">
                     <span>
                       Total due <small>As of {dateLabel(DAY)}</small>
@@ -844,16 +681,8 @@ export function DemoPage({ section }: { section: Section }) {
                     aria-label={`Open product details for ${p.name}`}
                     onClick={() => open({ kind: "productDetails", id: p.id })}
                   />
-                  <div className={`product-art ${p.category.toLowerCase()}`}>
-                    <div className="package">
-                      <span>{p.brand}</span>
-                      <Icon name="leaf" size={36} />
-                      <strong>{p.name}</strong>
-                      <small>QUALITY FARM INPUTS</small>
-                    </div>
-                    <span className="category-tag">{p.category}</span>
-                  </div>
                   <div className="inventory-content">
+                    <span className="status">{p.category}</span>
                     <h3>{p.name}</h3>
                     <p>
                       {p.brand} · Batch {p.batch || "Not specified"}
@@ -935,7 +764,6 @@ export function DemoPage({ section }: { section: Section }) {
                       <p>{s.phone}</p>
                     </div>
                   </div>
-                  <div className="farmer-location">{s.address}</div>
                   <div className="farmer-balance">
                     <span>Purchase dues</span>
                     <strong>
@@ -1009,7 +837,7 @@ export function DemoPage({ section }: { section: Section }) {
                       <small>
                         OMS-{i.id} ·{" "}
                         {i.events.filter((e) => e.type === "Credit").length}{" "}
-                        credits · Full account bill
+                        credits · Farmer bill
                       </small>
                     </div>
                   </button>

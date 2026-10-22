@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import {
   aggregateBusinessLines,
   roundMoney,
+  supplierPaymentsOn,
 } from "../src/components/demo-math.ts";
 const read = (name) =>
   JSON.parse(
@@ -18,6 +19,29 @@ const events = read("transactions"),
   purchases = read("purchases"),
   invoices = read("invoices"),
   movements = read("stock_movements");
+
+test("supplier dashboard excludes Due and counts Paid on its payment date once", () => {
+  const entries = [
+    { amount: 100, date: "2026-10-20", paid: false, statusHistory: [{ date: "2026-10-20", paid: false }] },
+    { amount: 200, date: "2026-10-20", paid: true, statusHistory: [{ date: "2026-10-20", paid: false }, { date: "2026-10-22", paid: true }] },
+    { amount: 50, date: "2026-10-22", paid: true, statusHistory: [{ date: "2026-10-22", paid: true }] },
+  ];
+  assert.equal(supplierPaymentsOn(entries, "2026-10-20"), 0);
+  assert.equal(supplierPaymentsOn(entries, "2026-10-22"), 250);
+  assert.equal(supplierPaymentsOn(entries), 250);
+  entries[1].paid = false;
+  entries[1].statusHistory.push({ date: "2026-10-22", paid: false });
+  assert.equal(supplierPaymentsOn(entries), 50);
+});
+
+test("extended fixtures contain credits and payments on every day through 22 October", () => {
+  for (let day = 15; day <= 22; day++) {
+    const date = `2026-10-${day}`;
+    assert.ok(events.some((e) => e.date === date && e.type === "Credit"));
+    assert.ok(events.some((e) => e.date === date && e.type === "Payment"));
+  }
+  assert.ok(purchases.some((p) => p.date === "2026-10-22"));
+});
 
 test("credit snapshots and payments reconcile to their stored amounts", () => {
   for (const e of events) {

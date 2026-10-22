@@ -45,6 +45,7 @@ export function DemoModal({
     p = data.products.find((p) => p.id === modal.id),
     supplier = data.suppliers.find((s) => s.id === modal.id),
     invoice = data.invoices.find((i) => i.id === modal.id);
+  const [includeHistory, setIncludeHistory] = useState(true);
   const [amount, setAmount] = useState("");
   const [error, setError] = useState("");
   const [historyTab, setHistoryTab] = useState("Transactions");
@@ -62,7 +63,7 @@ export function DemoModal({
   const isArchiveAction =
     modal.kind.startsWith("delete") || modal.kind.startsWith("restore");
   const titles: Record<string, string> = {
-    farmer: f ? "Edit farmer" : "Welcome a new farmer",
+    farmer: f ? "Edit farmer" : "Add farmer",
     pay: "Record payment",
     credit: "Give farmer credit",
     history: "Farmer account",
@@ -530,9 +531,6 @@ export function DemoModal({
       <div className="sheet-handle" />
       <div className="modal-heading">
         <div>
-          <div className="eyebrow">
-            OMSAI WORKSPACE <span>✧</span>
-          </div>
           <h2 id="dialog-title">{titles[modal.kind]}</h2>
         </div>
         <button
@@ -902,7 +900,7 @@ export function DemoModal({
                 {modal.kind === "pay"
                   ? "Save payment"
                   : modal.kind === "bill"
-                    ? "Create full bill"
+                    ? "Create bill"
                     : "Save changes"}
               </button>
             </div>
@@ -1148,7 +1146,7 @@ export function DemoModal({
                 Edit farmer
               </button>
               <button className="primary" onClick={() => saveBill(f)}>
-                <Icon name="file" size={16} /> Generate full bill
+                <Icon name="file" size={16} /> Generate bill
               </button>
             </div>
           </>
@@ -1651,10 +1649,13 @@ export function DemoModal({
         {modal.kind === "invoice" && invoice && (
           <>
             <div className="report-controls">
-              <span>Saved snapshot · OMS-{invoice.id}</span>
+              <span>Saved bill · OMS-{invoice.id}</span>
+              <label className="checkbox-field">
+                <input type="checkbox" checked={includeHistory} onChange={(e) => setIncludeHistory(e.target.checked)} /> Include account history
+              </label>
               <PrintButton />
             </div>
-            <BillDocument invoice={invoice} />
+            <BillDocument invoice={invoice} includeHistory={includeHistory} />
           </>
         )}
         {isArchiveAction && (

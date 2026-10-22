@@ -1,8 +1,9 @@
 ﻿import type { Metadata } from "next";
 import { DemoShell } from "@/components/demo";
 import "./globals.css";
+import "./plain.css";
 export const metadata: Metadata = {
-  title: "Omsai · Your business, in harmony",
+  title: "Omsai | Shop accounts",
   description:
     "Omsai Fertiliser, pesticides and seeds — interactive shop management demo.",
 };
