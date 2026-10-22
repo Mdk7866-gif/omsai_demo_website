@@ -218,7 +218,7 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .profile-detail-list dd { margin: 0; overflow-wrap: anywhere; min-width: 0; }
 .profile-bank-note { margin-bottom: 10px; }
 .profile-document-footer { margin-top: auto; padding-top: 14px; border-top: 1px solid #333; display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
-.company-profile-pdf-frame { display: block; width: 100%; height: 65vh; border: 1px solid var(--line); background: #f6f7f9; }
+.profile-preview-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .profile-editor { max-width: 850px; background: #fff; border: 1px solid var(--line); padding: 28px; margin-bottom: 24px; border-radius: 5px; }
 .profile-editor h2 { font-size: 20px; font-weight: 600; color: #111; }
 .profile-editor > p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 10px 0 24px; }
@@ -239,6 +239,8 @@ h1, h2, h3, strong { letter-spacing: normal; }
   .company-profile-page > .page-heading,
   .company-profile-page > .profile-editor { display: none !important; }
   .app-shell[data-page="/profile"] .main-shell { margin: 0 !important; width: 100% !important; }
+  body:has(.report-modal[open]) .app-shell[data-page="/profile"] { display: none !important; }
+  .report-modal .company-profile-document { min-height: 259mm; border: 0; padding: 0; }
   .company-profile-page { padding: 0 !important; max-width: none !important; }
   .company-profile-page .company-profile-document { border: 0; padding: 0; max-width: none; min-height: 259mm; color: #000; }
   .company-profile-document * { color: #000 !important; background: #fff !important; box-shadow: none !important; }

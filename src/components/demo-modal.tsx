@@ -59,7 +59,7 @@ export function DemoModal({
     [to, setTo] = useState(date),
     [reportReady, setReportReady] = useState(false);
   const isReport =
-    ["invoice", "inventoryReport", "supplierReport"].includes(modal.kind) ||
+    ["invoice", "inventoryReport", "supplierReport", "companyProfile"].includes(modal.kind) ||
     (modal.kind === "businessReport" && reportReady);
   const wide = isReport || ["credit", "purchase", "companyProfile"].includes(modal.kind);
   const isArchiveAction =
@@ -545,7 +545,7 @@ export function DemoModal({
         </button>
       </div>
       <div className="modal-content">
-        {modal.kind === "companyProfile" && <CompanyProfilePdfPreview close={close} />}
+        {modal.kind === "companyProfile" && <CompanyProfilePdfPreview />}
         {["pay", "credit", "history"].includes(modal.kind) && f && (
           <div className="modal-person">
             <Avatar name={f.name} id={f.id} />
@@ -1723,7 +1723,7 @@ export function DemoModal({
         )}
       </div>
       {isReport && (
-        <style>{`@media print { @page { size: A4 ${modal.kind === "invoice" || modal.kind === "businessReport" ? "portrait" : "landscape"}; margin: 12mm; } }`}</style>
+        <style>{`@media print { @page { size: A4 ${modal.kind === "invoice" || modal.kind === "businessReport" || modal.kind === "companyProfile" ? "portrait" : "landscape"}; margin: ${modal.kind === "companyProfile" ? "18mm 19mm" : "12mm"}; } }`}</style>
       )}
     </dialog>
   );

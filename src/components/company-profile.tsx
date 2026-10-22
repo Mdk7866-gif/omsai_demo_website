@@ -1,8 +1,9 @@
 "use client";
 
-import { useContext, useEffect, useRef, useState, type FormEvent } from "react";
+import { useContext, useState, type FormEvent } from "react";
 import { PROFILE_STORAGE_KEY, shopDetails, type Shop } from "./demo-data";
 import { DemoContext } from "./demo-context";
+import { PrintButton } from "./reports";
 
 export function CompanyProfileDocument({ shop = shopDetails }: { shop?: Shop }) {
   return (
@@ -113,32 +114,30 @@ export function CompanyProfilePage() {
 }
 
 
-export function CompanyProfilePdfPreview({ close }: { close: () => void }) {
+export function CompanyProfilePdfPreview() {
   const { data, notify } = useContext(DemoContext);
   const shop = data.shop ?? shopDetails;
-  const [url, setUrl] = useState("");
-  const [error, setError] = useState("");
-  const frame = useRef<HTMLIFrameElement>(null);
-  useEffect(() => {
-    let cancelled = false;
-    let objectUrl = "";
-    import("./company-profile-pdf").then(({ createCompanyProfilePdf }) => createCompanyProfilePdf(shop)).then(bytes => {
-      if (cancelled) return;
-      objectUrl = URL.createObjectURL(new Blob([new Uint8Array(bytes)], { type: "application/pdf" }));
-      setUrl(objectUrl);
-    }).catch(() => {
-      if (!cancelled) setError("The PDF preview could not be generated. Check that the profile uses English text and try again.");
-    });
-    return () => { cancelled = true; if (objectUrl) URL.revokeObjectURL(objectUrl); };
-  }, [shop]);
+  const [downloading, setDownloading] = useState(false);
+  async function download() {
+    setDownloading(true);
+    try {
+      const { createCompanyProfilePdf } = await import("./company-profile-pdf");
+      const bytes = await createCompanyProfilePdf(shop);
+      const url = URL.createObjectURL(new Blob([new Uint8Array(bytes)], { type: "application/pdf" }));
+      const link = document.createElement("a");
+      link.href = url; link.download = "Omsai_Company_Profile.pdf"; link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 30000);
+    } catch { notify("The PDF could not be generated. Check the profile details and try again."); }
+    finally { setDownloading(false); }
+  }
   return <>
-    {error ? <p className="error" role="alert">{error}</p> : url ? <iframe ref={frame} className="company-profile-pdf-frame" src={url} title="Company profile PDF preview" /> : <p role="status">Preparing PDF preview...</p>}
-    <div className="modal-actions">
-      <button className="outline" onClick={close}>Close</button>
-      {url && <><a className="outline" href={url} download="Omsai_Company_Profile.pdf">Download PDF</a><button className="primary" onClick={() => {
-        try { frame.current?.contentWindow?.focus(); frame.current?.contentWindow?.print(); }
-        catch { notify("Use the print icon in the PDF preview toolbar to print this document."); }
-      }}>Print PDF</button></>}
+    <div className="report-controls">
+      <span>Company profile</span>
+      <div className="profile-preview-actions">
+        <button className="outline" disabled={downloading} onClick={download}>{downloading ? "Generating PDF..." : "Download PDF"}</button>
+        <PrintButton />
+      </div>
     </div>
+    <CompanyProfileDocument shop={shop} />
   </>;
 }
