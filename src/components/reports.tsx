@@ -1,4 +1,5 @@
 import { aggregateBusinessLines } from "./demo-math";
+import { simplifyInterestHistory, interestReason, interestTitle } from "./interest-history.mjs";
 import {
   DAY,
   dateLabel,
@@ -131,10 +132,11 @@ export function BillDocument({ invoice, includeHistory = invoice.includeHistory 
         ))}
         <h3 className="report-section-title">Interest history</h3>
         <table className="detail-table">
-          <thead><tr><th>Period / date</th><th>Entry</th><th>Interest amount</th></tr></thead>
-          <tbody>{invoice.interestHistory.map(e => <tr key={e.id}>
+          <thead><tr><th>Period / date</th><th>Entry</th><th>Reason</th><th>Interest amount</th></tr></thead>
+          <tbody>{simplifyInterestHistory(invoice.interestHistory, invoice.events).map(e => <tr key={e.id}>
             <td>{e.type === "Accrual" ? `${dateLabel(e.from)} - ${dateLabel(e.to)}` : dateLabel(e.date)}</td>
-            <td>{e.type === "Accrual" ? "Interest added" : e.type === "Capitalization" ? "Interest added to principal" : "Account settings updated"}</td>
+            <td>{interestTitle(e)}</td>
+            <td>{interestReason(e)}</td>
             <td>{e.type === "Settings" ? "-" : money(e.amount)}</td>
           </tr>)}</tbody>
         </table>

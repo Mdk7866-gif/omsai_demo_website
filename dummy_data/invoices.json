@@ -294,7 +294,9 @@
         "amount": 119.7,
         "from": "2026-06-17",
         "to": "2026-07-11",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 415,
@@ -308,7 +310,9 @@
         "amount": 192.72,
         "from": "2026-07-11",
         "to": "2026-08-04",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 416,
@@ -322,38 +326,12 @@
         "amount": 778.52,
         "from": "2026-08-04",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 417,
-        "farmer": 48,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 98.18,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 418,
-        "farmer": 48,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 58.91,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 419,
         "farmer": 48,
         "date": "2026-10-16",
         "type": "Accrual",
@@ -361,10 +339,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 58.91,
-        "from": "2026-10-13",
+        "amount": 216,
+        "from": "2026-10-05",
         "to": "2026-10-16",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 420,
@@ -378,7 +358,9 @@
         "amount": 147.52,
         "from": "2026-10-16",
         "to": "2026-10-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       }
     ]
   },
@@ -677,7 +659,9 @@
         "amount": 460.56,
         "from": "2026-07-20",
         "to": "2026-08-18",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 382,
@@ -691,7 +675,9 @@
         "amount": 492.75,
         "from": "2026-08-18",
         "to": "2026-09-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 383,
@@ -705,38 +691,12 @@
         "amount": 514.37,
         "from": "2026-09-13",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 384,
-        "farmer": 44,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 144.27,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 385,
-        "farmer": 44,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 86.56,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 386,
         "farmer": 44,
         "date": "2026-10-19",
         "type": "Accrual",
@@ -744,10 +704,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 173.12,
-        "from": "2026-10-13",
+        "amount": 403.95,
+        "from": "2026-10-05",
         "to": "2026-10-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 387,
@@ -761,7 +723,9 @@
         "amount": 38.53,
         "from": "2026-10-19",
         "to": "2026-10-21",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 388,
@@ -775,7 +739,9 @@
         "amount": 25.72,
         "from": "2026-10-21",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -1059,7 +1025,9 @@
         "amount": 183.97,
         "from": "2026-08-13",
         "to": "2026-09-07",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 341,
@@ -1073,7 +1041,9 @@
         "amount": 430.25,
         "from": "2026-09-07",
         "to": "2026-10-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 342,
@@ -1087,7 +1057,9 @@
         "amount": 53.22,
         "from": "2026-10-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 343,
@@ -1101,7 +1073,9 @@
         "amount": 195.74,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 344,
@@ -1115,7 +1089,9 @@
         "amount": 0,
         "from": "2026-10-10",
         "to": "2026-10-10",
-        "note": "Monthly compounding enabled prospectively"
+        "note": "Monthly compounding enabled prospectively",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 345,
@@ -1129,24 +1105,12 @@
         "amount": 863.17,
         "from": "2026-10-10",
         "to": "2026-10-10",
-        "note": "Existing unpaid interest capitalized once on starting compound mode"
+        "note": "Existing unpaid interest capitalized once on starting compound mode",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 346,
-        "farmer": 40,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": true,
-        "newCompound": true,
-        "amount": 119.17,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 347,
         "farmer": 40,
         "date": "2026-10-17",
         "type": "Accrual",
@@ -1154,10 +1118,12 @@
         "newRate": 2,
         "oldCompound": true,
         "newCompound": true,
-        "amount": 158.89,
-        "from": "2026-10-13",
+        "amount": 278.06,
+        "from": "2026-10-10",
         "to": "2026-10-17",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 348,
@@ -1171,7 +1137,9 @@
         "amount": 262.63,
         "from": "2026-10-17",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -1485,7 +1453,9 @@
         "amount": 170.6,
         "from": "2026-05-02",
         "to": "2026-06-01",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 306,
@@ -1499,7 +1469,9 @@
         "amount": 141.12,
         "from": "2026-06-01",
         "to": "2026-06-18",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 307,
@@ -1513,7 +1485,9 @@
         "amount": 1575.57,
         "from": "2026-06-18",
         "to": "2026-09-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 308,
@@ -1527,7 +1501,9 @@
         "amount": 0,
         "from": "2026-09-20",
         "to": "2026-09-20",
-        "note": "Monthly rate reduced after discussion with the farmer"
+        "note": "Monthly rate reduced after discussion with the farmer",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 309,
@@ -1541,7 +1517,9 @@
         "amount": 113.14,
         "from": "2026-09-20",
         "to": "2026-09-29",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 310,
@@ -1555,7 +1533,9 @@
         "amount": 52.11,
         "from": "2026-09-29",
         "to": "2026-10-05",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 311,
@@ -1569,38 +1549,12 @@
         "amount": 0,
         "from": "2026-10-05",
         "to": "2026-10-05",
-        "note": "Rate revised for the new crop season"
+        "note": "Rate revised for the new crop season",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 312,
-        "farmer": 36,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 1.75,
-        "newRate": 1.75,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 74.47,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
-      },
-      {
-        "id": 313,
-        "farmer": 36,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 1.75,
-        "newRate": 1.75,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 44.68,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
-      },
-      {
-        "id": 314,
         "farmer": 36,
         "date": "2026-10-16",
         "type": "Accrual",
@@ -1608,10 +1562,12 @@
         "newRate": 1.75,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 44.68,
-        "from": "2026-10-13",
+        "amount": 163.83,
+        "from": "2026-10-05",
         "to": "2026-10-16",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
+        "note": "Interest accrued at 1.75% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 315,
@@ -1625,7 +1581,9 @@
         "amount": 57.67,
         "from": "2026-10-16",
         "to": "2026-10-22",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
+        "note": "Interest accrued at 1.75% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -1939,7 +1897,9 @@
         "amount": 303.79,
         "from": "2026-05-22",
         "to": "2026-06-17",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 267,
@@ -1953,7 +1913,9 @@
         "amount": 497.35,
         "from": "2026-06-17",
         "to": "2026-07-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 268,
@@ -1967,38 +1929,12 @@
         "amount": 2971.35,
         "from": "2026-07-15",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 269,
-        "farmer": 32,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 214.01,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 270,
-        "farmer": 32,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 128.41,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 271,
         "farmer": 32,
         "date": "2026-10-15",
         "type": "Accrual",
@@ -2006,10 +1942,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 85.61,
-        "from": "2026-10-13",
+        "amount": 428.03,
+        "from": "2026-10-05",
         "to": "2026-10-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 272,
@@ -2023,7 +1961,9 @@
         "amount": 87.56,
         "from": "2026-10-15",
         "to": "2026-10-18",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 273,
@@ -2037,7 +1977,9 @@
         "amount": 35.62,
         "from": "2026-10-18",
         "to": "2026-10-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 274,
@@ -2051,7 +1993,9 @@
         "amount": 68.55,
         "from": "2026-10-19",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": true
       }
     ]
   },
@@ -2335,7 +2279,9 @@
         "amount": 119.53,
         "from": "2026-06-15",
         "to": "2026-07-07",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 233,
@@ -2349,7 +2295,9 @@
         "amount": 220.8,
         "from": "2026-07-07",
         "to": "2026-08-04",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 234,
@@ -2363,38 +2311,12 @@
         "amount": 850.58,
         "from": "2026-08-04",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 235,
-        "farmer": 28,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 120.23,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 236,
-        "farmer": 28,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 72.14,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 237,
         "farmer": 28,
         "date": "2026-10-14",
         "type": "Accrual",
@@ -2402,10 +2324,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 24.05,
-        "from": "2026-10-13",
+        "amount": 216.42,
+        "from": "2026-10-05",
         "to": "2026-10-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 238,
@@ -2419,7 +2343,9 @@
         "amount": 250.81,
         "from": "2026-10-14",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -2718,7 +2644,9 @@
         "amount": 219.15,
         "from": "2026-07-18",
         "to": "2026-08-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 196,
@@ -2732,7 +2660,9 @@
         "amount": 526.49,
         "from": "2026-08-14",
         "to": "2026-09-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 197,
@@ -2746,7 +2676,9 @@
         "amount": 275.8,
         "from": "2026-09-02",
         "to": "2026-09-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 198,
@@ -2760,7 +2692,9 @@
         "amount": 0,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Monthly compounding enabled by the proprietor"
+        "note": "Monthly compounding enabled by the proprietor",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 199,
@@ -2774,7 +2708,9 @@
         "amount": 1021.44,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Existing unpaid interest capitalized once on starting compound mode"
+        "note": "Existing unpaid interest capitalized once on starting compound mode",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 200,
@@ -2788,7 +2724,9 @@
         "amount": 1042.1,
         "from": "2026-09-09",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 201,
@@ -2802,7 +2740,9 @@
         "amount": 172.59,
         "from": "2026-10-05",
         "to": "2026-10-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "compound",
+        "ongoing": false
       },
       {
         "id": 202,
@@ -2816,38 +2756,12 @@
         "amount": 1214.69,
         "from": "2026-09-09",
         "to": "2026-10-09",
-        "note": "Completed 30-day cycle; unpaid interest added to the interest-bearing principal"
+        "note": "Completed 30-day cycle; unpaid interest added to the interest-bearing principal",
+        "reason": "compound",
+        "ongoing": false
       },
       {
         "id": 203,
-        "farmer": 24,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": true,
-        "newCompound": true,
-        "amount": 43.96,
-        "from": "2026-10-09",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 204,
-        "farmer": 24,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": true,
-        "newCompound": true,
-        "amount": 131.87,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 205,
         "farmer": 24,
         "date": "2026-10-19",
         "type": "Accrual",
@@ -2855,10 +2769,12 @@
         "newRate": 2,
         "oldCompound": true,
         "newCompound": true,
-        "amount": 263.74,
-        "from": "2026-10-13",
+        "amount": 439.57,
+        "from": "2026-10-09",
         "to": "2026-10-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 206,
@@ -2872,7 +2788,9 @@
         "amount": 105.49,
         "from": "2026-10-19",
         "to": "2026-10-21",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 207,
@@ -2886,7 +2804,9 @@
         "amount": 33.99,
         "from": "2026-10-21",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": true
       }
     ]
   },
@@ -3185,7 +3105,9 @@
         "amount": 238.65,
         "from": "2026-08-11",
         "to": "2026-09-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 159,
@@ -3199,7 +3121,9 @@
         "amount": 386.14,
         "from": "2026-09-03",
         "to": "2026-10-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 160,
@@ -3213,38 +3137,12 @@
         "amount": 62.82,
         "from": "2026-10-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 161,
-        "farmer": 20,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 187.94,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 162,
-        "farmer": 20,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 112.76,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 163,
         "farmer": 20,
         "date": "2026-10-15",
         "type": "Accrual",
@@ -3252,10 +3150,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 75.18,
-        "from": "2026-10-13",
+        "amount": 375.88,
+        "from": "2026-10-05",
         "to": "2026-10-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 164,
@@ -3269,7 +3169,9 @@
         "amount": 224.12,
         "from": "2026-10-15",
         "to": "2026-10-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 165,
@@ -3283,7 +3185,9 @@
         "amount": 58.47,
         "from": "2026-10-20",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": true
       }
     ]
   },
@@ -3582,7 +3486,9 @@
         "amount": 223.62,
         "from": "2026-04-30",
         "to": "2026-05-28",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 127,
@@ -3596,7 +3502,9 @@
         "amount": 264.72,
         "from": "2026-05-28",
         "to": "2026-06-18",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 128,
@@ -3610,7 +3518,9 @@
         "amount": 1581.54,
         "from": "2026-06-18",
         "to": "2026-09-27",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 129,
@@ -3624,38 +3534,12 @@
         "amount": 87.24,
         "from": "2026-09-27",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 130,
-        "farmer": 16,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 71.09,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 131,
-        "farmer": 16,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 42.65,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 132,
         "farmer": 16,
         "date": "2026-10-20",
         "type": "Accrual",
@@ -3663,10 +3547,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 99.53,
-        "from": "2026-10-13",
+        "amount": 213.27,
+        "from": "2026-10-05",
         "to": "2026-10-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 133,
@@ -3680,7 +3566,9 @@
         "amount": 56.02,
         "from": "2026-10-20",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -4019,7 +3907,9 @@
         "amount": 298.27,
         "from": "2026-05-20",
         "to": "2026-06-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 89,
@@ -4033,7 +3923,9 @@
         "amount": 347,
         "from": "2026-06-13",
         "to": "2026-07-04",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 90,
@@ -4047,38 +3939,12 @@
         "amount": 2003.56,
         "from": "2026-07-04",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 91,
-        "farmer": 12,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 156.55,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 92,
-        "farmer": 12,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 93.93,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 93,
         "farmer": 12,
         "date": "2026-10-16",
         "type": "Accrual",
@@ -4086,10 +3952,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 93.93,
-        "from": "2026-10-13",
+        "amount": 344.41,
+        "from": "2026-10-05",
         "to": "2026-10-16",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 94,
@@ -4103,7 +3971,9 @@
         "amount": 41.38,
         "from": "2026-10-16",
         "to": "2026-10-17",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 95,
@@ -4117,7 +3987,9 @@
         "amount": 206.91,
         "from": "2026-10-17",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -4441,7 +4313,9 @@
         "amount": 239.97,
         "from": "2026-06-22",
         "to": "2026-07-21",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 57,
@@ -4455,7 +4329,9 @@
         "amount": 310.7,
         "from": "2026-07-21",
         "to": "2026-08-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 58,
@@ -4469,7 +4345,9 @@
         "amount": 703.08,
         "from": "2026-08-13",
         "to": "2026-09-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 59,
@@ -4483,7 +4361,9 @@
         "amount": 0,
         "from": "2026-09-20",
         "to": "2026-09-20",
-        "note": "Monthly rate reduced after discussion with the farmer"
+        "note": "Monthly rate reduced after discussion with the farmer",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 60,
@@ -4497,7 +4377,9 @@
         "amount": 208.15,
         "from": "2026-09-20",
         "to": "2026-10-05",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 61,
@@ -4511,38 +4393,12 @@
         "amount": 0,
         "from": "2026-10-05",
         "to": "2026-10-05",
-        "note": "Rate revised for the new crop season"
+        "note": "Rate revised for the new crop season",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 62,
-        "farmer": 8,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 1.75,
-        "newRate": 1.75,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 115.28,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
-      },
-      {
-        "id": 63,
-        "farmer": 8,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 1.75,
-        "newRate": 1.75,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 69.17,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
-      },
-      {
-        "id": 64,
         "farmer": 8,
         "date": "2026-10-21",
         "type": "Accrual",
@@ -4550,10 +4406,12 @@
         "newRate": 1.75,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 184.44,
-        "from": "2026-10-13",
+        "amount": 368.89,
+        "from": "2026-10-05",
         "to": "2026-10-21",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
+        "note": "Interest accrued at 1.75% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 65,
@@ -4567,7 +4425,9 @@
         "amount": 30.07,
         "from": "2026-10-21",
         "to": "2026-10-22",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
+        "note": "Interest accrued at 1.75% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -4891,7 +4751,9 @@
         "amount": 229.25,
         "from": "2026-07-16",
         "to": "2026-08-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 28,
@@ -4905,7 +4767,9 @@
         "amount": 327.2,
         "from": "2026-08-10",
         "to": "2026-09-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 29,
@@ -4919,38 +4783,12 @@
         "amount": 920.68,
         "from": "2026-09-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 30,
-        "farmer": 4,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 183.23,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 31,
-        "farmer": 4,
-        "date": "2026-10-13",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 109.94,
-        "from": "2026-10-10",
-        "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 32,
         "farmer": 4,
         "date": "2026-10-17",
         "type": "Accrual",
@@ -4958,10 +4796,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 146.58,
-        "from": "2026-10-13",
+        "amount": 439.75,
+        "from": "2026-10-05",
         "to": "2026-10-17",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 33,
@@ -4975,7 +4815,9 @@
         "amount": 256.1,
         "from": "2026-10-17",
         "to": "2026-10-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -5221,7 +5063,9 @@
         "amount": 238.28,
         "from": "2026-05-19",
         "to": "2026-06-11",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 406,
@@ -5235,7 +5079,9 @@
         "amount": 402.59,
         "from": "2026-06-11",
         "to": "2026-07-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 407,
@@ -5249,7 +5095,9 @@
         "amount": 1410.53,
         "from": "2026-07-05",
         "to": "2026-09-16",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 408,
@@ -5263,24 +5111,12 @@
         "amount": 283.04,
         "from": "2026-09-16",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 409,
-        "farmer": 47,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 150.58,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 410,
         "farmer": 47,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -5288,10 +5124,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 90.35,
-        "from": "2026-10-10",
+        "amount": 240.93,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -5522,7 +5360,9 @@
         "amount": 113.49,
         "from": "2026-06-21",
         "to": "2026-07-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 372,
@@ -5536,7 +5376,9 @@
         "amount": 748.28,
         "from": "2026-07-19",
         "to": "2026-08-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 373,
@@ -5550,7 +5392,9 @@
         "amount": 1452.36,
         "from": "2026-08-14",
         "to": "2026-09-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 374,
@@ -5564,7 +5408,9 @@
         "amount": 0,
         "from": "2026-09-20",
         "to": "2026-09-20",
-        "note": "Monthly rate reduced after discussion with the farmer"
+        "note": "Monthly rate reduced after discussion with the farmer",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 375,
@@ -5578,7 +5424,9 @@
         "amount": 441.6,
         "from": "2026-09-20",
         "to": "2026-10-05",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 376,
@@ -5592,24 +5440,12 @@
         "amount": 0,
         "from": "2026-10-05",
         "to": "2026-10-05",
-        "note": "Rate revised for the new crop season"
+        "note": "Rate revised for the new crop season",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 377,
-        "farmer": 43,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 1.75,
-        "newRate": 1.75,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 187.22,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
-      },
-      {
-        "id": 378,
         "farmer": 43,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -5617,10 +5453,12 @@
         "newRate": 1.75,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 112.33,
-        "from": "2026-10-10",
+        "amount": 299.55,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
+        "note": "Interest accrued at 1.75% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": true
       }
     ]
   },
@@ -5851,7 +5689,9 @@
         "amount": 64.4,
         "from": "2026-07-15",
         "to": "2026-08-08",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 333,
@@ -5865,7 +5705,9 @@
         "amount": 173.49,
         "from": "2026-08-08",
         "to": "2026-09-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 334,
@@ -5879,24 +5721,12 @@
         "amount": 410.18,
         "from": "2026-09-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 335,
-        "farmer": 39,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 145.09,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 336,
         "farmer": 39,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -5904,10 +5734,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 87.05,
-        "from": "2026-10-10",
+        "amount": 232.14,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -6151,7 +5983,9 @@
         "amount": 181.93,
         "from": "2026-08-17",
         "to": "2026-09-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 298,
@@ -6165,7 +5999,9 @@
         "amount": 174.73,
         "from": "2026-09-15",
         "to": "2026-10-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 299,
@@ -6179,24 +6015,12 @@
         "amount": 44.9,
         "from": "2026-10-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 300,
-        "farmer": 35,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 103.26,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 301,
         "farmer": 35,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -6204,10 +6028,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 61.95,
-        "from": "2026-10-10",
+        "amount": 165.21,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -6438,7 +6264,9 @@
         "amount": 205.08,
         "from": "2026-04-27",
         "to": "2026-05-22",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 260,
@@ -6452,7 +6280,9 @@
         "amount": 481.4,
         "from": "2026-05-22",
         "to": "2026-06-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 261,
@@ -6466,24 +6296,12 @@
         "amount": 3038.9,
         "from": "2026-06-19",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 262,
-        "farmer": 31,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 206.42,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 263,
         "farmer": 31,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -6491,10 +6309,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 123.85,
-        "from": "2026-10-10",
+        "amount": 330.27,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -6740,7 +6560,9 @@
         "amount": 186.4,
         "from": "2026-05-26",
         "to": "2026-06-25",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 224,
@@ -6754,7 +6576,9 @@
         "amount": 253.35,
         "from": "2026-06-25",
         "to": "2026-07-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 225,
@@ -6768,7 +6592,9 @@
         "amount": 1268.12,
         "from": "2026-07-14",
         "to": "2026-09-23",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 226,
@@ -6782,7 +6608,9 @@
         "amount": 164.15,
         "from": "2026-09-23",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 227,
@@ -6796,7 +6624,9 @@
         "amount": 114.13,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 228,
@@ -6810,7 +6640,9 @@
         "amount": 0,
         "from": "2026-10-10",
         "to": "2026-10-10",
-        "note": "Monthly compounding enabled prospectively"
+        "note": "Monthly compounding enabled prospectively",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 229,
@@ -6824,7 +6656,9 @@
         "amount": 278.29,
         "from": "2026-10-10",
         "to": "2026-10-10",
-        "note": "Existing unpaid interest capitalized once on starting compound mode"
+        "note": "Existing unpaid interest capitalized once on starting compound mode",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 230,
@@ -6838,7 +6672,9 @@
         "amount": 69.04,
         "from": "2026-10-10",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": true
       }
     ]
   },
@@ -7069,7 +6905,9 @@
         "amount": 146.73,
         "from": "2026-06-19",
         "to": "2026-07-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 187,
@@ -7083,7 +6921,9 @@
         "amount": 420.28,
         "from": "2026-07-15",
         "to": "2026-08-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 188,
@@ -7097,24 +6937,12 @@
         "amount": 1761.27,
         "from": "2026-08-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 189,
-        "farmer": 23,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 182.65,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 190,
         "farmer": 23,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -7122,10 +6950,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 109.59,
-        "from": "2026-10-10",
+        "amount": 292.24,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -7356,7 +7186,9 @@
         "amount": 46.14,
         "from": "2026-07-13",
         "to": "2026-08-04",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 152,
@@ -7370,7 +7202,9 @@
         "amount": 207.72,
         "from": "2026-08-04",
         "to": "2026-09-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 153,
@@ -7384,24 +7218,12 @@
         "amount": 508.27,
         "from": "2026-09-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 154,
-        "farmer": 19,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 112.52,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 155,
         "farmer": 19,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -7409,10 +7231,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 67.51,
-        "from": "2026-10-10",
+        "amount": 180.03,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -7643,7 +7467,9 @@
         "amount": 461.67,
         "from": "2026-08-15",
         "to": "2026-09-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 114,
@@ -7657,7 +7483,9 @@
         "amount": 0,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Monthly compounding enabled by the proprietor"
+        "note": "Monthly compounding enabled by the proprietor",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 115,
@@ -7671,7 +7499,9 @@
         "amount": 461.67,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Existing unpaid interest capitalized once on starting compound mode"
+        "note": "Existing unpaid interest capitalized once on starting compound mode",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 116,
@@ -7685,7 +7515,9 @@
         "amount": 37.55,
         "from": "2026-09-09",
         "to": "2026-09-11",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 117,
@@ -7699,7 +7531,9 @@
         "amount": 267.57,
         "from": "2026-09-11",
         "to": "2026-09-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 118,
@@ -7713,7 +7547,9 @@
         "amount": 0,
         "from": "2026-09-20",
         "to": "2026-09-20",
-        "note": "Monthly rate reduced after discussion with the farmer"
+        "note": "Monthly rate reduced after discussion with the farmer",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 119,
@@ -7727,7 +7563,9 @@
         "amount": 267.57,
         "from": "2026-09-20",
         "to": "2026-10-02",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 120,
@@ -7741,7 +7579,9 @@
         "amount": 75.71,
         "from": "2026-10-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 121,
@@ -7755,24 +7595,12 @@
         "amount": 0,
         "from": "2026-10-05",
         "to": "2026-10-05",
-        "note": "Rate revised for the new crop season"
+        "note": "Rate revised for the new crop season",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 122,
-        "farmer": 15,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 1.75,
-        "newRate": 1.75,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 190.04,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
-      },
-      {
-        "id": 123,
         "farmer": 15,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -7780,10 +7608,12 @@
         "newRate": 1.75,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 114.02,
-        "from": "2026-10-10",
+        "amount": 304.06,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
+        "note": "Interest accrued at 1.75% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": true
       }
     ]
   },
@@ -8029,7 +7859,9 @@
         "amount": 49.53,
         "from": "2026-04-25",
         "to": "2026-05-18",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 81,
@@ -8043,7 +7875,9 @@
         "amount": 567.57,
         "from": "2026-05-18",
         "to": "2026-06-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 82,
@@ -8057,7 +7891,9 @@
         "amount": 1526.29,
         "from": "2026-06-19",
         "to": "2026-08-23",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 83,
@@ -8071,24 +7907,12 @@
         "amount": 1009.7,
         "from": "2026-08-23",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 84,
-        "farmer": 11,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 150.31,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 85,
         "farmer": 11,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -8096,10 +7920,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 90.18,
-        "from": "2026-10-10",
+        "amount": 240.49,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -8330,7 +8156,9 @@
         "amount": 119.93,
         "from": "2026-05-24",
         "to": "2026-06-21",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 50,
@@ -8344,7 +8172,9 @@
         "amount": 182.02,
         "from": "2026-06-21",
         "to": "2026-07-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 51,
@@ -8358,24 +8188,12 @@
         "amount": 1185.41,
         "from": "2026-07-14",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 52,
-        "farmer": 7,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 134.74,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 53,
         "farmer": 7,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -8383,10 +8201,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 80.85,
-        "from": "2026-10-10",
+        "amount": 215.59,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -8617,7 +8437,9 @@
         "amount": 86.56,
         "from": "2026-06-17",
         "to": "2026-07-11",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 20,
@@ -8631,7 +8453,9 @@
         "amount": 188.14,
         "from": "2026-07-11",
         "to": "2026-08-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 21,
@@ -8645,24 +8469,12 @@
         "amount": 1038.66,
         "from": "2026-08-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 22,
-        "farmer": 3,
-        "date": "2026-10-10",
-        "type": "Accrual",
-        "oldRate": 2,
-        "newRate": 2,
-        "oldCompound": false,
-        "newCompound": false,
-        "amount": 129.4,
-        "from": "2026-10-05",
-        "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
-      },
-      {
-        "id": 23,
         "farmer": 3,
         "date": "2026-10-13",
         "type": "Accrual",
@@ -8670,10 +8482,12 @@
         "newRate": 2,
         "oldCompound": false,
         "newCompound": false,
-        "amount": 77.64,
-        "from": "2026-10-10",
+        "amount": 207.04,
+        "from": "2026-10-05",
         "to": "2026-10-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -8919,7 +8733,9 @@
         "amount": 173.21,
         "from": "2026-04-24",
         "to": "2026-05-16",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 398,
@@ -8933,7 +8749,9 @@
         "amount": 264,
         "from": "2026-05-16",
         "to": "2026-06-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 399,
@@ -8947,7 +8765,9 @@
         "amount": 814.23,
         "from": "2026-06-09",
         "to": "2026-07-23",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 400,
@@ -8961,7 +8781,9 @@
         "amount": 1144.91,
         "from": "2026-07-23",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 401,
@@ -8975,7 +8797,9 @@
         "amount": 94.12,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -9221,7 +9045,9 @@
         "amount": 225.27,
         "from": "2026-05-23",
         "to": "2026-06-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 358,
@@ -9235,7 +9061,9 @@
         "amount": 587.86,
         "from": "2026-06-19",
         "to": "2026-07-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 359,
@@ -9249,7 +9077,9 @@
         "amount": 1110.32,
         "from": "2026-07-15",
         "to": "2026-08-21",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 360,
@@ -9263,7 +9093,9 @@
         "amount": 475.62,
         "from": "2026-08-21",
         "to": "2026-09-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 361,
@@ -9277,7 +9109,9 @@
         "amount": 0,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Monthly compounding enabled by the proprietor"
+        "note": "Monthly compounding enabled by the proprietor",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 362,
@@ -9291,7 +9125,9 @@
         "amount": 475.62,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Existing unpaid interest capitalized once on starting compound mode"
+        "note": "Existing unpaid interest capitalized once on starting compound mode",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 363,
@@ -9305,7 +9141,9 @@
         "amount": 659.1,
         "from": "2026-09-09",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 364,
@@ -9319,7 +9157,9 @@
         "amount": 187.11,
         "from": "2026-10-05",
         "to": "2026-10-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "compound",
+        "ongoing": false
       },
       {
         "id": 365,
@@ -9333,7 +9173,9 @@
         "amount": 846.2,
         "from": "2026-09-09",
         "to": "2026-10-09",
-        "note": "Completed 30-day cycle; unpaid interest added to the interest-bearing principal"
+        "note": "Completed 30-day cycle; unpaid interest added to the interest-bearing principal",
+        "reason": "compound",
+        "ongoing": false
       },
       {
         "id": 366,
@@ -9347,7 +9189,9 @@
         "amount": 47.34,
         "from": "2026-10-09",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "compound",
+        "ongoing": true
       }
     ]
   },
@@ -9593,7 +9437,9 @@
         "amount": 140.46,
         "from": "2026-06-16",
         "to": "2026-07-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 324,
@@ -9607,7 +9453,9 @@
         "amount": 217.72,
         "from": "2026-07-09",
         "to": "2026-08-04",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 325,
@@ -9621,7 +9469,9 @@
         "amount": 898.92,
         "from": "2026-08-04",
         "to": "2026-09-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 326,
@@ -9635,7 +9485,9 @@
         "amount": 382.42,
         "from": "2026-09-14",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 327,
@@ -9649,7 +9501,9 @@
         "amount": 107.27,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -9880,7 +9734,9 @@
         "amount": 714.56,
         "from": "2026-07-19",
         "to": "2026-08-16",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 290,
@@ -9894,7 +9750,9 @@
         "amount": 609.71,
         "from": "2026-08-16",
         "to": "2026-09-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 291,
@@ -9908,7 +9766,9 @@
         "amount": 1394.7,
         "from": "2026-09-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 292,
@@ -9922,7 +9782,9 @@
         "amount": 220.62,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -10153,7 +10015,9 @@
         "amount": 85.28,
         "from": "2026-08-12",
         "to": "2026-09-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 252,
@@ -10167,7 +10031,9 @@
         "amount": 255.55,
         "from": "2026-09-05",
         "to": "2026-10-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 253,
@@ -10181,7 +10047,9 @@
         "amount": 47.93,
         "from": "2026-10-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 254,
@@ -10195,7 +10063,9 @@
         "amount": 145.56,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -10441,7 +10311,9 @@
         "amount": 135.67,
         "from": "2026-05-01",
         "to": "2026-05-30",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 216,
@@ -10455,7 +10327,9 @@
         "amount": 317.39,
         "from": "2026-05-30",
         "to": "2026-06-18",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 217,
@@ -10469,7 +10343,9 @@
         "amount": 896.77,
         "from": "2026-06-18",
         "to": "2026-07-30",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 218,
@@ -10483,7 +10359,9 @@
         "amount": 1192.68,
         "from": "2026-07-30",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 219,
@@ -10497,7 +10375,9 @@
         "amount": 119.41,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -10743,7 +10623,9 @@
         "amount": 200.83,
         "from": "2026-05-21",
         "to": "2026-06-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 176,
@@ -10757,7 +10639,9 @@
         "amount": 551.2,
         "from": "2026-06-15",
         "to": "2026-07-15",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 177,
@@ -10771,7 +10655,9 @@
         "amount": 1044.4,
         "from": "2026-07-15",
         "to": "2026-08-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 178,
@@ -10785,7 +10671,9 @@
         "amount": 794.56,
         "from": "2026-08-19",
         "to": "2026-09-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 179,
@@ -10799,7 +10687,9 @@
         "amount": 0,
         "from": "2026-09-20",
         "to": "2026-09-20",
-        "note": "Monthly rate reduced after discussion with the farmer"
+        "note": "Monthly rate reduced after discussion with the farmer",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 180,
@@ -10813,7 +10703,9 @@
         "amount": 279.34,
         "from": "2026-09-20",
         "to": "2026-10-05",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 181,
@@ -10827,7 +10719,9 @@
         "amount": 0,
         "from": "2026-10-05",
         "to": "2026-10-05",
-        "note": "Rate revised for the new crop season"
+        "note": "Rate revised for the new crop season",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 182,
@@ -10841,7 +10735,9 @@
         "amount": 136.09,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 1.75% per 30 elapsed days"
+        "note": "Interest accrued at 1.75% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": true
       }
     ]
   },
@@ -11100,7 +10996,9 @@
         "amount": 245.8,
         "from": "2026-06-23",
         "to": "2026-07-23",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 144,
@@ -11114,7 +11012,9 @@
         "amount": 251.58,
         "from": "2026-07-23",
         "to": "2026-08-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 145,
@@ -11128,7 +11028,9 @@
         "amount": 786.9,
         "from": "2026-08-13",
         "to": "2026-09-21",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 146,
@@ -11142,7 +11044,9 @@
         "amount": 235.57,
         "from": "2026-09-21",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 147,
@@ -11156,7 +11060,9 @@
         "amount": 104.6,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -11387,7 +11293,9 @@
         "amount": 388.44,
         "from": "2026-07-17",
         "to": "2026-08-12",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 104,
@@ -11401,7 +11309,9 @@
         "amount": 427.56,
         "from": "2026-08-12",
         "to": "2026-09-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 105,
@@ -11415,7 +11325,9 @@
         "amount": 1056.31,
         "from": "2026-09-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 106,
@@ -11429,7 +11341,9 @@
         "amount": 186.68,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 107,
@@ -11443,7 +11357,9 @@
         "amount": 0,
         "from": "2026-10-10",
         "to": "2026-10-10",
-        "note": "Monthly compounding enabled prospectively"
+        "note": "Monthly compounding enabled prospectively",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 108,
@@ -11457,7 +11373,9 @@
         "amount": 2058.99,
         "from": "2026-10-10",
         "to": "2026-10-10",
-        "note": "Existing unpaid interest capitalized once on starting compound mode"
+        "note": "Existing unpaid interest capitalized once on starting compound mode",
+        "reason": "settings",
+        "ongoing": false
       }
     ]
   },
@@ -11688,7 +11606,9 @@
         "amount": 91.52,
         "from": "2026-08-10",
         "to": "2026-09-01",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 74,
@@ -11702,7 +11622,9 @@
         "amount": 379.52,
         "from": "2026-09-01",
         "to": "2026-10-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 75,
@@ -11716,7 +11638,9 @@
         "amount": 35.09,
         "from": "2026-10-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 76,
@@ -11730,7 +11654,9 @@
         "amount": 156.64,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -11976,7 +11902,9 @@
         "amount": 290.06,
         "from": "2026-04-29",
         "to": "2026-05-26",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 42,
@@ -11990,7 +11918,9 @@
         "amount": 331.73,
         "from": "2026-05-26",
         "to": "2026-06-18",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 43,
@@ -12004,7 +11934,9 @@
         "amount": 965,
         "from": "2026-06-18",
         "to": "2026-07-28",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 44,
@@ -12018,7 +11950,9 @@
         "amount": 1664.63,
         "from": "2026-07-28",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 45,
@@ -12032,7 +11966,9 @@
         "amount": 132.91,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -12278,7 +12214,9 @@
         "amount": 319.39,
         "from": "2026-05-19",
         "to": "2026-06-11",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 12,
@@ -12292,7 +12230,9 @@
         "amount": 446.74,
         "from": "2026-06-11",
         "to": "2026-07-04",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 13,
@@ -12306,7 +12246,9 @@
         "amount": 1107.07,
         "from": "2026-07-04",
         "to": "2026-08-17",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 14,
@@ -12320,7 +12262,9 @@
         "amount": 1232.87,
         "from": "2026-08-17",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 15,
@@ -12334,7 +12278,9 @@
         "amount": 142.99,
         "from": "2026-10-05",
         "to": "2026-10-10",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": true
       }
     ]
   },
@@ -12565,7 +12511,9 @@
         "amount": 398.2,
         "from": "2026-08-18",
         "to": "2026-09-17",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 390,
@@ -12579,7 +12527,9 @@
         "amount": 288.6,
         "from": "2026-09-17",
         "to": "2026-10-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 391,
@@ -12593,7 +12543,9 @@
         "amount": 67.74,
         "from": "2026-10-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -12839,7 +12791,9 @@
         "amount": 180.82,
         "from": "2026-04-28",
         "to": "2026-05-24",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 350,
@@ -12853,7 +12807,9 @@
         "amount": 526.08,
         "from": "2026-05-24",
         "to": "2026-06-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 351,
@@ -12867,7 +12823,9 @@
         "amount": 218.06,
         "from": "2026-06-19",
         "to": "2026-06-27",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 352,
@@ -12881,7 +12839,9 @@
         "amount": 2452.91,
         "from": "2026-06-27",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -13112,7 +13072,9 @@
         "amount": 54.79,
         "from": "2026-05-18",
         "to": "2026-06-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 317,
@@ -13126,7 +13088,9 @@
         "amount": 235.66,
         "from": "2026-06-09",
         "to": "2026-07-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 318,
@@ -13140,7 +13104,9 @@
         "amount": 1113.94,
         "from": "2026-07-05",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -13386,7 +13352,9 @@
         "amount": 347.55,
         "from": "2026-06-20",
         "to": "2026-07-17",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 276,
@@ -13400,7 +13368,9 @@
         "amount": 615.23,
         "from": "2026-07-17",
         "to": "2026-08-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 277,
@@ -13414,7 +13384,9 @@
         "amount": 222.46,
         "from": "2026-08-14",
         "to": "2026-08-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 278,
@@ -13428,7 +13400,9 @@
         "amount": 836.82,
         "from": "2026-08-19",
         "to": "2026-09-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 279,
@@ -13442,7 +13416,9 @@
         "amount": 0,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Monthly compounding enabled by the proprietor"
+        "note": "Monthly compounding enabled by the proprietor",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 280,
@@ -13456,7 +13432,9 @@
         "amount": 836.82,
         "from": "2026-09-09",
         "to": "2026-09-09",
-        "note": "Existing unpaid interest capitalized once on starting compound mode"
+        "note": "Existing unpaid interest capitalized once on starting compound mode",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 281,
@@ -13470,7 +13448,9 @@
         "amount": 1050.57,
         "from": "2026-09-09",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -13716,7 +13696,9 @@
         "amount": 42.82,
         "from": "2026-07-14",
         "to": "2026-08-06",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 240,
@@ -13730,7 +13712,9 @@
         "amount": 388.87,
         "from": "2026-08-06",
         "to": "2026-09-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 241,
@@ -13744,7 +13728,9 @@
         "amount": 151.22,
         "from": "2026-09-03",
         "to": "2026-09-12",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 242,
@@ -13758,7 +13744,9 @@
         "amount": 121.02,
         "from": "2026-09-12",
         "to": "2026-09-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 243,
@@ -13772,7 +13760,9 @@
         "amount": 0,
         "from": "2026-09-20",
         "to": "2026-09-20",
-        "note": "Monthly rate reduced after discussion with the farmer"
+        "note": "Monthly rate reduced after discussion with the farmer",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 244,
@@ -13786,7 +13776,9 @@
         "amount": 170.18,
         "from": "2026-09-20",
         "to": "2026-10-05",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 245,
@@ -13800,7 +13792,9 @@
         "amount": 0,
         "from": "2026-10-05",
         "to": "2026-10-05",
-        "note": "Rate revised for the new crop season"
+        "note": "Rate revised for the new crop season",
+        "reason": "settings",
+        "ongoing": false
       }
     ]
   },
@@ -14031,7 +14025,9 @@
         "amount": 276.22,
         "from": "2026-08-16",
         "to": "2026-09-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 209,
@@ -14045,7 +14041,9 @@
         "amount": 330.69,
         "from": "2026-09-13",
         "to": "2026-10-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 210,
@@ -14059,7 +14057,9 @@
         "amount": 59.82,
         "from": "2026-10-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -14305,7 +14305,9 @@
         "amount": 112.42,
         "from": "2026-04-26",
         "to": "2026-05-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 167,
@@ -14319,7 +14321,9 @@
         "amount": 553.32,
         "from": "2026-05-20",
         "to": "2026-06-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 168,
@@ -14333,7 +14337,9 @@
         "amount": 138.7,
         "from": "2026-06-19",
         "to": "2026-06-25",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 169,
@@ -14347,7 +14353,9 @@
         "amount": 2123.15,
         "from": "2026-06-25",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -14593,7 +14601,9 @@
         "amount": 330.07,
         "from": "2026-05-25",
         "to": "2026-06-23",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 135,
@@ -14607,7 +14617,9 @@
         "amount": 352.27,
         "from": "2026-06-23",
         "to": "2026-07-14",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 136,
@@ -14621,7 +14633,9 @@
         "amount": 218.48,
         "from": "2026-07-14",
         "to": "2026-07-24",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 137,
@@ -14635,7 +14649,9 @@
         "amount": 1442.12,
         "from": "2026-07-24",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -14866,7 +14882,9 @@
         "amount": 221.37,
         "from": "2026-06-18",
         "to": "2026-07-13",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 97,
@@ -14880,7 +14898,9 @@
         "amount": 411.78,
         "from": "2026-07-13",
         "to": "2026-08-03",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 98,
@@ -14894,7 +14914,9 @@
         "amount": 1605.34,
         "from": "2026-08-03",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -15140,7 +15162,9 @@
         "amount": 176.16,
         "from": "2026-07-21",
         "to": "2026-08-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 67,
@@ -15154,7 +15178,9 @@
         "amount": 294.84,
         "from": "2026-08-20",
         "to": "2026-09-12",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 68,
@@ -15168,7 +15194,9 @@
         "amount": 114.75,
         "from": "2026-09-12",
         "to": "2026-09-19",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "payment",
+        "ongoing": false
       },
       {
         "id": 69,
@@ -15182,7 +15210,9 @@
         "amount": 262.28,
         "from": "2026-09-19",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -15413,7 +15443,9 @@
         "amount": 122.75,
         "from": "2026-08-14",
         "to": "2026-09-09",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 35,
@@ -15427,7 +15459,9 @@
         "amount": 356.68,
         "from": "2026-09-09",
         "to": "2026-10-02",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 36,
@@ -15441,7 +15475,9 @@
         "amount": 61.86,
         "from": "2026-10-02",
         "to": "2026-10-05",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       }
     ]
   },
@@ -15685,7 +15721,9 @@
         "amount": 139.71,
         "from": "2026-04-24",
         "to": "2026-05-16",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 2,
@@ -15699,7 +15737,9 @@
         "amount": 260.3,
         "from": "2026-05-16",
         "to": "2026-06-08",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "credit",
+        "ongoing": false
       },
       {
         "id": 3,
@@ -15713,7 +15753,9 @@
         "amount": 2515.14,
         "from": "2026-06-08",
         "to": "2026-09-20",
-        "note": "Interest accrued at 2% per 30 elapsed days"
+        "note": "Interest accrued at 2% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 4,
@@ -15727,7 +15769,9 @@
         "amount": 0,
         "from": "2026-09-20",
         "to": "2026-09-20",
-        "note": "Monthly rate reduced after discussion with the farmer"
+        "note": "Monthly rate reduced after discussion with the farmer",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 5,
@@ -15741,7 +15785,9 @@
         "amount": 272.07,
         "from": "2026-09-20",
         "to": "2026-10-05",
-        "note": "Interest accrued at 1.5% per 30 elapsed days"
+        "note": "Interest accrued at 1.5% per 30 elapsed days",
+        "reason": "settings",
+        "ongoing": false
       },
       {
         "id": 6,
@@ -15755,7 +15801,9 @@
         "amount": 0,
         "from": "2026-10-05",
         "to": "2026-10-05",
-        "note": "Rate revised for the new crop season"
+        "note": "Rate revised for the new crop season",
+        "reason": "settings",
+        "ongoing": false
       }
     ]
   }

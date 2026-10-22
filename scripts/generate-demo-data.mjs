@@ -1,6 +1,7 @@
 // Deterministic fictional fixtures. Run only to deliberately regenerate the editable JSON files.
 import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { simplifyInterestHistory } from "../src/components/interest-history.mjs";
 const root = join(process.cwd(), "dummy_data");
 mkdirSync(root, { recursive: true });
 const round = (n) => Math.round((n + Number.EPSILON) * 100) / 100;
@@ -666,8 +667,8 @@ for (const [filename, data] of Object.entries({
   suppliers,
   transactions: events,
   purchases,
-  invoices,
-  interest_history: interestHistory,
+  invoices: invoices.map(invoice => ({ ...invoice, interestHistory: simplifyInterestHistory(invoice.interestHistory, invoice.events) })),
+  interest_history: simplifyInterestHistory(interestHistory, events),
   stock_movements: stockMovements,
 }))
   writeFileSync(

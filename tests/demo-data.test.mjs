@@ -1,4 +1,5 @@
 import test from "node:test";
+import { simplifyInterestHistory, interestReason } from "../src/components/interest-history.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
@@ -145,4 +146,39 @@ test("saved bills retain full multi-product history without future events or Aad
     products.length,
   );
   assert.ok(farmers.some((f) => f.archived && f.due > 0));
+});
+
+
+test('interest periods merge reporting checkpoints while keeping account events and amounts', () => {
+  const accrual = (id, from, to, amount) => ({id, farmer:1, date:to, type:'Accrual', oldRate:2, newRate:2, oldCompound:false, newCompound:false, from, to, amount, note:''});
+  const entries = [accrual(1,'2026-10-01','2026-10-05',10.01),accrual(2,'2026-10-05','2026-10-10',20.02),accrual(3,'2026-10-10','2026-10-13',30.03),accrual(4,'2026-10-13','2026-10-22',40.04)];
+  const activity = [{farmer:1,date:'2026-10-01',type:'Credit'},{farmer:1,date:'2026-10-10',type:'Payment'}];
+  const result = simplifyInterestHistory(entries, activity);
+  assert.equal(result.length,2);
+  assert.deepEqual(result.map(e=>[e.from,e.to,e.amount,e.reason,e.ongoing]),[['2026-10-01','2026-10-10',30.03,'payment',false],['2026-10-10','2026-10-22',70.07,'payment',true]]);
+  assert.equal(interestReason(result[1]),'Since payment');
+  assert.deepEqual(simplifyInterestHistory(result, activity),result);
+  assert.equal(entries.length,4);
+});
+
+test('fixture interest boundaries have only account events or the final as-of date', () => {
+  const history=read('interest_history');
+  const reasons=new Set(['credit','payment','settings','compound']);
+  for(const farmer of farmers) {
+    const own=history.filter(h=>h.farmer===farmer.id);
+    const boundaries=new Set([
+      ...events.filter(e=>e.farmer===farmer.id).map(e=>e.date),
+      ...own.filter(e=>e.type!=='Accrual').map(e=>e.date),
+    ]);
+    for(const entry of own) {
+      assert.ok(reasons.has(entry.reason));
+      if(entry.type==='Accrual') {
+        assert.ok(boundaries.has(entry.from));
+        assert.ok(boundaries.has(entry.to)||entry.to==='2026-10-22');
+      }
+    }
+  }
+  const ramesh=history.filter(h=>h.farmer===1&&h.type==='Accrual');
+  assert.ok(ramesh.some(h=>h.from==='2026-10-05'&&h.to==='2026-10-14'&&h.amount===239.11));
+  assert.ok(!ramesh.some(h=>['2026-10-10','2026-10-13'].includes(h.to)));
 });

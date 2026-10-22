@@ -129,7 +129,10 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .farmer-account .payment-allocation { background: #f6f7f9; border-color: var(--line); color: var(--ink); font-size: 12px; }
 .farmer-account .interest-history-item > div > strong { font-size: 14px; color: var(--ink); font-weight: 600; }
 .farmer-account .interest-history-item small, .farmer-account .interest-history-item p { font-size: 12px; color: var(--muted); }
+.farmer-account .interest-history-item p { display: inline-block; margin-right: 8px; }
+.farmer-account .interest-history-item small { display: block; }
 .farmer-account .interest-history-item > strong { font: 600 17px/1.5 Arial, Helvetica, sans-serif; color: var(--ink); }
+.interest-reason { display: inline-block; margin-top: 7px; border: 1px solid var(--line); border-radius: 3px; padding: 3px 6px; font-size: 11px; line-height: 1.4; color: var(--muted); background: #f6f7f9; }
 .farmer-account .profile-details { background: #fff; }
 .farmer-account .profile-details > div { font-size: 13px; }
 .farmer-account .profile-details dt { color: var(--muted); }

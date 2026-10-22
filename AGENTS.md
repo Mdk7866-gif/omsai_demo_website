@@ -37,6 +37,7 @@ Read the current owner decisions and confirmed farmer bill behaviour in `README.
 - Keep payment allocation interest-first, then principal. Never subtract the same payment again while rendering a bill.
 - Product-table amounts describe historical purchases; the bill summary describes the remaining debt. Do not force these totals to match or add a product grand total. Hide zero unpaid interest in the bill summary.
 - Bill row counts may decrease when matching historical product lines are grouped. Preserve their quantities and amounts, and keep different final charged rates separate. Use the documented farmer ID 11 example when investigating apparent discrepancies.
+- Interest periods have only four event reasons: new credit, payment, settings change, compounding. Merge reporting-only checkpoints for display without changing recorded amounts. Keep final as-of accrued interest visible as an ongoing period. Share compact reason labels between Farmer account and history bills.
 - Saved invoices are snapshots. Preserve earlier bills when profile data, farmer details or balances change. History is unchecked by default and selected in Farmer account before generating a bill.
 - Profile uses the same plain report-preview pattern as farmer bills. Preserve About, What we offer, Business details and Bank details. Keep the dedicated reference-layout PDF export available.
 - Do not regenerate `dummy_data` or reset browser data merely to resolve a presentation issue. The demo's fixed date and fixture interest are not a continuously accruing production interest engine.

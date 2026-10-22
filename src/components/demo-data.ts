@@ -91,6 +91,8 @@ export type Purchase = {
   statusHistory: { date: string; paid: boolean }[];
 };
 export type InterestEntry = {
+  reason?: "credit" | "payment" | "settings" | "compound";
+  ongoing?: boolean;
   id: number;
   farmer: number;
   date: string;

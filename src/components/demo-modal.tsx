@@ -23,6 +23,7 @@ import {
   type InterestEntry,
 } from "./demo-data";
 import { Icon } from "./icons";
+import { simplifyInterestHistory, interestReason, interestTitle } from "./interest-history.mjs";
 import { CreditEditor, PurchaseEditor } from "./credit-editor";
 import { CompanyProfilePdfPreview } from "./company-profile";
 import {
@@ -505,8 +506,7 @@ export function DemoModal({
         .sort((a, b) => eventOrder(b) - eventOrder(a))
     : [];
   const interestEntries = f
-    ? data.interestHistory
-        .filter((e) => e.farmer === f.id)
+    ? simplifyInterestHistory(data.interestHistory.filter((e) => e.farmer === f.id), data.events.filter((e) => e.farmer === f.id))
         .sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id)
     : [];
   const isSimpleForm = [
@@ -1064,11 +1064,7 @@ export function DemoModal({
                     </div>
                     <div>
                       <strong>
-                        {e.type === "Settings"
-                          ? "Interest settings changed"
-                          : e.type === "Accrual"
-                            ? "Interest accrued"
-                            : "Interest capitalized"}
+                        {interestTitle(e)}
                       </strong>
                       <small>
                         {e.type === "Accrual"
@@ -1080,7 +1076,7 @@ export function DemoModal({
                           ? `${e.oldRate}% ${e.oldCompound ? "Compound" : "Simple"} → ${e.newRate}% ${e.newCompound ? "Compound" : "Simple"}`
                           : `${e.newRate}% · ${e.newCompound ? "Compound" : "Simple"}`}
                       </p>
-                      <p>{e.note}</p>
+                      <span className="interest-reason">{interestReason(e)}</span>
                     </div>
                     {e.type !== "Settings" && (
                       <strong>{money(e.amount)}</strong>
