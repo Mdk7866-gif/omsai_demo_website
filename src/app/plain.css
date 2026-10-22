@@ -309,6 +309,35 @@ h1, h2, h3, strong { letter-spacing: normal; }
   .report-shop, .report-title { max-width: 100%; }
   .report-controls { align-items: flex-start; }
 }
+/* Phone previews stay readable without changing the printed A4 layout. */
+@media screen and (max-width:760px) {
+  .supplier-account { width: 100%; max-width: 100%; margin: auto 0 0; }
+  .modal-heading > .icon-button { min-width: 44px; min-height: 44px; }
+  .modal-actions .primary, .modal-actions .outline { min-height: 44px; font-size: 12px; }
+  .field input, .field select, .field textarea { font-size: 16px; }
+  .supplier-payment-status { min-height: 44px; font-size: 16px; }
+  .supplier-purchase-heading > div { min-width: 0; }
+  .supplier-purchase-heading > div:first-child { flex-shrink: 0; }
+  .supplier-account .purchase-lines > summary { min-height: 44px; }
+}
+@media screen and (max-width:600px) {
+  .simple-product-list .bill-number-column,
+  .simple-product-list th:first-child { width: 28px; }
+  .simple-product-list .bill-product-column { width: 28%; }
+  .simple-product-list th, .simple-product-list td { padding: 5px 4px; font-size: 11px; }
+  .simple-product-list th { padding-left: 2px; padding-right: 2px; font-size: 10px; }
+  .simple-product-list th:first-child, .simple-product-list td:first-child {
+    padding-left: 4px; padding-right: 4px; white-space: nowrap; overflow-wrap: normal;
+  }
+  .simple-product-list td:nth-child(n+4) { font-size: 10px; padding-left: 2px; padding-right: 2px; white-space: nowrap; }
+  .simple-bill-company, .report-letterhead { grid-template-columns: minmax(0,1fr) 48px; gap: 12px; }
+  .company-report-logo { width: 48px; height: 48px; }
+  .simple-bill-reference { flex-wrap: wrap; gap: 4px 12px; }
+  .simple-farmer-bill { overflow-wrap: anywhere; }
+}
+@media screen and (max-width:360px) {
+  .simple-product-list td:nth-child(n+4) { font-size: 9px; }
+}
 @media print {
   .print-document { border: 0; font-size: 10pt; padding: 0; }
   .print-document * { box-shadow: none !important; }
