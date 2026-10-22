@@ -682,7 +682,19 @@ export function DemoPage({ section }: { section: Section }) {
                     onClick={() => open({ kind: "productDetails", id: p.id })}
                   />
                   <div className="inventory-content">
-                    <span className="status">{p.category}</span>
+                    <div className="inventory-card-top">
+                      <div className="inventory-card-labels">
+                        {archive ? <span className="status">Archived</span> : p.stock < 10 && <span className="status due">Low</span>}
+                        <span className="inventory-category">{p.category}</span>
+                      </div>
+                      <button
+                        className="icon-button"
+                        aria-label={`${archive ? "Restore" : "Delete"} product ${p.name}`}
+                        onClick={() => open({ kind: archive ? "restoreProduct" : "deleteProduct", id: p.id })}
+                      >
+                        <Icon name={archive ? "reset" : "trash"} size={16} />
+                      </button>
+                    </div>
                     <h3>{p.name}</h3>
                     <p>
                       {p.brand} · Batch {p.batch || "Not specified"}
@@ -696,7 +708,7 @@ export function DemoPage({ section }: { section: Section }) {
                         </strong>
                       </div>
                       <div>
-                        <small>In stock</small>
+                        <small>Stock</small>
                         <strong
                           className={p.stock < 10 ? "negative" : "positive"}
                         >
@@ -704,37 +716,16 @@ export function DemoPage({ section }: { section: Section }) {
                         </strong>
                       </div>
                     </div>
-                    <div className="inventory-footer">
-                      <span
-                        className={`status ${p.stock < 10 ? "due" : "clear"}`}
-                      >
-                        {archive
-                          ? "Archived"
-                          : p.stock < 10
-                            ? "Low stock"
-                            : "In stock"}
-                      </span>
-                      {!archive && (
+                    {!archive && (
+                      <div className="inventory-footer">
                         <button
-                          className="text-button"
+                          className="primary"
                           onClick={() => open({ kind: "restock", id: p.id })}
                         >
                           <Icon name="plus" size={14} /> Restock
                         </button>
-                      )}
-                      <button
-                        className="icon-button"
-                        aria-label={`${archive ? "Restore" : "Delete"} product ${p.name}`}
-                        onClick={() =>
-                          open({
-                            kind: archive ? "restoreProduct" : "deleteProduct",
-                            id: p.id,
-                          })
-                        }
-                      >
-                        <Icon name={archive ? "reset" : "trash"} size={16} />
-                      </button>
-                    </div>
+                      </div>
+                    )}
                   </div>
                 </article>
               ))}

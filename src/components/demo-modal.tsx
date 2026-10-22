@@ -24,6 +24,7 @@ import {
 } from "./demo-data";
 import { Icon } from "./icons";
 import { CreditEditor, PurchaseEditor } from "./credit-editor";
+import { CompanyProfilePdfPreview } from "./company-profile";
 import {
   BillDocument,
   InventoryDocument,
@@ -60,7 +61,7 @@ export function DemoModal({
   const isReport =
     ["invoice", "inventoryReport", "supplierReport"].includes(modal.kind) ||
     (modal.kind === "businessReport" && reportReady);
-  const wide = isReport || ["credit", "purchase"].includes(modal.kind);
+  const wide = isReport || ["credit", "purchase", "companyProfile"].includes(modal.kind);
   const isArchiveAction =
     modal.kind.startsWith("delete") || modal.kind.startsWith("restore");
   const titles: Record<string, string> = {
@@ -82,6 +83,7 @@ export function DemoModal({
     inventoryReport: "Product report",
     businessReport: "Business report",
     supplierReport: "Supplier history report",
+    companyProfile: "Company profile PDF preview",
     reset: "Reset demo data",
     deleteFarmer: "Delete farmer",
     deleteProduct: "Delete product",
@@ -543,6 +545,7 @@ export function DemoModal({
         </button>
       </div>
       <div className="modal-content">
+        {modal.kind === "companyProfile" && <CompanyProfilePdfPreview close={close} />}
         {["pay", "credit", "history"].includes(modal.kind) && f && (
           <div className="modal-person">
             <Avatar name={f.name} id={f.id} />

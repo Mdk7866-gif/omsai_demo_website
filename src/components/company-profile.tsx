@@ -1,6 +1,6 @@
 "use client";
 
-import { useContext, useState, type FormEvent } from "react";
+import { useContext, useEffect, useRef, useState, type FormEvent } from "react";
 import { PROFILE_STORAGE_KEY, shopDetails, type Shop } from "./demo-data";
 import { DemoContext } from "./demo-context";
 
@@ -45,25 +45,11 @@ export function CompanyProfileDocument({ shop = shopDetails }: { shop?: Shop }) 
 }
 
 export function CompanyProfilePage() {
-  const { data, change, notify } = useContext(DemoContext);
+  const { data, change, notify, open } = useContext(DemoContext);
   const saved = data.shop ?? shopDetails;
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState<Shop>(() => structuredClone(saved));
   const [error, setError] = useState("");
-  const [downloading, setDownloading] = useState(false);
-  async function downloadPdf() {
-    setDownloading(true);
-    try {
-      const { createCompanyProfilePdf } = await import("./company-profile-pdf");
-      const bytes = await createCompanyProfilePdf(saved);
-      const url = URL.createObjectURL(new Blob([new Uint8Array(bytes)], { type: "application/pdf" }));
-      const link = document.createElement("a");
-      link.href = url; link.download = "Omsai_Company_Profile.pdf"; link.click();
-      setTimeout(() => URL.revokeObjectURL(url), 30000);
-    } catch {
-      notify("The PDF could not be generated. Check that the profile uses English text and try again.");
-    } finally { setDownloading(false); }
-  }
   const field = (label: string, key: "name" | "address" | "gstin" | "phone" | "pan" | "licence", maxLength = 160) => (
     <label className="field" key={key}>{label}
       {key === "address" ? <textarea required maxLength={400} value={draft[key]} onChange={e => setDraft(old => ({ ...old, [key]: e.target.value }))} /> :
@@ -103,7 +89,7 @@ export function CompanyProfilePage() {
         <div><h1>Profile</h1><p>Company details and bank information.</p></div>
         <div className="heading-actions">
           {!editing && <button className="outline" onClick={() => { setDraft(structuredClone(saved)); setError(""); setEditing(true); }}>Edit profile</button>}
-          {!editing && <button className="primary" disabled={downloading} onClick={downloadPdf}>{downloading ? "Generating PDF..." : "Download profile PDF"}</button>}
+          {!editing && <button className="primary" onClick={() => open({ kind: "companyProfile" })}>Print / Save as PDF</button>}
         </div>
       </div>
       {editing && <form className="profile-editor" onSubmit={save}>
@@ -124,4 +110,35 @@ export function CompanyProfilePage() {
       <style>{`@media print { @page { size: A4 portrait; margin: 18mm 19mm; } }`}</style>
     </main>
   );
+}
+
+
+export function CompanyProfilePdfPreview({ close }: { close: () => void }) {
+  const { data, notify } = useContext(DemoContext);
+  const shop = data.shop ?? shopDetails;
+  const [url, setUrl] = useState("");
+  const [error, setError] = useState("");
+  const frame = useRef<HTMLIFrameElement>(null);
+  useEffect(() => {
+    let cancelled = false;
+    let objectUrl = "";
+    import("./company-profile-pdf").then(({ createCompanyProfilePdf }) => createCompanyProfilePdf(shop)).then(bytes => {
+      if (cancelled) return;
+      objectUrl = URL.createObjectURL(new Blob([new Uint8Array(bytes)], { type: "application/pdf" }));
+      setUrl(objectUrl);
+    }).catch(() => {
+      if (!cancelled) setError("The PDF preview could not be generated. Check that the profile uses English text and try again.");
+    });
+    return () => { cancelled = true; if (objectUrl) URL.revokeObjectURL(objectUrl); };
+  }, [shop]);
+  return <>
+    {error ? <p className="error" role="alert">{error}</p> : url ? <iframe ref={frame} className="company-profile-pdf-frame" src={url} title="Company profile PDF preview" /> : <p role="status">Preparing PDF preview...</p>}
+    <div className="modal-actions">
+      <button className="outline" onClick={close}>Close</button>
+      {url && <><a className="outline" href={url} download="Omsai_Company_Profile.pdf">Download PDF</a><button className="primary" onClick={() => {
+        try { frame.current?.contentWindow?.focus(); frame.current?.contentWindow?.print(); }
+        catch { notify("Use the print icon in the PDF preview toolbar to print this document."); }
+      }}>Print PDF</button></>}
+    </div>
+  </>;
 }
