@@ -3,7 +3,6 @@
 import { useContext, useState, type FormEvent } from "react";
 import { PROFILE_STORAGE_KEY, shopDetails, type Shop } from "./demo-data";
 import { DemoContext } from "./demo-context";
-import { PrintButton } from "./reports";
 
 export function CompanyProfileDocument({ shop = shopDetails }: { shop?: Shop }) {
   return (
@@ -51,6 +50,20 @@ export function CompanyProfilePage() {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState<Shop>(() => structuredClone(saved));
   const [error, setError] = useState("");
+  const [downloading, setDownloading] = useState(false);
+  async function downloadPdf() {
+    setDownloading(true);
+    try {
+      const { createCompanyProfilePdf } = await import("./company-profile-pdf");
+      const bytes = await createCompanyProfilePdf(saved);
+      const url = URL.createObjectURL(new Blob([new Uint8Array(bytes)], { type: "application/pdf" }));
+      const link = document.createElement("a");
+      link.href = url; link.download = "Omsai_Company_Profile.pdf"; link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 30000);
+    } catch {
+      notify("The PDF could not be generated. Check that the profile uses English text and try again.");
+    } finally { setDownloading(false); }
+  }
   const field = (label: string, key: "name" | "address" | "gstin" | "phone" | "pan" | "licence", maxLength = 160) => (
     <label className="field" key={key}>{label}
       {key === "address" ? <textarea required maxLength={400} value={draft[key]} onChange={e => setDraft(old => ({ ...old, [key]: e.target.value }))} /> :
@@ -90,7 +103,7 @@ export function CompanyProfilePage() {
         <div><h1>Profile</h1><p>Company details and bank information.</p></div>
         <div className="heading-actions">
           {!editing && <button className="outline" onClick={() => { setDraft(structuredClone(saved)); setError(""); setEditing(true); }}>Edit profile</button>}
-          {!editing && <PrintButton />}
+          {!editing && <button className="primary" disabled={downloading} onClick={downloadPdf}>{downloading ? "Generating PDF..." : "Download profile PDF"}</button>}
         </div>
       </div>
       {editing && <form className="profile-editor" onSubmit={save}>

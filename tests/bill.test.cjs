@@ -93,3 +93,25 @@ test('profile defaults replace only the original sample bank and preserve custom
   old.bank = {...old.bank, account:'98765432100', isSample:false};
   assert.equal(restoreShop(old).bank.account, '98765432100');
 });
+
+
+test('direct profile export keeps A4 reference geometry and uses saved profile values', async () => {
+  const {createCompanyProfilePdf} = require('../src/components/company-profile-pdf.ts');
+  const {PDFDocument, PDFArray, decodePDFRawStream} = require('pdf-lib');
+  const profile = structuredClone(seed.shop);
+  const baseline = await PDFDocument.load(await createCompanyProfilePdf(profile));
+  assert.equal(baseline.getPageCount(), 1);
+  assert.deepEqual(baseline.getPage(0).getSize(), {width:595.276, height:841.89});
+  profile.name = 'Updated company, Updated products';
+  profile.bank.account = '99887766554';
+  const edited = await PDFDocument.load(await createCompanyProfilePdf(profile));
+  const page = edited.getPage(0);
+  const contents = page.node.Contents();
+  const streams = contents instanceof PDFArray ? contents.asArray().map(ref => edited.context.lookup(ref)) : [contents];
+  const source = streams.map(stream => Buffer.from(decodePDFRawStream(stream).decode()).toString('latin1')).join('');
+  for (const value of ['Updated company,','Updated products','99887766554']) {
+    assert.ok(source.includes(Buffer.from(value).toString('hex').toUpperCase()), value);
+  }
+  assert.ok(source.includes('55 788 Tm'));
+  assert.ok(source.includes('55 90 Tm'));
+});
