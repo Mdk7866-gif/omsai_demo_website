@@ -4,6 +4,7 @@ import {
   dateLabel,
   money,
   round,
+  shopDetails,
   type CreditLine,
   type Invoice,
   type Store,
@@ -13,9 +14,11 @@ import { Icon } from "./icons";
 export function LineTable({
   lines,
   showCost = false,
+  effectiveRate = false,
 }: {
   lines: CreditLine[];
   showCost?: boolean;
+  effectiveRate?: boolean;
 }) {
   return (
     <div className="table-scroll">
@@ -25,8 +28,8 @@ export function LineTable({
             <th>Product / batch</th>
             <th>Quantity</th>
             {showCost && <th>Purchase / unit</th>}
-            <th>Selling / unit</th>
-            <th>Discounted / unit</th>
+            <th>{effectiveRate ? "Rate / unit" : "Selling / unit"}</th>
+            {!effectiveRate && <th>Discounted / unit</th>}
             <th>Amount</th>
           </tr>
         </thead>
@@ -44,10 +47,10 @@ export function LineTable({
                 {l.quantity} {l.unit}
               </td>
               {showCost && <td>{money(l.purchasePrice)}</td>}
-              <td>{money(l.sellingPrice)}</td>
-              <td>
+              <td>{money(effectiveRate ? l.discountedPrice ?? l.sellingPrice : l.sellingPrice)}</td>
+              {!effectiveRate && <td>
                 {l.discountedPrice === null ? "—" : money(l.discountedPrice)}
-              </td>
+              </td>}
               <td>
                 <strong>{money(l.total)}</strong>
               </td>
@@ -80,140 +83,61 @@ function Letterhead({ title, subtitle, logo = false, generated = DAY }: { title:
     </>
   );
 }
-export function BillDocument({ invoice, includeHistory = true }: { invoice: Invoice; includeHistory?: boolean }) {
-  const credit = round(
-    invoice.events
-      .filter((e) => e.type === "Credit")
-      .reduce((s, e) => s + e.amount, 0),
-  );
-  const paid = round(
-    invoice.events
-      .filter((e) => e.type === "Payment")
-      .reduce((s, e) => s + e.amount, 0),
-  );
+export function BillDocument({ invoice, includeHistory = invoice.includeHistory ?? false }: { invoice: Invoice; includeHistory?: boolean }) {
+  const shop = invoice.shop ?? shopDetails;
+  const lines = aggregateBusinessLines({ events: invoice.events }, "", invoice.date);
   return (
-    <div className="print-document farmer-document">
-      <Letterhead
-        logo
-        generated={invoice.date}
-        title="Farmer bill"
-        subtitle={`OMS-${invoice.id} · Balance as of ${dateLabel(invoice.date)}`}
-      />
-      <div className="bill-meta">
-        <div>
-          <small>FARMER DETAILS</small>
-          <strong>{invoice.name}</strong>
-          <span>{invoice.phone}</span>
-          <p>{invoice.address}</p>
-        </div>
-        <div>
-          <small>INTEREST SETTINGS AT GENERATION</small>
-          <strong>{invoice.rate}% per month</strong>
-          <span>
-            {invoice.compound ? "Monthly compound interest" : "Simple interest"}
-          </span>
-          <span className={`status ${invoice.due ? "due" : "clear"}`}>
-            {invoice.due ? "Due" : "Clear"}
-          </span>
-        </div>
-      </div>
-      <div className="report-summary">
-        <div>
-          <small>Total products credited</small>
-          <strong>{money(credit)}</strong>
-        </div>
-        <div>
-          <small>Payments received</small>
-          <strong className="positive">{money(paid)}</strong>
-        </div>
-        <div>
-          <small>Balance due</small>
-          <strong>{money(invoice.due)}</strong>
-        </div>
-      </div>
-      <h3 className="report-section-title">Account balance</h3>
-      <div className="bill-settlement">
-        <div><span>Outstanding principal</span><strong>{money(invoice.principal)}</strong></div>
-        <div><span>Outstanding interest</span><strong>{money(invoice.interest)}</strong></div>
-        <div className="total"><span>Total amount due</span><strong>{money(invoice.due)}</strong></div>
-      </div>
-      <p className="report-explanation">Principal + interest = total amount due. No tax is charged on this bill.</p>
-      <p className="report-explanation">{includeHistory ? "Product, payment and interest history follows on the next pages." : "Account summary only. History is not included."}</p>
-      <ReportFoot />
+    <div className="print-document farmer-document simple-farmer-bill">
+      <header className="simple-bill-header">
+        <h2>{shop.name}</h2>
+        <p>{shop.address}</p>
+        <p>GSTIN: {shop.gstin} | Phone: {shop.phone}</p>
+        <div className="simple-bill-reference"><strong>Farmer bill: OMS-{invoice.id}</strong><span>Date: {dateLabel(invoice.date)}</span></div>
+      </header>
+      <section className="simple-farmer-details">
+        <p><strong>Farmer:</strong> {invoice.name}</p>
+        <p><strong>Mobile:</strong> {invoice.phone}</p>
+        {invoice.address && <p><strong>Address:</strong> {invoice.address}</p>}
+      </section>
+      <table className="simple-product-list">
+        <colgroup><col className="bill-number-column" /><col className="bill-product-column" /><col /><col /><col /></colgroup>
+        <thead><tr><th>No.</th><th>Product name</th><th>Quantity</th><th>Rate / unit</th><th>Amount</th></tr></thead>
+        <tbody>{lines.map((line, i) => <tr key={i}>
+          <td>{i + 1}</td><td>{line.name}</td><td>{line.quantity} {line.unit}</td>
+          <td>{money(line.discountedPrice ?? line.sellingPrice)}</td>
+          <td>{money(line.total)}</td>
+        </tr>)}</tbody>
+      </table>
+      {!lines.length && <p>No products recorded.</p>}
+      <table className="simple-bill-balance"><tbody>
+        <tr><th>Principal amount</th><td>{money(invoice.principal)}</td></tr>
+        <tr><th>Interest amount</th><td>{money(invoice.interest)}</td></tr>
+        <tr><th>Total amount due</th><td><strong>{money(invoice.due)}</strong></td></tr>
+      </tbody></table>
+      <section className="simple-bank-details">
+        <strong>Bank details - SAMPLE / NOT FOR PAYMENT</strong>
+        <p>Account name: {shop.bank.holder}</p>
+        <p>Bank: {shop.bank.name} | Branch: {shop.bank.branch}</p>
+        <p>Account number: {shop.bank.account} | IFSC: {shop.bank.ifsc}</p>
+      </section>
+      <div className="simple-signature">For {shop.name}<br /><br />Authorised signatory</div>
       {includeHistory && <div className="bill-history-pages">
-      <h3 className="report-section-title">Product and payment history · OMS-{invoice.id}</h3>
-      {[...invoice.events]
-        .sort((a, b) => a.date.localeCompare(b.date) || a.id - b.id)
-        .map((e) => (
+        <h3>Account history - OMS-{invoice.id} - {invoice.name}</h3>
+        {[...invoice.events].sort((a,b) => a.date.localeCompare(b.date) || a.id - b.id).map(e => (
           <section className="bill-event" key={e.id}>
-            <div className="bill-event-heading">
-              <div>
-                <strong>
-                  {e.type === "Credit"
-                    ? "Products credited"
-                    : "Payment received"}
-                </strong>
-                <span>
-                  {dateLabel(e.date)} · {e.time}
-                </span>
-              </div>
-              <strong className={e.type === "Payment" ? "positive" : ""}>
-                {money(e.amount)}
-              </strong>
-            </div>
-            {e.type === "Credit" ? (
-              <LineTable lines={e.lines} />
-            ) : (
-              <div className="payment-allocation">
-                <span>Interest paid: {money(e.interestPaid || 0)}</span>
-                <span>Principal paid: {money(e.principalPaid || 0)}</span>
-                <span>Due after payment: {money(e.dueAfter)}</span>
-              </div>
-            )}
+            <div className="bill-event-heading"><div><strong>{e.type === "Credit" ? "Purchase" : "Payment"}</strong><span>{dateLabel(e.date)} | {e.time}</span></div><strong>{money(e.amount)}</strong></div>
+            {e.type === "Credit" ? <LineTable lines={e.lines} effectiveRate /> : <div className="payment-allocation"><span>Interest paid: {money(e.interestPaid || 0)}</span><span>Principal paid: {money(e.principalPaid || 0)}</span><span>Balance: {money(e.dueAfter)}</span></div>}
           </section>
         ))}
-      <h3 className="report-section-title">Interest history</h3>
-      <div className="table-scroll">
+        <h3 className="report-section-title">Interest history</h3>
         <table className="detail-table">
-          <thead>
-            <tr>
-              <th>Period / date</th>
-              <th>Event</th>
-              <th>Rate & mode</th>
-              <th>Amount</th>
-            </tr>
-          </thead>
-          <tbody>
-            {invoice.interestHistory.map((e) => (
-              <tr key={e.id}>
-                <td>
-                  {e.type === "Accrual"
-                    ? `${dateLabel(e.from)} – ${dateLabel(e.to)}`
-                    : dateLabel(e.date)}
-                </td>
-                <td>
-                  {e.type}
-                  <small>{e.note}</small>
-                </td>
-                <td>
-                  {e.type === "Settings"
-                    ? `${e.oldRate}% → ${e.newRate}%`
-                    : `${e.newRate}%`}
-                  <small>
-                    {e.type === "Settings"
-                      ? `${e.oldCompound ? "Compound" : "Simple"} → ${e.newCompound ? "Compound" : "Simple"}`
-                      : e.newCompound
-                        ? "Compound"
-                        : "Simple"}
-                  </small>
-                </td>
-                <td>{e.type === "Settings" ? "—" : money(e.amount)}</td>
-              </tr>
-            ))}
-          </tbody>
+          <thead><tr><th>Period / date</th><th>Entry</th><th>Interest amount</th></tr></thead>
+          <tbody>{invoice.interestHistory.map(e => <tr key={e.id}>
+            <td>{e.type === "Accrual" ? `${dateLabel(e.from)} - ${dateLabel(e.to)}` : dateLabel(e.date)}</td>
+            <td>{e.type === "Accrual" ? "Interest added" : e.type === "Capitalization" ? "Interest added to principal" : "Account settings updated"}</td>
+            <td>{e.type === "Settings" ? "-" : money(e.amount)}</td>
+          </tr>)}</tbody>
         </table>
-      </div>
-      <ReportFoot />
       </div>}
     </div>
   );

@@ -45,6 +45,7 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .stat-card { padding: 18px; }
 .stat-top > span { color: var(--muted); font-size: 14px; letter-spacing: 0; }
 .stat-card > strong { color: var(--ink); font-size: 28px; font-weight: 600; }
+.stat-card.green > strong { color: var(--green); }
 .stat-card.amber > strong, .stat-card.rose > strong { color: var(--ink); }
 .stat-card.amber .stat-icon, .stat-card.rose .stat-icon { background: #eef1f4; color: #526578; }
 .stat-caption { font-size: 12px; color: var(--muted); }
@@ -53,6 +54,7 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .panel-heading p, .overview-stat span { font-size: 12px; color: var(--muted); }
 .overview-stat small, .lifetime-strip small { font-size: 13px; color: var(--muted); }
 .overview-stat strong, .lifetime-strip strong { color: var(--ink); font-size: 24px; font-weight: 600; }
+.overview-stat .dues-amount { color: #b42318; }
 .overview-panel, .lifetime-strip { background: #fff; border-color: var(--line); }
 .overview-grid { background: #fff; border-color: var(--line); }
 .farmer-grid, .product-grid { gap: 14px; }
@@ -137,6 +139,77 @@ h1, h2, h3, strong { letter-spacing: normal; }
 .report-explanation, .report-footer { font-size: 12px; }
 .report-footer { border-color: #aaa; }
 .bill-history-pages { margin-top: 32px; }
+.farmer-account-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.farmer-account-actions > .checkbox-field { margin: 0 auto 0 0; white-space: nowrap; }
+.bill-history-choice { margin: 16px 0; }
+.company-profile-document { max-width: 850px; border-color: var(--line); padding: 28px; }
+.company-profile-document header { padding-bottom: 18px; border-bottom: 1px solid #111; }
+.company-profile-document h2 { font: 700 23px/1.4 Arial, Helvetica, sans-serif; }
+.company-profile-document header p { margin-top: 6px; font-size: 14px; }
+.company-profile-document section { margin-top: 24px; }
+.company-profile-document h3 { font-size: 17px; font-weight: 700; margin-bottom: 12px; }
+.company-profile-document dl { margin: 0; }
+.company-profile-document dl > div { display: grid; grid-template-columns: 145px minmax(0,1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid #ddd; font-size: 14px; line-height: 1.6; }
+.company-profile-document dt { font-weight: 600; }
+.company-profile-document dd { margin: 0; overflow-wrap: anywhere; }
+.profile-bank-note { margin-bottom: 10px; font-size: 13px; font-weight: 600; }
+@media(max-width:600px) {
+  .company-profile-document { padding: 20px; }
+  .company-profile-document h2 { font-size: 20px; }
+  .company-profile-document dl > div { grid-template-columns: 1fr; gap: 3px; }
+}
+@media print {
+  .app-shell[data-page="/profile"] { display: block !important; }
+  .app-shell[data-page="/profile"] .sidebar,
+  .app-shell[data-page="/profile"] .topbar,
+  .app-shell[data-page="/profile"] .page-footer,
+  .company-profile-page > .page-heading { display: none !important; }
+  .app-shell[data-page="/profile"] .main-shell { margin: 0 !important; width: 100% !important; }
+  .company-profile-page { padding: 0 !important; max-width: none !important; }
+  .company-profile-document { border: 0; padding: 0; max-width: none; color: #000; }
+  .company-profile-document * { color: #000 !important; background: #fff !important; box-shadow: none !important; }
+  .company-profile-document h2 { font-size: 18pt; }
+  .company-profile-document dl > div { grid-template-columns: 130px minmax(0,1fr); font-size: 11pt; break-inside: avoid; }
+}
+/* Farmer bills are monochrome records, with no card or decorative styling. */
+.simple-farmer-bill { color: #000; font: 13px/1.45 Arial, Helvetica, sans-serif; }
+.simple-farmer-bill * { color: #000 !important; background: transparent !important; border-color: #000 !important; border-radius: 0 !important; box-shadow: none !important; letter-spacing: normal !important; }
+.simple-bill-header { text-align: center; border-bottom: 1px solid #000; padding-bottom: 10px; }
+.simple-bill-header h2 { font: bold 20px/1.4 Arial, Helvetica, sans-serif; }
+.simple-bill-header p { margin: 4px 0; font-size: 12px; }
+.simple-bill-reference { display: flex; justify-content: space-between; gap: 12px; margin-top: 12px; font-size: 13px; }
+.simple-farmer-details { padding: 10px 0; }
+.simple-farmer-details p { margin: 3px 0; }
+.simple-product-list, .simple-bill-balance { border-collapse: collapse; width: 100%; }
+.simple-product-list { table-layout: fixed; }
+.simple-product-list th, .simple-product-list td { text-align: left; border: 1px solid #000; padding: 4px 8px; font-size: 12px; }
+.simple-product-list .bill-number-column { width: 5%; }
+.simple-product-list .bill-product-column { width: 39%; }
+.simple-product-list th:first-child { width: 5%; white-space: nowrap; overflow-wrap: normal; padding-left: 5px; padding-right: 5px; }
+.simple-product-list th, .simple-product-list td { overflow-wrap: anywhere; }
+.simple-product-list th:nth-child(n+4), .simple-product-list td:nth-child(n+4) { text-align: right; }
+.simple-bill-balance { width: min(100%,340px); margin: 12px 0 12px auto; }
+.simple-bill-balance th, .simple-bill-balance td { padding: 6px 8px; border: 1px solid #000; font-size: 13px; }
+.simple-bill-balance th { text-align: left; font-weight: 400; }
+.simple-bill-balance td { text-align: right; white-space: nowrap; }
+.simple-bill-balance tr:last-child th, .simple-bill-balance tr:last-child td { font-weight: 700; }
+.simple-bank-details { border-top: 1px solid #000; padding-top: 10px; font-size: 11px; break-inside: avoid; }
+.simple-bank-details p { margin: 3px 0; }
+.simple-signature { margin: 15px 0 0; text-align: right; font-size: 11px; break-inside: avoid; }
+.simple-farmer-bill .bill-history-pages > h3 { font-size: 16px; font-weight: 700; }
+@media print {
+  .simple-farmer-bill { font-size: 10pt; }
+  .simple-bill-header h2 { font-size: 15pt; }
+  .simple-bill-header p, .simple-bill-reference, .simple-product-list th, .simple-product-list td { font-size: 9pt; }
+  .simple-product-list thead { display: table-header-group; }
+  .simple-product-list tr { break-inside: avoid; }
+  .simple-bill-balance { break-inside: avoid; }
+  .simple-bill-balance th, .simple-bill-balance td { font-size: 10pt; }
+  .simple-farmer-bill .detail-table th { font-weight: 700; }
+  .simple-farmer-bill .detail-table th, .simple-farmer-bill .detail-table td { padding: 4px 6px; }
+  .simple-farmer-bill .bill-event { margin-bottom: 10px; }
+  .simple-farmer-bill .bill-event-heading { padding: 7px 9px; }
+}
 @media(max-width:1100px) { .farmer-grid, .product-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media(max-width:760px) {
   .stats-grid, .farmer-grid, .product-grid { grid-template-columns: 1fr; }

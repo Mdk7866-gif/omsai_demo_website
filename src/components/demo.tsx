@@ -16,7 +16,7 @@ import {
 } from "./demo-data";
 import { supplierPaymentsOn } from "./demo-math";
 import { DemoContext } from "./demo-context";
-import { Avatar, Empty, ModeBadge, Pager, DatePicker } from "./demo-ui";
+import { Empty, Pager, DatePicker } from "./demo-ui";
 import { Icon } from "./icons";
 import { DemoModal } from "./demo-modal";
 import { useContext } from "react";
@@ -32,6 +32,7 @@ export function DemoShell({ children }: { children: ReactNode }) {
     menuButtonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   useEffect(() => {
+    let restored = seed;
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
@@ -40,14 +41,16 @@ export function DemoShell({ children }: { children: ReactNode }) {
           Array.isArray(parsed.farmers) &&
           Array.isArray(parsed.interestHistory)
         ) {
-          // Restore saved demo state after server/client hydration.
-          // eslint-disable-next-line react-hooks/set-state-in-effect
-          setData(parsed);
+          restored = parsed;
         }
       }
     } catch {
       /* Use the JSON fixtures if storage is unavailable. */
     }
+    // Always load the current fixture when this demo version has no saved state.
+    // Fast Refresh otherwise keeps the previous version's in-memory balances.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setData(restored);
     // Enable persistence only after restoration.
     setReady(true);
   }, []);
@@ -99,16 +102,17 @@ export function DemoShell({ children }: { children: ReactNode }) {
     };
   }, [menu]);
   const change = (fn: (s: Store) => Store) => setData((old) => fn(old));
-  const routes: [Section, string, string][] = [
+  const routes: [Section | "Profile", string, string][] = [
     ["Dashboard", "/", "home"],
     ["Farmers", "/farmers", "people"],
     ["Products", "/products", "leaf"],
     ["Invoices", "/invoices", "file"],
     ["Suppliers", "/suppliers", "truck"],
+    ["Profile", "/profile", "profile"],
   ];
   return (
     <DemoContext.Provider value={{ data, change, open, notify, date, setDate }}>
-      <div className="app-shell">
+      <div className="app-shell" data-page={pathname}>
         {menu && (
           <button
             className="drawer-backdrop"
@@ -459,7 +463,7 @@ export function DemoPage({ section }: { section: Section }) {
                 <div className="round-icon amber">₹</div>
                 <div>
                   <small>Total farmer dues</small>
-                  <strong>{money(totalDue)}</strong>
+                  <strong className="dues-amount">{money(totalDue)}</strong>
                   <span>Includes archived dues · as of {dateLabel(DAY)}</span>
                 </div>
               </div>
@@ -611,30 +615,17 @@ export function DemoPage({ section }: { section: Section }) {
                     onClick={() => open({ kind: "history", id: f.id })}
                   />
                   <div className="card-person">
-                    <Avatar name={f.name} id={f.id} />
                     <div>
                       <h3>{f.name}</h3>
                       <p>{f.phone}</p>
                     </div>
-                    <span className={`status ${f.due ? "due" : "clear"}`}>
-                      {f.due ? "Due" : "Clear"}
-                    </span>
                   </div>
                   <div className="farmer-balance">
-                    <span>
-                      Total due <small>As of {dateLabel(DAY)}</small>
-                    </span>
+                    <span>Total due</span>
                     <strong>{money(f.due)}</strong>
                   </div>
                   <div className="rate-line">
-                    <span>{f.rate}% monthly</span>
-                    <ModeBadge compound={f.compound} />
-                  </div>
-                  <div className="card-account-hint">
-                    {archive
-                      ? "Archived account · history retained"
-                      : "View full account & history"}
-                    <Icon name="arrow" size={13} />
+                    <span>Interest rate: {f.rate}% per month</span>
                   </div>
                   <div className="card-actions">
                     {!archive && (
@@ -650,7 +641,7 @@ export function DemoPage({ section }: { section: Section }) {
                       disabled={!f.due}
                       onClick={() => open({ kind: "pay", id: f.id })}
                     >
-                      Record payment
+                      Payment
                     </button>
                     <button
                       className="icon-button"

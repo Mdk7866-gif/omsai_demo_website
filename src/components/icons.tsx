@@ -18,6 +18,13 @@ export function Icon({ name, size = 20 }: { name: string; size?: number }) {
         <path d="M9 20v-7h6v7" />
       </>
     ),
+    profile: (
+      <>
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <circle cx="9" cy="10" r="2" />
+        <path d="M5 17a4 4 0 0 1 8 0M15 9h3M15 13h3M15 17h3" />
+      </>
+    ),
     people: (
       <>
         <circle cx="9" cy="7" r="3" />

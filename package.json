@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --experimental-strip-types --test tests/demo-data.test.mjs"
+    "test": "node --experimental-strip-types --test tests/demo-data.test.mjs tests/bill.test.cjs"
   },
   "dependencies": {
     "next": "16.4.0",

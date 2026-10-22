@@ -1,10 +1,11 @@
 // Deterministic fictional fixtures. Run only to deliberately regenerate the editable JSON files.
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 const root = join(process.cwd(), "dummy_data");
 mkdirSync(root, { recursive: true });
 const round = (n) => Math.round((n + Number.EPSILON) * 100) / 100;
 const DAY = "2026-10-22";
+const SEASON_START = "2026-04-22";
 const nextDate = (date, days = 1) =>
   new Date(Date.parse(date + "T12:00:00Z") + days * 86400000)
     .toISOString()
@@ -265,7 +266,7 @@ const farmers = Array.from({ length: 120 }, (_, i) => {
     interest: 0,
     rate: 2,
     compound: false,
-    created: "2026-09-01",
+    created: SEASON_START,
     archived: i >= 116,
     ...(i % 11 === 0 && i < 116 ? { aadhaar: "/demo-document.svg" } : {}),
   };
@@ -312,22 +313,16 @@ const raw = [];
 const changes = [];
 for (const f of farmers) {
   const i = f.id - 1;
-  const dates = [
-    nextDate("2026-09-04", i % 7),
-    nextDate("2026-09-16", i % 6),
-    nextDate("2026-09-25", i % 5),
-    "2026-10-05",
-    nextDate("2026-10-07", i % 6),
-  ];
-  if (i < 18) dates.push("2026-10-14");
-  // Give each day of the extended presentation period realistic activity.
-  dates.push(nextDate("2026-10-15", i % 8));
+  const start = nextDate(["2026-04-24", "2026-05-18", "2026-06-15", "2026-07-13", "2026-08-10"][i % 5], i % 9);
+  const dates = [start, nextDate(start, 22 + i % 9), nextDate(start, 45 + i % 11), "2026-10-05", nextDate("2026-10-14", i % 9)];
+  // These returning customers open the first page, with months of accrued interest.
+  if (i < 12) dates.push(DAY);
   dates.forEach((date, j) => {
     const lines = Array.from({ length: 2 + ((i + j) % 2) }, (_, k) => {
       const p = products[(i * 3 + j * 5 + k * 7) % products.length];
       return line(
         p,
-        p.unit === "kg" ? round(2.5 + ((i + k) % 5)) : 1 + ((i + j + k) % 4),
+        p.unit === "kg" ? round(20 + ((i + k) % 9) * 5.5) : 4 + ((i + j + k) % 9),
         (i + j + k) % 4 === 0,
       );
     });
@@ -353,35 +348,29 @@ for (const f of farmers) {
       type: "Credit",
       amount: round(lines.reduce((s, l) => s + l.total, 0)),
       date,
-      time: `${String(9 + ((i + j) % 3)).padStart(2, "0")}:${j % 2 ? "35" : "10"} AM`,
+      time: i < 12 && j === dates.length - 1 ? "05:20 PM" : `${String(9 + ((i + j) % 3)).padStart(2, "0")}:${j % 2 ? "35" : "10"} AM`,
       detail: `${lines.length} farm inputs supplied`,
       lines,
       dueBefore: 0,
       dueAfter: 0,
     });
   });
-  [
-    nextDate(dates[0], 4),
-    nextDate(dates[2], 2),
-    "2026-10-05",
-    nextDate("2026-10-15", i % 8),
-  ].forEach((date, j) =>
-    raw.push({
-      id: serial++,
-      farmer: f.id,
-      name: f.name,
-      type: "Payment",
-      amount: 0,
-      date,
-      time: `${String(2 + ((i + j) % 3)).padStart(2, "0")}:20 PM`,
-      detail: "Payment received at the shop",
-      lines: [],
-      dueBefore: 0,
-      dueAfter: 0,
-      fraction: j === 3 && i % 11 === 3 ? 1 : 0.18 + (i % 4) * 0.05,
-    }),
-  );
-  if (i % 9 === 5)
+  // Visits follow seasonal repayment patterns: none, or a return after 2–5 months.
+  const paymentDates = [];
+  if (i % 6 !== 0) {
+    const delay = [60, 90, 120, 150][i % 4];
+    const harvestReturn = nextDate(start, delay);
+    if (harvestReturn <= DAY) paymentDates.push(harvestReturn);
+  }
+  if (i >= 12 && i % 3 !== 0) paymentDates.push(nextDate("2026-10-14", Math.floor(i / 3) % 9));
+  [...new Set(paymentDates)].sort().forEach((date, j) => raw.push({
+    id: serial++, farmer: f.id, name: f.name, type: "Payment", amount: 0,
+    date, time: `${String(2 + i % 3).padStart(2, "0")}:20 PM`,
+    detail: j === 0 ? "Seasonal partial repayment" : "Harvest-time repayment",
+    lines: [], dueBefore: 0, dueAfter: 0,
+    fraction: i % 11 === 3 && date >= "2026-10-14" ? 1 : i < 12 ? 0.02 : 0.12 + (i % 4) * 0.08,
+  }));
+  if (i >= 12 && i % 9 === 5)
     changes.push({
       farmer: f.id,
       date: "2026-09-09",
@@ -405,7 +394,7 @@ for (const f of farmers) {
       note: "Rate revised for the new crop season",
     });
   }
-  if (i % 13 === 0)
+  if (i >= 12 && i % 13 === 0)
     changes.push({
       farmer: f.id,
       date: "2026-10-10",
@@ -424,7 +413,7 @@ for (const f of farmers) {
     rate = 2,
     compound = false,
     boundary = null,
-    segment = "2026-09-01",
+    segment = SEASON_START,
     segmentInterest = 0;
   const entries = raw
     .filter((e) => e.farmer === f.id)
@@ -452,7 +441,7 @@ for (const f of farmers) {
     segment = date;
     segmentInterest = 0;
   };
-  for (let date = "2026-09-01"; date <= DAY; date = nextDate(date)) {
+  for (let date = SEASON_START; date <= DAY; date = nextDate(date)) {
     if (principal > 0) {
       const accrued = (principal * rate) / 100 / 30;
       interest += accrued;
@@ -604,6 +593,7 @@ for (let i = 0; i < 96; i++) {
     ],
   });
 }
+const shop = JSON.parse(readFileSync(join(root, "shop.json"), "utf8"));
 const invoices = Array.from({ length: 48 }, (_, i) => {
   const f = farmers[i],
     date = ["2026-10-05", "2026-10-10", "2026-10-13", DAY][i % 4],
@@ -616,6 +606,8 @@ const invoices = Array.from({ length: 48 }, (_, i) => {
     address: f.address,
     date,
     ...snapshot,
+    shop: structuredClone(shop),
+    includeHistory: false,
     events: events.filter((e) => e.farmer === f.id && e.date <= date),
     interestHistory: interestHistory.filter(
       (e) => e.farmer === f.id && e.date <= date,
@@ -640,7 +632,7 @@ for (const p of products) {
   stockMovements.push({
     id: movementId++,
     product: p.id,
-    date: "2026-09-01",
+    date: SEASON_START,
     time: "08:30 AM",
     direction: "In",
     quantity: opening,

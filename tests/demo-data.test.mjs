@@ -34,13 +34,37 @@ test("supplier dashboard excludes Due and counts Paid on its payment date once",
   assert.equal(supplierPaymentsOn(entries), 50);
 });
 
-test("extended fixtures contain credits and payments on every day through 22 October", () => {
-  for (let day = 15; day <= 22; day++) {
+test("extended fixtures contain credits and payments on every day from 14 to 22 October", () => {
+  for (let day = 14; day <= 22; day++) {
     const date = `2026-10-${day}`;
     assert.ok(events.some((e) => e.date === date && e.type === "Credit"));
     assert.ok(events.some((e) => e.date === date && e.type === "Payment"));
   }
   assert.ok(purchases.some((p) => p.date === "2026-10-22"));
+});
+
+test("seasonal accounts keep months of interest and appear on the first page", () => {
+  const returns = events.filter(e => e.date === "2026-10-22" && e.time === "05:20 PM");
+  assert.equal(returns.length, 12);
+  for (const event of returns) {
+    const farmer = farmers.find(f => f.id === event.farmer);
+    assert.ok(farmer.interest >= 200, `${farmer.name} should show meaningful seasonal interest`);
+    assert.equal(farmer.due, roundMoney(farmer.principal + farmer.interest));
+  }
+  const delays = new Set();
+  let noRepayments = 0;
+  for (const farmer of farmers) {
+    const history = events.filter(e => e.farmer === farmer.id).sort((a,b) => a.date.localeCompare(b.date));
+    const firstCredit = history.find(e => e.type === "Credit");
+    const firstPayment = history.find(e => e.type === "Payment");
+    if (!firstPayment) noRepayments++;
+    else delays.add((Date.parse(firstPayment.date) - Date.parse(firstCredit.date)) / 86400000);
+    assert.ok(history.filter(e => e.type === "Payment").length <= 2);
+  }
+  for (const days of [60, 90, 120, 150]) assert.ok(delays.has(days));
+  assert.ok(noRepayments >= 20);
+  assert.ok(events.some(e => e.date.startsWith("2026-04")));
+  assert.ok(farmers.find(f => f.id === 11).interest >= 1000);
 });
 
 test("credit snapshots and payments reconcile to their stored amounts", () => {
@@ -104,7 +128,7 @@ test("historical business reports use inclusive dates and snapshot prices after 
   );
   assert.ok(rows.some((l) => l.discountedPrice !== null));
   assert.deepEqual(
-    aggregateBusinessLines({ events }, "2026-08-01", "2026-08-31"),
+    aggregateBusinessLines({ events }, "2026-03-01", "2026-03-31"),
     [],
   );
 });

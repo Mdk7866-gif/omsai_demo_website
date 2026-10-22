@@ -11,18 +11,24 @@ The client is an agro input shop proprietor serving farmers, mostly in **Andhra 
 These decisions replace the earlier temple-gold presentation direction and dashboard formulas.
 
 - Keep the website minimal and formal: Arial/system sans-serif, white cards, neutral borders, restrained blue controls, simple headings and wording. `UI.png` is a historical reference only.
-- Remove Om and devotional slogans from the website. Keep Om only in the farmer bill letterhead.
-- Farmer and supplier cards are compact and show no address preview; addresses remain in forms, details and farmer bills. Product cards have no package illustration.
+- On Dashboard, Farmer payments amounts are green and Total farmer dues amounts are red.
+- Keep devotional slogans off the website. A new Om logo is pending owner approval; show the preview first and add it to the website and bills only after approval.
+- Farmer preview cards show only name, mobile number, total due, interest rate, and Credit, Payment and Delete actions. The whole card opens Farmer account. Keep principal/interest breakdowns and other details inside the account dialog. Supplier cards are compact and have no address preview. Product cards have no package illustration.
 - Dashboard shows only Farmer payments, Credit given (historical input cost), Supplier purchases (Paid only), Total farmer dues, active farmer/supplier counts, All-time payments, All-time supplier purchases (Paid only), and All-time inputs supplied at cost. Remove farmer activity, restock panels, net activity, profit and cash-flow figures.
 - New supplier purchases default to **Paid**; the owner may mark them **Due**. Due purchases are excluded from dashboard purchase totals. Paid purchases count on the latest Paid status date, once. Supplier purchases remain separate from inventory.
-- All reports use plain white, formal layouts, readable text and ruled tables. Farmer bills use portrait paper, show company/farmer details and principal + interest = total due on page one. An **Include account history** checkbox controls whether product, payment and interest history starts on later pages. Saved financial snapshots remain complete regardless of this print option. No tax is added.
+- Farmer bills are pure black and white, with simple ruled tables. The **With history** checkbox is the leftmost action in **Farmer account**, before Edit farmer and Generate bill; it is unchecked by default and absent from the bill preview. Create farmer bill also offers this option. Save the selected option on the invoice. The first-page table shows serial number, product, quantity with unit, final charged rate per unit and net amount, with no separate discount column. Group only compatible product/batch/unit/price/discount lines; retain separate rows when prices differ. Use the transaction’s discounted final unit price when present, otherwise its original selling price, on both the first page and history pages. Both formats contain company/farmer details, date, principal, interest amount, total due and bank details. The default has no transaction/payment headings, interest history, taxes or interest percentages. With history adds complete dated product/payment and interest-amount histories on subsequent pages, still without interest percentages. Financial snapshots retain the complete history regardless of the print selection.
 - Farmer bill company identity: **Omsai Fertiliser, Pesticides and Seeds**; D.No. 3-47, Dhongagurthy Vill, Dharmaram Mdl, Peddapalli Dist, Dongathurthy - 505187, Telangana; GSTIN **36BFAPP5110C1Z1**; phone **9948710704**.
 - Preserve existing account workflows, archive/restore, typed product search, units, discounts, payment allocation and snapshot history.
-- Demo fixtures now include daily credits and payments through **22 October 2026**. Browser storage uses `omsai-demo-v3` so the refreshed fixtures load without deleting the old `omsai-demo-v2` storage entry. Old browser edits are not migrated into this new demonstration dataset.
+- Demo fixtures span a six-month season from **22 April through 22 October 2026**, with varied first repayments after 60, 90, 120 or 150 days and some accounts with no repayment yet. Do not simulate all farmers paying every few days. The first 12 recent accounts carry meaningful accumulated interest, typically hundreds/thousands of rupees. Farmer account dialogs show principal and unpaid interest separately.
+- Daily credits, payments and supplier purchases are present for **14–22 October**. Browser storage uses `omsai-demo-v5-season`, retaining older keys separately. Explicitly restore current seed data when that version has no save, including development refreshes.
+- `dummy_data/shop.json` contains the company details and **State Bank of India (SBI)** sample bank information: Dharmaram sample branch, masked sample account number and IFSC. Bills and Profile PDFs label these **SAMPLE / NOT FOR PAYMENT**. Replace them with owner-supplied real details before real use. New saved invoices snapshot these details; older browser-saved invoices retain their historical details.
+- **Profile** is the sixth sidebar menu at `/profile`. It shows company name, address, GSTIN, phone and bank information from the same shop configuration as new bills. **Print / Save as PDF** prints only the plain company profile on portrait A4, without navigation or shop financial data.
+
+
 
 ### Demo versus production, and PDF feedback
 
-The demo implements the plain visual direction, five routes, client-side forms, archive/restore, linked stock deductions, account histories, local image previews, invoice snapshots, and browser-print reports. It uses JSON seed data and browser local storage. It demonstrates intended UI and basic workflows; it is not the finished financial system.
+The demo implements the plain visual direction, six routes, client-side forms, archive/restore, linked stock deductions, account histories, local image previews, invoice snapshots, and browser-print reports. It uses JSON seed data and browser local storage. It demonstrates intended UI and basic workflows; it is not the finished financial system.
 
 Production still requires FastAPI authentication and APIs, Supabase persistence, concurrent transaction integrity, authoritative elapsed-day interest calculations, private Cloudinary image handling, durable image cleanup, and deployment. Keep the architecture below unless the owner changes it. Building the demo entirely in Next.js was a deliberate demo simplification, not a decision to remove the production backend.
 
@@ -32,12 +38,13 @@ Treat explicit owner decisions as requirements. Items labeled **implementation d
 
 ### Code and data map
 
-- `src/app/page.tsx` and the four page folders expose Dashboard, Farmers, Products, Invoices, and Suppliers. The dashboard is `/`, not a separate `/dashboard` route in this checkout.
+- `src/app/page.tsx` and the five page folders expose Dashboard, Farmers, Products, Invoices, Suppliers, and Profile. The dashboard is `/`, not a separate `/dashboard` route in this checkout.
 - `src/components/demo.tsx`: shell/sidebar, page cards, filters, pagination, and dashboard interactions.
 - `src/components/demo-modal.tsx`: forms, detail views, payments, account history, bills, report dialogs, and archive/restore actions.
 - `src/components/credit-editor.tsx`: multi-product credit entry and supplier purchase lines.
 - `src/components/demo-ui.tsx`: themed calendar, typed suggestions, badges, avatars, and pagination.
 - `src/components/demo-data.ts` and `demo-context.tsx`: domain types, seed imports, helpers, and browser demo state.
+- `src/components/company-profile.tsx`: company profile display and plain portrait printing.
 - `src/components/reports.tsx` and `demo-math.ts`: branded bill/report layouts and historical business-report aggregation.
 - `src/components/icons.tsx` and `src/app/globals.css`: icons, design tokens, responsive layout, and print styling.
 - `dummy_data/*.json` and `scripts/generate-demo-data.mjs`: split fixtures and their deterministic generator. The generator overwrites fixtures; browser edits do not write them.
@@ -63,13 +70,13 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. All five pages are available: Dashboard, Farmers, Products, Invoices, and Suppliers. The production build can be verified with `npm run build` and served with `npm run start`.
+Open `http://localhost:3000`. All six pages are available: Dashboard, Farmers, Products, Invoices, Suppliers, and Profile. The production build can be verified with `npm run build` and served with `npm run start`.
 
 ### Sample data and walkthrough
 
-- Sample records are split across JSON files in [`dummy_data`](dummy_data): `farmers.json`, `products.json`, `suppliers.json`, `transactions.json`, `purchases.json`, `interest_history.json`, `stock_movements.json`, and `invoices.json`. The fixtures include 120 fictional Andhra Pradesh farmer accounts with detailed village/mandal/district addresses, 32 products, 12 suppliers, 1,218 transactions, 96 supplier purchases, and 48 saved bills.
+- Sample records are split across JSON files in [`dummy_data`](dummy_data): `farmers.json`, `products.json`, `suppliers.json`, `transactions.json`, `purchases.json`, `interest_history.json`, `stock_movements.json`, `invoices.json`, and `shop.json`. The fixtures include 120 fictional Andhra Pradesh farmer accounts with detailed village/mandal/district addresses, 32 products, 12 suppliers, 750 transactions, 96 supplier purchases, and 48 saved bills.
 - Edit the JSON files to customize the presentation, then use **Reset demo** in the footer to reload them. Browser changes stay local and do not overwrite the JSON. `node scripts/generate-demo-data.mjs` deliberately regenerates all fixtures and overwrites manual JSON edits.
-- The fixed demo business date is **22 October 2026**. The calendar includes activity from September through 22 October, including **240 transactions on 5 October**. New demo transactions use the fixed business date and sequential demo times after the latest existing entry, keeping the account history in order during presentations.
+- The fixed demo business date is **22 October 2026**. The calendar includes activity from April through 22 October, including **122 transactions on 5 October**. New demo transactions use the fixed business date and sequential demo times after the latest existing entry, keeping the account history in order during presentations.
 - Add/edit farmers with an optional local Aadhaar photo preview. Entire cards open their accounts. Sort by Recent (default), Highest activity, Highest due, Highest paid, or A–Z. Compounding has a visible badge on cards and payment screens.
 - Give multi-product credit using typed inventory suggestions showing category, batch, stock, purchase price, and selling price. Selling price fills automatically; an optional discounted final price applies only to that transaction. Whole-unit products and fractional kg/litre quantities use their own quantity rules. Manual lines are explicitly selected and require their purchase cost too.
 - Payments reduce unpaid interest first, then principal. Expand transactions to inspect every credited line and before/after balances. Interest History includes effective rate/mode changes, accrued interest, and capitalization examples.
@@ -246,7 +253,7 @@ The **Full Farmer Bill** action creates a printable/downloadable PDF containing:
 - Farmer name, phone number, and address when available.
 - All credit/purchase lines with dates, quantities, selling prices, discounts, effective prices, and totals.
 - All payments with their dates and amounts.
-- Interest history, including rates, modes, effective periods, and calculated interest.
+- Optional interest history, including dates and calculated amounts; never print the monthly interest percentage on farmer bills.
 - Current unpaid principal, unpaid interest, total due, and Due/Clear status.
 
 Save a structured snapshot of this bill in the database and add it to `/invoices`. Generating a new full bill creates a new snapshot; reprinting an existing invoice does not create another entry.
@@ -470,7 +477,7 @@ Provide **Create farmer bill** with typed farmer-name/phone suggestions. After s
 
 Provide **Generate PDF** for each saved bill. Generate it from the saved structured snapshot, not from the farmer's current balance or today's product prices.
 
-The snapshot must contain all data required to reproduce the bill: shop identity, farmer contact details, transaction lines, historical prices/discounts, payments, interest periods and events, and captured totals.
+The snapshot must contain the chosen With history print option and all data required to reproduce the bill: shop identity and dummy bank details, farmer contact details, transaction lines, historical prices/discounts, payments, interest periods and events, and captured totals.
 
 - Do not store PDF files in Cloudinary.
 - Do not store generated PDFs permanently in the database.
@@ -687,7 +694,7 @@ The implementation is ready for review when the following behavior is demonstrat
 
 - An unauthenticated visitor cannot read business data, call protected APIs, retrieve Aadhaar images, or generate private reports.
 - FastAPI verifies the password configured in its own environment, issues/verifies the session, and ends that access on logout. Next.js contains no copy of the configured password or session signing secret.
-- All five routes are accessible through the sidebar, with the current page highlighted; the sidebar remains visible on desktop and works as a collapsible side drawer on mobile.
+- All six routes are accessible through the sidebar, with the current page highlighted; the sidebar remains visible on desktop and works as a collapsible side drawer on mobile.
 - Add/edit/credit/pay/history workflows work on desktop and as usable mobile bottom sheets.
 - The plain white design, compact cards, sans-serif fonts, sidebar and simple calendars remain consistent across pages. No OP avatar or dashboard Add Farmer button is present.
 - Entire farmer/product/supplier cards open details, while individual action buttons remain independent. Farmer account history remains accessible from Farmers.

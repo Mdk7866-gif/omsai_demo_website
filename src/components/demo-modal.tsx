@@ -45,7 +45,7 @@ export function DemoModal({
     p = data.products.find((p) => p.id === modal.id),
     supplier = data.suppliers.find((s) => s.id === modal.id),
     invoice = data.invoices.find((i) => i.id === modal.id);
-  const [includeHistory, setIncludeHistory] = useState(true);
+  const [includeHistory, setIncludeHistory] = useState(false);
   const [amount, setAmount] = useState("");
   const [error, setError] = useState("");
   const [historyTab, setHistoryTab] = useState("Transactions");
@@ -107,7 +107,7 @@ export function DemoModal({
   };
   const now = () => nextDemoTime(data);
   function saveBill(farmer: Farmer) {
-    const bill = createInvoice(data, farmer);
+    const bill = createInvoice(data, farmer, includeHistory);
     change((s) => ({ ...s, invoices: [bill, ...s.invoices] }));
     notify(`Bill OMS-${bill.id} saved to Invoices.`);
     open({ kind: "invoice", id: bill.id });
@@ -879,11 +879,10 @@ export function DemoModal({
                   }}
                   required
                 />
-                <div className="info-note">
-                  The full bill captures all credited product lines, payments,
-                  interest history, contact details, and the current balance.
-                  Existing bills remain unchanged.
-                </div>
+                <label className="checkbox-field bill-history-choice">
+                  <input type="checkbox" checked={includeHistory} onChange={(e) => setIncludeHistory(e.target.checked)} /> With history
+                </label>
+                <div className="info-note">The bill includes products and the current balance. Select With history to add the complete account history.</div>
               </>
             )}
             {error && (
@@ -1138,7 +1137,10 @@ export function DemoModal({
                 )}
               </>
             )}
-            <div className="modal-actions">
+            <div className="modal-actions farmer-account-actions">
+              <label className="checkbox-field">
+                <input type="checkbox" checked={includeHistory} onChange={(e) => setIncludeHistory(e.target.checked)} /> With history
+              </label>
               <button
                 className="outline"
                 onClick={() => open({ kind: "farmer", id: f.id })}
@@ -1650,12 +1652,9 @@ export function DemoModal({
           <>
             <div className="report-controls">
               <span>Saved bill · OMS-{invoice.id}</span>
-              <label className="checkbox-field">
-                <input type="checkbox" checked={includeHistory} onChange={(e) => setIncludeHistory(e.target.checked)} /> Include account history
-              </label>
               <PrintButton />
             </div>
-            <BillDocument invoice={invoice} includeHistory={includeHistory} />
+            <BillDocument invoice={invoice} />
           </>
         )}
         {isArchiveAction && (
