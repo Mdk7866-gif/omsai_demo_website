@@ -1,5 +1,6 @@
 ﻿"use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
@@ -142,8 +143,11 @@ export function DemoShell({ children }: { children: ReactNode }) {
             <Icon name="close" />
           </button>
           <Link href="/" className="brand" onClick={() => setMenu(false)}>
-            <span className="brand-name">
-              Omsai<span className="brand-dot">.</span>
+            <span className="brand-title">
+              <Image className="brand-logo" src="/om-logo.svg" alt="Om" width={40} height={40} />
+              <span className="brand-name">
+                Omsai<span className="brand-dot">.</span>
+              </span>
             </span>
             <span className="brand-sub">FERTILISER, PESTICIDES & SEEDS</span>
           </Link>

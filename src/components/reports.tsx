@@ -1,4 +1,5 @@
 import { aggregateBusinessLines } from "./demo-math";
+import { CompanyLogo } from "./company-logo";
 import { simplifyInterestHistory, interestReason, interestTitle } from "./interest-history.mjs";
 import {
   DAY,
@@ -62,18 +63,18 @@ export function LineTable({
     </div>
   );
 }
-function Letterhead({ title, subtitle, logo = false, generated = DAY }: { title: string; subtitle: string; logo?: boolean; generated?: string }) {
+function Letterhead({ title, subtitle, generated = DAY }: { title: string; subtitle: string; generated?: string }) {
   return (
     <>
       <div className="report-letterhead">
         <div className="report-shop">
-          {logo && <span aria-label="Om">ॐ</span>}
           <div>
             <h2>Omsai Fertiliser, Pesticides and Seeds</h2>
             <p>D.No. 3-47, Dhongagurthy Vill, Dharmaram Mdl, Peddapalli Dist, Dongathurthy - 505187, Telangana</p>
             <small>GSTIN: 36BFAPP5110C1Z1 | Phone: 9948710704</small>
           </div>
         </div>
+        <CompanyLogo />
         <div className="report-title">
           <h3>{title}</h3>
           <p>{subtitle}</p>
@@ -90,9 +91,14 @@ export function BillDocument({ invoice, includeHistory = invoice.includeHistory 
   return (
     <div className="print-document farmer-document simple-farmer-bill">
       <header className="simple-bill-header">
-        <h2>{shop.name}</h2>
-        <p>{shop.address}</p>
-        <p>GSTIN: {shop.gstin} | Phone: {shop.phone}</p>
+        <div className="simple-bill-company">
+          <div>
+            <h2>{shop.name}</h2>
+            <p>{shop.address}</p>
+            <p>GSTIN: {shop.gstin} | Phone: {shop.phone}</p>
+          </div>
+          <CompanyLogo />
+        </div>
         <div className="simple-bill-reference"><strong>Farmer bill: OMS-{invoice.id}</strong><span>Date: {dateLabel(invoice.date)}</span></div>
       </header>
       <section className="simple-farmer-details">

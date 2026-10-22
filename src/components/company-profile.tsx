@@ -4,13 +4,17 @@ import { useContext, useState, type FormEvent } from "react";
 import { PROFILE_STORAGE_KEY, shopDetails, type Shop } from "./demo-data";
 import { DemoContext } from "./demo-context";
 import { PrintButton } from "./reports";
+import { CompanyLogo } from "./company-logo";
 
 export function CompanyProfileDocument({ shop = shopDetails }: { shop?: Shop }) {
   return (
     <article className="print-document company-profile-document" aria-label="Company profile">
       <header>
+        <div>
         <h2>{shop.name.includes(",") ? <>{shop.name.slice(0, shop.name.indexOf(",") + 1)}<br />{shop.name.slice(shop.name.indexOf(",") + 1).trim()}</> : shop.name}</h2>
         <p className="profile-document-label">Company profile</p>
+        </div>
+        <CompanyLogo />
       </header>
       <section className="profile-about-section"><h3>About</h3><p>{shop.about}</p></section>
       <section className="profile-offerings"><h3>What we offer</h3>
